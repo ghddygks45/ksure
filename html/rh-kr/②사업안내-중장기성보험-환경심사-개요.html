@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 15);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">환경심사</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="②사업안내-중장기성보험-환경심사-개요.html" class="active">개요</a></li>
+							<li><a href="②사업안내-중장기성보험-환경심사-프로젝트.html">프로젝트</a></li>
+						</ul>
+
+						<div class="bg_info_txt">
+							<h4>환경심사란?</h4>
+							<p>
+								K-SURE는 우리나라 기업이 수출하고 있는 중장기 프로젝트에 대해 금융지원을 하고 있습니다.<br class="pc_content">
+								K-SURE가 금융 지원하는 중장기 프로젝트는 수입국에 경제적 이익을 가져다 주기도 하지만<br class="pc_content">
+								사회·환경에 영향을 미칠 수도 있습니다.
+							</p>
+							<p>
+								이에, K-SURE는 OECD의 환경권고(Recommendation of The Council on Common<br class="pc_content">
+								Approaches for Officially Supported Export Credits and Environmental and Social<br class="pc_content">
+								Due Diligence)에 따라 중장기 프로젝트에 대한 금융지원시 사회·환경적 영향을 평가하고<br class="pc_content">
+								저감 대책을 마련하도록 하여 궁극적으로는 지속가능한 발전에 기여하고 있습니다.
+							</p>
+							<p>
+								사회·환경영향평가(Environmental and Social Impact Assessment)보고서 및<br class="pc_content">
+								사회·환경관리계획(Environmental and Social Management Plan) 등을 바탕으로<br class="pc_content">
+								영향평가 및 저감대책의 적정성 등을 평가하는 일련의 과정을 환경심사라고 합니다.
+							</p>
+						</div>
+						<div class="section">
+							<h4 class="tit">환경심사 대상 &amp; 적용기준</h4>
+							<div class="des_list_box one_line_arr">
+								<div class="des_list des_env1">
+									<h5 class="des_tit">환경심사 대상</h5>
+									<ul class="list shape_type1">
+										<li>연불기간 2년 이상이고 금융지원 금액이 SDR10백만 이상인 사업</li>
+										<li>연불기간 2년 이상이고 환경 민감지역(국립공원, 습지 등)에서 추진되는 사업</li>
+									</ul>
+								</div>
+								<div class="des_list des_env2">
+									<h5 class="des_tit">적용기준</h5>
+									<ul class="list shape_type1">
+										<li>
+											프로젝트가 진행되는 현지 기준 및 국제기준 중 엄격한 기준 적용<br>
+											<span class="bold">※ 국제기준 : IFC Performance Standards, EHS Guidelines 등</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">환경위험 등급 분류</h4>
+							<ul class="env_cate one_line_arr">
+								<li>
+									<h5 class="cate_a">A등급(Category A)</h5>
+									환경·사회에 미치는 위험이 심각하고, 당해 사업장보다 광범위한 지역에 그 영향이 파급될 가능성이 있는 사업으로 OECD 환경권고에서 A등급으로 예시 되어있는 종류의 사업은 모두 해당
+								</li>
+								<li>
+									<h5 class="cate_b">B등급(Category B)</h5>
+									환경·사회에 미치는 위험이 A등급보다 낮고, 통상적으로 그 영향이 당해 사업장으로 한정되며, 경감조치 또는 회복조치가 용이한 사업
+								<li>
+									<h5 class="cate_c">C등급(Category C)</h5>
+									환경·사회에 미치는 영향이 극미하거나 없는 거래
+								</li>
+							</ul>
+							<div class="sm-mt-20 lg-mt-30 txt_c"><a href="#n" class="btn_white_line ico_download">등급별 프로젝트 종류 예시</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

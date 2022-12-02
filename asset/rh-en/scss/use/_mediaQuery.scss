@@ -1,0 +1,41 @@
+// Break Point
+$mobile: 767px;
+$tablet: 768px;
+$pc-ctn: 1137px;
+$pc: 1457px;
+
+// mobile
+@mixin res--mobile {
+
+	@media all and (max-width: #{$mobile}),
+	print {
+		@content;
+	}
+}
+
+// Tablet
+@mixin res--tablet {
+
+	@media all and (min-width: #{$tablet}),
+	print {
+		@content;
+	}
+}
+
+// pc-ctn
+@mixin res--pc-ctn {
+
+	@media all and (min-width: #{$pc-ctn}),
+	print {
+		@content;
+	}
+}
+
+// pc
+@mixin res--pc {
+
+	@media all and (min-width: #{$pc}),
+	print {
+		@content;
+	}
+}

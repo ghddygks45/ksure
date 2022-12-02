@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">범위제한선물환/범위선물환</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="②사업안내-환변동보험-범위제한선물환범위선물환-개요(범위제한선물환범위선물환).html" class="active">개요</a></li>
+							<li><a href="②사업안내-환변동보험-범위제한선물환범위선물환-보험요율조회.html">보험요율 조회</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">범위제한선물환 환변동보험</h4>
+							환율하락에 따른 보험금과 환율상승시의 환수금을 일정 범위 이내로 제한하는 상품
+							<p class="txt_margin">※ 환율 하락시 100% 헤지가 불가능하나, 환율 상승시 손실이 제한되는 장점이 있음</p>
+							<div class="sub_section sm-mt-20 lg-mt-30">
+								<h5 class="sub_tit">범위제한선물환 환변동보험(Collar)구조도
+								</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/vary_table5.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/rh-kr/images/vary_table5_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										<div>
+											<h6>손익구조</h6>
+											<ul>
+												<li>보상환율 : 보장환율 -50원까지</li>
+												<li>환수환율 : 보장환율 +50원까지</li>
+											</ul>
+										</div>
+										<div>
+											<h6>손익구조 예시 (-50 ~ 50원 구간예시)</h6>
+											<ul>
+												<li>보장환율 1,250원</li>
+												<li>1,200 ~ 1,250원 범위까지 보상</li>
+												<li>1,250 ~ 1,300원 범위까지 환수</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">범위선물환 환변동보험</h4>
+							일정 범위까지는 환위험을 노출시키고 일정환율 이하로 하락시 보험금 지급, 일정환율 이상으로 상승시 환수금 납부하는 상품
+							<div class="sub_section sm-mt-20 lg-mt-30">
+								<h5 class="sub_tit">범위제한선물환 환변동보험(Range Forward)구조도</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/vary_table4.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/rh-kr/images/vary_table4_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										<h6>손익구조</h6>
+										<ul>
+											<li>보상시작환율 : 보장환율 -10/-20/-30
+												<ul>
+													<li>환수시작환율 : 보장환율 +α*
+														(*시장가격에 따라 매일 변동)
+													</li>
+												</ul>
+											</li>
+											<li>손익구조 (-20 ~ 20원 구간예시)
+												<ul>
+													<li>보장환율 : 1,110</li>
+													<li>1,090~1,130원 범위인 경우 : 보상/환수 無</li>
+													<li>1,090원 미만 시 보상</li>
+													<li>1,130원 초과 시 환수</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

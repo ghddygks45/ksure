@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">중장기수출보험(구매자신용)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>상담단계
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자는 거래추진 단계에서 인수타당성 및 조건에 대하여 충분한 시간을 두고 K-SURE와 상담을 진행하는 것이 바람직</li>
+											<li>수출자 등의 요청이 있거나 거래추진에 필요한 경우 K-SURE는 상담결과 통지 또는 인수의향서(L/I) 발급 가능</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>예비신청
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자는 K-SURE의 예비승인을 얻기 위하여 수출계약(또는 금융계약) 체결전에 구비서류와 함께 예비신청서 제출
+												<ul class="list shape_type2">
+													<li>구비서류 : 거래내용 및 추진경위, 금융공여 계획 수입자, 차주 등에 관한 서류</li>
+												</ul>
+											</li>
+											<li>K-SURE는 예비신청서를 접수한 경우 수출거래(또는 금융거래) 내용, 수출입자 및 지급보증기관의 신용도 등과 기타 필요한 사항을 심사한 후 보험요율, 부보율,
+												인수적격조건 등을 기재한 예비승인서 발급</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>청약
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수출계약 체결 후 1월 이내(구매자신용의 경우 금융계약체결 후 최초 자금공여일 3개월 전)에 보험 계약자는 구비서류와 함께 중장기수출보험에 대한 청약서 제출
+												<ul class="list shape_type2">
+													<li>구비서류 : 계약서 사본, 수입자(차주)·지급보증기관관련서류, 지급보증 등 위험담보 장치내용서류, 예비승인서 사본 등 참고서류 등</li>
+												</ul>
+											</li>
+											<li>K-SURE는 청약서 접수 후 수입자 및 차주의 계약이행능력 및 신용상태, 지급보증기관의 채무이행능력 등을 심사하고 청약내용이 합당하다고 판단되는 경우 청약을 승낙
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>선적(자금인출)의 통지
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>중장기수출보험-선적전의 경우 해당 없음</li>
+											<li>수출목적물의 선적완료(또는 금융계약에 따른 자금의 인출) 후 선적일(또는 자금인출일)로부터 10영업일 이내에 그 사실을 K-SURE에 서면으로 통지</li>
+											<li>통지 내용 중 당초 보험청약 승낙 내용과 상이한 점이 있는 경우 보험계약내용을 최종 확정 후 보험료 정산</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>내용변경
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자는 수출계약(또는 금융계약)의 당사자, 금액, 상환조건 또는 위험담보장치의 내용이나 조건과 같은 중대한 변경을 하고자 하는 경우 K-SURE의 사전 서면승인을
+												받아야 함</li>
+											<li>수출계약(또는 금융계약)의 내용을 변경한 경우에는 당해 내용변경일로부터 10영업일 이내에 그 변경 내용을 K-SURE에 서면으로 통지하여야 함</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

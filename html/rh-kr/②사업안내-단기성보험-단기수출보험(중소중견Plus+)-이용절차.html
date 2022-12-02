@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단기수출보험(중소중견Plus+)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-제도운영예시.html">제도운영예시</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">가입절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2 process_wrap">
+								<ol class="ico_process">
+									<li class="use_step2">
+										<strong>수출자 신용조사</strong>
+										(사이버영업점)
+									</li>
+									<li class="use_step11">
+										<strong>청약서류 제출</strong>
+										(거래수입자 등록 및 책임금액선택)
+									</li>
+									<li class="use_step5">
+										<strong>보험료 납부 후 증권발급</strong>
+									</li>
+								</ol>
+								<div class="process_con">
+									<div class="process_tit">단기수출보험(선적후) 대비 중소중견Plus+보험 비교</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수입자 신용조사 및 수입자별 인수한도 심사 생략 → <span class="color_red">보험가입기간 단축</span></li>
+											<li>수출통지 절차 생략 → <span class="color_red">수출자 이용 부담 경감</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보상절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2">
+								<ol class="ico_process">
+									<li class="comp_step1">
+										<strong>전화상담</strong>
+										(고객센터, 담당자)
+									</li>
+									<li class="comp_step2">
+										<strong>사고발생통지</strong>
+										<a href="#n" class="underline color_red bold">신청서류</a>
+									</li>
+									<li class="comp_step3">
+										<strong>사고조사</strong>
+									</li>
+									<li class="comp_step4">
+										<strong>보험금 청구</strong>
+										<a href="#n" class="underline color_red bold">신청서류</a>
+									</li>
+									<li class="comp_step5">
+										<strong>보상심사</strong>
+									</li>
+									<li class="comp_step6">
+										<strong>보험금 지급</strong>
+									</li>
+									<li class="comp_step7">
+										<strong>채권양도 및 사후관리</strong>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

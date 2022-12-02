@@ -1,0 +1,141 @@
+@use '../use'as *;
+
+.table_top {
+	@include clearboth();
+
+	.l {
+		float: left;
+	}
+
+	.r {
+		float: right;
+	}
+}
+
+.table {
+	position: relative;
+	overflow-x: auto;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #999;
+
+	.m_scroll {
+		min-width: 768px;
+	}
+
+	.data_table {
+		width: auto;
+
+		tbody {
+			td {
+				text-align: center;
+				white-space: pre;
+			}
+		}
+	}
+
+	th {
+		color: #222;
+		font-weight: 500;
+		padding: 11px 10px;
+	}
+
+	thead {
+		th {
+			background: #fcf1e6;
+			border-bottom: 1px solid #d7d7d7;
+
+			&:not(:first-child) {
+				border-left: 1px solid #d7d7d7;
+			}
+
+			&.tbl_bg_gray {
+				background: #f6f6f6;
+			}
+		}
+	}
+
+	tbody {
+		tr:not(:last-child) {
+			border-bottom: 1px solid #d7d7d7;
+		}
+
+		tr.txt_c {
+			td {
+				padding: 11px 10px;
+			}
+		}
+
+		th {
+			background: #f6f6f6;
+			border-right: 1px solid #d7d7d7;
+		}
+
+		td {
+			padding: 11px 15px;
+
+			&:not(:last-child) {
+				border-right: 1px solid #d7d7d7;
+			}
+		}
+	}
+
+	@include res--pc-ctn {
+		border-top: 2px solid #222;
+
+		th {
+			height: 60px;
+			padding: 15px;
+		}
+
+		tbody {
+			tr.txt_c {
+				td {
+					height: 60px;
+					padding: 20px 15px;
+				}
+			}
+
+			td {
+				height: 60px;
+				padding: 15px 20px;
+			}
+		}
+	}
+}
+
+.bor_r {
+	border-right: 1px solid #d7d7d7;
+}
+
+// info_scroll
+.info_scroll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 120px;
+		height: 37px;
+		background: url("../images/tbl_scroll.png") 0 0 / 100% no-repeat;
+
+	}
+
+	&:after {
+		content: '좌우로 스크롤이 가능합니다.';
+		display: block;
+		color: #fff;
+		font-size: 12px;
+		font-weight: 400;
+		margin-top: 10px;
+	}
+}

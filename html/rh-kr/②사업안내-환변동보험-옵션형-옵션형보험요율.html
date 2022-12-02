@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">옵션형</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-환변동보험-옵션형-개요(옵션형).html">제도개요</a></li>
+							<li><a href="②사업안내-환변동보험-옵션형-보장결제환율조회.html">보장/결제환율조회</a></li>
+							<li><a href="②사업안내-환변동보험-옵션형-옵션형보험요율.html" class="active">옵션형 보험요율</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">옵션형 보험요율 산정방식</h4>
+							보험요율 = 기본요율(0.005%) + 추가보험요율(옵션프리미엄)<br>
+							<span class="fwr color_black">※ 일자별 옵션프리미엄 매일 공지</span>
+						</div>
+						<div class="section">
+							<h4 class="tit">옵션형 추가보험요율 조회</h4>
+							<span class="color_red">옵션형 * 보험요율은 사이버영업점 로그인 후, 환변동보험 → 청약 → 옵션형추가요율조회 화면에서 조회가 가능합니다.</span>
+							<p class="sm-mt-5 lg-mt-7">※ 옵션형 : ① 부분보장 옵션형(Bear Put Spread), ② 완전보장 옵션형(조기결제 불가형, Put option), ③ 완전보장
+								옵션형(조기결제형, Put Option A), ④ 범위선물환(Range Forward), ⑤ 범위제한선물환(Collar)</p>
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="https://cyber.ksure.or.kr/cyber/websquare/websquare.jsp?w2xPath=/ws5/ui/ZZ/MN/ZZMN0101BK.xml&custSctCd=E100"
+								class="btn_link_site bg_red ico_arrow_w" title="새창으로 열림" target="_blank">사이버 영업점 바로가기</a>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

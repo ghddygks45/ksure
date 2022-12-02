@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"><!-- 추가 -->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/iframe/css/style.css"><!-- 추가 -->
+
+	<title>환위험관리 지원센터 | Ksure 한국무역보험공사</title>
+	<script>
+		window.addEventListener('DOMContentLoaded', function () {
+			window.parent.postMessage(document.body.scrollHeight, "*");
+		})
+
+		var mql = window.matchMedia("all and (min-width: 1120px)");
+
+		mql.addListener(function () {
+			deviceCheck();
+		});
+
+		// 디바이스 체크
+		function deviceCheck() {
+			setTimeout(function () {
+				if (mql.matches) {
+					window.parent.postMessage(document.body.scrollHeight, "*");
+				} else {
+					window.parent.postMessage(document.body.scrollHeight, "*");
+				}
+			}, 100)
+		}
+		deviceCheck();
+
+		let resizeTimer = null;
+
+		function resizeComplete() {
+			// 리사이즈 함수 사용
+			consoloe.log('resize Complete');
+		}
+
+		window.addEventListener('resize', function () {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(resizeComplete, 400);
+		}, false);
+	</script>
+</head>
+
+<body>
+	<!-- board_top -->
+	<div class="board_top">
+		<div class="l">
+			<div class="tip">외환관련 국내외 주요 뉴스가 실시간으로 업데이트 됩니다.</div>
+		</div>
+
+		<div class="r">
+			<div class="search_unit">
+				<!--
+				<div class="select_wrap">
+					<select class="board_select" title="조건 선택">
+						<option value="">제목</option>
+						<option value="">내용</option>
+					</select>
+				</div>
+				-->
+				<div class="input_wrap">
+					<input type="text" class="board_input" title="검색어 입력">
+					<button type="button" class="btn_search"><span class="blind">검색</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // board_top -->
+
+	<!-- board_list -->
+	<div class="board_list">
+		<div class="board_box">
+			<div class="cate">
+				<span class="num pc_content">No.900</span>
+			</div>
+			<div class="board_cont">
+				<a href="#;" class="subject">달러-엔 상승폭 확대…0.32% 상승한 139.402엔(08:55)</a>
+				<ul class="board_info_list">
+					<li class="m_w_full"><span class="bold">일시 : </span>2022-09-01 08:57:31</li>
+				</ul>
+			</div>
+		</div>
+		<div class="board_box">
+			<div class="cate">
+				<span class="num pc_content">No.900</span>
+			</div>
+			<div class="board_cont">
+				<a href="#;" class="subject">달러-엔 상승폭 확대…0.32% 상승한 139.402엔(08:55)</a>
+				<ul class="board_info_list">
+					<li class="m_w_full"><span class="bold">일시 : </span>2022-09-01 08:57:31</li>
+				</ul>
+			</div>
+		</div>
+		<div class="board_box">
+			<div class="cate">
+				<span class="num pc_content">No.900</span>
+			</div>
+			<div class="board_cont">
+				<a href="#;" class="subject">달러-엔 상승폭 확대…0.32% 상승한 139.402엔(08:55)</a>
+				<ul class="board_info_list">
+					<li class="m_w_full"><span class="bold">일시 : </span>2022-09-01 08:57:31</li>
+				</ul>
+			</div>
+		</div>
+		<div class="board_box">
+			<div class="cate">
+				<span class="num pc_content">No.900</span>
+			</div>
+			<div class="board_cont">
+				<a href="#;" class="subject">달러-엔 상승폭 확대…0.32% 상승한 139.402엔(08:55)</a>
+				<ul class="board_info_list">
+					<li class="m_w_full"><span class="bold">일시 : </span>2022-09-01 08:57:31</li>
+				</ul>
+			</div>
+		</div>
+		<div class="board_box">
+			<div class="cate">
+				<span class="num pc_content">No.900</span>
+			</div>
+			<div class="board_cont">
+				<a href="#;" class="subject">달러-엔 상승폭 확대…0.32% 상승한 139.402엔(08:55)</a>
+				<ul class="board_info_list">
+					<li class="m_w_full"><span class="bold">일시 : </span>2022-09-01 08:57:31</li>
+				</ul>
+			</div>
+		</div>
+		<div class="board_box">
+			<div class="cate">
+				<span class="num pc_content">No.900</span>
+			</div>
+			<div class="board_cont">
+				<a href="#;" class="subject">달러-엔 상승폭 확대…0.32% 상승한 139.402엔(08:55)</a>
+				<ul class="board_info_list">
+					<li class="m_w_full"><span class="bold">일시 : </span>2022-09-01 08:57:31</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- // board_list -->
+
+	<!-- pagination -->
+	<div class="pagination">
+		<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+		<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+		<ul class="page_num">
+			<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+			<li><a href="#;">2</a></li>
+			<li><a href="#;">3</a></li>
+			<li><a href="#;">4</a></li>
+			<li><a href="#;">5</a></li>
+		</ul>
+		<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+		<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+	</div>
+	<!-- // pagination -->
+</body>
+
+</html>

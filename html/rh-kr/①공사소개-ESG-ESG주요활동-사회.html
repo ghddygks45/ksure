@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">ESG 주요 활동</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-ESG-ESG주요활동-환경.html">환경(Environmental)</a></li>
+							<li><a href="①공사소개-ESG-ESG주요활동-사회.html" class="active">사회(Social)</a></li>
+							<li><a href="①공사소개-ESG-ESG주요활동-지배구조.html">지배구조(Governance)</a></li>
+						</ul>
+
+						<h4 class="blind">사회(Social)</h4>
+
+						<div class="section">
+							<h5 class="tit">정기적인 후원과 봉사활동으로 따뜻한 나눔 실천</h5>
+							<ul class="list shape_type1">
+								<li>공사는 데레사의 집(아동 양육 보호시설), 라파엘의 집(장애아동 생활시설) 등에 정기적으로 후원을 하고 있으며, 일손을 덜어드리기 위한 봉사활동 또한 지속적으로 수행하고 있습니다.
+								</li>
+							</ul>
+							<div class="img_flex_wrap lg-mt-15 sm-mt-10">
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0201.jpg" alt="데레사의 집 정기후원 사진">
+								</div>
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0202.jpg" alt="한국무역보험공사 교육용 차량기증 사진">
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h5 class="tit">1사1촌 자매결연을 통한 농촌 마을과의 교류 지속</h5>
+							<ul class="list shape_type1">
+								<li>경기도 객현리 농촌과 1사1촌 자매결연을 맺어 농촌 일손돕기 봉사활동 행사, 마을 주민을 초청한 문화 행사 개최 등 다양한 지원 활동을 전개하고 있습니다.</li>
+							</ul>
+							<div class="img_flex_wrap lg-mt-15 sm-mt-10">
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0203.jpg" alt="농촌 일손돕기 단체김장 사진">
+								</div>
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0204.jpg" alt="1사1촌 봉사활동 사진">
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h5 class="tit">다양한 교육 기부 프로그램 수행</h5>
+							<ul class="list shape_type1">
+								<li>공사는 미래 인재 발굴, ‘무역’에 특화된 경제 교육 수행을 위해 초 · 중 · 고등학생, 대학생 등 전 연령을 대상으로 다양한 교육 기부 프로그램을 운영하고 있습니다.</li>
+								<li>이러한 노력을 인정받아 공사는 ‘교육기부 우수기관(’23~’25)‘ 및 ’진로체험 우수기관(’21~’24)‘ 인증을 동시에 획득하고 교육부 주관 대한민국 교육 기부 대상을
+									수상하였습니다.</li>
+							</ul>
+							<div class="img_flex_wrap lg-mt-15 sm-mt-10">
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0205.jpg" alt="교육 기부 프로그램 운영">
+								</div>
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0206.jpg" alt="교육 기부 프로그램 운영">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

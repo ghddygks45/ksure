@@ -1,0 +1,53 @@
+//
+// variables
+//
+
+// 색상
+$color-default: #2b2e38 !default;
+$color-primary: darken(#2753b7, 10%) !default;
+$color-gray: #575b63 !default;
+$color-lightgray: #7d7e89 !default;
+$color-blue: #014cc8 !default;
+
+$border-color-dark: #ccc;
+$border-color-base: #ddd;
+$border-color-light: #eee;
+
+$bg-dark: #2f3253;
+$bg-gray: #f1f1f1;
+$bg-lightgray: #f8f8f8;
+
+// 글꼴
+$font-family-base: 'Open Sans',
+Arial,
+'Malgun Gothic',
+sans-serif,
+Dotum,
+Gulim,
+Verdana,
+Tahoma;
+$font-size-xxs: 11px !default;
+$font-size-xs: 12px !default;
+$font-size-sm: 13px !default;
+$font-size-base: 14px !default;
+$font-size-lg: 16rem !default;
+$font-size-xl: 18rem !default;
+$font-size-xxl: 20rem !default;
+
+$line-height-sm: 1.2 !default;
+$line-height-base: 1.4 !default;
+$line-height-lg: 1.55 !default;
+
+// 경로
+//$url-fonts: "../fonts/";
+//$url-img: "../images/";
+
+// 그리드
+//$content-width: 1200px;
+//$both-padding: 10px;
+//$mobile-title-width: 160px;
+
+// 폼 컨트롤 사이즈
+//$height-sm: 35px;
+//$height-base: 46px;
+//$height-lg: 62px;

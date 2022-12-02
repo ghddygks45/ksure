@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">CEO's Profile</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="outline_info_con ceo_profile_con">
+								<div class="txt">
+									<h4>
+										“K-SURE, as a reliable trade, investment, and financial safety network, will provide trustworthy
+										support to ensure Korea’s advancement as a global trade powerhouse.”
+									</h4>
+								</div>
+								<div class="con">
+									<strong class="fwr color_red">Korea Trade Insurance Corporation Chairman and President</strong>
+									<div class="ceo_name">Inho Lee</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="sub_section">
+								<h5 class="sub_tit">Education</h5>
+								<ul class="list shape_type1">
+									<li>M.A. in Public Administration, Harvard Kennedy School</li>
+									<li>M.A. in Public Administration, Seoul National University</li>
+									<li>B.A. in Economics, Seoul National University, Korea</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">Career Highlights</h5>
+								<ul class="list shape_type1">
+									<li>President and Chairman, Korea Trade Insurance Corporation</li>
+									<li>Vice Minister, Ministry of Trade, Industry and Energy (MOTIE)</li>
+									<li>Assistant Deputy Minister of Trade, MOTIE</li>
+									<li>Deputy Minister for Trade and Investment, MOTIE</li>
+									<li>Director General for Industrial Innovation Policy, MOTIE</li>
+									<li>Director General for Policy Coordination, MOTIE</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

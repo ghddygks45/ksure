@@ -1,0 +1,256 @@
+// 스토리
+
+// 목록
+.search_area {
+	&.search_area_type2 {
+		table {
+			padding: 10px;
+
+			tr {
+				.table-2row {
+					label {
+						width: auto;
+						padding-left: 5px;
+						margin-right: 20px;
+					}
+				}
+
+				th {
+					padding-left: 0;
+
+					&.tag_tit {
+						vertical-align: top;
+						padding-top: 14px;
+					}
+				}
+
+				td {
+					&.chkbox {
+						margin-right: 10px;
+						background: #ffffff;
+						height: 154px;
+						padding: 15px;
+
+						.tag {
+							overflow: auto;
+							height: 100%;
+							display: flex;
+							justify-content: space-between;
+							flex-wrap: wrap;
+
+							span {
+								width: 90px;
+
+								label {
+									width: auto;
+									padding-left: 5px;
+									margin-right: 34px;
+
+									&:last-child {
+										margin-right: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.stroy-area {
+					>.togglebox {
+						.checkbox {
+							width: auto;
+
+							.toggle {
+								.toggle-btn {
+									position: relative;
+									left: 0;
+									top: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.list_status {
+		&.list_status_type2 {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			height: 34px;
+
+			div {
+				&.left {
+					.status {
+						line-height: 14px;
+						float: none;
+					}
+				}
+
+				&.right {
+					position: absolute;
+					right: 0;
+
+					.btn {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.gallery-list {
+		&.gallery-list2 {
+			li {
+				a {
+					.info {
+						padding: 8px;
+
+						.sec {
+							font-size: 10px;
+							line-height: 18px;
+							color: #6A6A6A;
+							display: flex;
+							justify-content: space-between;
+						}
+
+						.tit {
+							font-size: 16px;
+						}
+
+						.date {
+							font-size: 10px;
+							color: #6A6A6A;
+						}
+
+						.con {
+							width: 100%;
+							font-size: 10px;
+							display: block;
+							white-space: normal;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 2;
+							overflow: hidden;
+							height: 35px;
+							padding-bottom: 5px;
+						}
+
+						.tag_box {
+							width: 100%;
+							font-size: 10px;
+							color: #6A6A6A;
+							display: block;
+							white-space: nowrap;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							display: -webkit-box;
+							margin-top: 10px;
+
+							li {
+								width: auto;
+								border: none;
+								margin: 0 7px 0 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.togglebox {
+		display: inline-block;
+		position: relative;
+		top: 3px;
+		display: inline-flex;
+		align-content: center;
+
+		div {
+			&:first-child {
+				width: 100px;
+			}
+		}
+
+		.confirm-title {
+			margin-left: 3px;
+			line-height: 20px;
+			height: 20px;
+		}
+
+		.toggle-btn {
+			position: absolute;
+			left: 64px;
+			top: 2px;
+		}
+
+		.toggle_necessary {
+			line-height: 16px;
+			height: 20px;
+
+			.ico-notice {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin-right: 5px;
+				background: url(../images/ico_notice.png);
+				background-size: 15px 15px;
+				vertical-align: middle;
+			}
+		}
+	}
+
+
+}
+
+// 상세 
+#tit_page {
+	&.mb_0 {
+		margin-bottom: 0;
+	}
+}
+
+.btn_area {
+	&.top {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.portfoilo-detail-wrap {
+	.mount-area {
+		.scroll {
+			height: 50px !important;
+			overflow-y: auto;
+		}
+	}
+
+	// .disabled_radio {
+	// 	input[type=radio]:checked {
+	// 		margin: -2px 2px 0 0;
+
+	// 		&::before {
+	// 			content: '';
+	// 			position: relative;
+	// 			display: block;
+	// 			top: calc(50% - 3.5px);
+	// 			left: calc(50% - 3.5px);
+	// 			border: 1px solid rgba(118, 118, 118, 0.3);
+	// 			// border: 1px solid red;
+	// 			width: 5px;
+	// 			height: 5px;
+	// 			border-radius: 50%;
+	// 			background: #d1d1d1;
+	// 		}
+	// 	}
+
+	// 	input[readonly='readonly'] {
+	// 		border-color: #d0d0d0;
+	// 		background: #f9f9f9;
+	// 		opacity: 1;
+	// 		border-color: 1px solid red;
+	// 	}
+	// }
+}

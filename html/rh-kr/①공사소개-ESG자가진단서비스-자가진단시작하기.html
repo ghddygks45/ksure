@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">ESG 자가 진단 서비스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info20">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">ESG 공급망 실사 지침 소개</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									EU에서 영업하는 기업의 자사 활동, 자회사 및 직간접적 비즈니스 관계가 수립된 유관기업 전체에 대하여 인권 및 환경에 미칠 수 있는 실질적·잠재적 부정적 영향에 대한 실사 의무를
+									부여하는 제도
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상기업</h4>
+							<div class="table">
+								<table>
+									<caption>대상기업 표로 내용, EU 회원국, EU 비회원국 정보 제공</caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">내용</th>
+											<th scope="col">EU 회원국</th>
+											<th scope="col">EU 비회원국</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">그룹1 (’24)<br>(발효일 기준 2년 후)</th>
+											<td>종업원 500명 이상 및 전세계 순매출 1.5억 유로 이상(약 2천억원)인 기업</td>
+											<td>EU전체 순매출 1.5억 유로(약 2천억원) 초과인 기업 (종업원 기준 없음)</td>
+										</tr>
+										<tr>
+											<th scope="row">그룹2 (‘26)<br>(발효일 기준 4년 후)</th>
+											<td>종업원 250 ~ 500명 및 전세계 순매출 4천만 ~ 1.5억 유로(약 540억원 ~ 약 2천억원)인 기업 중 고위험 섹터*의 매출이 최소 50% 이상인 기업</td>
+											<td>EU전체 순매출 4천만 ~1.5억 유로(약540억 ~ 2천억원)기업 중 고위험 섹터*의 매출이 전체 순매출의 최소 50% 이상인 기업(종업원 기준 없음)</td>
+										</tr>
+										<tr>
+											<th scope="row">기타</th>
+											<td class="txt_c">-</td>
+											<td>종업원 및 매출 미충족 비EU 소재 기업은 적용 대상 대기업의 협력 관계 시 조치 요구등 간접적 영향을 받을 수 있음</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="txt_margin">
+								※ 고위험 섹터
+								<ul class="list shape_type1 mt-5">
+									<li>(섬유) 섬유, 가죽 및 관련 제품의 제조 또는 도매 무역</li>
+									<li>(농업) 농업·임업·어업 및 식품의 제조 또는 도매 무역</li>
+									<li>(광물) 광물 자원(화석연료, 금속 및 비금속 등)의 제조 또는 도매 무역</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">미준수 시 제재 내용</h4>
+							EU에서 영업하는 기업(협력사 포함)이 공급망 실사 의무 위반 시 금전 및 행정적 제재 혹은 민사상 손해배상책임까지 부과 가능 <br>
+							→ EU 수입자는 ESG 공급망 실사 지침 준수 여부를 거래 기준으로 내세워 계약파기 등을 진행할 가능성이 높음
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="#n" class="btn md bg_red">자가진단 시작하기</a>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

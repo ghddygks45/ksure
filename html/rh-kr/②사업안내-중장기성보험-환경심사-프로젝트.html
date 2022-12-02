@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 15);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">환경심사</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="②사업안내-중장기성보험-환경심사-개요.html">개요</a></li>
+							<li><a href="②사업안내-중장기성보험-환경심사-프로젝트.html" class="active">프로젝트</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">환경정보 공개</h4>
+							<p>
+								K-SURE는 지속가능한 발전에 기여하기 위해 공사가 지원검토
+								중인 사업에 대한 환경심사 정보를 공개하고 있습니다.<br>
+								해당프로젝트의 환경영향평가 관련 정보를 원하시면 아래
+								연락처로 연락주시기 바랍니다.
+							</p>
+							<ul class="contact_list sm-mt-15 lg-mt-20">
+								<li>
+									<span class="cont1">부서 :</span>
+									K-SURE 기술환경팀
+								</li>
+								<li>
+									<span class="cont2">주소 :</span>
+									서울시 종로구 종로14(서린동) 한국무역보험공사
+								</li>
+								<li>
+									<span class="cont3">이메일 :</span>
+									environment@ksure.or.kr
+								</li>
+							</ul>
+							<div class="table sm-mt-25 lg-mt-40">
+								<table>
+									<caption>해당프로젝트의 환경영향평가 관련 정보를 제공</caption>
+									<colgroup>
+										<col style="width: 140px;">
+										<col style="width: 310px;">
+										<col style="width: 300px;">
+										<col style="width: 140px;">
+										<col style="width: 100px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">게시일</th>
+											<th scope="col">프로젝트 명</th>
+											<th scope="col">프로젝트 위치</th>
+											<th scope="col">참고번호</th>
+											<th scope="col">첨부파일</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row" class="txt_c">2021/12/27</th>
+											<td class="txt_c">Barossa Area Development Project</td>
+											<td class="txt_c">approximately 300 kilometers north of Darwin, Northern Territory Australia</td>
+											<td class="txt_c">PJ0321040951</td>
+											<td class="txt_c"><a href="#n"><img src="../../asset/rh-kr/images/ico_pdf.png" alt="PDF 다운로드"></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="txt_c">2021/12/27</th>
+											<td class="txt_c">Barossa Area Development Project</td>
+											<td class="txt_c">approximately 300 kilometers north of Darwin, Northern Territory Australia</td>
+											<td class="txt_c">PJ0321040951</td>
+											<td class="txt_c"><a href="#n"><img src="../../asset/rh-kr/images/ico_pdf.png" alt="PDF 다운로드"></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="txt_c">2021/12/27</th>
+											<td class="txt_c">Barossa Area Development Project</td>
+											<td class="txt_c">approximately 300 kilometers north of Darwin, Northern Territory Australia</td>
+											<td class="txt_c">PJ0321040951</td>
+											<td class="txt_c"><a href="#n"><img src="../../asset/rh-kr/images/ico_pdf.png" alt="PDF 다운로드"></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pagination">
+								<ul class="page_num">
+									<li><a href="#;" class="first"><span class="blind">처음페이지 이동</span></a></li>
+									<li><a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a></li>
+									<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+									<li><a href="#;">2</a></li>
+									<li><a href="#;">3</a></li>
+									<li><a href="#;">4</a></li>
+									<li><a href="#;">5</a></li>
+									<li><a href="#;" class="next"><span class="blind">다음페이지 이동</span></a></li>
+									<li><a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

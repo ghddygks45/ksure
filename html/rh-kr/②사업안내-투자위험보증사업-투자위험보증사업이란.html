@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(11, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">투자위험보증사업</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-투자위험보증사업-투자위험보증사업이란.html" class="active">투자위험보증사업이란</a></li>
+							<li><a href="②사업안내-투자위험보증사업-관계법령.html">관계법령</a></li>
+							<li><a href="②사업안내-투자위험보증사업-해외자원개발펀드.html">해외자원개발펀드</a></li>
+							<li><a href="②사업안내-투자위험보증사업-운영종목.html">운영종목</a></li>
+						</ul>
+						<div class="top_info_box bg_info12">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">투자위험보증사업</strong>
+								<p class="sm-mt-7 lg-mt-10">해외자원개발투자회사가 해외자원 개발사업에 투자하여 비상위험, 신용위험으로 입게 되는 손실의 일부를 보상함으로써,<br
+										class="pc_content">
+									궁극적으로 해외자원 개발사업을 활성화하기 위한 정책 보험입니다.</p>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">투자위험보증사업 개요</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_invest_risk.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/rh-kr/images/img_invest_risk_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									해외자원개발사업법상의 해외자원개발투자(전문)회사 (일명'해외자원개발펀드')가 해외자원개발사업에투자하여, 피투자국의 전쟁, 수용, 송금제한 등의 비상위험(Poltical Risk)과
+									투자상대방의 파산,해당지원의 가격변동 등의 신용위험(Commercial Risk)으로 인하여 해외자원개발펀드가 입게 되는 손실의 일부를 보상함으로써, 궁극적으로 해외자원 개발사업을
+									활성화하기 위한 정책보험입니다.
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">투자위험보증사업 기능</h4>
+							<div class="des_list_box txt_row">
+								<div class="des_list des_risk01">
+									<h5 class="des_tit">해외자원개발 투자위험의 경감기능</h5>
+									해외자원개발사업은 일반적으로 높은 투자수익을 기대할 수 있는 반면, 장기·대규모 투자 및 미래수익의 불확실성 등으로 높은 투자위험
+									(High Risk, High Return)이 상존하고 있으나, 투자위험보증사업을 통해 투자자가 입게 되는 손실의 일부를 보상함에 따라 해외자원개발사업
+									투자활동에 따른 투자손실 위험을 경감시키는 기능을 갖습니다.
+								</div>
+								<div class="des_list des_risk02">
+									<h5 class="des_tit">해외자원개발펀드의 활성화 기능</h5>
+									해외자원개발 투자거래는 해당자원의 시장전망, 해당광구의 사업성평가 등 고도의 전문적인 지식 및 기술이 필요한 바,
+									전문기업(E&P기업 등)에 의한 제한적인 투자가 이루어 졌으나, 투자위험보증사업을 통해 해외자원개발펀드의 투자위험을 경감시킴으로써
+									기존 전문기업뿐만 아니라 일반투자자들도 안심하고 투자할 수 있는 해외자원개발펀드 시장조성 기능을 갖습니다.
+									즉 투자위험보증사업은 비전문가인 일반인들도 해외자원개발펀드에 투자하여 해외자원개발사업에 따른 투자수익을 영위함으로써,
+									기존 전문기업뿐만 아니라 일반투자자 등의 참여를 통한 해외자원개발펀드의 활성화를 도모하고 있습니다.
+								</div>
+								<div class="des_list des_risk03">
+									<h5 class="des_tit">투자위험보증사업의 정책기능</h5>
+									투자위험보증사업은 해외자원개발펀드 및 해외자원개발 투자거래의 촉진을 통해 원유 등 주요자원의 안정적 확보를 위하여 정부의 지원으로
+									운영됨에 따라, 장기적인 수지균형을 목표로 가능한 최저수준의 보험요율, 높은 수준의 보상한도 등 투자자에게 유리한 방식을 채택함으로써
+									해외자원개발투자금융시장의 조성기능을 갖습니다.
+									즉 해외자원개발투자거래의 활성화를 통해, 석유(가스)·석탄·철·동·아연 등 국내 산업발전을 위한 주요 원부자재를 장기·안정적 확보하여
+									국민경제 발전을 정책목표로 하고 있습니다.
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

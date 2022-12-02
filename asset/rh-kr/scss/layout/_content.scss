@@ -1,0 +1,46 @@
+@use '../use'as *;
+
+.contents {
+	.content_top {
+		position: relative;
+		border-bottom: 1px solid #e7e7e7;
+		margin-bottom: 30px;
+		padding-top: 35px;
+		padding-bottom: 15px;
+
+		.depth_tit {
+			margin-bottom: 15px;
+			font-size: 25px;
+			font-weight: 600;
+			color: #222;
+		}
+	}
+
+	.ctn {
+		padding-bottom: 50px;
+	}
+
+	@include res--pc-ctn {
+		width: 1120px;
+		margin: 0 auto;
+
+		.content_top {
+			margin-bottom: 60px;
+			padding-top: 50px;
+
+			.depth_tit {
+				margin-bottom: 16px;
+				font-size: 40px;
+			}
+		}
+
+		.ctn {
+			padding-bottom: 80px;
+		}
+	}
+
+	@include res--pc {
+		margin: 0;
+		float: right;
+	}
+}

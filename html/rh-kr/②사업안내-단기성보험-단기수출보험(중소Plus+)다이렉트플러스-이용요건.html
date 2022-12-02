@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 8);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단기수출보험(중소Plus+) 다이렉트 플러스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소Plus+)다이렉트플러스-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소Plus+)다이렉트플러스-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소Plus+)다이렉트플러스-이용절차.html">이용절차</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용요건 및 운영방식</h4>
+							<div class="table">
+								<table>
+									<caption>이용요건 및 운영방식 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row" rowspan="2">대상기업</th>
+											<td>연간 수출실적 U$50백만 이하 G급 이상(특례G급*제외) 중소기업<br>
+												* 최근 3년 연속 적자 등 (특례G급 여부는 영업점 담당자 통하여 확인가능)</td>
+										</tr>
+										<tr>
+											<td>단기수출보험(포괄·준포괄·농수산물패키지·중소중견플러스) 이용업체는 제외<br>
+												(단, 단체보험, 수출안전망 이용업체는 이용가능)</td>
+										</tr>
+										<tr>
+											<th scope="row">담보위험</th>
+											<td>신용위험 및 비상위험</td>
+										</tr>
+										<tr>
+											<th scope="row">보험기간</th>
+											<td>1년(보험증권에 명시)</td>
+										</tr>
+										<tr>
+											<th scope="row">적용대상거래 (결제조건)</th>
+											<td>일반수출, 위탁가공무역, 중계무역 (선적후 또는 일람후 1년 이내)</td>
+										</tr>
+										<tr>
+											<th scope="row">책임금액</th>
+											<td>최대 U$20만(개별 수입자별 최대 U$10만)</td>
+										</tr>
+										<tr>
+											<th scope="row">보상비율</th>
+											<td>95%</td>
+										</tr>
+										<tr>
+											<th scope="row">보험료</th>
+											<td>인수한도 * 보험료율(원화납부)</td>
+										</tr>
+										<tr>
+											<th scope="row">수입자 제한사항</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>“공사신용등급 자본잠식 G급 또는 R급(정보부족기업 R급 제외)” 에 해당하는 수입자(수출자가 알았던 경우)</li>
+													<li>보험계약자와 무역클레임 등의 사유로 분쟁 또는 소송 중에 있는 수입자</li>
+													<li>고위험 인수제한 국가 또는 이란 소재 수입자</li>
+													<li>수입대행계약을 체결한 중국 수입자</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">기타</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>수출통지: 없음</li>
+													<li>보험계약은 1년 단위 체결 및 갱신</li>
+													<li>보험료 납부: 연간 보험료 선납</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

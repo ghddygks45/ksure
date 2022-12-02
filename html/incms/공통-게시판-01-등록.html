@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>사학연금</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+    
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+        <article id="content">
+            <p id="page_loc">
+                <a href="#none" class="ico_home">HOME</a>
+                <span>&gt;</span>
+                <a href="#none">운영</a>
+                <span>&gt;</span> 
+                <a href="#none">대표 홈페이지 관리</a>
+                <span>&gt;</span>
+                <strong>등록</strong>
+            </p>
+    
+            <h2 id="tit_page">공통 게시판 등록 - 01</h2>
+            
+            <table class="tb_write">
+                <colgroup>
+                    <col style="width:160px">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>등록일</th>
+                        <td>
+                            <input type="text" name="bbs_regist_dt" id="bbs_regist_dt" readonly="readonly" style="width:100px;">
+                            <a href="#divCalendar" class="btn_cal" onclick="openCalendar(document.getElementById('bbs_regist_dt')); return false;">달력</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>담당자</th>
+                        <td>
+                            <input type="text" title="검색어" style="width:200px">
+                            <span><a href="#none" class="btn">검색</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>구분</th>
+                        <td>
+                            <select name="" id="" style="width:200px">
+                                <option value="1">선택하세요</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>게시여부</th>
+                        <td>
+                            <input type="radio" name="data_sttus" id="data_sttus1" checked>
+                            <label for="data_sttus1">Y</label>
+                            <input type="radio" name="data_sttus" id="data_sttus2">
+                            <label for="data_sttus2">N</label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>질문</th>
+                        <td><input type="text" name="" id="" style="width:100%;"></td>
+                    </tr>
+                    <tr>
+                        <th>답변</th>
+                        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>첨부파일</th>
+                        <td>
+                            <span class="attach">
+                                <input type="text" name="" id="" style="width:300px" readonly="readonly">
+                            </span>
+                            <a href="#none" class="btn" id=""><i class="fa fa-search"></i> 찾아보기</a>
+                            <button type="button" class="btn add">추가</button>
+                            <a href="#none" class="btn" id=""><i class="fa fa-trash-o"></i> 삭제</a>
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <div class="btn_area">
+                <div class="fl"><a href="#n" class="btn btn_lg basic"><i class="fa fa-list-ul"></i> 목록</a></div>
+                <div class="fr">
+                    <button type="submit" class="btn btn_lg act"><i class="fa fa-save"></i> 저장</button>
+                    <a href="#" class="btn btn_lg nav"><i class="fa fa-arrow-left"></i> 취소</a>     
+                </div>
+            </div>
+
+        
+        </article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

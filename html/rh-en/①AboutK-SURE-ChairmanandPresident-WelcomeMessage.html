@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Welcome Message</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="greeting_wrap">
+							<div class="greeting_con">
+								<div class="greeting_tit">
+									<h4>K-SURE, the trusted safety net for Korean trade, investment and finance</h4>
+									<strong>Good morning, I am Inho Lee, Chairman and President of Korea Trade Insurance Corporation
+										(K-SURE).</strong>
+								</div>
+								<p class="sm-mt-20 lg-mt-10">
+									K-SURE is a policy financial institution, providing its quarantee and insurance to facilitate Korean
+									export and overseas investment. By doing so, K-SURE has contributed to strengthening Korea's national
+									competitiveness and economy since it was established in 1992.
+
+									I believe now is the time to prepare to help Korean companies flexibly respond to the rapidly-
+									changing external environment and further strengthening our global competitiveness.
+								</p>
+							</div>
+							<div class="sm-mt-5 lg-mt-35">
+								<div>
+									<div class="bold">First of all, K-SURE will maintain our leadership by innovating Korea's export
+										structure.</div>
+									We will expand market presence by exploring new markets. Also, we will be committed to fostering new
+									industries.
+								</div>
+								<div class="txt_margin">
+									<div class="bold">Our support to Korea's small and mid-sized companies will be more solid and
+										practical.</div>
+									K-SURE will provide them with customized programs they can feel the benefit of. We will provide a
+									fine-tuned approach for their different needs and wants so that they have high enough export
+									competitiveness in the global market.
+								</div>
+								<div class="txt_margin">
+									<div class="bold">Also, we will put our effort to upgrade our trade insurance from the customer's
+										perspective.</div>
+									We will continue to pay close attention to changing customer needs, developing trade insurance that
+									adds value to them.
+								</div>
+								<div class="txt_margin">
+									<div class="bold">As a member of global community, let us help ensure a bright future for the world
+										and give our all to
+										create the environment in which all of us care for each other and share the burdens ahead of us.
+									</div>
+									Also, armed with a trusted trade, investment and financial safety net, K-SURE
+									will support Korea to make great strides toward being a qlobal powerhouse in trade.
+								</div>
+								<div class="txt_margin">Thank you for your constant support to K-SURE and look forward to your continued
+									trust in our company.</div>
+								<div class="txt_margin">Thank you.</div>
+							</div>
+							<div class="ceo_sign sm-mt-15 lg-mt-30">
+								<strong class="bold">Chairman and President Korea Trade Insurance Corporation</strong>
+								<img src="../../asset/rh-en/images/img_ceo_sign.jpg" alt="ceo sign">
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

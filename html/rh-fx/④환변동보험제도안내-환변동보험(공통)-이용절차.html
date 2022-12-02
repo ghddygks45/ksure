@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-fx/css/style.css">
+	<script src="../../asset/rh-fx/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-fx/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-fx/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-fx/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-fx/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-fx/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-fx/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">환변동보험(공통)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-개요.html">개요</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-이용요건.html">이용요건</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-보험료.html">보험료</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-이용절차.html" class="active">이용절차</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>인수한도 책정
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>인수한도 책정 및 약정체결</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>청약서 및 보험료 납부
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>오후 1시까지 청약입력(결제일자 지정)</li>
+											<li>청약 당일 보험료 납부</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>보험증권 발급
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>청약 익영업일 보험증권 발급</li>
+											<li>결제월별 보장환율 등 보험계약내용 기재</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>결제일 통지
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>만기결제시 자동적으로 정산처리</li>
+											<li>조기결제시 오후1시까지 결제신청 입력(결제환율 적용일은 결제신청일 익영업일)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>손익정산(보험금/환수금)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>결제신청일로부터 3영업일 내 보험금 지급</li>
+											<li>통지일로부터 15영업일 이내 환수금 납부</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sm-mt-10 lg-mt-15">※ 이용절차에 대한 상세한 내용은 아래 제도해설서 중 「환변동보험 제도안내」 참조</div>
+						</div>
+
+						<div class="btn_wrap txt_c">
+							<a href="#n" class="btn_link_site bg_red ico_arrow_w">제도해설서 바로가기</a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

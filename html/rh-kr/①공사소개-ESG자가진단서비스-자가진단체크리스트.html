@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">ESG 자가 진단 서비스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<h4 class="tit">자가진단 체크리스트</h4>
+						<div class="self_chk_list">
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>01</strong>
+									<span>(Article 5) 기업 경영 및 정책에 공급망 실사 의무를 반영하고 있습니까?</span>
+									<p>- 중장기적 방향 설정, 관련 규정 (Code of Conduct) 도입 및 실사 절차가 있을 시 Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd1-1" name="rd1" class="blind">
+										<label for="rd1-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd1-2" name="rd1" class="blind">
+										<label for="rd1-2">No</label>
+									</span>
+								</div>
+							</div>
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>02</strong>
+									<span>(Article 6) 영업 활동내 인권·환경에 대한 부정적 영향을 인식하고 있습니까?</span>
+									<p>- 관련 보고서 발간, 이해관계자와의 협의 또는 불만 제기 채널 활용 등을 통해 영업 활동으로 인해 발생하는 인권 및 환경 영향도를 인식하고 있으면 Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd2-1" name="rd2" class="blind">
+										<label for="rd2-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd2-2" name="rd2" class="blind">
+										<label for="rd2-2">No</label>
+									</span>
+								</div>
+							</div>
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>03</strong>
+									<span>(Article 7) 영업 활동을 통해 인권·환경에 대한 부정적 영향을 예방하고 있습니까?</span>
+									<p>- 인권·환경에 대한 잠재적인 부정적 영향을 인식하는 지표를 포함한 예방 계획의 수립, 계획 이행을 위한 제반시설 및 절차 구축, 사업 파트너에 대한 해당 계획의
+										준수 확약 (중소기업에 대해서는 비용까지 지원)이 있을 시 Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd3-1" name="rd3" class="blind">
+										<label for="rd3-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd3-2" name="rd3" class="blind">
+										<label for="rd3-2">No</label>
+									</span>
+								</div>
+							</div>
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>04</strong>
+									<span>(Article 8) 부정적 영향을 종결 또는 최소화하기 위한 조치가 있습니까?</span>
+									<p>- 부정적 영향으로 인한 피해 관련 금전적 배상 절차, 종결 불가 시 완화 계획의 수립 및 이행을 위한 제반시설 및 절차 구축, 완화 계획을 준수한다는
+										사업파트너의 확약 (중소기업에 대해서는 비용까지 지원)이 있을 시 Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd4-1" name="rd4" class="blind">
+										<label for="rd4-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd4-2" name="rd4" class="blind">
+										<label for="rd4-2">No</label>
+									</span>
+								</div>
+							</div>
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>05</strong>
+									<span>(Article 9) 적절한 피해 구제 절차가 마련되어 있습니까?</span>
+									<p>- 피해자, 노동조합 및 시민단체 등 이해관계자가 피해 사실을 제기할 수 있는 채널, 이해관계자의 조사 요청, 기업 대표와의 면담 등의 절차가 구축되어 있을 시
+										Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd5-1" name="rd5" class="blind">
+										<label for="rd5-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd5-2" name="rd5" class="blind">
+										<label for="rd5-2">No</label>
+									</span>
+								</div>
+							</div>
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>06</strong>
+									<span>(Article 10) 모니터링 절차가 구축되어 있습니까?</span>
+									<p>- 사내 공급망 실사 정책 및 절차에 대한 정기적(최소 12개월)으로 모니터링 수행 시 Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd6-1" name="rd6" class="blind">
+										<label for="rd6-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd6-2" name="rd6" class="blind">
+										<label for="rd6-2">No</label>
+									</span>
+								</div>
+							</div>
+							<div class="self_chk_box">
+								<div class="chk_tit">
+									<strong>07</strong>
+									<span>(Article 11) 공급망 실사 정책 및 절차 이행 결과를 공시하고 있습니까?</span>
+									<p>- 공급망 실사 이행 결과를 연차 보고서 작성 후 웹사이트 공개 시 Yes</p>
+								</div>
+								<div class="con">
+									<span class="rd-lb">
+										<input type="radio" id="rd7-1" name="rd7" class="blind">
+										<label for="rd7-1">Yes</label>
+									</span>
+									<span class="rd-lb">
+										<input type="radio" id="rd7-2" name="rd7" class="blind">
+										<label for="rd7-2">No</label>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="#n" class="btn md bg_red">결과보기</a>
+								<a href="#n" class="btn md bg_lightgray">취소</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

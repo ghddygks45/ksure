@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 7);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">해외투자보험(투자금융)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="②사업안내-중장기성보험-해외투자보험(투자금융)-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-해외투자보험(투자금융)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요</h4>
+							<ul class="list shape_type1">
+								<li>국내기업앞 해외자원개발, 해외 M&A 등에 필요한 소요자금을 대출하는 경우, 비상위험 또는 신용위험으로 인한 금융기관의 대출금 미회수위험을 담보하는 제도</li>
+								<li>금융기관이 해외투자에 필요한 자금을 공여하기 위해 대한민국 국민과 체결한 금융계약 지원</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur09.jpg"
+									alt="금융기관이 해외투자추진 국내 투자자에게 해외투자자금을 대출하여 해외투자를 진행할 때, K-SURE는 해외투자추진 국내 추자자와 구상약정을 체결하고 금융기관에 대출금 미회수위험을 담보한다.">
+								<a href="../../asset/rh-kr/images/img_insur09.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">주요내용</h4>
+							<ul class="list shape_type1">
+								<li><strong class="bold">대상거래 : </strong>국내사업자의 해외 자원개발, M&A 등 해외사업</li>
+								<li><strong class="bold">지원범위 : </strong>해외사업 소요자금의 100%까지 가능</li>
+								<li><strong class="bold">담보위험 : </strong>비상위험(신용위험 발생시 국내 사업자앞 구상)</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">담보위험</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>담보위험 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">신용위험</th>
+											<td>해외개발주체 또는 국내개발사업자의 파산, 채무불이행</td>
+										</tr>
+										<tr>
+											<th scope="row">비상위험</th>
+											<td>전쟁, 수용, 송금, 약정불이행 등</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보험료</h4>
+							투자상대국 등급 및 투자기업(수출자)의 신용등급에 따라 결정
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

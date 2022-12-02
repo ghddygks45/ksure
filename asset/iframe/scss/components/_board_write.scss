@@ -1,0 +1,393 @@
+@use '../use'as *;
+
+// board_write_top
+.board_write_top {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 12px;
+
+	.l {
+		margin-bottom: 10px;
+	}
+
+	.r {
+		flex: 1;
+		text-align: right;
+	}
+
+	@include res--pc-ctn {
+		flex-direction: row;
+		align-items: end;
+		margin-bottom: 18px;
+
+		.l {
+			margin-bottom: 0
+		}
+	}
+}
+
+// board_write
+.board_write {
+	border-top: 2px solid #222;
+	border-bottom: 1px solid #d7d7d7;
+
+	div,
+	input,
+	textarea,
+	a,
+	button {
+		transition: all .3s;
+	}
+
+	&.default_th {
+		.div_th {
+			width: 80px;
+		}
+	}
+
+	>.row {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+
+		&:not(:last-child),
+		&>.cell_div:not(:last-child) {
+			border-bottom: 1px solid #d7d7d7;
+		}
+
+		&:last-child {
+			>.row:last-child {
+				border-bottom: 0;
+			}
+		}
+
+		.div_th {
+			display: table-cell;
+			height: 64px;
+			padding: 22px 12px 20px 0;
+			background-color: #fff;
+			word-break: keep-all;
+			font-weight: 500;
+			color: #333;
+		}
+
+		.div_td {
+			display: table-cell;
+			padding: 12px 0;
+			background-color: #fff;
+			vertical-align: middle;
+		}
+
+		.txt_td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		.view_txt {
+			padding: 15px 15px 30px;
+		}
+	}
+
+	.b_txt {
+		padding: 20px 15px;
+
+		img {
+			max-width: 100%;
+		}
+
+		&+.row {
+			border-top: 1px solid #d7d7d7;
+		}
+	}
+
+	@include res--tablet {
+		&.default_th {
+			.div_th {
+				width: 120px;
+				min-width: 120px;
+			}
+		}
+	}
+
+	@include res--pc-ctn {
+
+		.row {
+			.div_th {
+				height: 80px;
+				padding: 24px 15px 26px 0;
+			}
+
+			.div_td {
+				height: 80px;
+				padding: 15px 0;
+			}
+
+			.txt_td {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			.cell_div {
+				display: table-cell;
+				vertical-align: top;
+
+				.div_th {
+					vertical-align: middle;
+				}
+
+				.div_td {
+					width: 100vw;
+				}
+
+				&:not(:last-child) {
+					border-bottom: 0;
+				}
+
+				&:last-child {
+					.div_th {
+						//border-left: 1px solid #d7d7d7;
+					}
+				}
+			}
+
+			.view_txt {
+				padding: 25px 30px 50px;
+			}
+		}
+
+		.b_txt {
+			padding: 30px;
+		}
+	}
+}
+
+// input size
+.inp_w_full {
+	width: 100%;
+}
+
+.inp_default {
+	width: 100%;
+
+	@include res--tablet {
+		width: 240px;
+	}
+}
+
+// textarea size
+.textarea {
+	display: block;
+	height: 200px;
+
+	@include res--pc-ctn {
+		height: 300px;
+	}
+}
+
+// 비밀번호
+.pw_box {
+	display: flex;
+	margin-bottom: 5px;
+
+	.input_password {
+		width: calc(100% - 43px);
+	}
+
+	.btn_password {
+		display: inline-block;
+		border: 1px solid #d7d7d7;
+		width: 38px;
+		height: 38px;
+		margin-left: 5px;
+		background: url(../images/bg_password.png) no-repeat center/12px;
+	}
+
+	@include res--tablet {
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 0;
+		vertical-align: middle;
+
+		.input_password {
+			width: 240px;
+		}
+
+		.btn_password {
+			vertical-align: middle;
+		}
+	}
+
+	@include res--pc-ctn {
+		margin-right: 10px;
+
+		.btn_password {
+			width: 50px;
+			height: 50px;
+			background-size: auto;
+		}
+	}
+}
+
+// 핸드폰, 유선전화 
+.input_tel_box {
+	margin-left: -10px;
+	@include clearboth();
+
+	>span {
+		position: relative;
+		float: left;
+		width: calc(33.3% - 10px);
+		margin-left: 10px;
+
+		>input,
+		>select {
+			width: 100%;
+		}
+
+		&:nth-child(1):before,
+		&:nth-child(2):before {
+			content: "-";
+			display: block;
+			position: absolute;
+			right: -7px;
+			top: 5px;
+			color: #333;
+		}
+	}
+
+	@include res--tablet {
+		display: inline-block;
+		margin-left: 0;
+		vertical-align: middle;
+
+		>span {
+			width: 110px;
+			margin: 0 24px 0 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&:nth-child(1):before,
+			&:nth-child(2):before {
+				top: 10px;
+				right: -15px;
+			}
+		}
+	}
+}
+
+// 생년월일
+.year_inp {
+	margin-right: 5px;
+
+	>input {
+		width: 60px;
+		margin-right: 4px;
+	}
+
+	@include res--pc-ctn {
+		margin-right: 5px;
+
+		>input {
+			width: 110px;
+			margin-right: 4px;
+		}
+	}
+}
+
+.mon_day_inp {
+	>input {
+		width: 40px;
+		margin-right: 4px;
+	}
+
+	&+.mon_day_inp {
+		margin-left: 5px;
+	}
+
+	@include res--tablet {
+		>input {
+			width: 70px;
+			margin-right: 4px;
+		}
+
+		&+.mon_day_inp {
+			margin-left: 5px;
+		}
+	}
+}
+
+// 이메일
+.email_inp {
+	.email_inp1 {
+		width: 100%;
+		margin-right: 3px;
+	}
+
+	.email_inp2 {
+		width: 100%;
+		margin-right: 5px;
+	}
+
+	.wr1,
+	.wr2 {
+		display: flex;
+		align-items: center;
+	}
+
+	.wr2 {
+		margin-top: 5px;
+
+		>select {
+			width: 100%;
+		}
+	}
+
+	@include res--pc-ctn {
+		display: flex;
+
+		.email_inp1 {
+			width: 240px;
+			margin-right: 7px;
+		}
+
+		.email_inp2 {
+			width: 240px;
+			margin-left: 5px;
+		}
+
+		.wr1,
+		.wr2 {
+			display: inline-block;
+		}
+
+		.wr2 {
+			margin: 0 0 0 5px;
+
+			>select {
+				width: 240px;
+			}
+		}
+	}
+}
+
+// 주소
+.addr_inp {
+
+	.addr1,
+	.addr2 {
+		width: 100%;
+	}
+
+	@include res--tablet {
+		.addr1 {
+			width: 400px;
+			margin-right: 2px;
+		}
+
+		.addr2 {
+			width: 350px;
+		}
+	}
+}

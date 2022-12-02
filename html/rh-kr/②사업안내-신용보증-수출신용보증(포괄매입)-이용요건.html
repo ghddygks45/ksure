@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출신용보증(포괄매입)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-신용보증-수출신용보증(포괄매입)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(포괄매입)-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(포괄매입)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(포괄매입)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용요건</h4>
+							<ul class="list shape_type1">
+								<li>한국기업데이터(KED) 신용등급 B-이상</li>
+								<li>공사가 정한 신용기준을 충족할 것 (수출자 또는 연대보증인 신용불량, 금융기관 연체, 4대 보험 미납, 세금체납, 공사 보증사고 발생 등인 경우 이용불가)</li>
+								<li>기존 공사의 수출채권 유동화 상품 한도를 보유하고 있지 않을 것 (한도를 보유하고 있는 경우 기존 상품 한도를 해지하고 이용가능)</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">보증취급은행(2021.6.23 기준)</h4>
+							<ul class="list shape_type1">
+								<li>신한은행, 하나은행, 국민은행, 우리은행 NH농협은행을 통해서 수출신용보증(포괄매입) 이용가능</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">보증 주요내용</h4>
+							<div class="table">
+								<table>
+									<caption>보증 주요내용 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">법적성격</th>
+											<td>기본 90%</td>
+										</tr>
+										<tr>
+											<th scope="row">지원대상</th>
+											<td>발급일로부터 1년 이내(보증서 유효기간 종료 시 재보증심사를 통해 연장)</td>
+										</tr>
+										<tr>
+											<th scope="row">보증 계약자</th>
+											<td>수출자의 연간 통관수출실적 기준으로 책정<br>업체당 최대U$500만</td>
+										</tr>
+										<tr>
+											<th scope="row">보증하는 채무</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보증한도 U$10만 이내 : 연율 0.4%</li>
+													<li>보증한도 U$10만 초과 : 연율 0.5% 내외(수출자 신용등급에 따라 산출</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="notice_box">
+							본 안내의 일부 내용은 무역보험관련 내규 개정시 변경될 수 있사오니 이 점 참고하시기 바라며, 보다 정확한 내용은 담당 영업점이나 고객센터(1588-3884)를 통해 확인하시기 바랍니다.
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

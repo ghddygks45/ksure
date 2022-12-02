@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">국외기업 신용조사 서비스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-국외기업신용조사서비스-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-국외기업신용조사서비스-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-국외기업신용조사서비스-수수료.html">수수료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요</h4>
+							<ul class="list shape_type1">
+								<li>K-SURE의 해외지사 및 전 세계 신용조사기관과 연계하여 해외소재 기업의 기본정보, 재무정보 등의 신용조사를 실시한 후 의뢰인에게 신용조사 보고서를 제공하는 서비스</li>
+								<li>국외기업에 대한 심층조사가 필요하거나 신용조사에 기타 어려움이 발생하는 경우 부득이하게 실제 조사 소요기간이 변동 될 수 있음</li>
+							</ul>
+							<div class="img_box sm-mt-12 lg-mt-15">
+								<img src="../../asset/rh-kr/images/img_importer01.jpg"
+									alt="국내기업은 K-SURE로부터 조사신청을하고 K-SURE는 조사기관으로부터 조사의뢰를하고, 조사기관은 국외기업로부터 조사실시를 하고, 국외기업는 조사기관으로부터 자료제공을 하고, 조사기관은 K-SURE로부터 조사보고서접수를 하고, K-SURE는 국내기업으로부터 조사보고서 제공과 세금계산서 발행을 한다.">
+								<a href="../../asset/rh-kr/images/img_importer01.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">신용조사 보고서 종류</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>신용조사 보고서 종류 표로 요약보고서, 정보자료 제공내역, 목적, 보고서 샘플 정보 제공</caption>
+									<colgroup>
+										<col style="width:15%;">
+										<col>
+										<col>
+										<col style="width:13%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">요약보고서</th>
+											<th scope="col">정보자료 제공내역</th>
+											<th scope="col">목적</th>
+											<th scope="col">보고서 샘플</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">요약보고서</th>
+											<td>일반현황, 신용등급평가정보 수출보험이용정보 등</td>
+											<td>수출보험부보를 위한 등급책정</td>
+											<td>
+												<a href="#n" class="btn_view_sample" onclick="fn_open_popup('popup1');">샘플보기</a>
+											</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">Full Report</th>
+											<td>신용조사보고서원본 + 요약보고서</td>
+											<td>추가적인 국외기업정보 확보</td>
+											<td>
+												<a href="#n" class="btn_view_sample" onclick="fn_open_popup('popup1');">샘플보기</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sm-mt-10 lg-mt-13">
+								※ 현지 사정에 따라 재무자료를 입수하지 못하는 경우가 있으므로 보고서 내에 재무자료가 포함되지 않을 수 있습니다.<br>
+								※ 일부 지역은 현지 신용조사기관의 사정에 따라 Full Report가 제공되지 않을 수 있습니다.
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">신용조사 보고서 신청 종류</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>신용조사 보고서 신청 종류 표로 신청방법, 내용, 상세설명, 소요기간 정보 제공</caption>
+									<colgroup>
+										<col style="width:15%;">
+										<col style="width:20%;">
+										<col>
+										<col style="width:15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">신청방법</th>
+											<th scope="col">내용</th>
+											<th scope="col">상세설명</th>
+											<th scope="col">소요기간</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">기존자료구매</th>
+											<td class="txt_c">기평가된 보고서 구매</td>
+											<td>6개월이내 기평가된 보고서 다운로드</td>
+											<td class="txt_c">당일</td>
+										</tr>
+										<tr>
+											<th scope="row">신규신청</th>
+											<td class="txt_c">공사 앞 조사신청</td>
+											<td>
+												<ul class="list shape_type1">
+													<li>공사가 접수하여 해외조사기관 앞 조사의뢰</li>
+													<li>해외조사기관으로부터 보고서 접수 시 등급평가 후 정보제공</li>
+												</ul>
+											</td>
+											<td class="txt_c">통상 3주</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sm-mt-10 lg-mt-13">
+								※ 신규신청의 경우 현지 사정에 따라 조사거절, 불가, 지연이 발생할 수 있으므로 시간을 두고 여유있게 신청해주시기 바랍니다.<br>
+								※ 진행상태가 ‘신청’이외의 경우에는 신청에 대한 취소가 불가능합니다.(공사에 의한 접수 이전에만 신청자가 직접 취소 가능)
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">신용조사 보고서 조회 방법</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>신용조사 보고서 조회 방법 표로 조회가능시기, 조회방법 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">조회가능시기</th>
+											<th scope="col">조회방법</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<td>우리 공사에 의한 신용조사 완료 시</td>
+											<td>사이버영업점에서 직접 조회</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sm-mt-10 lg-mt-13">
+								※ 청구서 및 세금계산서는 매월초 마스터 사용자 이메일로 발송(‘10년 1월 부터 시행)되며, 사이버 영업점에서도 직접 조회·출력하여 사용이 가능합니다.<br>
+								※ 신용조사완료일의 익월 27일까지 수수료를 납부하지 않을 시에는 향후 신용조사서비스 이용이 불가능합니다.<br>
+								※ 수수료 미납 건이 있는 경우에는 납부하신 수수료는 미납 건에 우선적으로 결제됩니다.
+							</div>
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="#n" class="btn md bg_red">국외기업 신용조사 신청서류 바로가기</a>
+						</div>
+
+						<!-- 신용조사보고서 번역샘플 -->
+						<div class="layer_popup_box" data-popup="popup1">
+							<div class="popup popup_size_1000" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">신용조사보고서 번역샘플</h4>
+								</div>
+								<div class="popup_content">
+									<div class="section">
+										<div class="top_notice_box">
+											<ul class="list shape_type1">
+												<li>
+													K-SURE가 제공중인 신용조사보고서 중 Full Report를 수출업체가 보다 원활하게 활용할 수 있도록 작성된 샘플입니다.</li>
+												<li>아래의 샘플을 다운받아 K-sure가 서비스중인 Full Report를 편리하게 이용하실 수 있습니다.</li>
+											</ul>
+											<p class="color_red mt-5">※ 단, 번역대상회사는 임의의 회사입니다.</p>
+										</div>
+									</div>
+									<div class="section">
+										<h4 class="tit">해외신용조사기관별 보고서 번역 샘플</h4>
+										<ul class="list_sample_down">
+											<li>
+												<strong>Sinosure</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Indodata</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>기은신용정보</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Sinotrust</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Mira</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Mira</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Inra</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Basis</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Coface Korea</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Coface IGK</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Sintesis</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Ofincur</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Icms</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Huaxia</strong>
+												<a href="#n">다운로드</a>
+											</li>
+											<li>
+												<strong>Ccr</strong>
+												<a href="#n">다운로드</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 신용조사보고서 번역샘플 -->
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

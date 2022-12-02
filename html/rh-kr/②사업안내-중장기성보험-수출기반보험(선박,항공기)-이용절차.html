@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 12);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출기반보험(선박, 항공기)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-수출기반보험(선박,항공기)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-수출기반보험(선박,항공기)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-수출기반보험(선박,항공기)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-수출기반보험(선박,항공기)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>보험가입 상담
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자는 금융계약 단계에서 인수 타당성 및 조건에 대하여 충분한 시간을 두고 공사와 상담 진행</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>인수의향서 발급신청
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자, 차주 등 이해관계자의 요청이 있는 경우, 인수의향서 발급 가능</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>청약
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자는 금융계약 체결 이전 청약</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>승낙통지서 발급
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>공사가 청약을 승낙하는 경우, 승낙통지서 발급</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>보험료 납부
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>최초 인출일로부터 10영업일 이내 보험료 납부</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>06</span>보험증권
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>발급보험료 수납일로부터 10영업일 이내 보험증권 발급</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>07</span>인출통지
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보험계약자는 매 인출일로부터 10영업일 이내에 인출통지</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit sm-mb-35 lg-mb-40">보상절차</h4>
+							<ul class="process_step">
+								<li>
+									<h5 class="p_tit bg_red">01. 사고발생통지</h5>
+									<ul class="list shape_type1">
+										<li>상환일로부터 2개월 이상 원리금 미회수시 손실을 확정하고 손실확정일로부터 1개월 이내 사고 발생 통지</li>
+									</ul>
+								</li>
+								<li>
+									<h5 class="p_tit bg_orange">02. 보험금 청구</h5>
+									<ul class="list shape_type1">
+										<li>사고발생 통지일로부터 2개월 이내(사고발생통지일로부터 1개월이 경과한 날로부터 보험금 청구 가능)에 손실계산서, 증빙서류 및
+											기타 필요한 서류와 함께 보험금 청구</li>
+									</ul>
+								</li>
+								<li>
+									<h5 class="p_tit bg_red">03. 보험금 지급</h5>
+									<ul class="list shape_type1">
+										<li>보험금 청구일로부터 2개월 이내 보험금 지급</li>
+									</ul>
+								</li>
+								<li>
+									<h5 class="p_tit bg_orange">04. 보험금 회수</h5>
+									<ul class="list shape_type1">
+										<li>보험금 지급전 회수금이 있는 경우 충당순서는 미회수원리금에 대한 이자 → 미회수원리금(이자선충당)</li>
+										<li>보험금 지급후 보험계약자로부터 차주 앞 채권의 대위권 취득 및 채권회수업무 진행</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

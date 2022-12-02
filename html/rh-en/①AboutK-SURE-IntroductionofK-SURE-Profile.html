@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">History</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="outline_info_con">
+								<div class="txt">
+									<h4>
+										<strong><span class="color_red">Korea Trade Insurance Corporation</span></strong>
+										was established in July 1992 upon the Trade Insurance Act for the goal of promoting trade and
+										overseas investment of Korean enterprises with the mission to boost the national competitiveness.
+									</h4>
+								</div>
+								<div class="con">
+									<strong>As the official export credit agency under the Ministry of Trade, Industry and Energy, our
+										business scope is as follows:</strong>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<ul class="list_outline_task">
+								<li class="bg01">
+									<div class="txt">
+										Operation of various trade insurance programs to cover the risks arising from the export and import
+										of goods and services, overseas construction works and investments, management of foreign exchange
+										(FX) and interest rate fluctuations, export of cultural contents and services, and other overseas
+										transactions
+									</div>
+								</li>
+								<li class="bg02">
+									<div class="txt">
+										Provision of credit related services including credit research and credit information management in
+										addition to debt recovery services including the collection of overseas receivables for Korean
+										enterprises
+									</div>
+								</li>
+								<li class="bg03">
+									<div class="txt">
+										Sound management of the ‘Trade Insurance Fund’through the trade insurance underwriting ceiling
+										approved by the National Assembly and the integrated risk management system
+									</div>
+								</li>
+								<li class="bg04">
+									<div class="txt">
+										Realization of the vision to become a "public corporation trusted by the people of Korea"with
+										emphasis on customer satisfaction assurance by implementing ethical and innovative management based
+										on the principles of integrity, transparency, sharing, and communication
+									</div>
+								</li>
+							</ul>
+							<p class="bold sm-mt-20 lg-mt-30">
+								We develop various trade insurance products and value-added services with the aim to
+								contribute to the
+								promotion of Korean exports as well as international trade on a broader scope to proactively deal with a
+								constantly changing environment of global trade.</p>
+							<p class="sm-mt-10 lg-mt-15">
+								As of December 2013, the number of K-SURE employees stands at a total of 490, who work out of the head
+								office in Seoul and 13 domestic branches with one local representative in Korea, in addition to 14
+								representative offices abroad.
+							</p>
+						</div>
+						<!-- // ctn -->
+					</div>
+					<!-- // content -->
+				</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

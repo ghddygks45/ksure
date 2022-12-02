@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">국외기업 신용조사 서비스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-국외기업신용조사서비스-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-국외기업신용조사서비스-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-국외기업신용조사서비스-수수료.html" class="active">수수료</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">신용조사 수수료</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>신용조사 수수료 표로 기업규모, 보고서종류, 가격(VAT 포함)(일반조사, 재무제표미비, 정보부족기업 또는 장기소요(40일초과)) 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" rowspan="2">기업규모</th>
+											<th scope="col" rowspan="2" class="bor_r">보고서종류</th>
+											<th scope="col" colspan="3">가격(VAT 포함)</th>
+										</tr>
+										<tr>
+											<th scope="col">일반조사</th>
+											<th scope="col">재무제표미비</th>
+											<th scope="col">정보부족기업 또는 장기소요(40일초과)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">중소기업</th>
+											<td>요약보고서</td>
+											<td>33,000원</td>
+											<td>22,000원</td>
+											<td>면제</td>
+										</tr>
+										<tr class="txt_c">
+											<td>Full Report</td>
+											<td>49,500원</td>
+											<td>33,000원</td>
+											<td>면제</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">대기업</th>
+											<td>요약보고서</td>
+											<td>66,000원</td>
+											<td>22,000원</td>
+											<td>면제</td>
+										</tr>
+										<tr class="txt_c">
+											<td>Full Report</td>
+											<td>99,000원</td>
+											<td>33,000원</td>
+											<td>면제</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sm-mt-5 lg-mt-10">
+								※ 현지 사정에 따라 재무자료를 입수하지 못하는 경우가 있으므로 보고서 내에 재무자료가 포함되지 않을 수 있습니다.<br>
+								※ 국외기업 신용조사는 건당 평균 9만원 가량이 소요되고 있는 바, 요약보고서의 내용이 미흡한 경우에도 신청인에게 실제 소요비용의 일부만 부과되는 점을 양해해 주시기 바랍니다.
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">수수료 청구시기 및 방식</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>수수료 청구시기 및 방식 표로 수납방식, 청구시기, 세금계산서 발행시기, 납부기한 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">수납방식</th>
+											<th scope="col">청구시기</th>
+											<th scope="col">세금계산서 발행시기</th>
+											<th scope="col">납부기한</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<td>후불제</td>
+											<td>당월 중 조사 완료 건에 대한 수수료를 익월 1일자 일괄청구</td>
+											<td>당월 중 조사완료 건 전체에 대하여 익월 1일자 일괄발급(1장/월)</td>
+											<td>세금계산서 발행 월 27일까지</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sm-mt-5 lg-mt-10">
+								※ 청구서 및 세금계산서는 매월초 마스터 사용자 이메일로 발송(‘10년 1월 부터 시행)되며, 사이버 영업점에서도 직접 조회·출력하여 사용이 가능합니다.<br>
+								※ 신용조사완료일의 익월 27일까지 수수료를 납부하지 않을 시에는 향후 신용조사서비스를 이용하실수 없습니다.<br>
+								<span class="color_red">※ 주의 : 수수료 미납 건이 있는 경우, 납부하신 수수료는 미납 건에 우선적으로 결제 처리 되오니 이 점 유의하시기 바랍니다.</span>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

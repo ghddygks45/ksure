@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">중장기수출보험(선적전)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(선적전)-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(선적전)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(선적전)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(선적전)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요 및 상품의 특성</h4>
+							중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과 수출이행후 결제대금을
+							인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 손실을 담보함으로써 수출자의 적극적인 수출추진을 지원코자 마련된 제도임
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur03.jpg"
+									alt="수출자와 수입자간의 수출대금 결제기간 2년 초과하는 수출계약시 발생할 수 있는 수출 또는 결제자금 인출불능위험을 K-SURE가 담보한다.">
+								<a href="../../asset/rh-kr/images/img_insur03.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상거래</h4>
+							수출대금의 결제기간(<span class="fwr color_red txt_underline">신용기산점</span>)~ 최종 결제기일)이 2년을 초과하는 중장기 수출계약
+						</div>
+						<div class="section">
+							<h4 class="tit">담보위험</h4>
+							<div class="table">
+								<table>
+									<caption>담보위험 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">신용위험</th>
+											<td>수입자의 파산, 수입국 법원의 채무동결 또는 채권단과의 채무조정 협약으로 인한 수입자의 지급불능</td>
+										</tr>
+										<tr>
+											<th scope="row">비상위험</th>
+											<td>전쟁, 혁명, 수입국의 모라토리움 선언, 송금지연조치, 공공수입자의 일방적인 계약파기 또는 <span
+													class="fwr color_red txt_underline">특별한 사유</span>로 인한 계약의 해제·해지 등</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

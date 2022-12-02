@@ -1,0 +1,38 @@
+@use '../use'as *;
+
+// title
+.tit {
+	margin-bottom: 10px;
+	padding-left: 23px;
+	background: url(../images/bg_tit.png) no-repeat 0 6px/15px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #222;
+	transition: all .3s;
+
+	@include res--pc-ctn {
+		margin-bottom: 15px;
+		padding-left: 32px;
+		font-size: 23px;
+		background-position: 0 8px;
+		background-size: auto;
+	}
+}
+
+.sub_tit {
+	margin-bottom: 7px;
+	padding-left: 15px;
+	background: url(../images/bg_sub_tit.png) no-repeat 0 6px/10px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #222;
+	transition: all .3s;
+
+	@include res--pc-ctn {
+		margin-bottom: 10px;
+		padding-left: 20px;
+		background-position-y: 8px;
+		background-size: auto;
+		font-size: 19px;
+	}
+}

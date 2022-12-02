@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar03.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Q&amp;A</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<!-- infobox -->
+						<div class="top_info_box bg_info01">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">Select if you need to install keyboard security software for
+									PC</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									※ Services are available without the need to install keyboard security software.
+								</div>
+								<div class="sm-mt-10 lg-mt-17">
+									<a href="#n" class="btn_white_line ico_download">Install Keyboard Security Software</a>
+								</div>
+							</div>
+						</div>
+						<!-- // infobox -->
+
+						<div class="section">
+							<h4 class="tit">Please read and agree to the following privacy policy for the protection of your personal
+								information:</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									<ul class="list shape_type1">
+										<li class="bold">Purposes of the collection and usage of personal information
+											<p class="txt_margin fwl color_default">Identification of the subject, confirmation of
+												questions/complaints, contact and notification related to fact finding, notification on
+												processing outcomes</p>
+										</li>
+										<li class="bold">Details of personal information collected
+											<p class="txt_margin fwl color_default">[Required information] name, e-mail address</p>
+										</li>
+										<li class="bold">Period of retaining and using personal information
+											<p class="txt_margin fwl color_default">
+												Your personal information shall be kept until your question/complaint has been processed, after
+												which it shall be kept and used for claim investigation, conflict resolution, complaint
+												processing, and other statutory duties needed to be performed.
+											</p>
+										</li>
+										<li class="bold">You may disagree to this privacy policy pursuant to Article 15-2 and Article 4 of
+											the Personal Information Protection Act (Fact that a subject of information has a right to reject
+											to give his/her consent and details of a disadvantage, if any, due to his/her rejection to give
+											consent.) However, if you</li>
+									</ul>
+								</div>
+								<div class="agree_check_box">
+									<div class="ag_check">
+										<span class="ck-lb">
+											<input type="checkbox" id="ck2" name="chk2" class="blind">
+											<label for="ck2">I agree to the above</label>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<!-- board_write -->
+							<div class="board_write_top">
+								<div class="r">
+									<span class="color_red bold">*</span> Required fields
+								</div>
+							</div>
+
+							<div class="board_write default_th">
+								<div class="row">
+									<div class="div_th">
+										<label for="text2">NAME <span class="bold color_red">*</span><span
+												class="blind">Required</span></label>
+									</div>
+									<div class="div_td">
+										<input type="text" id="text1" class="inp_default">
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">E-MAIL <span class="bold color_red">*</span><span class="blind">Required</span>
+									</div>
+									<div class="div_td">
+										<div class="email_inp">
+											<span class="wr1">
+												<input type="text" class="email_inp1"> @
+											</span>
+											<span class="wr2">
+												<input type="text" class="email_inp2">
+												<select name="" id="">
+													<option value="">선택하세요</option>
+												</select>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="subject">TITLE <span class="bold color_red">*</span><span
+												class="blind">Required</span></label>
+									</div>
+									<div class="div_td">
+										<input type="text" id="subject" class="inp_w_full">
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="detail">CONTENT <span class="bold color_red">*</span><span
+												class="blind">Required</span></label>
+									</div>
+									<div class="div_td">
+										<textarea name="" id="detail" cols="30" rows="10" class="textarea"></textarea>
+									</div>
+								</div>
+							</div>
+							<!-- // board_write -->
+						</div>
+
+						<!-- btn -->
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="#;" class="btn md bg_red">SUBMIT</a>
+								<a href="#;" class="btn md bg_lightgray">CANCEL</a>
+							</div>
+						</div>
+						<!-- // btn -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

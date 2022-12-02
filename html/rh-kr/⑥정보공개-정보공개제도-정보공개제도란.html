@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">정보공개제도란</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info07">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">정보공개제도란?</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									공공기관이 직무상 작성 또는 취득하여 관리하고 있는 정보를 수요자인 국민의 청구에 의하여 열람·사본·복제 등의 형태로 청구인에게 공개 하거나
+									공공기관이 자발적으로 또는 법령 등의 규정에 의하여 의무적으로 보유하고 있는 정보를 배포 또는 공표 등의 형태로 제공하는 제도를 말합니다.
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">개요</h4>
+							<p>무역보험공사에서는 국민의 알권리를 보장하고 업무운영의 투명성을 확보하기 위하여 정보공개제도를 시행하고 있습니다. 지금까지는 주로 서면에 의하여 정보공개제도가
+								운영되었으나, 국민들에게 더욱 편리한 방법으로 정보가 제공되도록 인터넷 홈페이지에 <span class="bold">"정보공개제도"페이지를 개설하여
+									운영</span>하고 있습니다.</p>
+							<p class="sm-mt-6 lg-mt-10">앞으로 더욱 편리하고 신속한 방법으로 정보공개가 이루어지도록 최선의 노력을 다하겠으며 국민들에게 더욱 가깝게 다가갈 수 있는 무역보험공사가
+								되겠습니다.
+							</p>
+						</div>
+						<div class="section">
+							<h4 class="tit">정보공개/데이터개방책임관</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>정보공개/데이터개방책임관 표로 구분, 담당, 연락처 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">담당</th>
+											<th scope="col">연락처</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<td>정보공개/데이터제공 책임관</td>
+											<td><strong class="bold">기획조정실장</strong></td>
+											<td>02-399-6171</td>
+										</tr>
+										<tr class="txt_c">
+											<td>정보공개담당</td>
+											<td><strong class="bold">경영평가부장</strong></td>
+											<td>02-399-6733</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단기수출보험(선적후)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-제도운영예시.html" class="active">제도운영예시</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-신청서류.html">신청서류</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">한도책정 및 통보</h4>
+							<ul class="list shape_type1">
+								<li>신용조사 완료 후 이용에 제한사항이 없는 수입자에 대하여 인수한도 U$20만 요청</li>
+								<li>수출자가 사이버영업점을 통해 신청한 U$20만 인수한도 책정 후 한도책정 통보문 발송</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">보험관계 성립(예시)</h4>
+							<ul class="list shape_type1">
+								<li>수출자는 U$10만 선적 후 10영업일 이내 사이버영업점을 통해 U$10만 수출통지</li>
+								<li>수출통지건은 수출일로부터 보험관계가 성립됨(단, 통지 지연, 인수한도 초과, 수출자 또는 수입자 등급 제한 등의 사유로 보험관계가 성립되지 않은 수출통지건은 반송됨)</li>
+							</ul>
+							<div class="table mt-10">
+								<table>
+									<caption>보험관계 성립(예시) 표이며 구분, 책임금액, 보험료, 비고 정보를 제공하고 있습니다.</caption>
+									<colgroup>
+										<col style="width: 20%;">
+										<col style="width: 26%;">
+										<col style="width: 26%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">책임금액</th>
+											<th scope="col">보험료</th>
+											<th scope="col">비고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">비상 및 신용위험</th>
+											<td class="txt_c">U$10만</td>
+											<td class="txt_c">75만원</td>
+											<td class="txt_c">U$10만 * @1,000*0.75%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">보험료 납부</h4>
+							수출한 다음달 25일까지 보험료 75만원 납부
+						</div>
+
+						<div class="section">
+							<h4 class="tit">결제기간 만기 시</h4>
+							<ul class="list shape_type1">
+								<li>
+									<span class="bold">수출대금 입금</span>
+									<ul class="list shape_type2">
+										<li>사이버영업점을 통해 결제통지 등록으로 보험관계 종결</li>
+									</ul>
+								</li>
+								<li>
+									<span class="bold">수출대금 미입금</span>
+									<ul class="list shape_type2">
+										<li>만기일로부터 1개월 이내 사고발생 통지, 사고통지일로부터 1개월 이후 보험금 지급청구, 보험금 지급청구일로부터 2개월 이내 보험금 지급</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

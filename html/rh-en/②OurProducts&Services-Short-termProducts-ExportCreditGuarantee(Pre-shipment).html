@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Export Credit Guarantee (Pre-shipment)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">Overview of Scheme</h4>
+							Export credit guarantee (pre-shipment) product is a scheme of K-SURE to provide a joint guarantee for the
+							repayment debt of an exporter to a foreign exchange bank or an export-related organization (hereinafter
+							referred to as “bank”) that provided a loan or a payment guarantee based on an export credit guarantee to
+							assist in the company’s manufacturing, processing, or procuring of export goods according to an export
+							contract.
+						</div>
+						<div class="section">
+							<h4 class="tit">Product Structure</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-en/images/img_insur_sei09.jpg" alt="Transaction Structure for Buyer Credit">
+								<a href="../../asset/rh-en/images/img_insur_sei09.jpg" class="btn_img_size">Large view of images</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Target of Credit Guarantee</h4>
+							Export credit guarantee (pre-shipment) applies when a bank provides a loan with a credit guarantee or a
+							payment guarantee with credit guarantee under each of the following to an exporter.(application limited
+							when falling under cases of prohibition and restriction of guarantee, and other reasons for refusal)
+							<ul class="list shape_type1 mt-10">
+								<li>Trade finance and related payment guarantee according to the “Detailed Rules on Trade Finance for
+									Total Sum Bounded Loan of the Bank of Korea” of the Bank of Korea</li>
+								<li>Loan recognized by K-SURE as an export fund handled by the Export-Import Bank of Korea</li>
+								<li>Acquisition of trade bill specified in the “Detailed Rules on Credit Management by Financial
+									Institutes” of the Bank of Korea</li>
+								<li>Opening of import L/C for export materials (including opening of usance for import to Korea)
+									However, opening of import L/C for export materials in the form of intermediary trade excluded</li>
+								<li>Other loans recognized by K-SURE (KITA, trade fund, KOSME fund, online direct guarantee, etc.)</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

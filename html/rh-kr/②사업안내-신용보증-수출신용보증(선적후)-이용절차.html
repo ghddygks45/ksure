@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출신용보증(선적후)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>보험가입 상담(고객센터, 담당자)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>청약한 모든 수출거래를 보험으로 인수하지는 않으며 일정요건 구비여부를 체크한 뒤 절차 진행</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>신용조사
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수입자 신용등급 평가 : 수출자는 사이버영업점을 통해 수입자 신용조사 의뢰</li>
+											<li>수출자 신용등급 평가 : 최근 3년간 재무제표 제출</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>보증청약
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수출업체는 수출계약체결 전 후 수출신용보증(선적 후)청약서 제출</li>
+											<li>청약 시 보증서를 취급할 은행을 거쳐 K-SURE 소정양식의 관련서류를 제출</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>보증한도 책정
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수입자 신용평가 후 보증계약체결이 가능한 것으로 판정될 경우 거래 예상물량, 외상기간 및 수입자 신용도 등을 고려하여 보증가능 금액을 산출</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>보증서 발급
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수출신용보증 약정체결 후 보증서 발급</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>06</span>대출통지 및 보증료 보험료 납부
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수출업체는 선적 후 사이버영업점을 통해 보증대출통지 등록</li>
+											<li>K-SURE는 대출통지 내용을 심사하여 보증관계 성립 여부확인(반송사유 발생시 보증관계 미성립 통지), 보증료 및 보험료 수납</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>07</span>은행매입
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>매입을 위한 선적서류와 보증서를 담보로 매입요청, 은행은 매입 전 대출통지 성립 및 보증료 수납여부 조회</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

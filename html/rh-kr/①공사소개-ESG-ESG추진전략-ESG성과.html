@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">ESG 성과</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-ESG-ESG추진전략-ESG추진전략.html">ESG 추진 전략</a></li>
+							<li><a href="①공사소개-ESG-ESG추진전략-ESG조직체계.html">ESG 조직 체계</a></li>
+							<li><a href="①공사소개-ESG-ESG추진전략-ESG성과.html" class="active">ESG 성과</a></li>
+						</ul>
+
+						<h4 class="blind">ESG 성과</h4>
+
+						<div class="section">
+							<div class="img_box sm-mb-25 lg-mb-0">
+								<img src="../../asset/rh-kr/images/img_esg_growh_m.jpg" class="m_content" alt="">
+								<img src="../../asset/rh-kr/images/img_esg_growh.jpg" class="pc_content" alt="">
+								<div class="blind">
+									<strong>
+										美 LACP 주관 2020/2021 Vision Awards에서 ESG 및 Sustainability 부분 동시 대상(Platinum) 수상 및 전 세계 6위, 국내 1위 기록
+									</strong>
+									<dl>
+										<dt>ESG</dt>
+										<dd>ENVIRONMENT</dd>
+										<dd>SOCIAL</dd>
+										<dd>GOVERNANCE</dd>
+									</dl>
+									<div>
+										<div>
+											<h5>ENVIRONMENT</h5>
+											<ul>
+												<li>공공기관 온실가스 감축 목표 관리제 11년 연속 달성 우수 기관 표창</li>
+												<li>기후위기 대응을 위한 TCFD 지지 선언</li>
+											</ul>
+										</div>
+										<div>
+											<h5>SOCIAL</h5>
+											<ul>
+												<li>대 · 중소기업 동반성장 유공 ‘대통령 표창’ 수상</li>
+												<li>교육부 주관 대한민국 교육 기부 대상 수상</li>
+												<li>보건복지부 주관 지역사회공헌 인정제 취득(2년 연속)</li>
+												<li>여성가족부 주관 가족친화 인증 9년 연속 획득</li>
+											</ul>
+										</div>
+										<div>
+											<h5>GOVERNANCE</h5>
+											<ul>
+												<li>공공기관 최초 2년 연속UNGC LEAD Group 선정 및 반부패 어워드 수상</li>
+												<li>한국윤리경영학회 주관윤리경영대상 수상</li>
+												<li>공공데이터 평가 우수기관 행안부 장관 표창 수상</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="sub_section m_content">
+								<h5 class="sub_tit">ENVIRONMENT</h5>
+								<ul class="list shape_type1">
+									<li>공공기관 온실가스 감축 목표 관리제 11년 연속 달성 우수 기관 표창</li>
+									<li>기후위기 대응을 위한 TCFD 지지 선언</li>
+								</ul>
+							</div>
+							<div class="sub_section m_content">
+								<h5 class="sub_tit">SOCIAL</h5>
+								<ul class="list shape_type1">
+									<li>대 · 중소기업 동반성장 유공 ‘대통령 표창’ 수상</li>
+									<li>교육부 주관 대한민국 교육 기부 대상 수상</li>
+									<li>보건복지부 주관 지역사회공헌 인정제 취득(2년 연속)</li>
+									<li>여성가족부 주관 가족친화 인증 9년 연속 획득</li>
+								</ul>
+							</div>
+							<div class="sub_section m_content">
+								<h5 class="sub_tit">GOVERNANCE</h5>
+								<ul class="list shape_type1">
+									<li>공공기관 최초 2년 연속UNGC LEAD Group 선정 및 반부패 어워드 수상</li>
+									<li>한국윤리경영학회 주관윤리경영대상 수상</li>
+									<li>공공데이터 평가 우수기관 행안부 장관 표창 수상</li>
+								</ul>
+							</div> -->
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

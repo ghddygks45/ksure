@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">중장기수출보험(공급자신용)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(공급자신용)-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(공급자신용)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(공급자신용)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(공급자신용)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요 및 상품의 특성</h4>
+							수출대금 결제기간이 2년을 초과하는 중장기 수출계약을 체결하고 수출을 이행하였으나, 담보하는 위험의 발생으로 수입자가 수출대금을 상환하지 않을 경우에 발생하는 손실을 담보하는 제도
+							<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+								<li>산업설비, 선박, 플랜트 등 자본재상품 수출의 경우 통상 계약금액이 거액이고 대금의 상환기간이 장기이며, 수입국이 대부분 정치·경제적으로 불안정한 개발도상국 이라는 점에서
+									수출대금미회수 위험이 항상 존재함</li>
+								<li>중장기 수출보험<span class="fwr color_red txt_underline">공급자신용</span>은 수출자가 결제기간 2년을 초과하는 중장기 <span
+										class="fwr color_red txt_underline">연불조건</span>으로 자본재상품등을 수출하는 경우 수입국 비상위험 및 수입자 신용위험으로 인한 수출자의
+									대금미회수위험을 담보하는 제도임</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur04.jpg"
+									alt="수출자가 수입자에게 선적(기자재 공급)을 하고 수입자가 수출자에게 대금결재(연불상환)을 할때 K-SURE가 이때 연불원리금 미회수위험(공급자신용)을 담보하며, 수출자와 금융기관 사이에 대출, 대출상황시 K-SURE가 금융기관에 대해 간접적 보증을 제공한다.">
+								<a href="../../asset/rh-kr/images/img_insur04.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상거래</h4>
+							수출대금의 결제기간(<span class="fwr color_red txt_underline">신용기산점</span>)~ 최종 결제기일)이 2년을 초과하는 중장기 수출계약
+						</div>
+						<div class="section">
+							<h4 class="tit">담보위험</h4>
+							<div class="table">
+								<table>
+									<caption>담보위험 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">비상위험</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>OECD <span class="fwr color_red txt_underline">가이드라인상</span>의 <span
+															class="fwr color_red txt_underline">국가신용위험</span>(Country Credit Risk)</li>
+													<li>기타 대한민국 밖에서 발생한 사유로서, 계약 당사자에게 귀책이 없는 경우</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">신용위험</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>수입자의 파산</li>
+													<li>수입국 법원의 채무동결 또는 채권단과의 채무조정 협약으로 인한 수입자의 지급불능</li>
+													<li>수입자의 결제기일 이후 2개월 이상의 지급지체</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

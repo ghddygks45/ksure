@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 5);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">해외사업금융보험</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-해외사업금융보험-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-해외사업금융보험-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-해외사업금융보험-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">주요 계약내용</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>주요 계약내용 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">보험책임 개시일</th>
+											<td>
+												다음조건이 충족된 후 금융계약에 따라 자금이 인출된 날에 보험책임 개시
+												<ul class="list shape_type1 sm-mt-5 lg-mt-10">
+													<li>금융계약 및 위험담보장치의 효력발생</li>
+													<li>관계법령에 의하여 요구되는 인·허가의 취득</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험가액</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>인출통지된 대출원리금</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금액</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보험가액 × 부보율(100% 이내에서 K-SURE가 정함)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">지급보험금</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>손실액 × 부보율</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험료</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보험료는 연불원금에 수입국 등급 및 보험료 기간에 따른 OECD최저 기준 보험요율(MPR) 적용</li>
+												</ul>
+												<div class="sm-mt-5 lg-mt-10">※ 다만, 해외사업에 대한 사업성 분석, 국제금융기관의 가산금리 수준, 국별신용도 및 차주별 신용도 등을 고려하여
+													할증, 할인율을 가감 적용</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

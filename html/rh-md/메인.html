@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-md/css/style.css">
+	<link rel="stylesheet" href="../../asset/rh-md/css/main.css">
+	<script src="../../asset/rh-md/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-md/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-md/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-md/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-md/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-md/js/ui.js"></script>
+	<!-- main js -->
+	<script src="../../asset/rh-md/js/swiper-bundle.min.js"></script>
+	<script src="../../asset/rh-md/js/main.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-md/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사 | 경영공시</title>
+
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap" class="top_banner">
+
+		<!-- 메인 레이어팝업 -->
+		<div class="main-layer-popup dragging" id="popup2">
+			<div class="layer-popup">
+				<div class="top">
+					K-SURE 알림
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">닫기</span></a>
+				</div>
+				<div class="pop-content">
+					<a href="#;">
+						<img src="../../asset/rh-fx/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+						<img src="../../asset/rh-fx/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+					</a>
+				</div>
+				<div class="btm">
+					<div class="l">
+						<span class="ck-lb">
+							<input type="checkbox" id="ck3" class="blind" onclick="PopupCloseDay(this);">
+							<label for="ck3">오늘 하루 열지 않기</label>
+						</span>
+						<span class="ck-lb">
+							<input type="checkbox" id="ck4" class="blind" onclick="PopupCloseWeek(this);">
+							<label for="ck4">7일간 보지 않기</label>
+						</span>
+					</div>
+					<div class="r">
+						<button type="button" class="popup-close-btn" onclick="closePopup(this);return false;">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 메인 레이어팝업 -->
+
+		<!-- 메인 팝업 -->
+		<div class="main-layer-popup" id="popup1">
+			<div class="layer-popup">
+				<div class="top">
+					K-SURE 알림
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">닫기</span></a>
+				</div>
+				<div class="pop-content">
+					<div class="slide_area">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									01
+								</div>
+								<div class="swiper-slide">
+									02
+								</div>
+								<div class="swiper-slide">
+									03
+								</div>
+							</div>
+						</div>
+						<div class="swiper-content">
+							<div class="swiper mySwiper2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-md/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-md/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-md/images/img_main_popup_dommy02_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-md/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-md/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-md/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<script>
+							var swiper = new Swiper(".pop-content .mySwiper", {
+								spaceBetween: 10,
+								slidesPerView: 3,
+								freeMode: true,
+								watchSlidesProgress: true,
+								// slidesPerView: "auto",
+							});
+							var swiper2 = new Swiper(".pop-content .mySwiper2", {
+								spaceBetween: 10,
+								navigation: {
+									nextEl: ".swiper-button-next",
+									prevEl: ".swiper-button-prev",
+								},
+								thumbs: {
+									swiper: swiper,
+								},
+							});
+						</script>
+					</div>
+				</div>
+				<div class="btm">
+					<div class="l">
+						<span class="ck-lb">
+							<input type="checkbox" id="ck1" class="blind" onclick="PopupCloseDay(this);">
+							<label for="ck1">오늘 하루 열지 않기</label>
+						</span>
+						<span class="ck-lb">
+							<input type="checkbox" id="ck2" class="blind" onclick="PopupCloseWeek(this);">
+							<label for="ck2">7일간 보지 않기</label>
+						</span>
+					</div>
+					<div class="r">
+						<button type="button" class="popup-close-btn" onclick="closePopup(this);return false;">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 메인 팝업 -->
+
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+
+		<script>
+			$(function () {
+				// 개발 시 "setTimeout" 제거
+				setTimeout(function () {
+					// 메인 배너 (오늘 하루 보지 않기 체크된 배너 히든 처리)
+					if ($(window).width() >= 1440) {
+						$('.top_banner_wrap').each(function () {
+							var banner = $(this);
+							if (popupGetCookie($(this).attr("id"))) { // '오늘 하루 보지 않기 체크'를 했다면
+								banner.remove();
+								$("#wrap").removeClass('top_banner');
+							} else {
+								banner.show();
+							}
+						});
+					}
+					// 메인, 배너 슬라이드
+					var bannerSwiper = new Swiper(".banner-swiper", {
+						slidesPerView: 1,
+						watchSlidesProgress: true,
+						navigation: {
+							nextEl: ".banner-button-next",
+							prevEl: ".banner-button-prev",
+						},
+					});
+				}, 300)
+			})
+		</script>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+
+			<div class="md_main_wrap">
+				<div class="inner">
+					<div class="md_contnets">
+						<div class="l">
+							<div class="md_intro">
+								<h3 class="md_tit">한국무역보험공사 경영공시</h3>
+								<p class="dsec">국민에게 사랑받는 무역보험공사가 될 수 있도록 최선을 다하겠습니다.</p>
+							</div>
+							<div class="md_box">
+								<h4 class="md_box_tit bg_red">Ⅰ.일반현황</h4>
+								<ul class="md_list">
+									<li><a href="#;">일반현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">정보공개 담당관</a></li>
+									<li><a href="#;">경영공시 담당자 안내</a></li>
+								</ul>
+							</div>
+							<div class="md_box">
+								<h4 class="md_box_tit bg_orange">Ⅱ.기관운영</h4>
+								<ul class="md_list">
+									<li><a href="#;">임직원수</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">환경보호</a></li>
+									<li><a href="#;">임원현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">사회공헌활동</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">신규채용현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">인권경영</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">임·직원채용정보</a></li>
+									<li><a href="#;">이사회 회의록</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">임원연봉</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">일·가정 양립<br> 지원제도 운영현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">직원평균보수</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">임원 국외출장 내역</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">기관장 업무추진비</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">노동조합 관련현황</a></li>
+									<li><a href="#;">복리후생비</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">내부규정</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">그 밖의 복리후생제도 등의 운영현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">징계현황</a></li>
+									<li><a href="#;">안전관리 및 정보보호</a></li>
+									<li><a href="#;">소송 및 법률자문현황</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="r">
+							<div class="md_box">
+								<h4 class="md_box_tit bg_gray">Ⅲ.주요사업 <br>및 경영성과</h4>
+								<ul class="md_list">
+									<li><a href="#;">요약재무상태표</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">납세정보 현황</a></li>
+									<li><a href="#;">요약 손익계산서</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">주요사업</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">수입 · 지출현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">투자 및 출자 · 출연 현황</a></li>
+									<li><a href="#;">자본금 및 주주현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">경영부담비용 추계</a></li>
+									<li><a href="#;">장단기 차입금 현황</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">중장기 재무관리계획</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">감사보고서</a></li>
+								</ul>
+							</div>
+							<div class="md_box">
+								<h4 class="md_box_tit bg_orange">Ⅳ.대내외 평가</h4>
+								<ul class="md_list">
+									<li><a href="#;">경영평가결과</a></li>
+									<li><a href="#;">국회 등 외부평가</a></li>
+									<li><a href="#;">동반성장 평가결과</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">고객만족도 조사결과</a><span class="alio">ALIO</span></li>
+									<li><a href="#;">청렴도 평가결과</a><span class="alio">ALIO</span></li>
+								</ul>
+							</div>
+							<div class="md_box">
+								<h4 class="md_box_tit bg_gray">Ⅴ.정보공개 </h4>
+								<ul class="md_list">
+									<li><a href="#;">계약정보</a></li>
+									<li><a href="#;">상품권 구매 및 사용내역</a></li>
+									<li><a href="#;">연구보고서</a></li>
+									<li><a href="#;">월별 임원 업무추진비 내역</a></li>
+									<li><a href="#;">해외ECA현황</a></li>
+								</ul>
+							</div>
+							<div class="md_box">
+								<h4 class="md_box_tit bg_red">VI.기금운용공시</h4>
+								<ul class="md_list">
+									<li><a href="#;">일반사항</a></li>
+									<li><a href="#;">투자 및 수익률 현황</a></li>
+									<li><a href="#;">기금운용기준</a></li>
+									<li><a href="#;">기타공시</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(11, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">투자위험보증사업</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-투자위험보증사업-투자위험보증사업이란.html">투자위험보증사업이란</a></li>
+							<li><a href="②사업안내-투자위험보증사업-관계법령.html">관계법령</a></li>
+							<li><a href="②사업안내-투자위험보증사업-해외자원개발펀드.html" class="active">해외자원개발펀드</a></li>
+							<li><a href="②사업안내-투자위험보증사업-운영종목.html">운영종목</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">해외자원개발펀드의 개념</h4>
+							다수 투자자들로부터 자금을 모아 해외자원개발사업에 투자하여 그 수익을 펀드투자자에게 배분하는 것을 목적으로 하는 펀드(해외자원개발사업법에 따른 특수펀드)
+						</div>
+						<div class="section">
+							<h4 class="tit">해외자원개발펀드 형태</h4>
+							<div class="invest_type_box">
+								<div class="type01">
+									<div class="txt">
+										<h5>투자회사형펀드(뮤츄얼펀드)<br>(법적명칭: 해외자원개발투자회사)</h5>
+										자산운용회사에 의한 펀드 설계 및 모집이 이루어지는 펀드 (자금모집은 공모 및 사모방식 모두 가능)
+									</div>
+									<ul>
+										<li>일반투자자</li>
+										<li>상법상 주식회사</li>
+										<li>자산운용회사주도의 펀드설계 및 운용</li>
+										<li>환매금지(주식상장으로 유동성 부여)</li>
+										<li>생산광구 투자</li>
+									</ul>
+								</div>
+								<div class="type02">
+									<div class="txt">
+										<h5>사모투자전문회사형펀드(PEF)<br>(법적명칭: 해외자원개발투자전문회사)</h5>
+										자원개발기업이 직접 설계할 수 있으며, 투자자는 기관투자자 중심 (자금모집은 사모방식만 가능)
+									</div>
+									<ul>
+										<li>기관투자자 대상</li>
+										<li>상법상 합자회사</li>
+										<li>자원개발기업중심의 펀드설계 및 운용</li>
+										<li>환매가능</li>
+										<li>탐사·개발광구 및 M&amp;A에 투자</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">일반펀드와 비교</h4>
+							<div class="table">
+								<table>
+									<caption>일반펀드와 비교 표로 구분, 일반펀드, 해외자원개발펀드 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">일반펀드</th>
+											<th scope="col">해외자원개발펀드</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">동일종목 투자</th>
+											<td>펀드재산의 10%이상 투자 금지</td>
+											<td>재산 100%까지 해외자원개발에 투자 가능</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">차입</th>
+											<td>10%이내 차입 가능</td>
+											<td>30%까지 차입 가능</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">자산운용사 설립자본금</th>
+											<td>설립자본금 요건 100억원 이상</td>
+											<td>설립자본금 요건 30억원 이상<br>(단, 전문성 강화를 위하여 해외자원개발전문인력 확보의무)</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">성과보수 취득</th>
+											<td>X</td>
+											<td>O</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+								<li>'<span class="color_red txt_underline fwr">자본시장과 금융투자업에 관한 법률</span>'상
+									PEF는 M&amp;A 목적으로 사용하게 되어 있으나,'해외자원개발사업법'상 PEF는 이러한 제한 없습니다.</li>
+								<li><strong class="bold">세제혜택 ("조세감면특례법")</strong>
+									<ul class="list shape_type2">
+										<li>'08년까지 3억원한도로 비과세하고 초과분 15.4%분리과세</li>
+										<li>'09 ~ '11년 중 3억원까지 5.5%과세하고, 초과분 15.4%분리과세</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="②사업안내-중장기성보험-해외자원개발펀드보험-제도개요.html" class="btn md bg_red">해외자원개발펀드보험 바로가기</a>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

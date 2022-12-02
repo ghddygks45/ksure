@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(8);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">보상</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-보상-국내보상.html">국내보상</a></li>
+							<li><a href="②사업안내-보상-국외보상.html" class="active">국외보상</a></li>
+							<li><a href="#n">FAQ</a></li>
+						</ul>
+
+						<div class="top_info_box bg_info17">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">국외보상</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									보험계약이 성립된 무역거래에서 해당약관이 담보하는 위험으로 손실이 발생할 경우, 보험계약자로부터 동 사실을 통보받아<br class="pc_contnet">
+									사고원인을 조사한 후 약관 위반여부를 심사하고 지급보험금액을 산정하여 해당보험금을 지급하는 일련의 과정입니다.
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">보험금 지급 심사 절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2">
+								<ol class="ico_process">
+									<li class="comp_step1">
+										<strong>전화상담</strong>
+										(고객센터, 담당자)
+									</li>
+									<li class="comp_step2">
+										<strong>사고발생통지</strong>
+										(신청서류)
+									</li>
+									<li class="comp_step3">
+										<strong>사고접수 및<br> 사고조사</strong>
+									</li>
+									<li class="use_step3">
+										<strong>보험금 청구</strong>
+									</li>
+									<li class="comp_step5">
+										<strong>보상심사</strong>
+									</li>
+									<li class="use_step7">
+										<strong>보험금 지급결정</strong>
+									</li>
+									<li class="comp_step7">
+										<strong>채권양도 및<br> 사후관리</strong>
+									</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">사고발생통지 및 보험금 청구 안내</h4>
+							<ul class="list shape_type1">
+								<li>사이버영업점(☞ https://cyber.ksure.or.kr)을 통해 온라인 접수</li>
+								<li>문의 : 고객센터 1588-3884 (평일 09:00 ~ 18:00(주말/공휴일 제외))</li>
+							</ul>
+							<div class="txt_margin">
+								※ 보험증권 등을 참고하시어 사고내용에 따라 보험 종목별 신청서류를 구비하여 접수하시기 바랍니다.<br>
+								※ 필요서류가 구비되지 않을 경우 보상절차가 지연될 수 있으니 양지하여 주시기 바랍니다.
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">보험금 지급안내</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>보험금 지급안내 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 18%">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사고발생통지</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보험계약자는 단기수출보험(일반수출) 약관 제4조(담보하는위험)의 사유가 발생한 것을 안 때에는 안 날로부터 1월 이내, 또는 수출대금의 결제기일로부터 1월 이내에
+														그 사실을 공사에 서면으로 통지하여야 합니다.
+														<p class="mt-5">
+															* 만기일이 2월 1일인 경우, 3월 1일까지 통지하여야 함
+														</p>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">사고조사 및 사고조사유예</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>사고접수 직후 공사는 수출자, 수입자 앞 사고조사를 실시합니다.</li>
+													<li>보험계약자는 공사의 조사에 따라야 할 의무가 있으며, 경우에 따라 보상담당자의 승인 하 서면으로 요청하여 사고조사를 유예할 수 있습니다</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금청구</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>통상적으로 사고발생통지일로부터 1개월 경과 후 보험금 청구를 하시면 청구일로부터 2개월 이내에 보험금이 지급됩니다.
+														<p class="mt-5">* 사고발생 통지일이 7월 7일인 경우, 8월 7일 이후 보험금 청구 가능함</p>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금 지급거절 면책사유 안내</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보험증권에 기재된 수출계약에 따라 보상하여 드리며, 약관 및 관련법 규정에 의거 보상되지 아니하는 손실에 해당되는 경우 보험금을 지급하지 아니합니다.</li>
+												</ul>
+												<div class="sm-mt-10 lg-mt-15">
+													<a href="#n" class="btn_white_line ico_download">국외보상 면책사례 다운로드</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금의 지급 및<br> 보험금 지급지연 안내</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보험금의 지급 및 지급기한은 해당 보험종목의 약관에 따릅니다.</li>
+													<li>공사가 보험금의 지급청구에 따라 보상책임의 유무 또는 보험금 결정을 위하여 보험계약자에게 필요한 서류의 제출을 요구한 경우, 보험금 지급기한에 그 요구한 날부터
+														보험계약자가 당해 자료를 전부 제출한 날까지의 기간이 가산되어 지급기한이 연장됩니다.</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금 청구권의 소멸시효</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>보험금 청구를 사고발생일로부터 3년 이내 접수하지 않으면 청구권이 소멸됩니다.(상법 제662조)</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="btn_wrap txt_c">
+							<a href="#n" class="btn md bg_red">신청서류 바로가기</a>
+							<a href="#n" class="btn md bg_red">면책사례 바로가기</a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

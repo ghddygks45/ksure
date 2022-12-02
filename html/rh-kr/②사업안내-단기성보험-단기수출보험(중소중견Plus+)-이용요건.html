@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단기수출보험(중소중견Plus+)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-제도운영예시.html">제도운영예시</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용요건</h4>
+							<div class="des_list_box txt_row">
+								<div class="des_list bg_des_building">
+									<h5 class="des_tit">수출자(중소중견기업)</h5>
+									<ul class="list shape_type1">
+										<li>전년도(최근 1년간) 수출실적 U$50백만 이하 중소중견기업</li>
+										<li>수출자 신용등급 G급 이상(K-SURE기준, 특례G급*제외)<br>
+											* 최근 3년 연속 적자 등(특례G급 여부는 영업점 담당자 통하여 확인가능)</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+								<li class="bold">보험증권 유효기간 1년</li>
+								<li class="bold">단기수출보험(중소중견Plus+) 약관 10조에 따라 계약기간 중 추가등록 된 수입자는 공사의 내용변경 승인일 이후거래 건부터 보험의 효력이 발생합니다.
+								</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">주요계약사항</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>주요계약사항 표로 구분, 중소기업, 중견기업 정보 제공</caption>
+									<colgroup>
+										<col style="width: 20%;">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">중소기업</th>
+											<th scope="col">중견기업</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">이용요건</th>
+											<td colspan="2">수출실적U$50백만 이하 G급 이상 중소중견기업</td>
+										</tr>
+										<tr class="txt_c">
+											<td colspan="2">단기수출보험(포괄ㆍ준포괄ㆍ농수산물패키지) 이용업체는 제외</td>
+										</tr>
+										<tr>
+											<th scope="row">담보위험</th>
+											<td>
+												<ul class="list shape_type1">
+													<li><strong class="bold">(기본)</strong> 수입자 위험, 신용장 위험</li>
+													<li><strong class="bold">(특약)</strong> 수입국 위험, 무역클레임 위험</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="list shape_type1">
+													<li><strong class="bold">(기본)</strong> 수입자 위험, 신용장 위험</li>
+													<li><strong class="bold">(특약)</strong> 수입국 위험</li>
+												</ul>
+											</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">대상거래</th>
+											<td>결제기간 1년 이내</td>
+											<td>결제기간 180일 이내</td>
+										</tr>
+										<tr>
+											<th scope="row" rowspan="2">보험계약 대상 수입자</th>
+											<td colspan="2">
+												<ul class="list shape_type1">
+													<li>청약 시 사전등록(최대 50개)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<ul class="list shape_type1">
+													<li>수입자 신용조사 생략</li>
+													<li>공사신용등급 R급(정보부족기업 제외) 또는 자본잠식 G급 수입자, 30일 이상 결제지연 수입자, 이란 또는 <strong class="bold">고위험
+															인수제한국</strong>
+														<sup>주1)</sup> 소재 수입자 제외
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">위험별 책임금액 <sup class="fwl color_default">주2)</sup>
+											</th>
+											<td>
+												<ul class="list shape_type1">
+													<li><strong class="bold">기본위험 :</strong> 최대 U$1백만(개별 수입자별 최대 U$300천)</li>
+													<li><strong class="bold">수입국위험 :</strong> 최대 U$1백만</li>
+													<li><strong class="bold">클레임위험 :</strong> 최대 U$50천</li>
+													<li><strong class="bold">최소책임금액 :</strong> U$10천</li>
+												</ul>
+											</td>
+											<td>
+												<ul class="list shape_type1">
+													<li><strong class="bold">기본위험 :</strong> 최대 U$3백만(개별 수입자별 최대 U$300천)</li>
+													<li><strong class="bold">수입국위험 :</strong> 최대 U$1백만</li>
+													<li><strong class="bold">클레임위험 :</strong> 담보 안함</li>
+													<li><strong class="bold">최소책임금액 :</strong> U$10천</li>
+												</ul>
+											</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">보상비율</th>
+											<td>100%</td>
+											<td>90% 이내</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">보험료</th>
+											<td colspan="2">위험별 책임금액 × 위험별 기본요율 × (1±Underwriter 할인·할증률) × (1±보험계약 손해율별 할인 · 할증률)</td>
+										</tr>
+										<tr>
+											<th scope="row">기타</th>
+											<td>
+												<ul class="list shape_type1">
+													<li><strong class="bold">수출통지 :</strong> 없음</li>
+													<li><strong class="bold">보험계약기간 :</strong> 1년 단위 체결ㆍ갱신</li>
+													<li><strong class="bold">보험료 납부 :</strong> 연간 보험료 선납</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="sm-mt-10 lg-mt-15">
+							<ul class="list shape_type1">
+								<li>주1) 이란 및 고위험 인수제한국가(‘17.12월 가봉, 리비아, 베네수엘라, 부탄, 소말리아, 시리아, 아프가니스탄, 예멘, 팔레스타인, 푸에르토리코) 10개국 수입자의 경우
+									인수가
+									제한되며, 이는 청약 및 승낙 시점이후 변경 또는 추가 지정될 수 있음</li>
+								<li>주2) 클레임 해결에 소요되는 비용을 보상</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(10, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar04.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">열린혁신 24 안내</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="section">
+							<h4 class="tit">공공기관 혁신이란</h4>
+							<ul class="list shape_type1">
+								<li><span class="bold">목표 :</span> 공공기관 혁신을 통한 국민 삶의 질 제고</li>
+								<li>혁신의 지향점을 국민에 두고, 국민이 체감할 수 있는 변화 촉진</li>
+								<li>
+									<span class="bold">추진방향</span>
+									<ul class="list shape_type2 mt-5">
+										<li>1. 사회적 가치의 확실한 성과 창출</li>
+										<li>2. 혁신성장 강화 및 경제활력 제고</li>
+										<li>3. 건전한 기관 운영 및 국민신뢰 제고</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">열린혁신 24란</h4>
+							<ul class="list shape_type1">
+								<li>개요 : ‘21년 한국무역보험공사 혁신계획에 국민참여를 위한 상시 의견 수렴 채널 마련</li>
+								<li>대상 : 3대 혁신방향, 16대 혁신과제의 성공적 실행을 위한 구체적 제안(아래 표 참조)</li>
+							</ul>
+							<div class="table sm-mt-10 lg-mt-15">
+								<table class="m_scroll">
+									<caption>3대 혁신방향, 16대 혁신과제의 성공적 실행을 위한 구체적 제안</caption>
+									<colgroup>
+										<col style="width: 155px;">
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">2021<br>3대 혁신방향</th>
+											<th scope="col">1. 공공기관으로서<br>사회적 가치 성과창출 선도</th>
+											<th scope="col">2. 무역보험을 통한<br>고객의 혁신성장 및 수출활력 제고</th>
+											<th scope="col">3. 건전한 무역보험 운영 및<br>국민신뢰 제고</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">2021<br>16대 혁신과제</th>
+											<td>
+												<ul>
+													<li class="color_red mb-5">① 공공기관 공직윤리 강화(중점)</li>
+													<li class="mb-5">② 양질의 일자리 창출 지속</li>
+													<li class="mb-5">③ 안전관리 체계 강화</li>
+													<li class="mb-5">④ 사회형평적 인사운영</li>
+													<li class="color_red">⑤ 혁신도시 활성화 등 지역상생(중점)</li>
+												</ul>
+											</td>
+											<td>
+												<ul>
+													<li class="mb-5">⑥ 공공기관의 한국형 뉴딜 선도(중점)</li>
+													<li class="mb-5">⑦ 경제활력 제고의 마중물 역할 강화</li>
+													<li class="mb-5">⑧ 중소기업 규제혁신 및 기업활력 제고</li>
+													<li class="mb-5">⑨ 혁신지향 공공조달 확대</li>
+													<li class="mb-5">⑩ K-테스트베드 지원 강화</li>
+												</ul>
+											</td>
+											<td>
+												<ul>
+													<li class="mb-5">⑪ 직무중심의 보수체계 도입</li>
+													<li class="mb-5">⑫ 임금피크제 인력의 효율적 활용</li>
+													<li class="mb-5">⑬ 공공기관 재무건전성 관리</li>
+													<li class="mb-5">⑭ 적극행정 보상 강화 및 소극행정 혁파</li>
+													<li class="mb-5">⑮ 공공기관 운영실태 점검·개선</li>
+													<li class="mb-5">⑯ 알리오 및 알리오플러스 사용자 편의성 강화</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="sm-mt-10 lg-mt-15">⋇ 무역보험제도, 업무절차, 고객 서비스 개선 등 무역보험과 관련된 제안 및 한도증액, 보험료 할인 등 단순요청사항은 기존 고객참여방 활용
+							</p>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

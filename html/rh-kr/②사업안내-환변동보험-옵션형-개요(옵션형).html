@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">옵션형</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-환변동보험-옵션형-개요(옵션형).html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-환변동보험-옵션형-보장결제환율조회.html">보장/결제환율조회</a></li>
+							<li><a href="②사업안내-환변동보험-옵션형-옵션형보험요율.html">옵션형 보험요율</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">옵션형 환변동보험</h4>
+							<ul class="list shape_type1">
+								<li>보험가입시 환율(청약일 시장평균환율)보다 환율 상승시에는 이익금 납부의무를 면제하되, 환율 하락 시 보험금을 지급하는 상품</li>
+								<li>부분보장 옵션형 환변동보험, 완전보장 옵션형 환변동보험(조기결제형), 완전보장 옵션형 환변동보험(조기결제 불가형)</li>
+							</ul>
+							<div class="sub_section sm-mt-20 lg-mt-30">
+								<h5 class="sub_tit">대상 통화</h5>
+								<ul class="list_currency">
+									<li>
+										<strong>USD</strong>
+										<i class="type01"><span class="blind">$</span></i>
+										최소 청약 금액 : U$1만
+									</li>
+									<li class="type02">
+										<strong>EUR</strong>
+										<i class="type02"><span class="blind">€</span></i>
+										최소 청약 금액 : €1만
+									</li>
+									<li class="type03">
+										<strong>JPY</strong>
+										<i class="type03"><span class="blind">￥</span></i>
+										최소 청약 금액 : ￥1백만
+									</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">공통</h5>
+								<ul class="list shape_type1">
+									<li>보험가입시 환율보다 환율 상승 시 환수금 부담이 없는 것이 가장 큰 장점</li>
+									<li>최장 6개월까지 환리스크 헤지 가능</li>
+									<li>일반형 환변동보험 보다 다소 비싼 보험료 (평균 2%)</li>
+									<li>월말 결제만 가능, 조기결제 및 월중결제 불가(완전보장 옵션형 조기결제형 조기결제 가능)</li>
+									<li>외화자금의 실제인도가 필요 없는 차액정산방식</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">부분보장 옵션형 환변동보험(Spread Option)</h4>
+							<div class="sub_section">
+								<ul class="list shape_type1">
+									<li>보험가입시 환율보다 환율 하락 시 하락분의 일정수준(통화당 최대 20~80원)까지 환차손을 보상하는 복합옵션상품 (엔화(JPY)의 경우 100엔 기준)</li>
+									<li>옵션형 중 보험료가 다소 낮으나 보장구간 제한</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">부분보장 옵션형 환변동보험(Spread Option)구조도</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/vary_table2.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/rh-kr/images/vary_table2_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										손익구조 및 보험료 수준
+										<ul>
+											<li>보상구간(통화당)
+												<ul>
+													<li>-70/-30/-20 ~ ‘시장평균환율’</li>
+													<li>-90/-50/-40 ~ ‘시장평균환율’-10원</li>
+												</ul>
+											</li>
+											<li>손익구조(-40 ~ -10원 구간 예시)
+												<ul>
+													<li>보험청약일 시장평균환율 : 1,160원</li>
+													<li>환율하락시 : 10원 초과 하락 시(1,150원 미만) 보험금 지급(최대 보험금 지급액 : 통화단위당 30원)</li>
+													<li>환율상승시 : 환수금 납부 없음 (엔화(JPY)의 경우 100엔 기준)</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">완전보장 옵션형 환변동보험</h4>
+							<div class="sub_section">
+								<ul class="list shape_type1">
+									<li>보험가입시 환율보다 환율 하락 시 하락분 전액을 보상하는 옵션상품</li>
+									<li>환율 하락 분 전액 보상하나 보험료 높음</li>
+								</ul>
+								<div class="table sm-mt-10 lg-mt-15">
+									<table class="m_scroll">
+										<caption>완전보장 옵션형 환변동보험 표로 구분, 완전보장 옵션형 환변동보험 (조기결제형*), 완전보장 옵션형 환변동보험 (조기결제 불가형) 정보 제공</caption>
+										<colgroup>
+											<col style="width:23%;">
+											<col>
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">완전보장 옵션형 환변동보험<br>(조기결제형*)</th>
+												<th scope="col">완전보장 옵션형 환변동보험<br>(조기결제 불가형)</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="txt_c">
+												<th scope="row">대상통화</th>
+												<td>USD</td>
+												<td>USD, JPY, EUR</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">결제환율</th>
+												<td>결제일 최초고시환율</td>
+												<td>결제월 최종영업일 최초고시환율</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">최소청약금액</th>
+												<td>결제일자별 U$ 1만</td>
+												<td>결제일자별U$ 1만, € 1만 , ￥ 1백만</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">결제시점</th>
+												<td>청약일의 2영업일 후부터 조기결제 가능 및 월말결제</td>
+												<td>조기결제 불가 및 월말결제</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="sm-mt-5 lg-mt-10">※ 조기결제 불가형 대비 높은 보험료</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">완전보장 옵션형 환변동보험 구조도</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/vary_table3.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/rh-kr/images/vary_table3_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										손익구조 및 보험료 수준
+										<ul>
+											<li>보장구간(통화당)
+												<ul>
+													<li>‘시장평균환율’부터 무제한 하락 보상</li>
+													<li>‘시장평균환율-10원’부터 무제한 하락 보상</li>
+												</ul>
+											</li>
+											<li>손익구조(‘시장평균환율’ 구간 예시)
+												<ul>
+													<li>보험청약일 시장평균환율 : 1,150원</li>
+													<li>환율하락시 : (1,150원 미만) 보험금 지급 (최대 보험금 지급액 : 통화단위당 1,150원)</li>
+													<li>환율상승시 : 환수금 납부 없음 (엔화(JPY)의 경우 100엔 기준)</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

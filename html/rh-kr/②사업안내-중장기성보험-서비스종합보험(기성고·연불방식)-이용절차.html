@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 9);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">서비스종합보험(기성고·연불방식)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>수출자 및 수입자 신용조사 의뢰 (수출기업 → 공사)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수출자 신용조사 의뢰시 제출서류 : 최근 3년간 재무제표, 사업자등록증 사본</li>
+											<li>수입자 신용조사 의뢰 관련 : 공사 홈페이지 「사이버영업점」을 통해 구비서류 없이 의뢰(수입자 신용조사의뢰 비용 : 건당 33,000원)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>보험청약 (수출기업 → 공사)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>수입자 신용조사가 완료되고, 보험가입이 가능한 경우 수출기업은 offline으로 보험청약을 합니다.</li>
+											<li>제출서류
+												<ul class="list num_type1 mt-5">
+													<li>청약서(공사 양식, 기성확인스케줄 포함)</li>
+													<li>계약서 또는 당해 거래의 추진을 증명하는 서류</li>
+													<li>지급보증이 있는 계약인 경우 지급보증의 내용을 증명하는 서류 또는 위험담보 장치의 내용을 증명하는 서류</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>인수심사 (공사)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>공사는 서비스종합보험 청약서, 수출입자 신용조사 결과 및 당해거래 관련 계약조건 등을 종합적으로 심사하여 인수한도를 책정합니다.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>보험증권 발급 (공사 → 수출기업)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>최초 보험료 수납일로부터 10영업일 이내 보험증권을 발급합니다.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>대가확인 통지 및 계속 보험료 납부
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>기성고방식 확인대가의 경우, 각 기성단계별 대가확인 등의 사실을 증빙서류와 함께 10영업일(기성확인 요청일로부터) 이내 공사앞 통지하여야 하며, 기성확인 요청일로부터
+												15영업일 이내 공사앞 기성단계별 보험료를 납부하여야 합니다.</li>
+										</ul>
+										<p class="sm-mt-5 lg-mt-10">
+											※ 주의사항 : 공사앞 대가확인 통지건에 한하여 보험관계가 성립하게 되고, 보험증권을 발급받았다 하더라도 대가확인 통지를 이행하지 않거나, 계속 보험료를 납부하지 않으면
+											보험관계가
+											성립하지 않습니다.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

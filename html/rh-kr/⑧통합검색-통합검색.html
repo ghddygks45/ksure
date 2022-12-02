@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 개발 시 삭제
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="srh_header">
+			<div class="header_top">
+				<div class="inner">
+					<a href="#;" class="btn_home">한국무역보험공사 바로가기</a>
+				</div>
+			</div>
+			<div class="header_cont">
+				<div class="inner">
+					<h1 class="logo_wrap">
+						<img src="../../asset/rh-kr/images/logo.png" alt="Ksure 한국무역보험공사 KOREA TRADE INSURANCE CORPORATION"
+							class="logo">
+					</h1>
+					<h2 class="srh_tit">통합검색 서비스</h2>
+				</div>
+			</div>
+		</header>
+		<!-- // header -->
+
+		<!-- container -->
+		<main id="container" class="srh_container">
+			<div class="inner">
+				<!-- content -->
+				<div id="contents" class="srh_contents">
+					<div class="srh_opt">
+						<div class="bg"></div>
+						<form action="?" class="srh_form">
+							<div class="srh_inp">
+								<div class="input_box">
+									<div class="inp_wrap">
+										<input type="text" name="" id="" value="" placeholder="검색어를 입력해주세요." title="검색어 입력">
+										<button type="button" class="btn_reset">검색어 초기화</button>
+									</div>
+									<button type="submit" class="btn_search">검색</button>
+								</div>
+								<button type="button" class="btn_expand">상세검색</button>
+							</div>
+							<div class="opt_wrap">
+								<div class="opt_area">
+									<div class="l">
+										<strong>검색범위</strong>
+									</div>
+									<div class="r">
+										<div class="rd-lb-wrap">
+											<span class="rd-lb">
+												<input type="radio" id="ck1-1" name="option1" class="blind" checked="">
+												<label for="ck1-1">전체</label>
+											</span>
+											<span class="rd-lb">
+												<input type="radio" id="ck1-2" name="option1" class="blind">
+												<label for="ck1-2">제목</label>
+											</span>
+											<span class="rd-lb">
+												<input type="radio" id="ck1-3" name="option1" class="blind">
+												<label for="ck1-3">내용</label>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="opt_area">
+									<div class="l">
+										<strong>검색기간</strong>
+									</div>
+									<div class="r">
+										<div class="rd-lb-wrap">
+											<span class="rd-lb">
+												<input type="radio" id="ck2-1" name="option2" class="blind" checked="">
+												<label for="ck2-1">전체</label>
+											</span>
+											<span class="rd-lb">
+												<input type="radio" id="ck2-2" name="option2" class="blind">
+												<label for="ck2-2">1개월</label>
+											</span>
+											<span class="rd-lb">
+												<input type="radio" id="ck2-3" name="option2" class="blind">
+												<label for="ck2-3">6개월</label>
+											</span>
+											<span class="rd-lb">
+												<input type="radio" id="ck2-4" name="option2" class="blind">
+												<label for="ck2-4">1년</label>
+											</span>
+										</div>
+										<div class="date sm-mt-12">
+											<span class="rd-lb">
+												<input type="radio" id="ck2-5" name="option2" class="blind">
+												<label for="ck2-5">직접입력</label>
+											</span>
+											<span class="date-inp"><input type="text" class="datepicker" title="시작일 입력"></span>
+											<span class="date_char">~</span>
+											<span class="date-inp"><input type="text" class="datepicker" title="종료일 입력"></span>
+										</div>
+									</div>
+								</div>
+								<div class="opt_area">
+									<div class="l">
+										<strong>검색정렬</strong>
+									</div>
+									<div class="r">
+										<div class="rd-lb-wrap">
+											<span class="rd-lb">
+												<input type="radio" id="ck3-1" name="option3" class="blind" checked="">
+												<label for="ck3-1">정확도</label>
+											</span>
+											<span class="rd-lb">
+												<input type="radio" id="ck3-2" name="option3" class="blind">
+												<label for="ck3-2">최신순</label>
+											</span>
+										</div>
+										<div class="re_search sm-mt-12">
+											<button type="submit">검색</button>
+											<span class="ck-lb">
+												<input type="checkbox" id="ck4" class="blind">
+												<label for="ck4">결과 내 재검색</label>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="srh_keyword">
+							<span class="key">“사업”</span>(으)로 검색한 결과<br class="m_content"><span class="key">총 33,449건</span>이 검색되었습니다.
+						</div>
+						<div class="no_result">
+							<div><strong>“사업” 에 대한 검색결과가 없습니다.</strong></div>
+							<div>
+								단어의 철자가 정확한지 확인해 주시기 바랍니다.<br>
+								검색어의 단어 수를 줄이거나, 다른 검색어(유사어)로 검색해 보시기 바랍니다.<br>
+								일반적으로 많이 사용하는 검색어로 다시 검색해 주시기 바랍니다.<br>
+								검색처리가 <span>대기중</span> 혹은 <span>업데이트 메시지</span>가 뜨면 잠시 후 다시 검색해 보시기 바랍니다.
+							</div>
+						</div>
+						<div class="srh_cate">
+							<ul class="tab tab_pc_6">
+								<li><a href="#;" class="active">전체</a></li>
+								<li><a href="#;">메뉴</a></li>
+								<li><a href="#;">웹 페이지</a></li>
+								<li><a href="#;">게시물</a></li>
+								<li><a href="#;">무역보험 용어집</a></li>
+								<li><a href="#;">첨부파일</a></li>
+							</ul>
+						</div>
+						<div class="srh_ctn">
+							<div class="srh_res">
+								<div class="res_con">
+									<div class="res_top">
+										<h4 class="tit">메뉴 검색 (<span class="key">49건</span>)</h4>
+										<a href="#;" class="btn_more" title="메뉴 검색">더보기</a>
+									</div>
+									<div class="res_btm">
+										<ul class="list shape_type1">
+											<li><span class="key">사업</span>안내 &gt; 중강기성보험(선작전) <a href="#;" class="link">[메뉴 바로가기]</a></li>
+											<li><span class="key">사업</span>안내 &gt; 중강기수출보험(공급자신용) <a href="#;" class="link">[메뉴 바로가기]</a></li>
+											<li><span class="key">사업</span>안내 &gt; 중강기수출보험(구매자신용) <a href="#;" class="link">[메뉴 바로가기]</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="res_con">
+									<div class="res_top">
+										<h4 class="tit">웹 페이지 검색 (<span class="key">49건</span>)</h4>
+										<a href="#;" class="btn_more" title="웹 페이지 검색">더보기</a>
+									</div>
+									<div class="res_btm">
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">사업안내 &gt; 중장기성보험(선적전)</a></h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">사업안내 &gt; 중장기성보험(선적전)</a></h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">사업안내 &gt; 중장기성보험(선적전)</a></h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="res_con">
+									<div class="res_top">
+										<h4 class="tit">게시물 검색 (<span class="key">49건</span>)</h4>
+										<a href="#;" class="btn_more" title="게시물 검색">더보기</a>
+									</div>
+									<div class="res_btm">
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">완전보장 옵션형 환변동보험(조기결제형) 청약 및 결제 불가 안내</a> <span>2022.09.14</span>
+											</h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+											<ul class="list shape_type1 sm-mt-6 lg-mt-10">
+												<li><strong class="fwr">메뉴 :</strong> 소식 &gt; 공지사항</li>
+											</ul>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">완전보장 옵션형 환변동보험(조기결제형) 청약 및 결제 불가 안내</a> <span>2022.09.14</span>
+											</h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+											<ul class="list shape_type1 sm-mt-6 lg-mt-10">
+												<li><strong class="fwr">메뉴 :</strong> 소식 &gt; 공지사항</li>
+											</ul>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">완전보장 옵션형 환변동보험(조기결제형) 청약 및 결제 불가 안내</a> <span>2022.09.14</span>
+											</h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+											<ul class="list shape_type1 sm-mt-6 lg-mt-10">
+												<li><strong class="fwr">메뉴 :</strong> 소식 &gt; 공지사항</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="res_con">
+									<div class="res_top">
+										<h4 class="tit">무역보험 용어집 검색 (<span class="key">49건</span>)</h4>
+										<a href="#;" class="btn_more" title="무역보험 용어집 검색">더보기</a>
+									</div>
+									<div class="res_btm">
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">약정이자</a></h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">잠정보상한도</a></h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">재판매</a></h5>
+											<div>
+												<a href="#;" class="web_res">
+													중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는 중장기수출보험(선적전)은 수출자가 중장기 수출계약을 체결하고 계약의 효력이 발생한 후에
+													수출계약에 따라 물품을 수출할 수 없게 된 경우(수출불능)에 입게 되는 손실과
+													수출이행후 결제대금을 인출할 수 없게 된 경우(결제자금 인출불능)에 입게 되는
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="res_con">
+									<div class="res_top">
+										<h4 class="tit">첨부파일 검색 (<span class="key">49건</span>)</h4>
+										<a href="#;" class="btn_more" title="무역보험 용어집 검색">더보기</a>
+									</div>
+									<div class="res_btm">
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">사고발생통지서 및 보증채무이행청구서(간편보상심사용).hwp</a> <span>2022.09.14</span>
+											</h5>
+											<ul class="list shape_type1 sm-mt-6 lg-mt-10">
+												<li><strong class="fwr">메뉴 :</strong> 자료실 &gt; 신청서류</li>
+											</ul>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">사고발생통지서 및 보증채무이행청구서(간편보상심사용).hwp</a> <span>2022.09.14</span>
+											</h5>
+											<ul class="list shape_type1 sm-mt-6 lg-mt-10">
+												<li><strong class="fwr">메뉴 :</strong> 자료실 &gt; 신청서류</li>
+											</ul>
+										</div>
+										<div class="res_section">
+											<h5 class="sub_tit"><a href="#;">사고발생통지서 및 보증채무이행청구서(간편보상심사용).hwp</a> <span>2022.09.14</span>
+											</h5>
+											<ul class="list shape_type1 sm-mt-6 lg-mt-10">
+												<li><strong class="fwr">메뉴 :</strong> 자료실 &gt; 신청서류</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<aside class="srh_aside">
+								<div class="srh_aside_section">
+									<div class="aside_top">
+										<strong>인기 검색어</strong>
+									</div>
+									<div class="aside_btm">
+										<div class="period_wrap">
+											<button type="button" class="active">일간</button>
+											<button type="button">주간</button>
+											<button type="button">월간</button>
+										</div>
+										<ol class="rating lg-mt-20">
+											<li>환변동보험</li>
+											<li>수출신용보증</li>
+											<li>단기수출보험</li>
+											<li>수입보험</li>
+											<li>중장기성보험</li>
+											<li>면책사례</li>
+											<li>중소중견Plus</li>
+											<li>다이렉트</li>
+											<li>수출안전망보험</li>
+											<li>포페이팅</li>
+										</ol>
+									</div>
+								</div>
+								<div class="srh_aside_section">
+									<div class="aside_top">
+										<strong>내가 찾은 검색어</strong>
+									</div>
+									<div class="aside_btm">
+										<ul class="srh_record">
+											<li><a href="#;">환변동보험</a><a href="#;" title="환변동보험" class="btn_delete">기록삭제</a></li>
+											<li><a href="#;">수출신용보증</a><a href="#;" title="수출신용보증" class="btn_delete">기록삭제</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="srh_aside_section">
+									<div class="aside_top">
+										<strong>연관검색어</strong>
+									</div>
+									<div class="aside_btm">
+										<ul class="srh_rel">
+											<li><a href="#;">환변동보험</a></li>
+											<li><a href="#;">수출신용보증</a></li>
+										</ul>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+				<!-- // ctn -->
+			</div>
+			<!-- // content -->
+	</div>
+	</main>
+	<!-- // container -->
+
+	<!-- [include] : _inc-quickmenu.html -->
+	<!-- <div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div> -->
+	<!-- // quickmenu -->
+
+	<!-- [include] : _inc-footer.html -->
+	<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+	<!-- // footer -->
+	</div>
+</body>
+
+</html>

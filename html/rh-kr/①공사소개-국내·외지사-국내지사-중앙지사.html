@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(9, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">국내지사</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab tab_m_3">
+							<li><a href="①공사소개-국내·외지사-국내지사-중앙지사.html" class="active">중앙지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-강남지사.html">강남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-부산지사.html">부산지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-대구경북지사.html">대구경북지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-인천지사.html">인천지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-반월시화지사.html">반월시화지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-광주전남지사.html">광주전남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-대전세종충남지수.html">대전세종충남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-울산지사.html">울산지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-경기남부지사.html">경기남부지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-경기북부지사.html">경기북부지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-강원지사.html">강원지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-충북지사.html">충북지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-전북지사.html">전북지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-경남지사.html">경남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-구로디지털지사.html">구로디지털지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-제주지사.html">제주지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-천안출장소.html">천안출장소</a></li>
+						</ul>
+
+						<div class="section">
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_place_head_office.jpg" alt="">
+								<div class="plcae_info">
+									<strong class="address">서울특별시 종로구 종로 14 (서린동), 한국무역보험공사 (우 03187)</strong>
+									<ul class="more_info_list">
+										<li class="phone"><span>전화번호 :</span> 1588-3884</li>
+										<li class="time"><span>근무시간 :</span> 평일 09:00~18:00, 토/일 및 주중 공휴일 : 휴무</li>
+									</ul>
+									<a href="#;" class="kakao_navigation_btn" title="새창으로 열림" target="_blank">카카오
+										길찾기</a>
+								</div>
+							</div>
+							<div class="place_btn_area">
+								<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup('info', this);">담당자 안내</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">관할지역</h4>
+							서울특별시 북부지역 및 인근 경기도 지역
+						</div>
+						<div class="section">
+							<h4 class="tit">교통안내</h4>
+							※ 자세한 길찾기는 지도 우측 하단의 ‘카카오 길찾기’를 클릭해주세요.
+							<div class="transfer_wrap">
+								<div class="transfer_box subway">
+									<strong class="tt">지하철</strong>
+									<ul class="transfer_list">
+										<li>
+											<div class="circle pupple">5</div>
+											<div><span class="pupple">광화문역</span> 5번출구에서 광화문우체국방향 도보3분거리</span>
+										</li>
+										<li>
+											<div class="circle navy">1</div>
+											<div><span class="navy">종각역</span> 6번출구에서 광화문방향 도보5분거리</span>
+										</li>
+										<li>
+											<div class="circle green">2</div>
+											<div><span class="green">을지로입구역</span> 2번출구에서 무교동방향 도보15분거리</span>
+										</li>
+									</ul>
+								</div>
+								<div class="transfer_box bus">
+									<strong class="tt">버스</strong>
+									<ul class="list shape_type1">
+										<li>
+											<div class="bold">종로1가 중앙차로(종로 → 광화문)</div>
+											<ul class="transfer_list">
+												<li>
+													<div class="round_rec navy">간선</div>
+													<div>101, 103, 150, 160, 260, 270, 271, 273, 370, 470, 601, 720, 721, 741, N26, N37</div>
+												</li>
+												<li>
+													<div class="round_rec green">지선</div>
+													<div>7212</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="bold">종로1가 중앙차로(광화문 → 종로)</div>
+											<ul class="transfer_list">
+												<li>
+													<div class="round_rec navy">간선</div>
+													<div>101, 150, 160, 260, 270, 271, 273, 370, 470, 501, 720, 721, 741, N26, N37</div>
+												</li>
+												<li>
+													<div class="round_rec green">지선</div>
+													<div>7212</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="bold">광화문 중앙차로(광화문 → 서대문)</div>
+											<ul class="transfer_list">
+												<li>
+													<div class="round_rec navy">간선</div>
+													<div>101, 103, 150, 160, 260, 270, 271, 273, 370, 470, 601, 720, 721, 741, N26, N37</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="bold">종로1가 르메이에르빌딩 앞</div>
+											<ul class="transfer_list">
+												<li>
+													<div class="round_rec navy">간선</div>
+													<div>109, 606</div>
+												</li>
+												<li>
+													<div class="round_rec green">지선</div>
+													<div>1020</div>
+												</li>
+												<li>
+													<div class="round_rec blue">공항</div>
+													<div>6002</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">주차안내</h4>
+							<ul class="list shape_type1">
+								<li>
+									업무차 방문하시는 방문부서에서 무료주차 확인시간을 받으셔야 무료주차혜택을 받으실 수 있습니다. (단, 확인시간에 한하여 무료이며, 이후 매 10분마다 1,000원씩의 주차요금이
+									징수되며, 신용카드로 결제 가능합니다.(현금불가))
+								</li>
+								<li>
+									저희 무역보험공사는 승용차 요일제(끝번호제)를 운영하고 있사오니, 방문하시는 고객분들께서는 이점 참고하시기 바랍니다. (단, 선택요일제 차량(스티커 부착)의 경우 이를 우선으로
+									적용합니다.)
+								</li>
+							</ul>
+							<div class="border_normal_box sm-mt-10 lg-mt-15">
+								<strong class="bold d_b mb-10">※ 승용차 요일제(끝번호제) : 차량의 끝번호에 해당하는 요일에는 공사 진입 불가</strong>
+								<div class="table">
+									<table class="m_scroll">
+										<caption>주차안내 표로 요일, 차량 끝번호 정보 제공</caption>
+										<colgroup>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col style="width:20%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">요일</th>
+												<th scope="col">월</th>
+												<th scope="col">화</th>
+												<th scope="col">수</th>
+												<th scope="col">목</th>
+												<th scope="col">금</th>
+												<th scope="col">공휴 | 비근무일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">끝번호</th>
+												<td class="txt_c">1, 6</td>
+												<td class="txt_c">2, 7</td>
+												<td class="txt_c">3, 8</td>
+												<td class="txt_c">4, 9</td>
+												<td class="txt_c">5, 0</td>
+												<td class="txt_c">-</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<ul class="list shape_type1">
+								<li>장애인 주차구역 안내 : 지하 주차장(2~3층) 주 엘리베이터 출입구 앞 장애인 주차구역을 지정하여 운영하고 있사오니 참고하시기
+									바랍니다. 승용차 요일제(끝번호제)
+								</li>
+							</ul>
+						</div>
+
+						<div class="layer_popup_box" data-popup="info">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">담당자 안내</h4>
+								</div>
+								<div class="popup_content">
+									<div class="company_sub_tit">
+										중앙지사/중견기업팀
+									</div>
+									<p class="color_red">※ 담당자와 통화를 원하실 경우 고객센터(1588-3884)를 이용하여 주시기 바랍니다.</p>
+									<div class="table sm-mt-15 lg-mt-25">
+										<table>
+											<caption>담당자 안내 표로 담당자, 담당업무 정보제공</caption>
+											<colgroup>
+												<col style="width: 20%;">
+												<col style="width: 20%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col" colspan="2">담당자</th>
+													<th scope="col">담당업무</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row" colspan="2">지사장 정선기</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>업무 총괄</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">수석전문역 김춘수</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>현장 마케팅 지원</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">책임심사역 조경진</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>중소기업 총괄</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">책임심사역 김지원</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>중소기업 총괄</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">김지웅</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용평가/조사/인수(ㅋ)</li>
+															<li>서울시 보험료 지원사업</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">김도홍</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용평가/조사/인수(ㄴ)</li>
+															<li>마케팅</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">윤지혜</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용평가/조사/인수(ㅂ, ㅅ)</li>
+															<li>마케팅</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">최건수</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용평가/조사/인수(ㅈ, 아, 이)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">길연경</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용평가/조사/인수(ㅁ, ㅍ, ㅎ)</li>
+															<li>전자무역</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">정유연</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용조사/평가/인수(ㅇ("아", "이" 제외))</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">이은동</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용조사/평가/인수(ㄱ, ㅌ)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">석아름</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용조사/평가/인수(ㄷ, ㄹ, ㅊ)</li>
+															<li>단체보험</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">안하영</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>선적전 재보증</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" colspan="2">노소영</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>보험(보증)료 수납</li>
+															<li>보험료 지원사업</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" rowspan="9" class="wd_ba">중견기업팀</th>
+													<th scope="row">팀장 이규형</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>중견기업 총괄</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">박홍철</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용조사/평가</li>
+															<li>인수(현대코퍼레이션)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">김사애</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>신용조사/평가</li>
+															<li>인수(ㄷ, 한솔계열)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">김래영</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>인수(ㅇ, ㅎ)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">길유정</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>인수(금호석유화학계열, 삼양계열, 태광계열, 위니아전자, 애경계열, 하이트진로, 엘엑스계열, 아모레퍼시픽)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">황다겸</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>인수(ㄱ, ㅂ, 넥센)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">유혜민</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>인수(ㄴ, ㅈ~ㅍ)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">노승현</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>인수(ㄹ, ㅁ, ㅅ, 한라계열)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">장하영</th>
+													<td>
+														<ul class="list shape_type1 mt-0">
+															<li>보험(보증)료 수납(팀)</li>
+															<li>환변동보험</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn md bg_red" onclick="fn_hide_popup('info');">확인</button>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('info');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

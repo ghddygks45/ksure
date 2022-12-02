@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(10);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">해외채권 회수불능 확인</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-해외채권회수불능확인-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-해외채권회수불능확인-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-해외채권회수불능확인-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>사이버 영업점 회원가입
+									</div>
+									<div class="con">
+										<ul class="list num_type1">
+											<li>www.ksure.or.kr 접속</li>
+											<li>초기 분기화면에서 사이버영업점 접속 </li>
+											<li>회원사 및 마스터 대표 사용자 가입등록
+												<ul class="list shape_type1 pl-10 sm-mt-5 lg-mt-10">
+													<li>(방법1) 사업자공동(구 공인)인증을 이용한 즉시가입</li>
+													<li>(방법2) 아래 서류 사본 파일을 가입등록 시 업로드하거나, 가입등록 완료 후 팩스 송부
+														<ul class="list shape_type2 sm-mt-5 lg-mt-10">
+															<li>사업자등록증 사본</li>
+															<li>마스터대표사용자 지정(변경)신청서<br>
+																<span class="color_red">* 고객센터 팩스번호 02-6234-1407</span></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>회원사/마스터 대표 사용자 승인(공사)</li>
+										</ul>
+										<a href="https://cyber.ksure.or.kr/cyber/websquare/websquare.jsp?w2xPath=/ws5/ui/ZZ/MN/ZZMN0101BK.xml&custSctCd=E100"
+											class="btn_white_line ico_arrow sm-mt-10 lg-mt-15" title="새창으로 열림" target="_blank">사이버 영업점
+											바로가기</a>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>로그인
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>사용자ID 또는 등록한 사업자공동(구 공인)인증서로 로그인</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>해외채권 회수불능 확인신청
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>조회서비스 &gt; 해외채권 회수불능 확인신청 메뉴 선택</li>
+											<li>해외채권회수불능 확인신청서 및 필요서류 제출(업로드)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>공사의 회수불능확정채권 해당여부 검토
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>회수불능 사유 및 회수불능 확정채권 범위 포함 여부 검토</li>
+											<li>공사 담당자 앞 실물서류 제출(개별 안내)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>해외채권 회수불능 확인서 발급
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>사이버영업점 접속</li>
+											<li>조회서비스 &gt; 해외채권 회수불능 확인신청 내역 메뉴에서 확인서 조회 가능 (신청자 담당자 앞 자동메일 발송)</li>
+										</ul>
+										<p class="sm-mt-5 lg-mt-10 color_red txt_underline">※ 법인세법 시행규칙 10조의4 상 요건 미충족 시 확인서 발급이 불가합니다.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

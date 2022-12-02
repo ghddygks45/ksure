@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(6, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수입보험(글로벌공급망)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-수입보험-수입보험(글로벌공급망)-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(글로벌공급망)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(글로벌공급망)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(글로벌공급망)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요</h4>
+							수입보험(글로벌공급망)은 금융기관이 소재·부품·장비를 제조하는 중소중견기업에게 수입에 필요한 자금을 대출(지급보증)한 후 대출금을 회수할 수 없게 된 경우에 발생하는 손실을 보상하는
+							제도입니다.
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur24.jpg" alt="하단에 내용 참고 바랍니다.">
+								<a href="../../asset/rh-kr/images/img_insur24.jpg" class="btn_img_size">크게보기</a>
+								<div class="blind">
+									<ol>
+										<li>국내 수입기업이 K-SURE에 보험청약을 하고 보험증권을 발급 받는다.</li>
+										<li>국내 수입기업은 금융기관에 보험증권을 제출하고 수입 자금대출을 받는다.</li>
+										<li>해외수출자는 국내 수입기업에 물품을 선적하고 국내 수입기업은 대금을 결제한다.</li>
+										<li>K-SURE는 미상환시 금융기관에 보험금을 지급한다.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상거래</h4>
+							대출기간 1년 이내의 수입자금 대출거래<br>
+							단, 내국신용장, Standby L/C등 해외로부터의 물품수입과 관련이 없는 대출, 중계무역 수입을 위한 대출, 아래 물품의 수입을 위한 수입자금 대출은 부보 대상이 아닙니다.
+							<h5 class="sub_tit sm-mt-10 lg-mt-25">부보대상에서 제외되는 수입물품 (HS코드 앞 2자리 기준)</h5>
+							<div class="table sm-mt-10 lg-mt-15">
+								<table>
+									<caption>부보대상에서 제외되는 수입물품 표로 HS코드앞 2자리, 물품내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 20%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">HS코드앞 2자리</th>
+											<th scope="col">물품내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">01~05</th>
+											<td>살아있는 동물과 동물성 생산품</td>
+										</tr>
+										<tr>
+											<th scope="row">06~14</th>
+											<td>식물성 생산품</td>
+										</tr>
+										<tr>
+											<th scope="row">15</th>
+											<td>동물성·식물성 지방 및 이들의 분해생산물 등</td>
+										</tr>
+										<tr>
+											<th scope="row">16~24</th>
+											<td>조제 식료품, 음료·주료·식초, 담배 등</td>
+										</tr>
+										<tr>
+											<th scope="row">41~43</th>
+											<td>원피·가죽제품, 여행용구·핸드백 등</td>
+										</tr>
+										<tr>
+											<th scope="row">64~67</th>
+											<td>신발류·모자류 등</td>
+										</tr>
+										<tr>
+											<th scope="row">71</th>
+											<td>진주, 귀금속 등</td>
+										</tr>
+										<tr>
+											<th scope="row">94~96</th>
+											<td>잡품</td>
+										</tr>
+										<tr>
+											<th scope="row">97</th>
+											<td>예술품·수집품·골동품</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

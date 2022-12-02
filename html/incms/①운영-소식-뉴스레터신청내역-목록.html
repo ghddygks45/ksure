@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">뉴스레터 신청내역</h2>
+
+			<div class="search_area">
+				<table class="tb_search">
+					<caption>검색조건</caption>
+					<colgroup>
+						<col style="width:120px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th><label for="srchFr">작성일자</label></th>
+							<td>
+								<input type="text" id="srchFr" title="시작일" style="width:100px;">
+								<a href="#divCalendar" class="btn_cal"
+									onclick="openCalendar(document.getElementById('srchFr')); return false;">달력</a> ~
+								<input type="text" id="srchTo" title="종료일" style="width:100px;">
+								<a href="#divCalendar" class="btn_cal"
+									onclick="openCalendar(document.getElementById('srchTo')); return false;">달력</a>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="subject">검색어</label></th>
+							<td>
+								<select id="subject">
+									<option>선택</option>
+								</select>
+								<input type="text" title="검색어" style="width:500px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="btn_area">
+					<button type="submit" class="btn btn_lg act"><i class="fa fa-search"></i> 검색</button>
+					<button type="reset" class="btn btn_lg"><i class="fa fa-refresh"></i> 초기화</button>
+					<a href="#n" class="btn btn_lg act" target="_blank"><i class="fa fa-pencil"></i> 등록</a>
+				</div>
+			</div>
+
+			<div class="list_status">
+				<p class="status">총 <strong class="colr_point">8</strong> 건 (1/1 page)</p>
+				<div class="fr">
+					<select class="post_num" name="pageItm" id="pageItm">
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+						<option value="60">60</option>
+						<option value="70">70</option>
+						<option value="80">80</option>
+						<option value="90">90</option>
+						<option value="100">100</option>
+					</select>
+					<button type="button" class="btn" id="btnPageItm">적용</button>
+				</div>
+			</div>
+			<table class="tb_list">
+				<caption>목록</caption>
+				<colgroup>
+					<col style="width:60px">
+					<col style="width: 238px;">
+					<col>
+					<col style="width: 329px;">
+					<col style="width: 325px;">
+					<col style="width: 220px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>성명</th>
+						<th>소속</th>
+						<th>이메일</th>
+						<th>작성일</th>
+						<th>수정/삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>3</td>
+						<td>홍길동</td>
+						<td>무역보험공사</td>
+						<td>hong80@naver.com</td>
+						<td>2022-01-01 13:22:21</td>
+						<td>
+							<button type="button" class="label">수정</button>
+							<button type="button" class="label bg_error">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>홍길동</td>
+						<td>무역보험공사</td>
+						<td>hong80@naver.com</td>
+						<td>2022-01-01 13:22:21</td>
+						<td>
+							<button type="button" class="label">수정</button>
+							<button type="button" class="label bg_error">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>홍길동</td>
+						<td>무역보험공사</td>
+						<td>hong80@naver.com</td>
+						<td>2022-01-01 13:22:21</td>
+						<td>
+							<button type="button" class="label">수정</button>
+							<button type="button" class="label bg_error">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>홍길동</td>
+						<td>무역보험공사</td>
+						<td>hong80@naver.com</td>
+						<td>2022-01-01 13:22:21</td>
+						<td>
+							<button type="button" class="label">수정</button>
+							<button type="button" class="label bg_error">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>홍길동</td>
+						<td>무역보험공사</td>
+						<td>hong80@naver.com</td>
+						<td>2022-01-01 13:22:21</td>
+						<td>
+							<button type="button" class="label">수정</button>
+							<button type="button" class="label bg_error">삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<strong>1</strong>
+				<a
+					href="?pageIndex=2&amp;searchStartDt=&amp;searchEndDt=&amp;searchKeyword=&amp;searchCondition=&amp;searchCl=&amp;pageItm=10">2</a>
+				<a
+					href="?pageIndex=3&amp;searchStartDt=&amp;searchEndDt=&amp;searchKeyword=&amp;searchCondition=&amp;searchCl=&amp;pageItm=10">3</a>
+			</div>
+			<div class="btn_area">
+				<a href="#n" class="btn btn_lg act" target="_blank"><i class="fa fa-pencil"></i> 등록</a>
+			</div>
+
+			<!-- 뉴스레터 신청정보 팝업 -->
+			<div id="layer_sample" class="layer_popup modal">
+				<!-- // 레이어 크기 변경시 사이즈 지정 style="width:600px; height:500px;" -->
+				<div class="bg"></div>
+				<h2 class="tit_layer" tabindex="0">뉴스레터 신청정보</h2>
+				<div class="layer_cont">
+					<table class="tb_write">
+						<caption>뉴스레터 신청정보 등록</caption>
+						<colgroup>
+							<col style="width:120px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>성명</th>
+								<td><input type="text" style="width: 200px;"></td>
+							</tr>
+							<tr>
+								<th>소속</th>
+								<td><input type="text" style="width: 200px;"></td>
+							</tr>
+							<tr>
+								<th>이메일</th>
+								<td>
+									<input type="text" style="width: 150px;"> @
+									<input type="text" style="width: 150px;">
+									<select name="" id="">
+										<option value="">직접입력</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn_area ac">
+						<button type="submit" class="btn btn_lg act" onclick="closeLayer(this);">등록</button>
+						<button type="submit" class="btn btn_lg" onclick="closeLayer(this);">취소</button>
+					</div>
+				</div>
+				<button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+			</div>
+			<!-- // 뉴스레터 신청정보 팝업 -->
+
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

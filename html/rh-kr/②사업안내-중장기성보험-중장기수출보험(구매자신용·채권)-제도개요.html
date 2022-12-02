@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">중장기수출보험(구매자신용·채권)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용·채권)-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용·채권)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용·채권)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-중장기수출보험(구매자신용·채권)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요 및 상품의 특성</h4>
+							수출대금 결제기간이 2년을 초과하는 중장기 수출거래에서 수입자가 자금조달을 위해 발행하는 채권(Project Bond)에 대해 공사가 원리금 상환을 보장하는 제도
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur06.jpg"
+									alt="수출자가 수입자에 수출하고, 수입자가 자금조달을 위해 수탁기관을 통해 채권을 발행하면 수입자는 수출자에 수출대금을 상환한 후 수탁기관에 원리금을 상환한다. 수탁기관은 투자자에게 원리금을 전달하는 구조이며, 이때 K-SURE는 수탁기관에 대해 원리금 상환을 보장한다.">
+								<a href="../../asset/rh-kr/images/img_insur06.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상거래</h4>
+							금융기관이 수출대금의 지급에 필요한 자금을 외국인에게 공여하는 상환기간 2년 초과의 <span class="fwr color_red txt_underline">채권인수계약</span>
+							<div class="sm-mt-5 lg-mt-10 bold">※ 선박 및 부유식 해양설비 수출거래에 한하여 적용</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보상하는 손실</h4>
+							채권이 발행되었으나, 보험계약자가 채권 조건상 상환기일에 당해 채권의 원금 또는 이자를 회수할 수 없게 된 경우에 입게 되는 손실로서 다음 각호를 더한 금액
+							<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+								<li>보험계약자가 채권조건상 상환기일에 회수할 수 없는 원리금</li>
+								<li>미상환원리금 잔액에 대해 상환기일 후 보험금 지급일까지 발생한 이자금액(채권조건상의 정상이자율 적용)</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

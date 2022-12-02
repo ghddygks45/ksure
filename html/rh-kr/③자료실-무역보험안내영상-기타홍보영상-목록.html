@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(7, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar03.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">기타 홍보영상</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<!-- board_top -->
+						<div class="board_top">
+							<div class="l">
+								전체 <span class="bold">905</span>건, 현재페이지 : <span class="bold">1</span>/<span class="page">11</span>
+							</div>
+
+							<div class="r">
+								<div class="search_unit">
+									<div class="select_wrap">
+										<select class="board_select" title="조건 선택">
+											<option value="">구분</option>
+										</select>
+									</div>
+									<div class="input_wrap">
+										<input type="text" class="board_input" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="blind">검색</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // board_top -->
+
+						<!-- gallery_list -->
+						<div class="gallery_list">
+							<ul>
+								<li>
+									<a href="③자료실-무역보험안내영상-기타홍보영상-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_thumb01.jpg" alt="주간 문화예보 12월 2주 본편 썸네일">
+										</div>
+										<strong class="subject">다이렉트 보증 제도 안내</strong>
+										<ul class="board_info_list">
+											<li><span class="bold">등록일 : </span>2022.07.19</li>
+											<li><span class="bold">조회수 : </span>2</li>
+										</ul>
+									</a>
+								</li>
+								<li>
+									<a href="③자료실-무역보험안내영상-기타홍보영상-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_thumb01.jpg" alt="주간 문화예보 12월 2주 예보 썸네일">
+										</div>
+										<strong class="subject">다이렉트 보증 제도 안내</strong>
+										<ul class="board_info_list">
+											<li><span class="bold">등록일 : </span>2022.07.19</li>
+											<li><span class="bold">조회수 : </span>2</li>
+										</ul>
+									</a>
+								</li>
+								<li>
+									<a href="③자료실-무역보험안내영상-기타홍보영상-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_thumb01.jpg" alt="융성융성 문화예보 11월 2째주 본편 썸네일">
+										</div>
+										<strong class="subject">다이렉트 보증 제도 안내</strong>
+										<ul class="board_info_list">
+											<li><span class="bold">등록일 : </span>2022.07.19</li>
+											<li><span class="bold">조회수 : </span>2</li>
+										</ul>
+									</a>
+								</li>
+								<li>
+									<a href="③자료실-무역보험안내영상-기타홍보영상-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_thumb_default.png" alt="이미지 없음">
+										</div>
+										<strong class="subject">다이렉트 보증 제도 안내</strong>
+										<ul class="board_info_list">
+											<li><span class="bold">등록일 : </span>2022.07.19</li>
+											<li><span class="bold">조회수 : </span>2</li>
+										</ul>
+									</a>
+								</li>
+								<li>
+									<a href="③자료실-무역보험안내영상-기타홍보영상-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_thumb_default.png" alt="이미지 없음">
+										</div>
+										<strong class="subject">주간 문화예보 12월 2주 예보</strong>
+										<ul class="board_info_list">
+											<li><span class="bold">등록일 : </span>2022.07.19</li>
+											<li><span class="bold">조회수 : </span>2</li>
+										</ul>
+									</a>
+								</li>
+								<li>
+									<a href="③자료실-무역보험안내영상-기타홍보영상-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_thumb_default.png" alt="이미지 없음">
+										</div>
+										<strong class="subject">융성융성 문화예보 11월 2째주 본편</strong>
+										<ul class="board_info_list">
+											<li><span class="bold">등록일 : </span>2022.07.19</li>
+											<li><span class="bold">조회수 : </span>2</li>
+										</ul>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- // gallery_list -->
+
+						<!-- pagination -->
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+						<!-- // pagination -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

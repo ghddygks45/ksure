@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">공통</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-환변동보험-공통-개요(공통).html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-환변동보험-공통-주요용어.html">주요용어</a></li>
+							<li><a href="②사업안내-환변동보험-공통-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-환변동보험-공통-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-환변동보험-공통-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="top_info_box bg_info13">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">환변동보험이란?</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									수출 또는 수입을 통해 외화를 획득 또는 지급하는 과정에서 발생할 수 있는 환차손익을 제거, 사전에 외화금액을 원화로 확정 시킴으로써 환율변동에
+									따른 위험을 헤지(Hedge)하는 상품
+								</div>
+								<ul class="list shape_type1 sm-mt-7 lg-mt-10">
+									<li>환변동보험은 환위험 관리여건이 취약한 중소중견기업이 환위험을 손쉽게 헤지할 수 있도록 제도·비용면의 도움을 드림으로써, 적극적인
+										무역활동을 할 수 있도록 지원
+									</li>
+									<li>K-SURE는 보험인수 시 시중은행을 통해 전액 헤지하므로, 환변동보험 운영에 따른 K-SURE의 이익은 없음</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">환변동보험 상품별 비교(수출거래 기준)</h4>
+							<div class="table">
+								<table>
+									<caption>환변동보험 상품별 비교 표로 상품, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">상품</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">일반형</th>
+											<td>환율 하락시 손실을 보상받고, 환율 상승시 이익금 납부</td>
+										</tr>
+										<tr>
+											<th scope="row">범위선물환</th>
+											<td>일정범위 환위험에 노출, 일정환율 이하 하락시 보상 및 일정환율 이상 상승시 이익금 납부</td>
+										</tr>
+										<tr>
+											<th scope="row">범위제한선물환</th>
+											<td>환율하락시 보험금과 환율상승시의 환수금을 일정 범위 이내로 제한하는 상품</td>
+										</tr>
+										<tr>
+											<th scope="row">부분보장 옵션형</th>
+											<td>이익금 납부 의무를 면제하고, 환율 하락시에는 하락분의 일정수준까지 보상</td>
+										</tr>
+										<tr>
+											<th scope="row">완전보장 옵션형</th>
+											<td>이익금 납부 의무를 면제하고, 환율 하락시에는 하락분 전액을 보상</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">환헤지(Hedge)란?</h4>
+							환율변동에 따른 위험을 없애기 위하여 현재 수준의 환율로 수출이나 수입, 해외투자에 따른 거래금액을 고정시키는 것
+							<div class="sub_section sm-mt-10 lg-mt-20">
+								<h5 class="sub_tit">환헤지의 목적</h5>
+								<ul class="list shape_type1">
+									<li>환율변동에 관계없이 원화기준 미래 현금흐름의 확정을 통해 안정적인 영업활동 영위</li>
+									<li>환율변동에 따른 손익을 제한하고 수출입 거래를 통해 안정적으로 수익을 확보하는 것</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

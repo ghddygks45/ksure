@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">공익신고안내</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<ul class="tab tab_m_3">
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-안내페이지.html">원클릭신고시스템</a></li>
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-청탁금지법위반행위신고안내.html">청탁금지법 위반행위 신고안내</a></li>
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-공익신고안내.html" class="active">공익신고안내</a></li>
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-신고자보호안내.html">신고자 보호안내</a></li>
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-보상금지급안내.html">보상금지급 안내</a></li>
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-공익신고자보호제도안내.html">공익신고자 보호제도 안내</a></li>
+						<li><a href="①공사소개-윤리경영-원클릭신고시스템-인권침해신고센터-동의인증.html">인권침해신고센터</a></li>
+					</ul>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="top_info_box bg_info01">
+								<div class="top_info_wrap">
+									<p>무역보험공사는 공익침해행위와 관련된 법률에 따라 설치된 공공기관은 아니나, 공익신고의 활성화와 공익신고자 보호제도의 인식확산을 위해
+										공익신고처리 및 신고자 보호 등에 관한 운영요령을 제정 및 공익신고 관련 자료 안내 등을 지원하고 있습니다.</p>
+									<div class="sm-mt-10 lg-mt-17">
+										<a href="#n" class="btn_white_line ico_arrow">국민권익위원회 공익신고제도 안내</a>
+										<a href="#n" class="btn_white_line ico_arrow">국민권익위원회 공익신고창구 접수</a>
+										<a href="#n" class="btn_white_line ico_arrow">공익신고대상 및 보호보상제도 안내</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">공익신고의 정의</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">(<span class="bracket_indent d_i_b">「공익신고자 보호법」</span> 제2조제2호 관련)</h5>
+								<ul class="list shape_type1">
+									<li>공익침해행위가 발생 또는 발생할 우려가 있다는 사실을 신고ㆍ진정ㆍ제보ㆍ고소ㆍ고발하거나 공익침해행위에 대한 수사의 단서를 제공하는 행위</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">공익침해행위 정의</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">(<span class="bracket_indent d_i_b">「공익신고자 보호법」</span> 제2조제1호 관련</h5>
+								<ul class="list shape_type1">
+									<li>국민의 건강과 안전, 환경, 소비자의 이익 공정한 경쟁 및 이에 준하는 공공의 이익을 침해하는 행위로서, 공익신고 대상법률에 따라 벌칙 또는 행정처분의 대상이 되는 행위
+									</li>
+								</ul>
+								<p class="mt-10 color_red">※ 「시설물의 안전관리에 관한 특별법」, 「식품위생법」, 「자연환경보전법」, 「의료법」 등 471개 법률</p>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">공익침해행위 예시</h4>
+							<div class="ico_floating_box ico_item06">
+								<div class="item ico_public01">
+									<div class="cont">
+										<strong class="cont_tit">건강분야</strong>
+										<div class="cont_desc">불량식품 제조·판매 등</div>
+									</div>
+								</div>
+								<div class="item ico_public03">
+									<div class="cont">
+										<strong class="cont_tit">안전분야</strong>
+										<div class="cont_desc">부실시공 등</div>
+									</div>
+								</div>
+								<div class="item ico_public02">
+									<div class="cont">
+										<strong class="cont_tit">환경분야</strong>
+										<div class="cont_desc">대기오염 물질 불법배출 등</div>
+									</div>
+								</div>
+								<div class="item ico_public04">
+									<div class="cont">
+										<strong class="cont_tit">소비자이익분야</strong>
+										<div class="cont_desc">보이스피싱, 보험사기 등</div>
+									</div>
+								</div>
+								<div class="item ico_public05">
+									<div class="cont">
+										<strong class="cont_tit">공정경쟁분야</strong>
+										<div class="cont_desc">기업간 담합 등</div>
+									</div>
+								</div>
+								<div class="item ico_public05">
+									<div class="cont">
+										<strong class="cont_tit">공공의 이익분야</strong>
+										<div class="cont_desc">거짓 채용공고 등</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">공익침해행위 신고접수 기관</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">(<span class="bracket_indent d_i_b">「공익신고자 보호법」</span> 제6조, 동법 시행령 제5조 관련)</h5>
+								<ul class="list shape_type1">
+									<li>국민권익위원회, 수사기관, 국회의원</li>
+									<li>공익침해행위를 하는 사람이나 기관·단체·기업 등의 대표자 또는 사용자</li>
+									<li>공익침해행위에 대한 지도·감독·규제 또는 조사 등의 권한을 가진 행정기관이나 감독기관</li>
+									<li>공익침해행위와 관련된 법률에 따라 설치된 공사ㆍ공단 등 공공단체</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">공익신고 처리 절차(국민권익위원회에 접수한 경우)</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">(<span class="bracket_indent d_i_b">「공익신고자 보호법 시행령」</span> 제8조 관련)</h5>
+								<ul class="list shape_type1">
+									<li>신고 접수 60일 이내에 사실 확인을 마친 후 조사·수사기관에 이첩하고, 처리 결과를 신고자에게 통보</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 공익신고대상 및 보호보상제도 안내 팝업 -->
+						<div class="layer_popup_box" data-popup="popup1" style="display:block">
+							<div class="popup popup_size_720" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">공익신고대상 및 보호보상제도 안내 팝업</h4>
+								</div>
+								<div class="popup_content">
+									<div class="section">
+										<h5 class="tit">공익신고대상</h5>
+										<div class="sub_section">
+											<h6 class="sub_tit">공익신고의 정의</h6>
+											<div class="sub_section">
+												<ul class="list shape_type1">
+													<li>
+														<div class="bold">(<span class="bracket_indent d_i_b">「공익신고자 보호법」</span> 제2조제2호 관련)</div>
+														공익침해행위가 발생 또는 발생할 우려가 있다는 사실을 신고ㆍ진정ㆍ제보ㆍ고소ㆍ고발하거나 공익침해행위에 대한 수사의 단서를 제공하는 행위
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="sub_section">
+											<h6 class="sub_tit">공익침해행위 정의</h6>
+											<ul class="list shape_type1">
+												<li>
+													<div class="bold">(<span class="bracket_indent d_i_b">「공익신고자 보호법」</span> 제2조제1호 관련</div>
+													<p>국민의 건강과 안전, 환경, 소비자의 이익 공정한 경쟁 및 이에 준하는 공공의 이익을 침해하는 행위로서, 공익신고 대상법률에 따라 벌칙 또는 행정처분의 대상이
+														되는 행위</p>
+												</li>
+											</ul>
+											<p class="mt-10 color_red">※ 「시설물의 안전관리에 관한 특별법」, 「식품위생법」, 「자연환경보전법」, 「의료법」 등 471개 법률</p>
+										</div>
+										<div class="sub_section">
+											<h6 class="sub_tit">공익침해행위 예시</h6>
+											<div class="ico_floating_box ico_item06">
+												<div class="item ico_public01">
+													<div class="cont">
+														<strong class="cont_tit">건강분야</strong>
+														<div class="cont_desc">불량식품 제조·판매 등</div>
+													</div>
+												</div>
+												<div class="item ico_public03">
+													<div class="cont">
+														<strong class="cont_tit">안전분야</strong>
+														<div class="cont_desc">부실시공 등</div>
+													</div>
+												</div>
+												<div class="item ico_public02">
+													<div class="cont">
+														<strong class="cont_tit">환경분야</strong>
+														<div class="cont_desc">대기오염 물질 불법배출 등</div>
+													</div>
+												</div>
+												<div class="item ico_public04">
+													<div class="cont">
+														<strong class="cont_tit">소비자이익분야</strong>
+														<div class="cont_desc">보이스피싱, 보험사기 등</div>
+													</div>
+												</div>
+												<div class="item ico_public05">
+													<div class="cont">
+														<strong class="cont_tit">공정경쟁분야</strong>
+														<div class="cont_desc">기업간 담합 등</div>
+													</div>
+												</div>
+												<div class="item ico_public05">
+													<div class="cont">
+														<strong class="cont_tit">공공의 이익분야</strong>
+														<div class="cont_desc">거짓 채용공고 등</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="section">
+										<h5 class="tit">보호·보상제도</h5>
+										<p class="sub_section">한국무역보험공사 공익신고 처리 및 신고자 보호 등에 관한 운영 요령에 의거, 신고자는 국가 또는 지방자치단체에 직접적인 수입의 회복 또는
+											증대를 가져오거나 이에 대한
+											법률관계가 확정된 것을 알게된 경우에 국민권익위원회에 보상금 지급을 신청할 수 있도록 통지해드립니다.(다만, 법 제2조제7호의 내부 공익신고자에 해당하는 경우에 한함)</p>
+										<div class="sub_section">
+											<h6 class="sub_tit">보상금 지급사유</h6>
+											<p class="bold">
+												공익신고로 인하여 다음의 어느 하나에 해당하는 부과 또는 환수 등을 통하여 국가 또는 지방자치단체의 직접적인 수입의 회복 또는 증대를 가져오거나 그에 관한 법률관계가 확정된
+												때
+												지급
+											</p>
+											<ul class="list shape_type1 sm-mt-10 lg-mt-20">
+												<li>벌칙 또는 통고처분</li>
+												<li>몰수 또는 추징금의 부과</li>
+												<li>과태료 또는 이행강제금의 부과</li>
+												<li>과징금의 부과</li>
+												<li>국세 또는 지방세의 부과</li>
+												<li>부담금 또는 가산금 부과 등의 처분</li>
+												<li>손해배상 또는 부당이익 반환 등의 판결</li>
+												<li>손해배상 또는 부당이득 반환 등에 의한 환수</li>
+											</ul>
+										</div>
+										<div class="sub_section">
+											<h6 class="sub_tit">국민권익위원회 보상금 지급기준</h6>
+											<div class="table_box">
+												<div class="table">
+													<table>
+														<caption>보상금 지급기준 표로 보상대상가액, 지급기준 정보제공</caption>
+														<colgroup>
+															<col style="width:30%;">
+															<col>
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col">보상대상가액</th>
+																<th scope="col">지급기준</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1억원 이하</th>
+																<td class="txt_c">20%</td>
+															</tr>
+															<tr>
+																<th scope="row">1억원 초과 5억원 이하</th>
+																<td class="txt_c">2천만원 + 1억원 초과금액의 14%</td>
+															</tr>
+															<tr>
+																<th scope="row">5억원 초과 20억원 이하</th>
+																<td class="txt_c">7천6백만원 + 5억원 초과금액의 10%</td>
+															</tr>
+															<tr>
+																<th scope="row">20억원 초과 40억원 이하</th>
+																<td class="txt_c">2억2천6백만원 + 20억원 초과금액의 6%</td>
+															</tr>
+															<tr>
+																<th scope="row">40억원 초과</th>
+																<td class="txt_c">3억4천6백만원 + 40억원 초과금액의 4%</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="tbl_btm">
+													<ul class="list shape_type4">
+														<li>개별 공익침해행위로 인하여 산정된 보상금이 20만원 미만인 경우에는 지급하지 아니하고, 보상금의 지급 한도액은 2018.5.1. 신고부터 30억원임</li>
+														<li>보상대상가액 : 부과 또는 환수등을 통하여 국가 또는 지방자치 단체의 직접적인 수입의 회복 또는 증대를 가져오거나 그에 관한 법률관계가 확정된 금액</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="sub_section">
+											<h6 class="sub_tit">보상금 지급절차</h6>
+											<div class="img_box">
+												<img src="../../asset/rh-kr/images/img_payment_procedure.jpg" alt="" class="pc_content">
+												<img src="../../asset/rh-kr/images/img_payment_procedure_m.jpg" alt="" class="m_content">
+												<div class="blind">
+													<ol>
+														<li>신청자(지급신청)</li>
+														<li>공익신고 운영팀(접수, 사실확인)</li>
+														<li>보상심의 위원회(심의,의결)</li>
+														<li>전원위원회(지급여부 및 금액결정)</li>
+														<li>공익신고 운영팀(위원회 결정내용 통보)</li>
+														<li>공익신고 운영팀(보상금 지급)</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										<div class="sub_section">
+											<h6 class="sub_tit">보상금 신청 기한</h6>
+											국가 또는 지방자치단체의 수입의 회복이나 증대에 관한 법률관계가 확정되었음을 안 날부터 3년 이내, 그 법률 관계가 확정된 날부터 5년 이내<br>
+											(다만, 2021.10.21. 이전 접수된 공익신고의 경우에는 법률관계가 확정되었음을 안 날부터 2년 이내, 그 법률 관계가 확정된 날부터 5년 이내)
+										</div>
+										<div class="sub_section">
+											<h6 class="sub_tit">보상금 상담 및 신청방법</h6>
+											<ul class="list shape_type1">
+												<li>전화 : (국번없이) 110 또는 1398</li>
+												<li>우편 : (30102) 세종특별자치시 도움5로 20 정부세종총사 7동, 국민권익위원회 신고자보상과</li>
+												<li>팩스 : 044-200-7949</li>
+												<li>온라인 : 청렴포털_부패공익신고 홈페이지 “상담신청” 및 "보상신청"</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 공익신고대상 및 보호보상제도 안내 팝업 -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

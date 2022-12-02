@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(10);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">해외채권 회수불능 확인</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-해외채권회수불능확인-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-해외채권회수불능확인-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-해외채권회수불능확인-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="top_info_box bg_info15">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">해외채권 회수불능 확인</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									법인세법 시행령 19조의2에 의거 물품의 수출 또는 외국에서의 용역 제공으로 발생한 채권에 대하여 공사가 회수불능확정 채권임을
+									확인하는 서비스
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">확인요건</h4>
+							<ul class="list shape_type1">
+								<li><strong class="bold">아래의 시행규칙 내용 중 어느 하나에 해당하는 <span class="color_red">증빙서류</span>를
+										제출하는 경우에 한하여 한국무역보험공사가 회수불능확정 채권임을 확인할 수 있습니다.</strong></li>
+								<li><strong class="bold">[법인세법 시행규칙] 제10조의 4(회수불능 사유 및 회수불능 확정채권의 범위)</strong>
+									<ul class="list shape_type2">
+										<li>채무자의 <span class="bold">파산ㆍ행방불명 또는 이에 준하는 불가항력</span>으로 채권회수가 불가능함을
+											<span class="bold">현지의 거래은행ㆍ상공회의소 또는 공공기관이 확인</span>하는 경우</li>
+										<li>거래당사자 간에 분쟁이 발생하여 <span class="bold">중재기관ㆍ법원 또는 보험기관 등이 채권금액을 감면</span>하기로 <span
+												class="color_red bold">결정</span>하거나 채권금액을 그 소요경비로 하기로 <span class="color_red bold">확정</span>한
+											경우<br>
+											(채권금액의 일부를 감액하거나 일부를 소요경비로 하는 경우에는 그 감액되거나 소요경비로 하는 부분으로 한정한다)</li>
+										<li>채무자의 <span class="bold">인수거절ㆍ지급거절</span>에 따라 채권금액의 회수가 불가능하거나 <span class="bold">불가피하게 거래당사자
+												간의 합의</span>에 따라 채권금액을 감면하기로 한 경우로서 이를 <span class="bold">현지의
+												거래은행ㆍ검사기관ㆍ공증기관 또는 공공기관이 <span class="color_red">확인</span></span>하는 경우(채권금액의 일부를 감액한 경우에는 그 감액된
+											부분으로 한정한다)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

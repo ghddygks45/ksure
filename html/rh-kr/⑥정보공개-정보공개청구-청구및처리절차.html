@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">청구 및 처리절차</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">청구 및 접수</h4>
+							청구인은 청구하고자 하는 정보를 보유·관리하고 있는 공공기관에 「정보공개 청구서」를 제출합니다.
+							<div class="box_border bg_lightgray2 sm-mt-10 lg-mt-15">
+								<ul class="list shape_type1">
+									<li>
+										<span class="bold">청구인의 이름·주민등록번호 주소</span>
+										<p class="mt-5">(법인인 경우 당해 법인명 및 대표자의 이름, 외국인의 경우 여권·외국인의 등록번호)</p>
+									</li>
+									<li>
+										<span class="bold">청구하는 정보의 내용, 사용목적 및 공개방법</span>
+										<ul class="list shape_type2 mt-5">
+											<li>정보공개청구서는 공공기관에 「직접출석」하여 제출하거나 「우편·모사 전송」 또는 「컴퓨터 통신」에 의하여 제출할 수 있습니다.</li>
+											<li>「2인 이상 다수인」이 공동으로 정보공개를 청구하는 때에는 「1인」의 대표자를 선정하여 청구하여야 합니다.</li>
+											<li>공공기관이 정보공개청구서를 접수한 때에는 「정보공개처리대장」에 기록하고 청구인에게 접수증을 교부합니다.</li>
+											<li>정보공개청구서를 접수한 주관부서(문서과)는 이를 담당부서(처리과) 또는 소관 기관에 이송 합니다.</li>
+											<li>담당자 : 성과평가팀 김수정 (Tel. 02-399-7304) / 김보연 (Tel. 02-399-6594)</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="btn_wrap txt_c">
+								<a href="⑥정보공개-정보공개청구-공공기관정보청구.html" class="btn_link_site bg_red ico_arrow_w">공공기관 정보청구 바로가기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">공개여부 결정</h4>
+							공공기관(담당부서 : 처리과)은 청구를 받은 날부터 "10일"이내(부득이한 경우 10일 연장 가능)에 공개여부를 결정합니다.
+							<div class="sub_section sm-mt-13 lg-mt-20">
+								<h5 class="sub_tit">제3자의 의견청취</h5>
+								공개대상정보가 제3자와 관련이 있는 경우 공개 청구된 사실을 제3자에게 「지체없이」통지 하고, 필요시 제3자의 의견을 청취하여야 합니다.
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">정보생산기관의 의견청취</h5>
+								공개청구된 정보가 다른 공공기관이 생산한 정보일 때에는 당해 정보를 생산한 공공기관의 의견을 들어 공개여부를 결정합니다.
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">제3자의 비공개요청</h5>
+								공개청구된 사실을 통지받은 제3자는 의견이 있을 경우 통지받은 날부터 "3일" 이내에 당해 공공 기관에 공개하지 아니할 것을 요청할 수 있습니다.
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">정보공개심의회의 심의</h5>
+								공공기관은 정보공개여부를 심의하기 위하여 정보공개심의회를 설치·운영합니다. 정보공개심의회의 심의사항은 다음과 같습니다.
+								<ul class="list shape_type2 sm-mt-5 lg-mt-10 pl-10">
+									<li>공공기관의 장이 단독으로 공개청구된 정보의 공개여부를 결정하기 곤란한 사항</li>
+									<li>이의신청사항</li>
+									<li>기타 정보공개제도의 운영에 관한 사항</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">공개여부 결정의 통지</h4>
+							공공기관이 공개 청구된 정보에 대한 공개여부를 결정한 때에는 청구인에게 「지체없이 서면」으로 통지합니다.
+							<div class="sub_section sm-mt-13 lg-mt-20">
+								<h5 class="sub_tit">공개결정시의 통지</h5>
+								공개일시, 공개장소, 공개방법, 수수료의 금액 및 납부방법 등을 명시하여 청구인에게 통지하여야 합니다.
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">비공개결정시의 통지</h5>
+								공공기관은 정보의 비공개결정을 한 때에는 그 내용을 청구인에게 「지체없이 서면」 으로 통지합니다. 이 경우 비공개사유·불복방법 및 불복절차를 명시하여야 합니다.
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

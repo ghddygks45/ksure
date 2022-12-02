@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(7, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">안전관리체계</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-안전보건경영-CEO안전보건경영방침.html">CEO 안전보건경영 방침</a></li>
+							<li><a href="①공사소개-안전보건경영-안전관리체계.html" class="active">안전관리체계</a></li>
+							<li><a href="①공사소개-안전보건경영-주요활동.html">주요활동</a></li>
+							<li><a href="①공사소개-안전보건경영-위험신고.html">위험신고</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">안전 관련 조직도 및 책임자</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">노·사 공동의 산업안전보건위원회 하에 안전 및 보건 관련 업무별 전담라인 운영</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/img_safe_process.jpg" alt="하단에 내용 참고 바랍니다.">
+									<a href="../../asset/rh-kr/images/img_report_process.jpg" class="btn_img_size">크게보기</a>
+									<div class="blind">
+										<h6>사장</h6>
+										<ul>
+											<li><em>안전관리반(안전관리자, 안전보괄총괄)</em>
+												<span>전사 안전보건관리 계획수립, 교육 등</span>
+												<ul>
+													<li>안전관리 전문기관<sup>(주1)</sup></li>
+													<li>보건관리 전문기관<sup>(주1)</sup></li>
+													<li>산업 보건의<sup>(주1)</sup></li>
+												</ul>
+											</li>
+											<li>산업안전보건위원회</li>
+											<li>
+												<strong>안전보건관리책임자(부사장, 안전보건총괄 책임자 겸임)</strong>
+												<ul>
+													<li>명예산업안전감독관</li>
+													<li>안전보건협의체</li>
+												</ul>
+												<ul>
+													<li><em>선림관리감독자(운영지원부장)</em>
+														<ul>
+															<li><em>안전보건담장자(안전경영팀)</em>
+																법정검사, 시설관리
+															</li>
+														</ul>
+													</li>
+													<li><em>관리감독자(인사부장)</em>
+														<ul>
+															<li><em>안전보건담당자(인사팀)</em>
+																장애인 임산부 지원제도
+															</li>
+															<li><em>안전보건담당자(급여후생팀)</em>
+																건강검진, 심리상담, 산업재해 등
+															</li>
+														</ul>
+													</li>
+													<li><em>관리감독자(부, 실, 지사장 등)</em>
+														<ul>
+															<li><em>안전보건담당자(안전보건지킴이)</em>
+																소관부서 안전보건관리
+															</li>
+														</ul>
+													</li>
+													<li><em>관리감독자(관리소장)</em>
+														<ul>
+															<li><em>안전보건담당자(시설관리직)</em>
+																기계, 전기, 방제, 미화, 보안
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="sm-mt-10 lg-mt-15">
+									<sup class="color_red lg-fs-16">*<span class="blind">주1</span></sup> 안전관리자를 보좌하여 공사 안전 및 보건부문
+									증진을 위해
+									외부 전문기관과
+									연간
+									자문계약 체결
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

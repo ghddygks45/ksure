@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar04.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">불만</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="epeople sm-mb-20 lg-mb-40">
+							<h4><span class="blind">국민신문고 www.epeople.go.kr</span></h4>
+							<p>
+								민원, 국민제안, 정책토론 등 국민 참여 마당은 행정기관 민원서비스 통합에 따라 국민권익위원회에서 운영하는 국민신문고(www.epeople.go.kr)를 통해 서비스하고 있습니다. /
+								국민신문고 문의 : 1600-8172
+							</p>
+						</div>
+
+						<div class="top_info_box bg_info03">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">한국무역보험공사 및 직원에 대한 칭찬과 격려를 하실 수 있는 코너입니다.</strong>
+								<ul class="list shape_type1 sm-mt-7 lg-mt-10">
+									<li>불만의 사실 확인을 위해 필요하오니 성명, 주소, 연락처를 정확히 입력해주시기 바랍니다.</li>
+									<li>익명 작성 시 접수하지 않습니다.</li>
+									<li>처리결과는 E-mail이나 전화를 통해 개별적으로 알려드립니다.</li>
+								</ul>
+								<div class="sm-mt-10 lg-mt-17">
+									<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup('popup1');return false;">고객 주요불만
+										보기</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">개인정보 수집 및 이용동의</h4>
+							<div class="privacy_agree">
+								<div class="agree_txt">
+									<ul class="list shape_type1">
+										<li class="bold">개인정보의 수집 및 이용 목적
+											<p class="txt_margin fwl color_default">민원인의 신원확인, 민원사항 확인, 사실조사를 위한 연락·통지, 처리결과 통보</p>
+										</li>
+										<li class="bold">수집하는 개인정보의 항목
+											<p class="txt_margin fwl color_default">[필수정보] 성명, 연락처, 이메일</p>
+										</li>
+										<li class="bold">개인정보의 보유 및 이용기간
+											<p class="txt_margin fwl color_default">민원사무 처리의 종료시까지 보유하며 종료 후에는 사고조사, 분쟁해결, 민원처리, 법령상 의무이행 만을
+												위하여
+												보유·이용됩니다.</p>
+										</li>
+										<li class="bold">개인정보보호법 제15조 제2항 제4조(동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익이 있는 경우에는 그 불이익의 내용)에 따라서
+											동의를
+											거부할 수 있으나 거부 시에는 홈페이지 글쓰기의 제한 등 일부 서비스의 이용이 제한될 수 있음을 알려드립니다.</li>
+									</ul>
+								</div>
+								<div class="agree_check_box">
+									<div class="ag_check">
+										<span class="ck-lb">
+											<input type="checkbox" id="ck2" name="chk2" class="blind">
+											<label for="ck2">위 내용에 동의합니다.</label>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="lg-mt-30 sm-mt-20 bold txt_c">
+							휴대폰 본인인증 후 작성하실 수 있습니다.<br class="m_content">
+							입력하신 휴대전화 번호는 별도로 저장되지 않습니다.
+						</div>
+
+						<!-- btn -->
+						<div class="btn_wrap">
+							<div class="txt_c">
+								<a href="④고객참여-칭찬불만-불만-작성.html" class="btn md bg_red">휴대폰 인증하기</a>
+							</div>
+						</div>
+						<!-- // btn -->
+
+						<!-- 고객 주요불만 팝업 -->
+						<div class="layer_popup_box" data-popup="popup1">
+							<div class="popup popup_size_1000" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">고객 주요불만</h4>
+								</div>
+								<div class="popup_content">
+									<div class="faq_list">
+										<ul>
+											<li>
+												<a href="#;" class="q_box active"><span class="blind">질문</span>보증서가 발급되는데 왜 이렇게 시간이 오래 걸리나요?</a>
+												<div class="a_box">
+													<span class="blind">답변</span>
+													보증서의 발급을 위해서는 여러 심사 과정을 거치게 됩니다(심사 과정 종목 설명 참조). 수출자의 재무제표 분석, 제출 서류 검토, 실사 과정 등을 거쳐야 하기 때문에
+													일반적으로 신청시부터 발급시까지 평균 1개월의 시간이 소요되고 있습니다. 최대한 심사 시간을 단축하기 위해 심사 담당직원 모두가 최선을 다하고 있는 점 양해 부탁드리며,
+													보다 빠른 서비스를 제공하기 위해 노력하겠습니다.
+												</div>
+											</li>
+											<li>
+												<a href="#;" class="q_box"><span class="blind">질문</span>(보증종목)한도가 왜 이정도 밖에 책정되지 않나요?</a>
+												<div class="a_box">
+													<span class="blind">답변</span>
+													국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+													에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+													기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+													체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+													직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+													서” 라고 할 수 있습니다.
+												</div>
+											</li>
+											<li>
+												<a href="#;" class="q_box"><span class="blind">질문</span>담당자가 빈번하게 교체되어 업무처리에 불편이 많습니다.</a>
+												<div class="a_box">
+													<span class="blind">답변</span>
+													국가직무능력표준(NCS)은 『자격기본법』 에서 “산업현장
+													에서 직무를 성공적으로 수행하기 위하여 요구되는 지식·
+													기술·소양 등의 내용을 국가가 산업부문별, 수준별로
+													체계화한 것” 이라 정의하고 있으며, 우리나라 대부분의
+													직업에서 필요한 직무능력을 담고 있는 “산업현장의 지침
+													서” 라고 할 수 있습니다.
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="pagination">
+										<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+										<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+										<ul class="page_num">
+											<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+											<li><a href="#;">2</a></li>
+											<li><a href="#;">3</a></li>
+											<li><a href="#;">4</a></li>
+											<li><a href="#;">5</a></li>
+										</ul>
+										<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+										<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 고객 주요불만 팝업 -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(7, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">혁신성장기업 특례지원</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">혁신성장기업 특례지원</h4>
+							혁신성장정책금융센터 선정 혁신성장 공동기준 품목 업종을 영위하는 중소중견기업 등이 수출을 원활하게 이행할 수 있도록 무역보험(보증)을 지원
+						</div>
+						<div class="section">
+							<h4 class="tit">지원대상</h4>
+							<div class="des_list_box one_line_arr">
+								<div class="des_list bg_des_building">
+									<h5 class="des_tit">혁신성장기업</h5>
+									혁신성장정책금융센터 선정 혁신성장
+									공동기준 품목 업종을 영위하는 기업
+								</div>
+								<div class="des_list des_corp01">
+									<h5 class="des_tit">수출초보기업</h5>
+									연간 수출실적이 미화 50만불 이하<br class="pc_content">
+									(업력 5년 이내인 경우 미화 100만불 이하)<br class="pc_content">
+									기업 중 수출계약을 보유한 기업
+
+								</div>
+								<div class="des_list des_corp02">
+									<h5 class="des_tit">수출급증기업</h5>
+									연간 수출실적이 미화 50만불 이하<br class="pc_content">
+									(업력 5년 이내인 경우 미화 100만불 이하)<br class="pc_content">
+									기업 중 수출계약을 보유한 기업
+
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">세부 내용</h4>
+							<div class="table">
+								<table>
+									<caption>세부 내용 표로 특별지원 구분, 수출신용보증(선적전, Nego, 매입), 수출보증보험 정보 제공</caption>
+									<colgroup>
+										<col style="width:23%;">
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">특별지원 구분</th>
+											<th scope="col">수출신용보증(선적전, Nego, 매입)</th>
+											<th scope="col">수출보증보험</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">공통요건</th>
+											<td colspan="2">혁신성장기업·수출초보기업·수출급증기업으로 종목별 지원조건을 충족하는 중소중견기업</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">종목별 요건</th>
+											<td>보증제한* 또는 책정가능한도 부족 등<br>(* 매출액 대비 차입금 비율 /부채비율 과다 등)</td>
+											<td>책정가능한도 부족 등</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="sm-mt-5 lg-mt-10">※ 수출자(대표자 및 연대보증인 포함)가 신용관리대상정보의 등록사유를 발생시킨 경우, 부실자료를 제출한 기업, 대출금을 연체한 기업,
+								휴폐업상태의 기업 등은 지원에서 배제될 수 있습니다</p>
+						</div>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2">
+								<ol class="ico_process">
+									<li class="use_step1">
+										<strong>보증/보험 지원요청</strong>
+										(수출기업)
+									</li>
+									<li class="use_step2">
+										<strong>인수제한사유 검토</strong>
+										(공사(영업부서))
+									</li>
+									<li class="comp_step3">
+										<strong>(일반적 절차로 지원 불가시)혁신성장 특례인수위원회 부의요건 검토</strong>
+										(공사(영업부서))
+									</li>
+									<li class="use_step14">
+										<strong>(부의요건 충족 시) 혁신성장 특례인수위원회 상정</strong>
+										(공사(본사))
+									</li>
+									<li class="use_step15">
+										<strong>지원여부 결정 (성장가능성 및 수출이행능력중심 심사)</strong>
+										(혁신성장 특례인수위원회)
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

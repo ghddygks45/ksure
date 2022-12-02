@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단기수출보험(중소중견Plus+)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-제도운영예시.html" class="active">제도운영예시</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(중소중견Plus+)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">보험계약 예시</h4>
+							<div class="sub_section">
+								<div class="tbl_tit">
+									<div class="l">
+										<h5 class="sub_tit">(예시1) 연간 수출실적 U$1백만 중소기업</h5>
+									</div>
+									<div class="r">(환율 @1,000원 가정)</div>
+								</div>
+								<div class="table">
+									<table class="m_scroll">
+										<caption>보험계약 예시 표로 구분, 책임금액, 보험료, 비고 정보 제공</caption>
+										<colgroup>
+											<col>
+											<col style="width: 13%;">
+											<col style="width: 15%;">
+											<col style="width: 15%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="2">구분</th>
+												<th scope="col">책임금액</th>
+												<th scope="col">보험료</th>
+												<th scope="col">비고</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="txt_c">
+												<th scope="row" rowspan="2">기본위험<br>(U$500천범위)</th>
+												<th scope="row">수입자 위험</th>
+												<td>U$400천</td>
+												<td>3.6백만원</td>
+												<td>(U$300천×0.8%+U$100천×1.2%)×1,000 주1)</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">신용장 위험</th>
+												<td>U$100천</td>
+												<td>0.2백만원</td>
+												<td>U$100천 × 0.2% x 1,000)</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">선택위험<br>(U$1백만범위)</th>
+												<th scope="row">수입국 위험</th>
+												<td>U$500천</td>
+												<td>0.1백만원</td>
+												<td>U$500천 × 0.02% x 1,000</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row" colspan="2">책임금액 합계</th>
+												<td colspan="3">U$1백만</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row" colspan="2">보험료 합계</th>
+												<td colspan="3">3.9백만원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+									<li>주1) 수입자위험 책임금액에 대해 구간별 누진요율 적용</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<div class="tbl_tit">
+									<div class="l">
+										<h5 class="sub_tit">(예시2) 연간 수출실적 U$10백만 중견기업</h5>
+									</div>
+									<div class="r">(환율 @1,000원 가정)</div>
+								</div>
+								<div class="table">
+									<table class="m_scroll">
+										<caption>보험계약 예시 표로 구분, 책임금액, 보험료, 비고 정보 제공</caption>
+										<colgroup>
+											<col>
+											<col style="width: 13%;">
+											<col style="width: 15%;">
+											<col style="width: 15%;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="2">구분</th>
+												<th scope="col">책임금액</th>
+												<th scope="col">보험료</th>
+												<th scope="col">비고</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="txt_c">
+												<th scope="row" rowspan="2">기본위험<br>(U$300천범위)</th>
+												<th scope="row">수입자 위험</th>
+												<td>U$200천</td>
+												<td>2백만원</td>
+												<td>U$200천 × 1.0% x 1,000</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">신용장 위험</th>
+												<td>U$100천</td>
+												<td>0.2백만원</td>
+												<td>U$100천 × 0.2% x 1,000</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">선택위험<br>(U$1백만범위)</th>
+												<th scope="row">수입국 위험</th>
+												<td>U$500천</td>
+												<td>0.1백만원</td>
+												<td>U$200천 × 1.0% x 1,0000</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row" colspan="2">책임금액 합계</th>
+												<td colspan="3">U$800천</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row" colspan="2">보험료 합계</th>
+												<td colspan="3">2.3백만원</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보험사고 발생</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur_sei08.jpg"
+									alt="수출자와 수입자간 보험사고 발생이 3월 15일 발생했다고 가정했을 때 수출자가 사고발생 통지를 4월 1일 K-SURE에 통보를 했고 K-SURE가 수입자에게 사건조사 지시를 4월 1일부터 5월 15일까지 진행을 하는데 도중 수출자가 K-SURE에게 5월 1일 보험금 지급 청구를 요청하고나면 사건조사가 끝난 시점에 K-SURE에서 수출자에게 보험금을 지급합니다. 그리고 K-SURE에서 수입자에게 채권회수절차를 진행하게 됩니다.">
+								<a href="../../asset/rh-kr/images/img_insur_sei08.jpg" class="btn_img_size">크게보기</a>
+							</div>
+							<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+								<li> 보험사고 발생 : 손실 2.0억원(무신용장 방식)</li>
+								<li>K-SURE는 수출자에게 1.6억원 지급</li>
+							</ul>
+							<div class="sm-mt-5 lg-mt-10 color_red">※ 수입자 위험 책임금액 : 1.6억원</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

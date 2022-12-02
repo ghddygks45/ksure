@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Overseas Representative Offices</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="img_box">
+								<img src="../../asset/rh-en/images/img_map_foreign.png" alt="" class="pc_content">
+								<img src="../../asset/rh-en/images/img_map_foreign_m.png" alt="" class="m_content">
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Overseas Representative Offices</h4>
+							<div class="foreign_branch_list">
+								<div class="branch_box">
+									<div class="flag_box us">
+										<h5 class="name">USA</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Los Angeles Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>915 Wilshire Blvd. Suite 1640 Los Angeles, CA 90017 USA
+											</li>
+											<li><span class="fwr color_black">Tel : </span>+1-213-622-4314, 4315</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box us">
+										<h5 class="name">USA</h5>
+									</div>
+									<div class="desc_box">
+										<strong>New York Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>460 Park Ave. 21st Floor NEW YORK, NY 10022, U.S.A</li>
+											<li><span class="fwr color_black">Tel : </span>+1-212-355-2505</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box cn">
+										<h5 class="name">China</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Beijing Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Room 2902, A Layer 29, Hongtai East Puxiang Center, Wangjing, Science Technology Business
+												Park, Chaoyang Dist, Beijing 100102, CHINA</li>
+											<li><span class="fwr color_black">Tel : </span>+86-10-6410-6437, 6438, 6439</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box br">
+										<h5 class="name">Brasil</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Sao Paulo Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Alameda Santos, 880, 5°Andar Conj. 52/53 CEP:01418-100- Cerqueira Cesar, Sao Paulo SP, Brasil
+											</li>
+											<li><span class="fwr color_black">Tel : </span>+55-11-3284-1105, 3285-1951</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box fr">
+										<h5 class="name">France</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Paris Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>45 rue Pierre Charron, 75008 Paris, France</li>
+											<li><span class="fwr color_black">Tel :</span>+33-09-8801-7766/67</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box cn">
+										<h5 class="name">China</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Shanghai Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Room 2208~09, Maxdo Center, No 8, Xingyi Road, Shanghai, 200336, CHINA</li>
+											<li><span class="fwr color_black">Tel : </span> +86-21-5208-1181, 1182</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box vn">
+										<h5 class="name">Vietnam</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Ho Chi Minh City Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Diamond Plaza #1207, 34 Le Duan St., Dist.1, Ho ChiMinh City, Vietnam</li>
+											<li><span class="fwr color_black">Tel : </span> +84-28-3824-6844,6845</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box id">
+										<h5 class="name">Indonseia</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Jakarta Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Wisma GKBI 21st. Fl., Suite2104, Jl. Jendral Sudirman Kav.28, Jakarta 10210 Indonesia</li>
+											<li><span class="fwr color_black">Tel : </span>+62-21-570-5565</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box in">
+										<h5 class="name">India</h5>
+									</div>
+									<div class="desc_box">
+										<strong>New Delhi Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Unit 306-307, 3rd Floor, Tower A, Emaar Digital Bldg, Golf Course Ext. Road, Sector 61,
+												Gurugram, Haryana122102, India</li>
+											<li><span class="fwr color_black">Tel : </span>+91-12-4481-6193~6</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box pa">
+										<h5 class="name">Panama</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Panama Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>KSURE Panama Corp. Calle 50, Torre Global Bank, Piso 33, oficina 3304, Panama City, Panama.
+											</li>
+											<li><span class="fwr color_black">Tel : </span> +507-394-9170, 9171</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box jp">
+										<h5 class="name">Japan</h5>
+									</div>
+									<div class="desc_box ru">
+										<strong>Tokyo Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Room Number 1056. South Tower 10th Fl. Yurakucho Denki Bldg. 7-1 Yurakucho 1-chome,
+												chiyoda-ku, Tokyo, Japan</li>
+											<li><span class="fwr color_black">Tel : </span>+81-3-3216-0601, 0677</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box ru">
+										<h5 class="name">Russia</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Moscow Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>123610, Moscow, Krasnopresnenskaya nab.,12 Mezhdunarodnaya-2, office 1650</li>
+											<li><span class="fwr color_black">Tel : </span> +7-495-258-1539, 1540, 1541</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box ae">
+										<h5 class="name">UAE</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Dubai Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Unit OT 17-38 Central Park Towers, DIFC, P.O. Box 507114, Dubai, UAE</li>
+											<li><span class="fwr color_black">Tel : </span>+971-4-399-1138</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box mx">
+										<h5 class="name">Mexico</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Mexico City Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Capital Reforma Torre B Piso 17-A, Paseo de la Reforma 250, Col. Juarez, Del. Cuauhtemoc,
+												Mexico, D.F. 06600</li>
+											<li><span class="fwr color_black">Tel : </span>+52-55-9155-7686, 7681</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box cn">
+										<h5 class="name">China</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Chengdu Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Room 2002, Yintai Center Tower 3, 1199 North Section Tianfu Avenue, Hi-Tech District, Chengdu,
+												610041, China</li>
+											<li><span class="fwr color_black">Tel : </span>+86-28-8605-9650, 9651</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box vn">
+										<h5 class="name">Vietnam</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Hanoi Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Unit O2307, 23FL, Keangnam Hanoi Landmark Tower, Plot E6, Cau Giay New Urban Area, Me Tri
+												Ward, Nam TuLiem District, Hanoi, Vietnam</li>
+											<li><span class="fwr color_black">Tel : </span>+84-28-3824-6844,6845</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box pl">
+										<h5 class="name">Poland</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Warsaw Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Focus Part C 9th floor, Aleja Armii Ludowej 26, 00-609 Warszawa Poland</li>
+											<li><span class="fwr color_black">Tel : </span>+48-22-579-6523</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box es">
+										<h5 class="name">Spain</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Madrid Representative Office</strong>
+										<ul class="list shape_type1">
+											<li>Calle Agustín de Foxá 27, 3Planta B, 28036 Madrid, España</li>
+											<li><span class="fwr color_black">Tel : </span>+34-919-919-877</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">KBC Detached Service</h4>
+							<div class="foreign_branch_list">
+								<div class="branch_box">
+									<div class="flag_box saf">
+										<h5 class="name">South Afirca</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Johannesburg</strong>
+										<ul class="list shape_type1">
+											<li>18th Floor, Sandton City Office Tower, Cnr. Rivonia Road & 5th Street, Sandton, PO Box 786703,
+												Sandton City 2146, South Africa</li>
+											<li><span class="fwr color_black">Tel : </span>+27-11-784-0607</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box sg">
+										<h5 class="name">Singapore</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Singapore</strong>
+										<ul class="list shape_type1">
+											<li>7 Temasek Boulevard #13-02 Suntec Tower One Singapore 038987</li>
+											<li><span class="fwr color_black">Tel : </span>+65-6715-9740</li>
+										</ul>
+									</div>
+								</div>
+								<div class="branch_box">
+									<div class="flag_box sa">
+										<h5 class="name">Saudi Arabia</h5>
+									</div>
+									<div class="desc_box">
+										<strong>Riyadh</strong>
+										<ul class="list shape_type1">
+											<li>105 Legend Tower, Tahlia Street North, King Fahad Road, P.O.Box 220297, Riyadh 11311 Kingdom
+												of Saudi Arabia</li>
+											<li><span class="fwr color_black">Tel : </span>+966-11-273-4496</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

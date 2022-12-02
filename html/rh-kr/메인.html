@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- main css -->
+	<link rel="stylesheet" href="../../asset/rh-kr/css/main.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+	<!-- main js -->
+	<script src="../../asset/rh-kr/js/swiper-bundle.min.js"></script>
+	<script src="../../asset/rh-kr/js/main.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap" class="main top_banner">
+
+		<!-- 메인 레이어팝업 -->
+		<div class="main-layer-popup dragging" id="popup2">
+			<div class="layer-popup">
+				<div class="top">
+					K-SURE 알림
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">닫기</span></a>
+				</div>
+				<div class="pop-content">
+					<a href="#;">
+						<img src="../../asset/rh-kr/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+						<img src="../../asset/rh-kr/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+					</a>
+				</div>
+				<div class="btm">
+					<div class="l">
+						<span class="ck-lb">
+							<input type="checkbox" id="ck3" class="blind" onclick="PopupCloseDay(this);">
+							<label for="ck3">오늘 하루 열지 않기</label>
+						</span>
+						<span class="ck-lb">
+							<input type="checkbox" id="ck4" class="blind" onclick="PopupCloseWeek(this);">
+							<label for="ck4">7일간 보지 않기</label>
+						</span>
+					</div>
+					<div class="r">
+						<button type="button" class="popup-close-btn" onclick="closePopup(this);return false;">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 메인 레이어팝업 -->
+
+		<div class="main-layer-popup" id="popup1">
+			<div class="layer-popup">
+				<div class="top">
+					K-SURE 알림
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">닫기</span></a>
+				</div>
+				<div class="pop-content">
+					<div class="slide_area">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									01
+								</div>
+								<div class="swiper-slide">
+									02
+								</div>
+								<div class="swiper-slide">
+									03
+								</div>
+							</div>
+						</div>
+						<div class="swiper-content">
+							<div class="swiper mySwiper2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-kr/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-kr/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-kr/images/img_main_popup_dommy02_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-kr/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-kr/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-kr/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<script>
+							var swiper = new Swiper(".pop-content .mySwiper", {
+								spaceBetween: 10,
+								slidesPerView: 3,
+								freeMode: true,
+								watchSlidesProgress: true,
+								// slidesPerView: "auto",
+							});
+							var swiper2 = new Swiper(".pop-content .mySwiper2", {
+								spaceBetween: 10,
+								navigation: {
+									nextEl: ".swiper-button-next",
+									prevEl: ".swiper-button-prev",
+								},
+								thumbs: {
+									swiper: swiper,
+								},
+							});
+						</script>
+					</div>
+				</div>
+				<div class="btm">
+					<div class="l">
+						<span class="ck-lb">
+							<input type="checkbox" id="ck1" class="blind" onclick="PopupCloseDay(this);">
+							<label for="ck1">오늘 하루 열지 않기</label>
+						</span>
+						<span class="ck-lb">
+							<input type="checkbox" id="ck2" class="blind" onclick="PopupCloseWeek(this);">
+							<label for="ck2">7일간 보지 않기</label>
+						</span>
+					</div>
+					<div class="r">
+						<button type="button" class="popup-close-btn" onclick="closePopup(this);return false;">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+
+		<script>
+			$(function () {
+				// 개발 시 "setTimeout" 제거
+				setTimeout(function () {
+					// 메인 배너 (오늘 하루 보지 않기 체크된 배너 히든 처리)
+					if ($(window).width() >= 1440) {
+						$('.top_banner_wrap').each(function () {
+							var banner = $(this);
+							if (popupGetCookie($(this).attr("id"))) { // '오늘 하루 보지 않기 체크'를 했다면
+								banner.remove();
+								$("#wrap").removeClass('top_banner');
+							} else {
+								banner.show();
+							}
+						});
+					}
+					// 메인, 배너 슬라이드
+					var bannerSwiper = new Swiper(".banner-swiper", {
+						slidesPerView: 1,
+						watchSlidesProgress: true,
+						navigation: {
+							nextEl: ".banner-button-next",
+							prevEl: ".banner-button-prev",
+						},
+					});
+				}, 300)
+			})
+		</script>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<!-- main_quick_nav -->
+			<ul class="main_page_navi">
+				<li>
+					<a href="#sec01" class="navi01 active"><span>프로모션/바로가기</span></a>
+				</li>
+				<li>
+					<a href="#sec02" class="navi02"><span>소식/홍보/정보</span></a>
+				</li>
+				<li>
+					<a href="#sec03" class="navi03"><span>지원사업안내</span></a>
+				</li>
+				<li>
+					<a href="#sec04" class="navi04"><span>공사소개/정보공개</span></a>
+				</li>
+			</ul>
+			<!-- // main_quick_nav -->
+
+			<!-- section 01 -->
+			<section id="sec01" class="sec01">
+				<h3 class="sec_tit blind">프로모션/바로가기</h3>
+				<!-- main slide -->
+				<div class="swiper main_slide">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual01_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								KOREA TRADE INSURANCE CORPORATION 지속가능한 미래를 추구하는 무역·투자·금융 파트너 무역과 해외투자 촉진을 통해 국가경쟁력을 강화하고 국민경제 발전에 이바지
+								하는 한국무역보험공사가 되겠습니다. 자세히 보기
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual02_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								KOREA TRADE INSURANCE CORPORATION 지속가능한 미래를 추구하는 무역·투자·금융 파트너 무역과 해외투자 촉진을 통해 국가경쟁력을 강화하고 국민경제 발전에 이바지
+								하는 한국무역보험공사가 되겠습니다. 자세히 보기
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual03_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								KOREA TRADE INSURANCE CORPORATION 지속가능한 미래를 추구하는 무역·투자·금융 파트너 무역과 해외투자 촉진을 통해 국가경쟁력을 강화하고 국민경제 발전에 이바지
+								하는 한국무역보험공사가 되겠습니다. 자세히 보기
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual04_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								KOREA TRADE INSURANCE CORPORATION 지속가능한 미래를 추구하는 무역·투자·금융 파트너 무역과 해외투자 촉진을 통해 국가경쟁력을 강화하고 국민경제 발전에 이바지
+								하는 한국무역보험공사가 되겠습니다. 자세히 보기
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="하단에 내용을 참고바랍니다." class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual05_pc.jpg" alt="하단에 내용을 참고바랍니다." class="pc_content">
+							</a>
+							<div class="blind">
+								KOREA TRADE INSURANCE CORPORATION 지속가능한 미래를 추구하는 무역·투자·금융 파트너 무역과 해외투자 촉진을 통해 국가경쟁력을 강화하고 국민경제 발전에 이바지
+								하는 한국무역보험공사가 되겠습니다. 자세히 보기
+							</div>
+						</div>
+					</div>
+					<div class="slide_unit">
+						<button type="button" class="swiper-button-prev"><span class="blind">이전 슬라이드</span></button>
+						<button type="button" class="swiper-button-next"><span class="blind">다음 슬라이드</span></button>
+					</div>
+				</div>
+				<!-- // main slide -->
+
+				<!-- quick service -->
+				<div class="inner">
+					<div class="quick_service">
+						<ul class="quick_service_tab">
+							<li><a href="#;" class="active">업무관련 바로가기</a></li>
+							<li><a href="#;">고객지원 바로가기</a></li>
+							<li><a href="#;">유관서비스 바로가기</a></li>
+							<li class="pc_content"><a href="#;">나만의 바로가기</a></li>
+						</ul>
+
+						<ul class="quick_service_cont active">
+							<li><a href="http://www.findsystem.co.kr/fs/FSDSI05R1.pop?instCd=09#" target="_blank" title="새창으로 열림">증빙자료
+									온라인 제출</a></li>
+							<li><a href="#;">각종 신청서류 안내</a></li>
+							<li><a href="#;">수입자 신용조사</a></li>
+							<li><a href="#;">중소중견 특별지원</a></li>
+							<li><a href="#;">보험료 지원</a></li>
+							<li><a href="#;">국외보상</a></li>
+						</ul>
+						<ul class="quick_service_cont">
+							<li><a href="#;">채용공고</a></li>
+							<li><a href="#;">해외채권 회수지원센터</a></li>
+							<li><a href="#;">영업점 안내</a></li>
+							<li><a href="#;">자주하는 질문</a></li>
+							<li><a href="#;">Q&A</a></li>
+							<li><a href="#;">내게 맞는 보험찾기</a></li>
+						</ul>
+						<ul class="quick_service_cont">
+							<li><a
+									href="https://cyber.ksure.or.kr/cyber/websquare/websquare.jsp?w2xPath=/ws5/ui/ZZ/MN/ZZMN0101BK.xml&custSctCd=E100#/ws5/ui/ZZ/MN/ZZMN0102BK.xml"
+									target="_blank" title="새창으로 열림">사이버 영업점_기업고객</a></li>
+							<li><a
+									href="https://cyber.ksure.or.kr/cyber/websquare/websquare.jsp?w2xPath=/ws5/ui/ZZ/MN/ZZMN0101BK.xml&custSctCd=B100"
+									target="_blank" title="새창으로 열림">사이버 영업점_은행고객</a></li>
+							<li><a
+									href="https://cyber.ksure.or.kr/cyber/websquare/websquare.jsp?w2xPath=/ws5/ui/ZZ/MN/ZZMN0101BK.xml&custSctCd=S100#/ws5/ui/ZZ/MN/ZZMN0102BK.xml"
+									target="_blank" title="새창으로 열림">사이버 영업점_특수고객</a></li>
+							<li><a href="https://www.ksure.or.kr:8443/research/" target="_blank" title="새창으로 열림">해외신용정보센터</a></li>
+							<li><a href="#;">환위험관리지원센터</a></li>
+							<li><a href="https://tradesure.ksure.or.kr/index.do" target="_blank" title="새창으로 열림">컨설팅&아카데미 홈페이지</a>
+							</li>
+						</ul>
+						<!-- 나만의 바로가기 설정 전 -->
+						<ul class="quick_service_cont before">
+							<p>
+								나만의 바로가기는 설정 후 이용하실 수 있습니다.
+							</p>
+						</ul>
+						<!-- // 나만의 바로가기 설정 전 -->
+						<!-- 나만의 바로가기 설정 후 -->
+						<ul class="quick_service_cont">
+							<li><a>증빙자료 온라인 제출</a></li>
+							<li><a href="#;">각종 신청서류 안내</a></li>
+							<li><a href="#;">수입자 신용조사</a></li>
+							<li><a href="#;">중소중견 특별지원</a></li>
+							<li><a href="#;">보험료 지원</a></li>
+							<li><a href="#;">국외보상</a></li>
+						</ul>
+						<!-- // 나만의 바로가기 설정 후 -->
+						<a href="#;" class="option_btn" onclick="fn_open_popup('option', this);">설정</a>
+					</div>
+				</div>
+				<!-- // quick service -->
+			</section>
+			<!-- // section 01 -->
+
+			<!-- section 02 -->
+			<section id="sec02" class="sec02">
+				<h3 class="sec_tit">소식/홍보/정보</h3>
+
+				<!-- tab nav -->
+				<div class="swiper tab_nav">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><button type="button" class="tab_btn active" data-tab="sec02_tab00">전체</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab01">공지사항</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab02">주요동정</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab03">뉴스레터</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab04">채용정보</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab05">카드뉴스</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab06">보도자료</button></li>
+					</ul>
+				</div>
+				<!-- //tab nav -->
+
+				<!-- tab wrap -->
+				<div class="tab_wrap">
+					<!-- 전체 -->
+					<div id="sec02_tab00" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">카드뉴스</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">언론보도</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">보도자료</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 전체 -->
+
+					<!-- 공지사항 -->
+					<div id="sec02_tab01" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">공지사항</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">공지사항</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">공지사항</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 공지사항 -->
+
+					<!-- 주요동정 -->
+					<div id="sec02_tab02" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 주요동정 -->
+
+					<!-- 뉴스레터 -->
+					<div id="sec02_tab03" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 뉴스레터 -->
+
+					<!-- 채용정보 -->
+					<div id="sec02_tab04" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 채용정보 -->
+
+					<!-- 카드뉴스 -->
+					<div id="sec02_tab05" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">카드뉴스</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge cardnews">카드뉴스</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">카드뉴스</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge cardnews">카드뉴스</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge cardnews">카드뉴스</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 카드뉴스 -->
+
+					<!-- 보도자료 -->
+					<div id="sec02_tab06" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="수입자 DB확충 개방 안내 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">수입자 DB확충 개방 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 감사실에서는 2022년 6월
+									27일부터 6월 29일까지 3일간 뉴욕지사에
+									대한 종합감사를 실시할 예정입니다.
+									이번 감사는 뉴욕지사 업무전반에 대한
+									점검을 통하여 보다 발전되고 내실 있는 수출
+									지원체제를 구축하기 위한 정기 종합감사입
+									니다.
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">주요동정</div>
+									<div class="news_tit"><a href="#;">「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27)</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="「2021년 기획재정부 주관 공공기관 고객만족도」 우수지사 시상식 개최(5.27) 썸네일">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">주요동정</div>
+								<div class="news_tit"><a href="#;">한국무역보험공사 광주전남지사 이전 안내</a></div>
+								<div class="news_cont">
+									한국무역보험공사 광주전남지사는 보다 나은
+									무역보험 서비스를 제공하기 위하여 아래와
+									같이 사무실을 이전하오니 지사 방문 및 관련
+									업무에 참고하여 주시기 바랍니다.
+									아울러, 사무실 이전에 따른 고객 여러분의
+									불편을 최소화하고자 최선을 다하겠으나
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+								<button type="button" class="btn_play"><span class="blind">재생</span></button>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 보도자료 -->
+				</div>
+				<!-- //tab wrap -->
+			</section>
+			<!-- // section 02 -->
+
+			<!-- section 03 -->
+			<section id="sec03" class="sec03">
+				<h3 class="sec_tit">지원사업 안내</h3>
+
+				<!-- tab nav -->
+				<div class="swiper tab_nav">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><button type="button" class="tab_btn active" data-tab="sec03_tab00">단기성 보험</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab01">신용보증</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab02">중장기성보험</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab03">환변동보험</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab04">수입보험</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab05">중소중견특별지원</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab06">그 외 사업안내</button></li>
+					</ul>
+				</div>
+				<!-- //tab nav -->
+
+				<!-- tab wrap -->
+				<div class="tab_wrap">
+					<!-- 단기성 보험 -->
+					<div id="sec03_tab00" class="tab_box tab03 swiper">
+						<div class="swiper-wrapper">
+							<ul class="swiper-slide">
+								<li class="bg01">
+									<a href="#;">
+										<strong>단기수출보험(선적후)</strong>
+										<p class="pc_content">수출자가 수출대금의 결제기간 2년 이하의 수출계약을 체결하고 물품을 수출한 후, 수입자로 부터 수출대금을 받을 수 없게 된 때에 입게되는
+											손실을
+											보상</p>
+									</a>
+								</li>
+								<li class="bg02">
+									<a href="#;">
+										<strong>단기수출보험(포페이팅)</strong>
+										<p class="pc_content">은행이 포페이팅 수출금융 취급 후 신용장 개설은행으로부터 만기에 수출대금을 회수하지 못하여 입게 되는 손실을 보상</p>
+									</a>
+								</li>
+								<li class="bg03">
+									<a href="#;">
+										<strong>단기수출보험(농수산물패키지)</strong>
+										<p class="pc_content">농수산물 수출 시 발생하는 여러가지 위험을 한번에 보장하는 농수산물 수출기업용 맞춤 상품</p>
+									</a>
+								</li>
+								<li class="bg04">
+									<a href="#;">
+										<strong>단기수출보험(중소중견Plus+)</strong>
+										<p class="pc_content">보험계약자(수출기업)는 연간 보상한도에 대한 보험료를 납부하며 보험계약자가 선택한 담보위험으로 손실이 발생할 때 손실보상</p>
+									</a>
+								</li>
+								<li class="bg05">
+									<a href="#;">
+										<strong>단체보험</strong>
+										<p class="pc_content">단기수출보험(중소중견Plus+)에 단체보험 개념을 도입, 지원기관 또는 단체가 제반 보험계약절차를 진행하여 보험 계약을 체결</p>
+									</a>
+								</li>
+								<li class="bg06">
+									<a href="#;">
+										<strong>수출안전망보험</strong>
+										<p class="pc_content">기존 단체보험 제도를 활용, 특정단체가 보험계약자로써 수출초보 중소기업에 대한 대금미회수 위험을 보장</p>
+									</a>
+								</li>
+							</ul>
+							<ul class="swiper-slide">
+								<li class="bg07">
+									<a href="#;">
+										<strong>서비스종합보험(일시결제방식)</strong>
+										<p class="pc_content">서비스제공 상대방으로부터 서비스대금을 지급받지 못하게 됨으로써 발생하는 손실을 보상하는 제도</p>
+									</a>
+								</li>
+								<li class="bg08">
+									<a href="#;">
+										<strong>단기수출보험(중소Plus+)다이렉트플러스</strong>
+										<p class="pc_content">사이버영업점 전용 비대면 상품 (단, 보험료지원은 기업 소재 지역 담당영업점 문의)</p>
+									</a>
+								</li>
+								<li class="bg09">
+									<a href="#;">
+										<strong>단기수출보험(다이렉트)</strong>
+										<p class="pc_content">사이버영업점 전용 비대면 상품 (단, 보험료지원은 기업 소재 지역 담당영업점 문의)</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="slide_unit">
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 단기성 보험 -->
+					<!-- 신용보증 -->
+					<div id="sec03_tab01" class="tab_box tab03">
+						<ul>
+							<li class="bg10">
+								<a href="#;">
+									<strong>수출신용보증(선적전)</strong>
+									<p class="pc_content">기업이 은행에 대하여 부담하게 되는 상환채무를 한국무역보험공사가 연대보증하는 제도</p>
+								</a>
+							</li>
+							<li class="bg11">
+								<a href="#;">
+									<strong>수출신용보증(선적후)</strong>
+									<p class="pc_content">수출계약에 따라 물품을 선적한 후 금융기관이 환어음 등의 선적서류를 근거로 수출채권을 매입(Nego)하는 경우 K-SURE가 연대보증하는
+										제도
+									</p>
+								</a>
+							</li>
+							<li class="bg12">
+								<a href="#;">
+									<strong>수출신용보증(매입)</strong>
+									<p class="pc_content">중소중견기업이 외상 수출 결제일 전에 수출대금을 조기에 회수 할 수 있도록 지원하는 제도</p>
+								</a>
+							</li>
+							<li class="bg13">
+								<a href="#;">
+									<strong>수출신용보증(포괄매입)</strong>
+									<p class="pc_content">수출이행서류를 근거로 은행으로부터 매입외환 대출을 받은 후, 대출만기에 상환하지 못하는 경우 공사가 은행에 손실을 보상</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- // 신용보증 -->
+					<!-- 중장기성보험 -->
+					<div id="sec03_tab02" class="tab_box tab03 swiper">
+						<div class="swiper-wrapper">
+							<ul class="swiper-slide">
+								<li class="bg14">
+									<a href="#;">
+										<strong>중장기수출보험(선적전)</strong>
+										<p class="pc_content">중장기 수출계약을 체결하고 계약의 효력이 발생한 후에 수출계약에 따라 물품을 수출할 수 없게 된 경우에 입게 되는 손실을 담보</p>
+									</a>
+								</li>
+								<li class="bg15">
+									<a href="#;">
+										<strong>중장기수출보험(공급자신용)</strong>
+										<p class="pc_content">중장기 수출계약을 체결하고 수출을 이행하였으나, 담보하는 위험의 발생으로 수입자가 수출대금을 상환하지 않을 경우에 발생하는 손실을 담보
+										</p>
+									</a>
+								</li>
+								<li class="bg16">
+									<a href="#;">
+										<strong>중장기수출보험(구매자신용)</strong>
+										<p class="pc_content">중장기 수출거래에서 금융기관의 대출원리금 회수불능 위험을 담보</p>
+									</a>
+								</li>
+								<li class="bg17">
+									<a href="#;">
+										<strong>중장기수출보험(구매자신용·채권)</strong>
+										<p class="pc_content">중장기 수출거래에서 수입자가 자금조달을 위해 발행하는 채권(Project Bond)에 대해 공사가 원리금 상환을 보장</p>
+									</a>
+								</li>
+								<li class="bg18">
+									<a href="#;">
+										<strong>해외사업금융보험</strong>
+										<p class="pc_content">해외사업에 필요한 자금을 상환기간 2년 초과 조건으로 공여하는 금융계약을 체결한 후 대출원리금을 상환 받을 수 없게 됨으로써 입게 되는
+											손실을
+											보상하는 제도</p>
+									</a>
+								</li>
+								<li class="bg19">
+									<a href="#;">
+										<strong>해외투자보험(주식,대출금,보증채무)</strong>
+										<p class="pc_content">투자상대국의 비상위험 등으로주식(또는 지분), 배당금, 원리금 등을 회수할 수 없게 되어 입는 손실을 보상</p>
+									</a>
+								</li>
+							</ul>
+							<ul class="swiper-slide">
+								<li class="bg20">
+									<a href="#;">
+										<strong>해외투자보험(투자금융)</strong>
+										<p class="pc_content">국내기업앞 해외자원개발, 해외 M&A 등에 필요한 소요자금을 대출하는 경우, 비상위험 또는 신용위험으로 인한 금융기관의 대출금 미회수위험을
+											담보
+										</p>
+									</a>
+								</li>
+								<li class="bg21">
+									<a href="#;">
+										<strong>해외공사보험</strong>
+										<p class="pc_content">해외공사계약 상대방의 신용위험 발생, 해외공사 발주국 또는 지급국에서의 비상위험 발생에 따라 손실을 입게 된 경우에 그 손실을 보상</p>
+									</a>
+								</li>
+								<li class="bg22">
+									<a href="#;">
+										<strong>서비스종합보험(기성고·연불방식)</strong>
+										<p class="pc_content">국내 수출업체가 서비스 거래를 수출하고 이에 따른 지출비용 또는 확인대가를 회수하지 못함으로써 입게 되는 손실을 보상</p>
+									</a>
+								</li>
+								<li class="bg23">
+									<a href="#;">
+										<strong>수출보증보험</strong>
+										<p class="pc_content">금융기관이 수출보증서를 발행한 후 수입자(발주자)로부터 보증채무 이행청구를 받아 이를 이행함으로써 입게 되는 금융기관의 손실을 보상</p>
+									</a>
+								</li>
+								<li class="bg24">
+									<a href="#;">
+										<strong>이자율변동보험</strong>
+										<p class="pc_content">K-SURE의 중장기 수출보험(구매자신용)에 부보한 금융기관이 이자율 변동에 따라 입게 되는 손실을 보상하고 이익을 환수</p>
+									</a>
+								</li>
+								<li class="bg25">
+									<a href="#;">
+										<strong>수출기반보험(선박, 항공기)</strong>
+										<p class="pc_content">금융기관이 국적외항선사, 항공기 리스사 등에 항공기 구매자금을 대출하고 대출원리금을 회수할 수 없게 된 경우에 발생하는 손실을 보상</p>
+									</a>
+								</li>
+							</ul>
+							<ul class="swiper-slide">
+								<li class="bg26">
+									<a href="#;">
+										<strong>수출기반보험(제조설비)</strong>
+										<p class="pc_content">금융기관이 상환기간 2년 초과의 제조설비 구매자금을 대출하고 대출원리금을 회수할 수 없게 된 경우에 발생하는 손실을 보상</p>
+									</a>
+								</li>
+								<li class="bg27">
+									<a href="#;">
+										<strong>해외자원 개발 펀드보험</strong>
+										<p class="pc_content">해외자원개발사업법상의 자원개발펀드가 해외자원개발사업에 투자하여 손실이 발생하는 경우 손실액의 일부를 보상</p>
+									</a>
+								</li>
+								<li class="bg28">
+									<a href="#;">
+										<strong>환경심사</strong>
+										<p class="pc_content">사회·환경관리계획등을 바탕으로 영향평가 및 저감대책의 적정성 등을 평가하는 일련의 과정</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="slide_unit">
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // 중장기성보험 -->
+					<!-- 환변동보험 -->
+					<div id="sec03_tab03" class="tab_box tab03">
+						<ul>
+							<li class="bg29">
+								<a href="#;">
+									<strong>공통</strong>
+									<p class="pc_content">수출/수입을 통해 외화를 획득 또는 지급하는 과정에서 발생할 수 있는 환차손익을 제거, 사전에 외화금액을 원화로 확정 시킴으로써 환율변동에 따른
+										위험을 Hedge하는 상품</p>
+								</a>
+							</li>
+							<li class="bg30">
+								<a href="#;">
+									<strong>선물환 방식</strong>
+									<p class="pc_content">보험가입시 환율보다 환율 상승시에는 이익금 납부, 환율 하락시에는 보험금을 지급하는 선물환 상품(수출거래 기준)</p>
+								</a>
+							</li>
+							<li class="bg31">
+								<a href="#;">
+									<strong>범위제한선물환</strong>
+									<p class="pc_content">환율하락에 따른 보험금과 환율상승시의 환수금을 일정 범위 이내로 제한하는 상품</p>
+								</a>
+							</li>
+							<li class="bg32">
+								<a href="#;">
+									<strong>범위선물환</strong>
+									<p class="pc_content">일정 범위까지는 환위험을 노출시키고 일정환율 이하로 하락 시 보험금 지급, 일정환율 이상으로 상승 시 환수금 납부하는 상품</p>
+								</a>
+							</li>
+							<li class="bg33">
+								<a href="#;">
+									<strong>옵션형</strong>
+									<p class="pc_content">보험가입시 환율(청약일 시장평균환율)보다 환율 상승시에는 이익금 납부의무를 면제하되, 환율 하락 시 보험금을 지급하는 상품</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- // 환변동보험 -->
+					<!-- 수입보험 -->
+					<div id="sec03_tab04" class="tab_box tab03">
+						<ul>
+							<li class="bg34">
+								<a href="#;">
+									<strong>수입보험(수입자용)</strong>
+									<p class="pc_content">국내수입기업이 선급금 지급조건 수입거래에서 비상위험 또는 신용위험으로 인해 선급금을 회수할 수 없게 된 경우에 발생하는 손실을 보상</p>
+								</a>
+							</li>
+							<li class="bg35">
+								<a href="#;">
+									<strong>수입보험(금융기관용)</strong>
+									<p class="pc_content">금융기관이 수입에 필요한 자금을 수입기업에 대출한 후 대출금을 회수할 수 없게 된 경우에 발생하는 손실을 보상</p>
+								</a>
+							</li>
+							<li class="bg36">
+								<a href="#;">
+									<strong>수입보험(글로벌 공급망)</strong>
+									<p class="pc_content">소재·부품·장비를 제조하는 중소중견기업에게 수입에 필요한 자금을 대출한 후 대출금을 회수할 수 없게 된 경우에 발생하는 손실을 보상하는 제도
+									</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- // 수입보험 -->
+					<!-- 중소중견특별지원 -->
+					<div id="sec03_tab05" class="tab_box tab03">
+						<ul>
+							<li class="bg37">
+								<a href="#;">
+									<strong>TRADE-SURE 컨설팅</strong>
+									<p class="pc_content">경험이 풍부한 컨설턴트를 통해 수출기업별 1:1 맞춤형 무료 컨설팅서비스를 제공하는 사업입니다.</p>
+								</a>
+							</li>
+							<li class="bg38">
+								<a href="#;">
+									<strong>단체보험</strong>
+									<p class="pc_content">중소중견기업은 피보험자로서 수출대금 미회수시 보험금을 수령하는 제도입니다.</p>
+								</a>
+							</li>
+							<li class="bg39">
+								<a href="#;">
+									<strong>수출안전망보험</strong>
+									<p class="pc_content">중소기업(연간 수출 U$10만 이하)에 대한 대금미회수 위험을 보장하는 제도</p>
+								</a>
+							</li>
+							<li class="bg40">
+								<a href="#;">
+									<strong>혁신성장기업 특례지원</strong>
+									<p class="pc_content">공동기준 품목 업종을 영위하는 중소중견기업의 무역보험(보증)을 지원합니다.</p>
+								</a>
+							</li>
+							<li class="bg41">
+								<a href="#;">
+									<strong>일자리 창출 우수기업 특별지원</strong>
+									<p class="pc_content">일자리 창출 우수기업 대상 무역보험 한도 우대 및 보험료 할인해주는 제도입니다.</p>
+								</a>
+							</li>
+							<li class="bg42">
+								<a href="#;">
+									<strong>수출초보기업 지원</strong>
+									<p class="pc_content">정부의 지원이 필요한 수출초보기업을 중점적으로 육성하기 위한 프로그램 입니다.</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- // 중소중견특별지원 -->
+					<!-- 그 외 사업안내 -->
+					<div id="sec03_tab06" class="tab_box tab03">
+						<ul>
+							<li class="bg43">
+								<a href="#;">
+									<strong>해외채권 회수지원 서비스</strong>
+									<p class="pc_content">수출거래에서 대금을 회수하지 못할 경우 K-SURE의 축적된 노하우를 통해 미수채권 회수를 지원</p>
+								</a>
+							</li>
+							<li class="bg44">
+								<a href="#;">
+									<strong>해외채권 회수불능 확인</strong>
+									<p class="pc_content">법인세법 시행령 19조의2에 의거 물품의 수출 또는 외국에서의 용역 제공으로 발생한 채권에 대하여 공사가 회수불능확정 채권임을 확인하는 서비스
+									</p>
+								</a>
+							</li>
+							<li class="bg45">
+								<a href="#;">
+									<strong>투자위험보증사업</strong>
+									<p class="pc_content">해외자원개발투자회사가 해외자원 개발사업에 투자하여 비상위험, 신용위험으로 입게 되는 손실의 일부를 보상</p>
+								</a>
+							</li>
+							<li class="bg46">
+								<a href="#;">
+									<strong>국외기업 신용조사 서비스</strong>
+									<p class="pc_content">K-SURE의 해외지사 및 전 세계 신용조사기관과 연계하여 해외소재 기업의 신용조사를 실시한 후 의뢰인에게 신용조사 보고서를 제공</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- // 그 외 사업안내 -->
+				</div>
+				<!-- // tab wrap -->
+			</section>
+			<!-- // section 03 -->
+
+			<!-- section 04 -->
+			<section id="sec04" class="sec04">
+				<div class="inner">
+					<h3 class="sec_tit">공사소개/정보공개</h3>
+
+					<!-- 팝업존 -->
+					<div class="popupzone">
+						<h4 class="sec_sub_tit blind">팝업존</h4>
+
+						<div class="swiper popup_wrap">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#;">
+										<img src="../../asset/rh-kr/images/img_popup_thumb01.png" alt=''>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#;">
+										<img src="../../asset/rh-kr/images/img_popup_thumb01.png" alt=''>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#;">
+										<img src="../../asset/rh-kr/images/img_popup_thumb01.png" alt=''>
+									</a>
+								</div>
+							</div>
+
+							<div class="slide_unit">
+								<div class="swiper-paging">
+									<span class="paging_num num_start">1</span> /
+									<span class="paging_num num_end"><span class="blind">슬라이드 총 갯수</span></span>
+								</div>
+								<div class="swiper-button-wrap">
+									<button type="button" class="btn_prev"><span class="blind">이전 슬라이드</span></button>
+									<button type="button" class="btn_pause"><span class="blind">일시정지</span></button>
+									<button type="button" class="btn_play"><span class="blind">재생</span></button>
+									<button type="button" class="btn_next"><span class="blind">다음 슬라이드</span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="clean_box">
+							<strong><span class="ksure_mark">Ksure</span> 반부패청렴시계</strong>
+							<div>
+								부패 <span class="color_red">ZERO</span> Clean K-SURE <span class="color_red">달성</span><br>
+								<div class="day_box"><span class="day">1,992</span>일 <span class="time">15</span>시간째</div> 입니다
+							</div>
+						</div>
+					</div>
+					<!-- // 팝업존 -->
+
+					<!-- 공사소개 -->
+					<div class="introduce">
+						<h4 class="sec_sub_tit">공사소개</h4>
+
+						<ul class="introduce_link">
+							<li><a href="#;" class="bg01">경영공시</a></li>
+							<li><a href="#;" class="bg02">윤리경영</a></li>
+							<li><a href="#;" class="bg03">정보공개청구</a></li>
+							<li><a href="#;" class="bg04">인권경영</a></li>
+							<li><a href="#;" class="bg05">사전정보공표</a></li>
+							<li><a href="#;" class="bg06">비전과 전략</a></li>
+							<li><a href="#;" class="bg07">공공데이터 개방</a></li>
+							<li><a href="#;" class="bg08">기관 일반현황</a></li>
+							<li><a href="#;" class="bg09">사회적 가치</a></li>
+							<li><a href="#;" class="bg10">CI 및 캐릭터</a></li>
+						</ul>
+					</div>
+					<!-- // 공사소개 -->
+
+					<!-- 광고 및 홍보영상 -->
+					<div class="publication">
+						<div class="sec_sub_tit">광고 및 홍보영상</div>
+
+						<div class="swiper publication_wrap">
+							<button type="button" class="swiper-button-prev"><span class="blind">이전 슬라이드</span></button>
+							<div class="swiper-wrapper">
+								<div class="img_slide swiper-slide">
+									<a href="#;">
+										<img src="../../asset/rh-kr/images/img_brochure.jpg" alt="수출을 올리다 표지">
+										<div class="publication_tit"><span>수출을 올리다</span></div>
+									</a>
+								</div>
+								<div class="video_slide swiper-slide">
+									<iframe src="https://www.youtube.com/embed/E8YpMRIZD9c" title="YouTube video player" frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+									<a href="#;">
+										<div class="publication_tit"><span>수출을 올리다</span></div>
+									</a>
+								</div>
+							</div>
+							<button type="button" class="swiper-button-next"><span class="blind">다음 슬라이드</span></button>
+						</div>
+					</div>
+					<!-- // 광고 및 홍보영상 -->
+				</div>
+			</section>
+			<!-- // section 04 -->
+
+			<!-- 나만의 바로가기 설정 팝업 -->
+			<div class="layer_popup_box" data-popup="option">
+				<div class="popup popup_size_1000" tabindex="0">
+					<div class="popup_head">
+						<h4 class="popup_tit">나만의 바로가기 설정</h4>
+					</div>
+					<div class="popup_content">
+						<div class="option_info_box">
+							<div class="l">즐겨찾는 메뉴를 최대 6개까지 선택하여 빠르게 서비스를 이용하실 수 있습니다.</div>
+							<div class="r">
+								<button type="button" class="refrash_btn">기본값</button>
+								<button type="button" class="success_btn">설정완료</button>
+							</div>
+						</div>
+						<div class="option_contents">
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck1" class="blind">
+								<label for="op_ck1">공지사항</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck2" class="blind">
+								<label for="op_ck2">채용공고</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck3" class="blind">
+								<label for="op_ck3">보도·해명자료</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck4" class="blind">
+								<label for="op_ck4">뉴스레터</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck5" class="blind">
+								<label for="op_ck5">보험료지원</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck6" class="blind">
+								<label for="op_ck6">해외채권 회수지원 서비스</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck7" class="blind">
+								<label for="op_ck7">보험종목 찾기</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck8" class="blind">
+								<label for="op_ck8">신청서류</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck9" class="blind">
+								<label for="op_ck9">보험약관</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck10" class="blind">
+								<label for="op_ck10">환율동향</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck11" class="blind">
+								<label for="op_ck11">자주하는 질문</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck12" class="blind">
+								<label for="op_ck12">Q&A</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck13" class="blind">
+								<label for="op_ck13">고객제안</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck14" class="blind">
+								<label for="op_ck14">환위험관리 상담신청</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck15" class="blind">
+								<label for="op_ck15">안전보건 위험신고</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck16" class="blind">
+								<label for="op_ck16">기업성장응답센터</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck17" class="blind">
+								<label for="op_ck17">원클릭신고시스템</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck18" class="blind">
+								<label for="op_ck18">사전정보공표</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck19" class="blind">
+								<label for="op_ck19">경영공시</label>
+							</span>
+							<span class="ck-lb">
+								<input type="checkbox" id="op_ck20" class="blind">
+								<label for="op_ck20">국내·외 지사</label>
+							</span>
+						</div>
+					</div>
+					<button type="button" class="btn_popup_close" onclick="fn_hide_popup('option');"><span
+							class="blind">닫기</span></button>
+				</div>
+			</div>
+			<!-- // 나만의 바로가기 설정 팝업 -->
+
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

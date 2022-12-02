@@ -1,0 +1,149 @@
+@use '../use'as *;
+
+.aside {
+	display: none;
+
+	@include res--pc {
+		display: block;
+		width: 270px;
+		margin-right: 50px;
+		float: left;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 270px;
+			height: 80px;
+		}
+
+		.depth_tit {
+			border-radius: 0 0 10px 10px;
+			display: table-cell;
+			width: 100vw;
+			height: 150px;
+			padding: 20px 30px;
+			background-repeat: no-repeat, repeat-y;
+			background-image: url(../images/bg_depth_tit.png), url(../images/bg_depth_tit_repeat.png);
+			background-size: auto;
+			background-position: left 0 bottom 0, 0 0;
+			font-size: 28px;
+			font-weight: 400;
+			vertical-align: middle;
+			word-break: break-all;
+			color: #fff;
+
+			&:before {
+				content: '';
+				display: block;
+				width: 24px;
+				height: 3px;
+				margin-bottom: 15px;
+				background: #fff;
+			}
+		}
+
+		.lnb {
+			border-radius: 10px;
+			margin-top: 10px;
+			overflow: hidden;
+
+			.depth2 {
+				>li {
+					border: 1px solid #d7d7d7;
+
+					&:first-child {
+						border-radius: 10px 10px 0 0;
+					}
+
+					&:last-child {
+						border-radius: 0 0 10px 10px;
+					}
+
+					&:not(:last-child) {
+						border-bottom: 0;
+					}
+
+					>a {
+						display: block;
+						min-height: 59px;
+						padding: 16px 58px 17px 20px;
+						font-size: 17px;
+						color: #444;
+
+						&.has_depth {
+							background-repeat: no-repeat;
+							background-image: url(../images/bg_plus_gray.gif);
+							background-position: right 20px top 50%;
+						}
+
+						&:hover,
+						&.active {
+							position: relative;
+							left: -1px;
+							border: 1px solid #ee8b20;
+							width: 272px;
+							padding: 15px 58px 16px 20px;
+							background-color: #ee8b20;
+							font-weight: 500;
+							color: #fff;
+
+							&.has_depth {
+								background-repeat: no-repeat;
+								background-image: url(../images/bg_plus_white.gif);
+								background-position: right 22px top 50%;
+							}
+						}
+
+						&.active {
+							&.has_depth {
+								background-image: url(../images/bg_minus_white.gif);
+							}
+
+							+.depth3 {
+								display: block;
+							}
+						}
+					}
+
+					>.depth3 {
+						display: none;
+						padding: 15px 20px 16px;
+						background: #fcf1e6;
+
+						>li {
+							&:not(:last-child) {
+								margin-bottom: 8px;
+							}
+
+							>a {
+								position: relative;
+								display: block;
+								padding-left: 12px;
+
+								&.active {
+									font-weight: 500;
+									color: #222;
+
+									&:before {
+										background-color: #222;
+									}
+								}
+
+								&:before {
+									content: '';
+									position: absolute;
+									top: 11px;
+									left: 0;
+									border-radius: 100%;
+									width: 4px;
+									height: 4px;
+									background-color: #999;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

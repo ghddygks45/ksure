@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 9);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">서비스종합보험(기성고·연불방식)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-중장기성보험-서비스종합보험(기성고·연불방식)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">담보위험</h4>
+							<div class="des_list_box one_line_arr">
+								<div class="des_list bg_des_danger01">
+									<h5 class="des_tit">비상위험 (수입국 위험)</h5>
+									<ul class="list shape_type1">
+										<li>수입국 또는 지급국에서 실시하는 환거래 제한 또는 금지</li>
+										<li>채무상환 연기협정 또는 지급국에 원인이 있는 외화송금 지연</li>
+										<li>전쟁, 혁명, 내란으로 인한 수입국의 수입불능 또는 환거래의 불능</li>
+									</ul>
+								</div>
+								<div class="des_list bg_des_danger02">
+									<h5 class="des_tit">신용위험 (수입자 위험)</h5>
+									<ul class="list shape_type1">
+										<li>수입자의 파산</li>
+										<li>수입자의 채무불이행</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">주요계약내용</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>주요계약내용 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">보험가액</th>
+											<td>기성단계별 또는 수출완료 후 대가로 확인된 금액(확인대가)</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금액</th>
+											<td>확인대가 미회수금액 × 부보율<br>
+												(수출계약 이행을 위해 지출한 비용 - 확인대가) × 부보율(시스템통합 수출의 경우에만 인정)</td>
+										</tr>
+										<tr>
+											<th scope="row">지급보험금</th>
+											<td>보험가액 × 부보율 (대기업 ∙ 중견기업 95%, 중소기업97.5%)</td>
+										</tr>
+										<tr>
+											<th scope="row">보험료</th>
+											<td>보험금액에 국별등급, 보험기간에 따라 결정</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보상하는 손실</h4>
+							<ul class="list shape_type1">
+								<li><strong class="bold">서비스 수출 대가의 회수불능으로 인한 손실 :</strong> 수출계약에 따라 기성단계별 또는 전부(연불방식의 경우에 해당)의 이행을 완료하여
+									수출계약 상대방으로부터 확인이 이루어진 금액을 회수하지 못함으로써 발생한 손실</li>
+								<li><strong class="bold">서비스 수출 비용의 회수불능으로 인한 손실 :</strong> 시스템통합 서비스 수출의 경우, 수출계약을 이행하는데 소요된 비용에서 확인대가를
+									뺀 금액을 회수하지 못함으로써 발생한 손실</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">보험계약 내용</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>보험계약 내용 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">보험가액</th>
+											<td>서비스 수출 계약 금액</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금액</th>
+											<td>보험가액 × 부보율<br>
+												(대기업 ∙ 중견기업 95% 이내, 중소기업 97.5% 이내)</td>
+										</tr>
+										<tr>
+											<th scope="row">지급보험금</th>
+											<td>손실액 × 부보율</td>
+										</tr>
+										<tr>
+											<th scope="row">보험료</th>
+											<td>보험금액 × 보험요율(공사대금 지급 국가 등급 및 대금지급 기간 감안)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

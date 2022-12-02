@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">비전 및 경영전략</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="img_box">
+							<img src="../../asset/rh-kr/images/img_vision.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+							<img src="../../asset/rh-kr/images/img_vision_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+							<div class="blind">
+								<strong>경영전략 체계도</strong>
+								<dl>
+									<dt>Mission</dt>
+									<dd>무역과 해외투자 촉진을 통해 국가경쟁력을 강화하고 국민경제 발전에 이바지</dd>
+									<dt>Vision</dt>
+									<dd>국민과 고객에게 신뢰받는 무역·투자·금융 안전망</dd>
+								</dl>
+								<dl>
+									<dt>핵심가치</dt>
+									<dd>고객</dd>
+									<dd>혁신</dd>
+									<dd>포용과 상생</dd>
+								</dl>
+								<dl>
+									<dt>전략목표(4대)</dt>
+									<dd>포스트 코로나 무역·투자 선도</dd>
+									<dd>수출中企 혁신성장 견인</dd>
+									<dd>지속경영 역량 강화</dd>
+									<dd>ESG 경영체계 실현</dd>
+								</dl>
+								<dl>
+									<dt>전략과제(12대)</dt>
+									<dd>한국판 뉴딜 수출생태계 구축</dd>
+									<dd>Digital K-SURE 기반 구축</dd>
+									<dd>수출활력 제고 지원</dd>
+									<dd>혁신中企 육성 프로그램 강화</dd>
+									<dd>中企 정책지원 강화</dd>
+									<dd>고객 중심 서비스 혁신</dd>
+									<dd>전사 업무기반 혁신</dd>
+									<dd>조직 관리·운영 체계 효율화</dd>
+									<dd>무역보험기금 건전성 강화</dd>
+									<dd>ESG 업무기반 구축</dd>
+									<dd>일자리 창출 및 사회적 가치 구현</dd>
+									<dd>윤리·안전·정보보안 시스템 장착</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

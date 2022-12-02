@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 5);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">연혁</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-공사소개-연혁-2000~현재.html">1992(한국무역보험공사 설립이후) ~ 현재</a></li>
+							<li><a href="①공사소개-공사소개-연혁-1968~1999.html" class="active">1968 ~ 1992(한국무역보험공사 설립이전)</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="blind">1968 ~ 1992(한국무역보험공사 설립이전)</h4>
+
+							<div class="root_wrap lg-mt-50 sm-mt-25">
+								<div class="top">
+									<h4 class="root_tit">1968<br>~<br>1992</h4>
+								</div>
+								<ul class="btm">
+									<li>
+										<strong class="year">1991</strong>
+										<ul>
+											<li>
+												<span class="date">12.31</span>
+												<span class="desc">수출보험기금 536억원으로 확대</span>
+											</li>
+											<li>
+												<span class="date">12.31</span>
+												<span class="desc">무역특계자금 50억원 수출보험기금 출연</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1989</strong>
+										<ul>
+											<li>
+												<span class="date">04.01</span>
+												<span class="desc">수출어음보험 포괄보험제도 시행</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1983</strong>
+										<ul>
+											<li>
+												<span class="date">10.17</span>
+												<span class="desc">수출신용정보센터 설치</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1981</strong>
+										<ul>
+											<li>
+												<span class="date">03.27</span>
+												<span class="desc">수출보험법 개정으로 한국무역보험공사 설립근거 마련</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1980</strong>
+										<ul>
+											<li>
+												<span class="date">12.31</span>
+												<span class="desc">수출보험기금 126억원으로 확대</span>
+											</li>
+											<li>
+												<span class="date">07.05</span>
+												<span class="desc">중장기연불수출보험 포괄보험제도 도입</span>
+											</li>
+											<li>
+												<span class="date">07.04</span>
+												<span class="desc">수출보증보험 포괄보험제도 도입</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1979</strong>
+										<ul>
+											<li>
+												<span class="date">01.01</span>
+												<span class="desc">수출보험 관장부서가 재무부에서 상공부(현 산자부)로 변경</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1977</strong>
+										<ul>
+											<li>
+												<span class="date">01.01</span>
+												<span class="desc">한국수출입은행으로 대행기관을 변경</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1969</strong>
+										<ul>
+											<li>
+												<span class="date">02.18</span>
+												<span class="desc">대한재보험공사에서 수출보험업무개시 및 수출보험기금 최초 3억원 조성</span>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<strong class="year">1968</strong>
+										<ul>
+											<li>
+												<span class="date">12.31</span>
+												<span class="desc">수출보험법 제정공포</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

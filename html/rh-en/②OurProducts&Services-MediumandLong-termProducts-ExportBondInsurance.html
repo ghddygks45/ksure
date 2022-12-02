@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 10);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Export Bond Insurance</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">Overview of Scheme</h4>
+							This scheme is to indemnify losses of financial institutes caused as financial institutes issue export
+							guarantees in relation to export transactions, receive requests for discharge of guaranteed liabilities
+							from importers (buyers), and implement the discharge.
+							<ul class="list shape_type1 sm-mt-5 lg-mt-10">
+								<li>In international transactions, importers request exporters to submit export guarantees issued by
+									financial institutes as a guarantee for export implementation.</li>
+								<li>Export bond insurance is an export support system to help exporters conveniently obtain export
+									guarantees by compensating for losses of financial institutes issuing export guarantees that are
+									caused as financial institutes make substitute payments upon receipt of requests for discharge of
+									guaranteed liabilities (bond calling) from the beneficiaries (importers or buyers).</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">Types of Export Guarantees</h4>
+							<div class="table">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Bid Bond</th>
+											<td>Guarantee for buyers to request payment in bidding-type transactions where bidders, following
+												successful bids, do not respond to contract conclusion, or fail to submit a performance bond
+												within a set period of time after the contract conclusion</td>
+										</tr>
+										<tr>
+											<th scope="row">Performance Bond</th>
+											<td>Guarantee issued for compensation of losses of buyers caused as exporters that have entered
+												into industrial facility export contracts or overseas construction work contracts do not perform
+												their contractual obligations</td>
+										</tr>
+										<tr>
+											<th scope="row">Advanced Payment Bond</th>
+											<td>Guarantee to claim return of advance payments to exporters if they do not implement the export
+												following receipt of advance payment</td>
+										</tr>
+										<tr>
+											<th scope="row">Retention Bond</th>
+											<td>In an interim payment-based export transaction, the importer reserves a part of the interim
+												payment at each completed construction stage in preparation for the risk of the exporter being
+												unable to complete the construction work. The exporter submits the guarantee the in order to
+												receive payment of an amount equivalent to the reserve amount.</td>
+										</tr>
+										<tr>
+											<th scope="row">Maintenance Bond</th>
+											<td>Guarantee issued to cover losses caused by defects occurring in finished facilities or
+												buildings during a set period of time from the completion of industrial facility installation or
+												overseas construction work</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Product Structure</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">For financial institutes : In case the insurance policy holder is a financial
+									institute issuing a guarantee</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-en/images/img_insur12.jpg" alt="Transaction Structure for Buyer Credit">
+									<a href="../../asset/rh-en/images/img_insur12.jpg" class="btn_img_size">크게보기</a>
+								</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">For exporter : In case the insurance policy holder is the exporter</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-en/images/img_insur13.jpg" alt="Transaction Structure for Buyer Credit">
+									<a href="../../asset/rh-en/images/img_insur13.jpg" class="btn_img_size">크게보기</a>
+								</div>
+							</div>
+							<div class="sm-mt-5 lg-mt-10">※ Export Bond Insurance for exporters has the characteristic of an insurance
+								contract for financial institutes as the insured</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Target Transactions</h4>
+							<ul class="list shape_type1">
+								<li>Overseas construction work under the Overseas Construction Promotion Act</li>
+								<li>Export under the Foreign Trade Act (excluding intermediary trade and overseas consignment export)
+								</li>
+								<li>Export of other services</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

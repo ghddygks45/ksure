@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">CEO</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-공사소개-CEO-CEO인사말.html" class="active">CEO 인사말</a></li>
+							<li><a href="①공사소개-공사소개-CEO-CEO프로필.html">CEO프로필</a></li>
+						</ul>
+						<div class="greeting_wrap">
+							<div class="greeting_con">
+								<div class="greeting_tit">
+									<h4>국민과 고객에게 신뢰받는<br><span class="color_red">무역 · 투자 · 금융 안전망</span>으로 거듭나겠습니다. </h4>
+									<strong>안녕하십니까?<br class="m_content">한국무역보험공사 (K-SURE)<br class="m_content">
+										사장 이인호입니다.</strong>
+								</div>
+								<p class="sm-mt-20 lg-mt-10">
+									1992년 설립된 한국무역보험공사는 무역보험을 운영하는 정책금융기관으로 수출, 수입 등
+									대외거래 위험을 담보하여 무역과 해외투자를 촉진함으로써 국가 경쟁력 강화와 국민경제
+									발전에 기여해왔습니다.<br>
+									앞으로도 우리 기업이 격변하는 대외 환경에 유연히 대응하고 세계 시장을 무대로
+									글로벌 경쟁력을 갖출 수 있도록 항상 준비된 자세로 업무에 임하겠습니다
+								</p>
+							</div>
+							<div class="sm-mt-5 lg-mt-35">
+								<div>
+									<div class="bold">우선, 우리나라 수출구조 혁신에 앞장서겠습니다.</div>
+									유망한 신시장 개척으로 수출 전선을 넓히고, 경쟁력 있는 신산업
+									육성으로 미래 먹거리를 창출하겠습니다.
+								</div>
+								<div class="txt_margin">
+									<div class="bold">수출 중소 · 중견기업의 힘이 되겠습니다.</div>
+									세계 시장에서 통하는 수출경쟁력을 갖출 수 있도록 맞춤형 프로
+									그램을 마련하여 기업의 체감도를 높이겠습니다.
+								</div>
+								<div class="txt_margin">
+									<div class="bold">고객의 시선에서 무역보험을 바꾸겠습니다.</div>
+									고객의 가치를 높이는 무역보험으로 진화할 수 있도록 다양한
+									목소리에 귀 기울이겠습니다.
+								</div>
+								<div class="txt_margin">
+									<div class="bold">사회적 가치 실현을 선도하겠습니다.</div>
+									더불어 살아가는 공동체의 일원으로서 즐거움은 더하고 어려움은
+									나눌 수 있는 함께 살아가는 문화를 만들겠습니다.
+								</div>
+								<div class="txt_margin">한국무역보험공사는 국민과 고객에게 신뢰받는 무역·투자·금융
+									안전망으로서 <br class="pc_content">우리나라가 세계적인 무역 강국으로 한 단계 더
+									도약할 수 있도록 흔들림 없이 뒷받침하겠습니다.</div>
+								<div class="txt_margin">여러분의 따듯한 응원과 격려를 부탁드립니다.</div>
+								<div class="txt_margin">감사합니다.</div>
+							</div>
+							<div class="ceo_sign sm-mt-15 lg-mt-30">
+								<strong class="bold">한국무역보험공사 사장</strong>
+								<img src="../../asset/rh-kr/images/img_ceo_sign.jpg" alt="ceo 사인">
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

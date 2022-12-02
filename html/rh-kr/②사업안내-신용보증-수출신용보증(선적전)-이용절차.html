@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출신용보증(선적전)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-신용보증-수출신용보증(선적전)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적전)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적전)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2">
+								<ol class="ico_process">
+									<li class="bg_use_process1">
+										<strong>보험가입 상담</strong>
+										(고객센터, 담당자)
+									</li>
+									<li class="bg_use_process2">
+										<strong>보증신청 및<br>신용평가 의뢰</strong>
+									</li>
+									<li class="bg_use_process3">
+										<strong>보증한도<br>심사 및 책정</strong>
+									</li>
+									<li class="bg_use_process9">
+										<strong>보증 약정 체결</strong>
+									</li>
+									<li class="bg_use_process7">
+										<strong>보증료 납부</strong>
+									</li>
+									<li class="bg_use_process5">
+										<strong>보증서 발급</strong>
+									</li>
+									<li class="bg_use_process10">
+										<strong>신용보증관계<br>성립</strong>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">가입절차</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>보험가입 상담(고객센터, 담당자)
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>공사 방문을 통해 보증가능 여부, 이용절차 등 상담</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>보증신청 및 신용평가 의뢰
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>신용평가 및 보증심사를 위해 보증 신청서류 제출</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>보증한도 심사 및 책정
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>K-SURE : 대표자와의 면담, 사업장 방문, 거래은행 담당심사역과의 상담 등을 통해 기업의 신용도, 수출실적, 재무사항(차입금 비율, 부채비율) 등을 심사</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>보증 약정 체결
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>K-SURE는 기업의 부탁으로 은행에 대하여 수출신용보증을 제공함에 따라 생기는 K-SURE와 기업간의 권리, 의무관계를 약정하는 수출신용보증약정을 기업과 체결<br>
+												* 신용보증약정시 기업의 공사에 대한 채무변제약속으로 연대보증인 입보기준에 따라 입보대상자는 공사에 내왕하여 자필서명날인을 하여야 함
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>보증료 납부
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>보증료 = 신용보증한도 × 보증서 유효기간에 해당하는 보증요율</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>06</span>보증서 발급
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>기업이 보증료를 납부한 경우에 은행 앞 수출신용보증서 발급</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>07</span>신용보증관계 성립
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>신용보증관계는 은행이 신용보증서에 부합되게 대출의 전부 또는 일부를 실행한 경우에 한하여 성립</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

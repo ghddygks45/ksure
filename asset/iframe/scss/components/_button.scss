@@ -1,0 +1,94 @@
+@use '../use'as *;
+
+// button
+.btn_wrap {
+	margin-top: 20px;
+	@include clearboth;
+
+	.l {
+		float: left;
+		display: flex;
+	}
+
+	.r {
+		float: right;
+		display: flex;
+	}
+
+	@include res--pc-ctn {
+		margin-top: 30px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 0 22px;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	transition: all .3s;
+
+	// size
+	&.md {
+		border-radius: 42px;
+		height: 42px;
+		line-height: 42px;
+	}
+
+	&+.btn {
+		margin-left: 8px;
+	}
+
+	@include res--pc-ctn {
+		padding: 0 35px;
+		font-size: 18px;
+
+		&.md {
+			border-radius: 56px;
+			height: 56px;
+			line-height: 56px;
+		}
+
+		&+.btn {
+			margin-left: 10px;
+		}
+	}
+}
+
+.btn_download {
+	display: inline-block;
+	min-height: 34px;
+	padding: 6px 10px 7px 30px;
+	background-image: url(../images/ico_download.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 13px;
+	color: #fff;
+
+	@include res--pc-ctn {
+		min-height: 46px;
+		padding: 10px 15px 10px 40px;
+		background-position: 15px 15px;
+		background-size: auto;
+	}
+}
+
+.btn_go_link {
+	display: inline-block;
+	border: 1px solid #222;
+	height: 34px;
+	padding: 0 38px 0 10px;
+	line-height: 32px;
+	background: url(../images/btn_link.png) no-repeat right 10px top 50%/20px;
+	color: #222;
+
+	@include res--pc-ctn {
+		height: 46px;
+		padding: 0 45px 0 15px;
+		line-height: 44px;
+		background-position-x: right 15px;
+		background-size: auto;
+	}
+}

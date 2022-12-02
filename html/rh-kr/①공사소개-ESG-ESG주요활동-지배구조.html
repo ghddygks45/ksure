@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">ESG 주요 활동</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-ESG-ESG주요활동-환경.html">환경(Environmental)</a></li>
+							<li><a href="①공사소개-ESG-ESG주요활동-사회.html">사회(Social)</a></li>
+							<li><a href="①공사소개-ESG-ESG주요활동-지배구조.html" class="active">지배구조(Governance)</a></li>
+						</ul>
+
+						<h4 class="blind">지배구조(Governance)</h4>
+
+						<div class="section">
+							<h5 class="tit">ESG 경영 지원 체계 구축</h5>
+							<ul class="list shape_type1">
+								<li>공사는 ESG 추진 전략 수립, ESG 위원회 신설, ESG 전문위원회 신설 등으로 내실있는 ESG경영 실천을 위한 업무 기반을
+									구축하였습니다.</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h5 class="tit">청렴한 윤리문화 구축</h5>
+							<ul class="list shape_type1">
+								<li>‘공직자 이해충돌방지법’ 대응을 위한 관련 내규 제정(’22.4월), 부패방지 경영시스템 도입을 통한 ISO37001 인증 획득 등 공사는 청렴한 사내문화를 구축하기 위해 노력하고
+									있습니다.</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h5 class="tit">인권경영 및 준법경영 실천
+							</h5>
+							<ul class="list shape_type1">
+								<li>인권영향평가 실시, 피해자 중심의 인권침해 구제절차를 확립 등으로 인권경영을 실천하고 있으며, 소송 대응시스템 고도화, 관련 내부 규정 정비로 준법경영을 위한 노력 또한 지속하고
+									있습니다.</li>
+								<li>이러한 전사적인 노력으로 공사는 2022 BIS SUMMIT 반부패 어워드, 2021 한국윤리경영대상 등을 수상하는 쾌거를 이루었습니다.</li>
+							</ul>
+							<div class="img_flex_wrap lg-mt-15 sm-mt-10">
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0301.jpg" alt="2022 BIS SUMMIT 반부패 어워드 수상 사진">
+								</div>
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0302.jpg" alt="2021 한국윤리경영대상 수상 사진">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@use '../use'as *;
+
+// sound-only
+.blind {
+	position: absolute;
+	left: -1000%;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+}
+
+// display
+.m_content {
+	display: block !important;
+
+	@include res--pc-ctn {
+		display: none !important;
+	}
+}
+
+.pc_content {
+	display: none !important;
+
+	@include res--pc-ctn {
+		display: block !important;
+	}
+}
+
+.d_b {
+	display: block !important;
+}
+
+.d_i_b {
+	display: inline-block !important;
+}
+
+.ofh {
+	overflow: hidden;
+}
+
+// font-weight
+.fwl {
+	font-weight: 300 !important;
+}
+
+.fwr {
+	font-weight: 400 !important;
+}
+
+.fwm {
+	font-weight: 500 !important;
+}
+
+.fwb {
+	font-weight: 600 !important;
+}
+
+.bold {
+	font-weight: 400;
+	color: #222;
+}
+
+// align
+.txt_l {
+	text-align: left !important;
+}
+
+.txt_c {
+	text-align: center !important;
+}
+
+.txt_r {
+	text-align: right !important;
+}
+
+.v_top {
+	vertical-align: top;
+}
+
+.v_mid {
+	vertical-align: middle !important;
+}
+
+.v_btm {
+	vertical-align: bottom;
+}
+
+.txt_vm {
+	vertical-align: -2px;
+}
+
+// color
+.bg_darkgray {
+	background-color: #444;
+}
+
+.bg_lightgray {
+	background-color: #999;
+}
+
+.bg_red {
+	background-color: #e43c3c;
+}
+
+.bg_orange {
+	background-color: #ee8b20;
+}
+
+.bg_brown {
+	background-color: #59544b;
+}
+
+.color_default {
+	color: #666;
+}
+
+.color_red {
+	color: #e43c3c;
+}
+
+.color_black {
+	color: #222;
+}
+
+// section
+.section+.section {
+	margin-top: 35px;
+
+	@include res--pc-ctn {
+		margin-top: 50px;
+	}
+}

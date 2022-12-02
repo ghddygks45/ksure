@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Import Insurance (For Financial Institute)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">Overview of Scheme</h4>
+							This scheme is to indemnify losses caused as a financial institute provides a loan (payment guarantee) to
+							an importing company as funds necessary for the import of key resources and items, and becomes unable to
+							recover the loan for the long-term stable supply of key strategic items, such as petroleum and gas.
+						</div>
+						<div class="section">
+							<h4 class="tit">Product Structure</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-en/images/img_insur02.jpg" alt="Transaction Structure for Buyer Credit">
+								<a href="../../asset/rh-en/images/img_insur02.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Target Transactions</h4>
+							Import transactions for which the following items must be shipped within two years from prepayment
+							(excluding intermediary trade)
+							<div class="table sm-mt-10 lg-mt-15">
+								<table class="m_scroll">
+									<caption></caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col>
+										<col style="width:20%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Details</th>
+											<th scope="col">Remarks</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Major resources</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>Iron, copper, zinc, coal, crude etc.</li>
+												</ul>
+											</td>
+											<td>
+												<a href="#n" class="btn_view_sample" onclick="fn_open_popup('popup1');">Major resources inquiry
+													(For Importer)</a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" rowspan="2">Machinery of Parts for Industrial Facilities</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>
+														<a href="https://www.law.go.kr/법령/관세법/(20200805,16957,20200204)/제95조" target="_blank"
+															class="txt_underline color_red fwr">[Factory automation machines under Article 95 (1) 3 of
+															the Customs Act]</a>
+													</li>
+													<li>
+														<a href="https://www.law.go.kr/법령/관세법/(20200805,16957,20200204)/제90조"
+															class="fwr txt_underline color_red">[Goods for the purposes of the research and
+															development of industrial technology under Article 90 (1) 4 of the Customs Act]</a>
+													</li>
+												</ul>
+											</td>
+											<td class="txt_c">
+												<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp file download</span></a>
+												<a href="#n" class="ico_file_down ico_pdf"><span class="blind">pdf file download</span></a>
+												<div class="mt-10">
+													<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp file download</span></a>
+													<a href="#n" class="ico_file_down ico_pdf"><span class="blind">pdf file download</span></a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- Major resources inquiry (For Importer) -->
+						<div class="layer_popup_box" data-popup="popup1">
+							<div class="popup popup_size_840" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Major resources inquiry (For Importer)</h4>
+								</div>
+								<div class="popup_content">
+									<div class="section">
+										<div class="top_notice_box">
+											일본 수출규제와 관련한 지원대상 품목은 고객센터 또는 담당 영업부서로 문의하여 주시기 바랍니다.
+											<div class="sm-mt-10 lg-mt-15">
+												<a href="#n" class="btn_white_line ico_arrow">문의 바로가기</a>
+											</div>
+										</div>
+									</div>
+									<div class="section">
+										<div class="mul_srh_box sm-mb-20 lg-mb-35">
+											<div class="mul_srh_form">
+												<div class="srh_row txt_c">
+													<div class="inp_box inp_box_search">
+														<input type="text" placeholder="HS CODE, 품목명, 품목상세내역 ">
+														<button type="button"><span class="blind">검색</span></button>
+													</div>
+												</div>
+											</div>
+											<div class="srh_info txt_c">
+												※ 지원대상 품목은 HS Code 앞 4자리 또는 10자리로 조회해주시기 바랍니다.
+											</div>
+										</div>
+									</div>
+									<div class="section">
+										<div class="tbl_tit">
+											<div class="l">총 <span class="bold">00</span>건</div>
+										</div>
+										<div class="table">
+											<table>
+												<caption>주요자원 상세조회 표로 HS CODE, 품목명, 품목상세내역 정보 제공</caption>
+												<colgroup>
+													<col style="width:20%">
+													<col style="width:35%;">
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">HS CODE</th>
+														<th scope="col">품목명</th>
+														<th scope="col">품목상세내역</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="txt_c">7208</td>
+														<td>철 및 비합금강 관련 자원 및 반제품</td>
+														<td>철 또는 비합금강의 평판압연제품 (폭 600MM 이상, 열간압연한 것)</td>
+													</tr>
+													<tr>
+														<td class="txt_c">7214</td>
+														<td>철 및 비합금강 관련 자원 및 반제품</td>
+														<td>철 또는 비합금강의 봉 (단조·열간압연·열간인발·열간압출한 것)</td>
+													</tr>
+													<tr>
+														<td class="txt_c">7216</td>
+														<td>철 및 비합금강 관련 자원 및 반제품</td>
+														<td>철강 또는 비합금강의 형강</td>
+													</tr>
+													<tr>
+														<td class="txt_c">7304</td>
+														<td>철 및 비합금강 관련 자원 및 반제품</td>
+														<td>철강제(주철제 제외)의 관과 중공프로파일 (무계목의 것)</td>
+													</tr>
+													<tr>
+														<td class="txt_c">7210</td>
+														<td>철 및 비합금강 관련 자원 및 반제품</td>
+														<td>철 또는 비합금강의 평판압연제품 (폭 600MM 이상, 클래드, 도금, 도포한 것)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="btn_wrap txt_c">
+										<a href="#n" class="btn md bg_gray" onclick="fn_hide_popup('popup1');">닫기</a>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"> <span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // Major resources inquiry (For Importer) -->
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

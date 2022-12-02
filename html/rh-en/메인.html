@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<link rel="stylesheet" href="../../asset/rh-en/css/main.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+	<!-- main js -->
+	<script src="../../asset/rh-en/js/swiper-bundle.min.js"></script>
+	<script src="../../asset/rh-en/js/main.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap" class="top_banner">
+
+		<!-- 메인 레이어팝업 -->
+		<div class="main-layer-popup dragging" id="popup2">
+			<div class="layer-popup">
+				<div class="top">
+					K-SURE Alim
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">Close</span></a>
+				</div>
+				<div class="pop-content">
+					<a href="#;">
+						<img src="../../asset/rh-en/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+						<img src="../../asset/rh-en/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+					</a>
+				</div>
+				<div class="btm">
+					<div class="l">
+						<span class="ck-lb">
+							<input type="checkbox" id="ck3" class="blind" onclick="PopupCloseDay(this);">
+							<label for="ck3">not open today</label>
+						</span>
+						<span class="ck-lb">
+							<input type="checkbox" id="ck4" class="blind" onclick="PopupCloseWeek(this);">
+							<label for="ck4">don't watch for 7 days</label>
+						</span>
+					</div>
+					<div class="r">
+						<button type="button" class="popup-close-btn" onclick="closePopup(this);return false;">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 메인 레이어팝업 -->
+
+
+		<!-- 메인 팝업 -->
+		<div class="main-layer-popup" id="popup1">
+			<div class="layer-popup">
+				<div class="top">
+					K-SURE Alim
+					<a href="#n" onclick="closePopup(this);return false;"><span class="blind">close</span></a>
+				</div>
+				<div class="pop-content">
+					<div class="slide_area">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									01
+								</div>
+								<div class="swiper-slide">
+									02
+								</div>
+								<div class="swiper-slide">
+									03
+								</div>
+							</div>
+						</div>
+						<div class="swiper-content">
+							<div class="swiper mySwiper2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-en/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-en/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-en/images/img_main_popup_dommy02_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-en/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-en/images/img_main_popup_dommy_m.jpg" alt="" class="m_content">
+											<img src="../../asset/rh-en/images/img_main_popup_dommy.jpg" alt="" class="pc_content">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<script>
+							var swiper = new Swiper(".pop-content .mySwiper", {
+								spaceBetween: 10,
+								slidesPerView: 3,
+								freeMode: true,
+								watchSlidesProgress: true,
+								// slidesPerView: "auto",
+							});
+							var swiper2 = new Swiper(".pop-content .mySwiper2", {
+								spaceBetween: 10,
+								navigation: {
+									nextEl: ".swiper-button-next",
+									prevEl: ".swiper-button-prev",
+								},
+								thumbs: {
+									swiper: swiper,
+								},
+							});
+						</script>
+					</div>
+				</div>
+				<div class="btm">
+					<div class="l">
+						<span class="ck-lb">
+							<input type="checkbox" id="ck1" class="blind" onclick="PopupCloseDay(this);">
+							<label for="ck1">not open today</label>
+						</span>
+						<span class="ck-lb">
+							<input type="checkbox" id="ck2" class="blind" onclick="PopupCloseWeek(this);">
+							<label for="ck2">don't watch for 7 days</label>
+						</span>
+					</div>
+					<div class="r">
+						<button type="button" class="popup-close-btn" onclick="closePopup(this);return false;">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // 메인 팝업 -->
+
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+
+		<script>
+			$(function () {
+				// 개발 시 "setTimeout" 제거
+				setTimeout(function () {
+					// 메인 배너 (오늘 하루 보지 않기 체크된 배너 히든 처리)
+					if ($(window).width() >= 1440) {
+						$('.top_banner_wrap').each(function () {
+							var banner = $(this);
+							if (popupGetCookie($(this).attr("id"))) { // '오늘 하루 보지 않기 체크'를 했다면
+								banner.remove();
+								$("#wrap").removeClass('top_banner');
+							} else {
+								banner.show();
+							}
+						});
+					}
+					// 메인, 배너 슬라이드
+					var bannerSwiper = new Swiper(".banner-swiper", {
+						slidesPerView: 1,
+						watchSlidesProgress: true,
+						navigation: {
+							nextEl: ".banner-button-next",
+							prevEl: ".banner-button-prev",
+						},
+					});
+				}, 300)
+			})
+		</script>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<!-- main_quick_nav -->
+			<ul class="main_page_navi">
+				<li>
+					<a href="#sec01" class="navi01 active"><span>Go to Promotion</span></a>
+				</li>
+				<li>
+					<a href="#sec02" class="navi02"><span>Information Center</span></a>
+				</li>
+				<li>
+					<a href="#sec03" class="navi03"><span>Our Products & Services</span></a>
+				</li>
+				<li>
+					<a href="#sec04" class="navi04"><span>About K-SURE</span></a>
+				</li>
+			</ul>
+			<!-- // main_quick_nav -->
+
+			<!-- section 01 -->
+			<section id="sec01" class="sec01">
+				<h3 class="sec_tit blind">Go to Promotion</h3>
+				<!-- main slide -->
+				<div class="swiper main_slide">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="" class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual01_pc.jpg" alt="" class="pc_content">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="" class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual02_pc.jpg" alt="" class="pc_content">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="" class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual03_pc.jpg" alt="" class="pc_content">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="" class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual04_pc.jpg" alt="" class="pc_content">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#;">
+								<img src="../../asset/rh-kr/images/img_main_visual01_m.jpg" alt="" class="m_content">
+								<img src="../../asset/rh-kr/images/img_main_visual05_pc.jpg" alt="" class="pc_content">
+							</a>
+						</div>
+					</div>
+					<div class="slide_unit">
+						<button type="button" class="swiper-button-prev"><span class="blind">prev</span></button>
+						<button type="button" class="swiper-button-next"><span class="blind">next</span></button>
+					</div>
+				</div>
+				<!-- // main slide -->
+
+			</section>
+			<!-- // section 01 -->
+
+			<!-- section 02 -->
+			<section id="sec02" class="sec02">
+				<h3 class="sec_tit">Information Center</h3>
+
+				<!-- tab nav -->
+				<div class="swiper tab_nav">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><button type="button" class="tab_btn active" data-tab="sec02_tab00">All</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab01">K-SURE News</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab02">Publication</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab03">Event</button></li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec02_tab04">Annual Report</button>
+						</li>
+					</ul>
+				</div>
+				<!-- //tab nav -->
+
+				<!-- tab wrap -->
+				<div class="tab_wrap">
+					<!-- All -->
+					<div id="sec02_tab00" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">Annual Report</div>
+									<div class="news_tit"><a href="#;">Annual Report 2021</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="Annual Report 2021 thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">K-SURE News</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">Publication</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge event">Event</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">Annual Report</div>
+									<div class="news_tit"><a href="#;">Annual Report 2021</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png" alt="Annual Report 2021 thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">K-SURE News</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+						</div>
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+								<button type="button" class="btn_pause"><span class="blind">pause</span></button>
+								<button type="button" class="btn_play"><span class="blind">play</span></button>
+								<button type="button" class="btn_next"><span class="blind">next</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // All -->
+
+					<!-- K-SURE News -->
+					<div id="sec02_tab01" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">K-SURE News</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">K-SURE News</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">K-SURE News</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge notice">K-SURE News</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge notice">K-SURE News</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+								<button type="button" class="btn_pause"><span class="blind">pause</span></button>
+								<button type="button" class="btn_play"><span class="blind">play</span></button>
+								<button type="button" class="btn_next"><span class="blind">next</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // K-SURE News -->
+
+					<!-- Publication -->
+					<div id="sec02_tab02" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">Publication</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">Publication</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+										Years</a></div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">Publication</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge newsletter">Publication</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+										Years</a></div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge newsletter">Publication</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+								<button type="button" class="btn_pause"><span class="blind">pause</span></button>
+								<button type="button" class="btn_play"><span class="blind">play</span></button>
+								<button type="button" class="btn_next"><span class="blind">next</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // Publication -->
+
+					<!-- EVENT -->
+					<div id="sec02_tab03" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge event">Event</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge event">Event</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge event">Event</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge event">Event</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge event">Event</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+								<button type="button" class="btn_pause"><span class="blind">pause</span></button>
+								<button type="button" class="btn_play"><span class="blind">play</span></button>
+								<button type="button" class="btn_next"><span class="blind">next</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // EVENT -->
+
+					<!-- Annual Report -->
+					<div id="sec02_tab04" class="swiper tab_box">
+						<div class="swiper-wrapper">
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">Annual Report</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge cardnews">Annual Report</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">Annual Report</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+							<div class="type_txt_box swiper-slide">
+								<div class="badge cardnews">Annual Report</div>
+								<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years</a>
+								</div>
+								<div class="news_cont">
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+									Became the First Policy Financial
+									Institution to Receive the Anti-Corruption
+									Award for 2 Years in a Row
+									Obtained Recognition of K-SURE’s
+									achievements including Anti-corruption
+									Management System Establishment,
+									Ethical Management
+								</div>
+								<div class="date">2022.05.12</div>
+							</div>
+							<div class="type_img_box swiper-slide">
+								<div class="img_box_top">
+									<div class="badge cardnews">Annual Report</div>
+									<div class="news_tit"><a href="#;">K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive
+											Years</a></div>
+									<div class="date">2022.05.12</div>
+								</div>
+								<div class="thumb">
+									<img src="../../asset/rh-kr/images/img_thumb01.png"
+										alt="K-SURE Won the UNGC Anti-corruption Award for 2 Consecutive Years thumbnail">
+								</div>
+							</div>
+						</div>
+
+						<div class="slide_unit">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+								<button type="button" class="btn_pause"><span class="blind">pause</span></button>
+								<button type="button" class="btn_play"><span class="blind">play</span></button>
+								<button type="button" class="btn_next"><span class="blind">next</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // Annual Report -->
+
+				</div>
+				<!-- //tab wrap -->
+			</section>
+			<!-- // section 02 -->
+
+			<!-- section 03 -->
+			<section id="sec03" class="sec03">
+				<h3 class="sec_tit">Our Products <br class="pc_content2">& Services</h3>
+
+				<!-- tab nav -->
+				<div class="swiper tab_nav">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><button type="button" class="tab_btn active" data-tab="sec03_tab00">Short-term
+								Products</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab01">Medium and Long-term
+								Products</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab02">Import
+								Insurance</button>
+						</li>
+						<li class="swiper-slide"><button type="button" class="tab_btn" data-tab="sec03_tab03">Others</button></li>
+					</ul>
+				</div>
+				<!-- //tab nav -->
+
+				<!-- tab wrap -->
+				<div class="tab_wrap">
+					<!-- Short-term Products -->
+					<div id="sec03_tab00" class="tab_box tab03">
+						<div class="swiper-wrapper">
+							<ul class="swiper-slide">
+								<li class="bg01">
+									<a href="#;">
+										<strong>Short-term Export Credit Insurance (General)</strong>
+									</a>
+								</li>
+								<li class="bg02">
+									<a href="#;">
+										<strong>Export Credit Guarantee (Pre-shipment)</strong>
+									</a>
+								</li>
+								<li class="bg03">
+									<a href="#;">
+										<strong>Export Credit Guarantee (Post-shipment)</strong>
+									</a>
+								</li>
+								<li class="bg04">
+									<a href="#;">
+										<strong>Export Credit Guarantee (Negotiation)</strong>
+									</a>
+								</li>
+								<li class="bg05">
+									<a href="#;">
+										<strong>Export Credit Guarantee (Comprehensive Negotiation)</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // Short-term Products -->
+					<!-- Medium and Long-term Products -->
+					<div id="sec03_tab01" class="tab_box tab03 swiper">
+						<div class="swiper-wrapper">
+							<ul class="swiper-slide">
+								<li class="bg06">
+									<a href="#;">
+										<strong>Mid- to Long-term Export Credit Insurance <br>(Pre-shipment)</strong>
+									</a>
+								</li>
+								<li class="bg07">
+									<a href="#;">
+										<strong>Mid- to Long-term Export Credit Insurance <br>(Supplier Credit)</strong>
+									</a>
+								</li>
+								<li class="bg08">
+									<a href="#;">
+										<strong>Mid- to Long-term Export Credit Insurance <br>(Buyer Credit)</strong>
+									</a>
+								</li>
+								<li class="bg09">
+									<a href="#;">
+										<strong>Mid- to Long-term Export Credit Insurance <br>(Buyer Credit and Bond)</strong>
+									</a>
+								</li>
+								<li class="bg10">
+									<a href="#;">
+										<strong>Overseas Business Financial Insurance</strong>
+									</a>
+								</li>
+								<li class="bg11">
+									<a href="#;">
+										<strong>Overseas Investment Insurance (Shares, Loans, Guaranteed Liabilities)</strong>
+									</a>
+								</li>
+							</ul>
+							<ul class="swiper-slide">
+								<li class="bg12">
+									<a href="#;">
+										<strong>Overseas Investment Insurance (Investment Finance)</strong>
+									</a>
+								</li>
+								<li class="bg13">
+									<a href="#;">
+										<strong>Overseas Construction Works Insurance</strong>
+									</a>
+								</li>
+								<li class="bg14">
+									<a href="#;">
+										<strong>Comprehensive Service Insurance (Interim/Deferred Payment Basis)</strong>
+									</a>
+								</li>
+								<li class="bg15">
+									<a href="#;">
+										<strong>Export Bond Insurance</strong>
+									</a>
+								</li>
+								<li class="bg16">
+									<a href="#;">
+										<strong>Interest Rate Risk Insurance</strong>
+									</a>
+								</li>
+								<li class="bg17">
+									<a href="#;">
+										<strong>Export Infrastructure Export (Ship, Aircraft)</strong>
+									</a>
+								</li>
+							</ul>
+							<ul class="swiper-slide">
+								<li class="bg18">
+									<a href="#;">
+										<strong>Export Infrastructure Insurance (Manufacturing Facility)</strong>
+									</a>
+								</li>
+								<li class="bg19">
+									<a href="#;">
+										<strong>Overseas Resource Development Fund Insurance</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="slide_unit">
+							<div class="swiper-button-wrap">
+								<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="btn_next"><span class="blind">next</span></button>
+							</div>
+						</div>
+					</div>
+					<!-- // Medium and Long-term Products -->
+					<!-- Import Insurance -->
+					<div id="sec03_tab02" class="tab_box tab03">
+						<div class="swiper-wrapper">
+							<ul class="swiper-slide">
+								<li class="bg20">
+									<a href="#;">
+										<strong>Import Insurance <br>(For Importer)</strong>
+									</a>
+								</li>
+								<li class="bg21">
+									<a href="#;">
+										<strong>Import Insurance <br>(For Financial Institute)</strong>
+									</a>
+								</li>
+								<li class="bg22">
+									<a href="#;">
+										<strong>Import Insurance <br>(Global Supply Chain)</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // Import Insurance -->
+					<!-- Others -->
+					<div id="sec03_tab03" class="tab_box tab03">
+						<div class="swiper-wrapper">
+							<ul class="swiper-slide">
+								<li class="bg23">
+									<a href="#;">
+										<strong>Overseas Debt Collection Support</strong>
+									</a>
+								</li>
+								<li class="bg24">
+									<a href="#;">
+										<strong>Confirmation of Irrecoverability</strong>
+									</a>
+								</li>
+								<li class="bg25">
+									<a href="#;">
+										<strong>Investment Risk Guarantee</strong>
+									</a>
+								</li>
+								<li class="bg26">
+									<a href="#;">
+										<strong>Environmental Review</strong>
+									</a>
+								</li>
+								<li class="bg27">
+									<a href="#;">
+										<strong>Foreign Exchange Risk Insurance</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // Others -->
+				</div>
+				<!-- // tab wrap -->
+			</section>
+			<!-- // section 03 -->
+
+			<!-- section 04 -->
+			<section id="sec04" class="sec04">
+				<div class="inner">
+					<h3 class="sec_tit">About K-SURE</h3>
+
+					<div class="top">
+						<!-- 팝업존 -->
+						<div class="popupzone">
+							<h4 class="sec_sub_tit blind">popupZone</h4>
+
+							<div class="swiper popup_wrap">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-en/images/img_popup_thumb01_en.jpg" alt=''>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-en/images/img_popup_thumb01_en.jpg" alt=''>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#;">
+											<img src="../../asset/rh-en/images/img_popup_thumb01_en.jpg" alt=''>
+										</a>
+									</div>
+								</div>
+
+								<div class="slide_unit">
+									<div class="swiper-paging">
+										<span class="paging_num num_start">1</span> /
+										<span class="paging_num num_end"><span class="blind">슬라이드 총 갯수</span></span>
+									</div>
+									<div class="swiper-button-wrap">
+										<button type="button" class="btn_prev"><span class="blind">prev</span></button>
+										<button type="button" class="btn_pause"><span class="blind">pause</span></button>
+										<button type="button" class="btn_play"><span class="blind">play</span></button>
+										<button type="button" class="btn_next"><span class="blind">next</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // 팝업존 -->
+
+						<!-- 공사소개 -->
+						<div class="introduce">
+							<h4 class="sec_sub_tit blind">Introduce</h4>
+
+							<ul class="introduce_link">
+								<li><a href="#;" class="bg01">Introduction of K-SURE</a></li>
+								<li><a href="#;" class="bg02">Organization</a></li>
+								<li><a href="#;" class="bg03">Head & Branch Office</a></li>
+								<li><a href="#;" class="bg04">Major Business Achievements</a></li>
+							</ul>
+						</div>
+						<!-- // 공사소개 -->
+
+						<!-- welcome -->
+						<div class="welcome">
+							<div class="sec_sub_tit blind">Welcome Message</div>
+
+							<a href="#;" class="welcome_box">
+								<h4 class="welcome_tit">Welcome Message</h4>
+								<p>
+									<strong>K-SURE</strong>,<br>
+									the trusted safety net for Korean trade,<br> investment and finance
+								</p>
+								<div class="welcome_btn">GO</div>
+							</a>
+
+						</div>
+						<!-- // welcome -->
+					</div>
+					<div class="bottom">
+						<ul class="direct_link">
+							<li><a href="#;">Overseas Representative Offices</a></li>
+							<li><a href="#;">Environmental Information</a></li>
+							<li><a href="#;">Q&A</a></li>
+							<li><a href="#;">Key Contact Information</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- // section 04 -->
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

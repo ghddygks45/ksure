@@ -1,0 +1,230 @@
+@use '../use'as *;
+
+.footer {
+
+	.footer_top,
+	.homepage_menu,
+	.banner_site_wrap,
+	.family_site_wrap {
+		display: none;
+	}
+
+	background:#33302a;
+
+	.footer_btm {
+		.address {
+			padding: 12px 0;
+			font-size: 12px;
+			text-align: center;
+			color: #ccc;
+
+			.addr {
+				margin-bottom: 5px;
+			}
+
+			.copy {
+				display: none;
+			}
+		}
+
+		.alio_logo_box {
+			padding-bottom: 17px;
+			font-size: 0;
+			text-align: center;
+
+			.alio_logo {
+				display: inline-block;
+				width: 188px;
+				height: 35px;
+				background: url(../images/img_alio_logo.png) no-repeat center / 188px;
+				color: transparent;
+			}
+		}
+	}
+
+	@include res--pc {
+
+		.footer_top,
+		.homepage_menu,
+		.banner_site_wrap,
+		.family_site_wrap {
+			display: block;
+		}
+
+		.footer_top {
+			height: 54px;
+			background: #26241f;
+
+			.inner {
+				@include clearboth();
+
+				.l {
+					float: left;
+				}
+
+				.r {
+					float: right;
+				}
+
+				.unit_menu {
+					@include clearboth();
+
+					li {
+						border-left: 1px solid #464540;
+						float: left;
+
+						&:last-child {
+							border-right: 1px solid #464540;
+						}
+
+						a {
+							display: block;
+							height: 54px;
+							padding: 0 20px;
+							font-size: 15px;
+							line-height: 54px;
+							color: #fff;
+						}
+					}
+				}
+
+				.sns {
+					@include clearboth();
+
+					li {
+						float: left;
+
+						a {
+							display: block;
+							width: 40px;
+							height: 54px;
+							background-repeat: no-repeat;
+							background-position: center;
+
+							&.btn_facebook {
+								background-image: url(../images/ico_facebook_gray.png);
+							}
+
+							&.btn_linkedin {
+								background-image: url(../images/ico_linkedin_gray.png);
+							}
+
+							&.btn_instargram {
+								background-image: url(../images/ico_instargram_gray.png);
+							}
+
+							&.btn_youtube {
+								background-image: url(../images/ico_youtube_gray.png);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.footer_btm {
+
+			>.inner {
+				position: relative;
+				padding: 25px 0;
+
+				.homepage_menu {
+					margin-bottom: 15px;
+					@include clearboth();
+
+					>li {
+						float: left;
+
+						&:first-child {
+							>a {
+								padding-left: 0;
+							}
+						}
+
+						&:not(:first-child) {
+							>a {
+								&:before {
+									content: '';
+									position: absolute;
+									top: 50%;
+									left: 0;
+									width: 2px;
+									height: 2px;
+									margin-top: -1px;
+									background-color: #ccc;
+								}
+							}
+						}
+
+						>a {
+							position: relative;
+							display: block;
+							padding: 0 15px;
+							font-size: 15px;
+							color: #ccc;
+						}
+					}
+				}
+
+				.address {
+					padding: 0;
+					font-size: 15px;
+					text-align: left;
+
+					>.addr {
+						margin-bottom: 0;
+					}
+
+					.copy {
+						display: block;
+					}
+				}
+
+				.alio_logo_box {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					padding-bottom: 0;
+					transform: translateY(-50%);
+
+					.alio_logo {
+						width: 264px;
+						height: 49px;
+						background-size: auto;
+					}
+				}
+
+				.banner_site_wrap,
+				.family_site_wrap {
+					position: absolute;
+					top: 50%;
+					margin-top: -22px;
+
+					>button {
+						border: 2px solid #fff;
+						width: 240px;
+						height: 44px;
+						padding: 0 44px 0 15px;
+						font-size: 15px;
+						text-align: left;
+						line-height: 40px;
+						color: #fff;
+						background: url(../images/bg_select_white.png) no-repeat right 15px top 50%;
+					}
+
+					>ul {
+						display: none;
+					}
+				}
+
+				.banner_site_wrap {
+					right: 246px;
+				}
+
+				.family_site_wrap {
+					right: 0;
+				}
+			}
+		}
+	}
+}

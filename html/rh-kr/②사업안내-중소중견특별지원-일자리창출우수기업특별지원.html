@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(7, 5);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">일자리 창출 우수기업 특별지원</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">제도 개요</h4>
+							<ul class="list shape_type1">
+								<li>일자리 창출 우수기업을 위한 무역보험 특별지원 지침
+									<ul class="list shape_type2 mt-3">
+										<li>일자리 창출 우수기업 대상 무역보험 한도 우대 및 보험료 할인해주는 프로그램</li>
+									</ul>
+								</li>
+								<li>시행기간 : ’22/9/30 까지</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">지원대상</h4>
+							<div class="des_list_box one_line_arr">
+								<div class="des_list des_corp03">
+									<h5 class="des_tit">많은 일자리 창출 기업</h5>
+									상시 근로자수 증가 기업 등
+								</div>
+								<div class="des_list des_corp04">
+									<h5 class="des_tit">좋은 일자리 창출 기업</h5>
+									근속연수 우수기업 등
+								</div>
+								<div class="des_list des_corp05">
+									<h5 class="des_tit">새로운 일자리 창출 기업</h5>
+									국내복귀기업, 창업 및 벤처기업 등
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">지원종목 및 우대 혜택</h4>
+							<div class="item_benefit_list">
+								<div class="item_box_tit">
+									<div>지원종목</div>
+									<div>우대혜택</div>
+								</div>
+								<div class="item_box">
+									<div class="item_tit bg01">
+										<strong>단기수출보험 (선적후)</strong>
+										<a href="#n" class="color_red txt_underline fwr">[안내바로가기]</a>
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>한도우대(최대 2배 이내)</li>
+											<li>보험료 할인(최대 50% 이내)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item_box">
+									<div class="item_tit bg02">
+										<strong>수출신용보증 (선적후)</strong>
+										<a href="#n" class="color_red txt_underline fwr">[안내바로가기]</a>
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>한도우대(최대 1.5배 이내)</li>
+											<li>보증료 할인(최대 50% 이내)</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item_box">
+									<div class="item_tit bg03">
+										<strong>수출신용보증 (선적전)</strong>
+										<a href="#n" class="color_red txt_underline fwr">[안내바로가기]</a>
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>추가 한도 책정 (최대 10억원 이내)</li>
+											<li>보증료 할인(최대 50% 이내)</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<p class="sm-mt-10 lg-mt-14">※ 구체적인 지원내용은 담당 영업부서를 통해 확인 가능</p>
+						</div>
+						<div class="section">
+							<h4 class="tit">일자리 창출 우수기업 선정 신청서</h4>
+							<a href="#n" class="btn_white_line ico_download">일자리 창출 우수기업 선정 신청서 다운로드</a>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

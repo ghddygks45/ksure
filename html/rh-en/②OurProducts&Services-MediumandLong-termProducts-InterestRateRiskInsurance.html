@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 11);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Interest Rate Risk Insurance</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">Overview of Scheme</h4>
+							This scheme is to compensate for losses suffered by financial institutes that provided export finance with
+							a repayment period of at least two years and are covered by K-SURE’s medium and long-term export credit
+							insurance (buyer credit) according to interest rate fluctuations, and to redeem gains of the financial
+							institutes.
+							<ul class="list shape_type1 sm-mt-5 lg-mt-10">
+								<li>To improve the capacity of Korean companies to secure orders for medium and long-term export
+									transactions on deferred payment basis, such as for petrochemical and power generation facilities, it
+									is necessary to have financial institutes offering loan products with better conditions participate in
+									the transactions, in addition to the companies’ providing competitive export products and prices.
+									However, the OECD has established the principle to set the minimum interest rate provided to buyers as
+									CIRR in order to prevent excessive competition among member states in international competitive
+									bidding.</li>
+								<li>The issue is that not only the number of financial institutes capable of providing export finance on
+									the condition of CIRR is limited, but also commercial banks prefer loans with variable interest rates
+									while buyers prefer loans with fixed interest rates.</li>
+								<li>Interest rate risk insurance has been introduced to resolve the differences in interests between
+									financial contract parties, and ensure successful use of export finance by companies.</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">Effect of Interest Rate Risk Insurance</h4>
+							Importers (borrowers) can take out loans on the basis of CIRR, the minimum fixed interest rate, permitted
+							by the OECD Arrangement.
+							<div class="mt-10">Lenders (financial institutes) can stably enjoy gains for the spread as guaranteed by
+								K-SURE while hedging interest rate risks associated with borrowing on variable interest rates and loans
+								on fixed interest rates.</div>
+							<div class="sub_section sm-mt-15 lg-mt-20">
+								<h5 class="sub_tit">Fund flow</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-en/images/img_insur15.jpg" alt="Transaction Structure for Buyer Credit">
+									<a href="../../asset/rh-en/images/img_insur15.jpg" class="btn_img_size">크게보기</a>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Interest rate difference settlement method</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">Settlement Time</h5>
+								Next business day of interest payment date
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">Settlement Method</h5>
+								<div class="des_list_box one_line_arr">
+									<div class="des_list bg_des_calc">
+										<h5 class="des_tit">Settlement amount for the balance of loan principal based on the immediately
+											preceding interest payment date*</h5>
+										Balance of loan principal based on the immediately preceding interest payment date x {CIRR-(LIBOR +
+										Spread)}x(number of days elapsed/360)
+										<p class="sm-mt-6 lg-mt-20">* Number of Days Elapsed : Immediately preceding interest payment date -
+											interest payment date <br>LIBOR: LIBOR announced two business days before interest period start
+											date
+										</p>
+									</div>
+									<div class="des_list bg_des_calendar">
+										<h5 class="des_tit">Settlement amount for new loan amount during the respective interest period*
+										</h5>
+										New loan amount during respective interest period x {(CIRR-(LIBOR + Spread)}x(number of days
+										elapsed/360)
+										<p class="sm-mt-6 lg-mt-10">* Number of Days Elapsed : Date of withdrawal - first interest payment
+											date <br>LIBOR: LIBOR announced two business days before date of withdrawal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

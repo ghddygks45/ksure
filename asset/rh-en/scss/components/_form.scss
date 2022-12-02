@@ -1,0 +1,417 @@
+@use '../use'as *;
+
+// input
+input[type=text],
+input[type=search],
+input[type=password] {
+	box-sizing: border-box;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 10px;
+	border: 1px solid #d9d9d9;
+	background-color: #fff;
+	vertical-align: middle;
+	font-family: inherit;
+	font-weight: 300;
+	color: #666;
+
+	@include res--pc-ctn {
+		height: 50px;
+		padding: 0 15px;
+		font-size: 16px;
+	}
+}
+
+.input-disabled:disabled,
+.input-readonly {
+	background: #f6f6f6 !important;
+}
+
+// select
+select {
+	box-sizing: border-box;
+	height: 38px;
+	padding: 0 28px 0 10px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAAXNSR0IArs4c6QAAAC1JREFUGFdjnDlz5v/09HRGBhwAJA+WxKUQJg43AV0hMh/FGpgEugYMt2CzGgBQDyLQC2T6vwAAAABJRU5ErkJggg==);
+	background-repeat: no-repeat;
+	background-size: 7px;
+	background-position: calc(100% - 10px) 50%;
+	border: 1px solid #d9d9d9;
+	background-color: #fff;
+	vertical-align: middle;
+	font-family: inherit;
+	font-weight: 300;
+	color: #666;
+
+	@include res--pc-ctn {
+		height: 50px;
+		padding: 0 40px 0 15px;
+		background-size: 10px;
+		background-position: calc(100% - 15px) 50%;
+		font-size: 16px;
+	}
+}
+
+// checkbox, radio
+.ck-lb,
+.rd-lb {
+	display: inline-block;
+	margin-right: 10px;
+
+	&>input:focus+label {
+		outline: 1px dotted #e43c3c;
+	}
+
+	@at-root {
+		.ck-lb {
+			> {
+				input[type=checkbox]:checked+label {
+					background-image: url(../images/bg_checkbox_on.png);
+				}
+
+				label {
+					display: inline-block;
+					padding-left: 19px;
+					background: url(../images/bg_checkbox_off.png) no-repeat 0 3px;
+					background-size: 15px 15px;
+				}
+			}
+		}
+
+		.rd-lb {
+			> {
+				input[type=radio]:checked+label {
+					background-image: url(../images/bg_radio_on.png);
+				}
+
+				label {
+					display: inline-block;
+					padding-left: 19px;
+					background: url(../images/bg_radio_off.png) no-repeat 0 3px;
+					background-size: 15px 15px;
+				}
+			}
+		}
+	}
+
+	&.single>label {
+		width: 15px;
+		height: 15px;
+		padding-left: 0;
+		background-position-y: 0;
+	}
+
+	&.mgn {
+		margin-right: 0;
+	}
+
+	@include res--pc-ctn {
+		margin-right: 15px;
+
+		>label {
+			padding-left: 30px;
+			background-position: 0 2px;
+			background-size: 22px 22px;
+		}
+
+		&.single>label {
+			width: 22px;
+			height: 22px;
+		}
+	}
+}
+
+// datepicker
+.date {
+	display: inline-flex;
+	align-items: center;
+
+	>.date-inp {
+		position: relative;
+		//width: 120px;
+
+		>input {
+			width: 100%;
+			padding-right: 36px;
+		}
+
+		>.ui-datepicker-trigger {
+			position: absolute;
+			right: 10px;
+			top: 11px;
+			width: 16px;
+			height: 16px;
+			overflow: hidden;
+			background: url(../images/btn_datepicker.png) no-repeat 0 0;
+			background-size: 16px;
+			text-indent: -1000%;
+		}
+	}
+
+	>.date_char {
+		margin: 0 5px;
+	}
+
+	@include res--pc-ctn {
+		>.date-inp {
+			width: 240px;
+
+			>input {
+				padding-right: 50px;
+			}
+
+			>.ui-datepicker-trigger {
+				right: 15px;
+				top: 15px;
+				width: 20px;
+				height: 20px;
+				background-size: auto;
+			}
+		}
+
+		>.date_char {
+			margin: 0 10px;
+		}
+	}
+}
+
+
+// search
+.search_board {
+	margin-bottom: 20px;
+	padding: 17px 15px;
+	border: 3px solid #eee;
+
+	.inr {
+		position: relative;
+		font-size: 0;
+
+		>div {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		select {
+			width: 85px;
+			font-size: 13px;
+		}
+
+		.select_box {
+			width: 85px;
+		}
+
+		.input_box {
+			position: relative;
+			width: calc(100% - 85px);
+			padding: 0 47px 0 5px;
+
+			input[type=text] {
+				width: 100%;
+				font-size: 13px;
+			}
+
+			button {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 42px;
+				height: 35px;
+				background: #666;
+				font-size: 12px;
+				color: #fff;
+			}
+		}
+
+		.lab {
+			display: block;
+			margin-bottom: 8px;
+			font-size: 14px;
+			font-weight: 500;
+			color: #222;
+
+			&+.input_box {
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+@include res--pc-ctn {
+	.search_board {
+		margin-bottom: 30px;
+		padding: 25px;
+		border-width: 4px;
+		text-align: center;
+		font-size: 0;
+
+		.inr {
+			position: relative;
+			font-size: 0;
+
+			div {
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			select {
+				float: none;
+				width: auto;
+				min-width: 150px;
+				font-size: 16px;
+			}
+
+			.select_box {
+				width: auto;
+				margin-right: 5px;
+
+				>div:not(:last-child) {
+					margin-right: 5px;
+				}
+			}
+
+			.input_box {
+				width: auto;
+				padding: 0;
+
+				input[type=text] {
+					width: 300px;
+					margin-right: 5px;
+					font-size: 16px;
+				}
+
+				button {
+					position: static;
+					width: 58px;
+					height: 44px;
+					font-size: 16px;
+				}
+			}
+
+			.lab {
+				display: inline-block;
+				margin: 10px 20px 0 0;
+				line-height: 1;
+				font-weight: 500;
+				font-size: 16px;
+
+				&+.input_box {
+					width: auto;
+					padding-left: 0;
+
+					>input[type=text] {
+						width: 400px;
+					}
+				}
+			}
+		}
+
+		&.multi .inr {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
+.detail_search {
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 3px solid #eee;
+
+	.row {
+		&:not(:last-child) {
+			margin-bottom: 13px;
+		}
+	}
+
+	.cell_l {
+		margin-bottom: 5px;
+
+		>strong {
+			font-size: 14px;
+			color: #222;
+		}
+	}
+
+	.inline_txt {
+		margin-top: 7px;
+	}
+}
+
+.search_word {
+	display: flex;
+
+	>input {
+		flex: 1;
+	}
+
+	>button {
+		flex: none;
+		width: 42px;
+		height: 35px;
+		margin-left: 5px;
+		background: #666;
+		font-size: 13px;
+		color: #fff;
+	}
+}
+
+@include res--pc-ctn {
+	.detail_search {
+		display: table;
+		width: 100%;
+		table-layout: auto;
+		margin-bottom: 30px;
+		padding: 27px;
+		border-width: 4px;
+
+		.row {
+			// display: flex;
+			// align-items: center;
+			display: table-row;
+
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+
+			&:not(:last-child) .cell_l,
+			&:not(:last-child) .cell_r {
+				padding-bottom: 20px;
+			}
+		}
+
+		.cell_l {
+			display: table-cell;
+			width: 113px;
+			margin-bottom: 0;
+			padding-right: 26px;
+			white-space: nowrap;
+
+			>strong {
+				font-size: 16px;
+			}
+		}
+
+		.cell_r {
+			display: table-cell;
+		}
+
+		.inline_txt {
+			display: inline-block;
+			margin-top: 0;
+		}
+	}
+
+	.search_word {
+		>input {
+			flex: none;
+			width: 400px;
+		}
+
+		>button {
+			width: 58px;
+			height: 44px;
+			font-size: 16px;
+		}
+	}
+}

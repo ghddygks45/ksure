@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(6, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">공공데이터 개방 제도안내</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info10">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">공공데이터 개방이란?</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									국가기관, 지방자치단체, 공공기관 등이 법령 등에서 정하는 목적을 위하여 생성 또는 취득하여 관리하고 있는 데이터베이스, 전자화된 파일 등
+									광(光) 또는 전자적 방식으로 처리된 공공데이터를 민간에 제공함으로써, 민간 활용을 통한 신규 비즈니스와 일자리 창출, 국민 편익을 향상하기
+									위한 제도입니다.
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">공공데이터 개방</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">공공데이터란?</h5>
+								데이터베이스, 전자화된 파일 등 공공기관이 법령등에서 정하는 목적을 위하여 생성 또는 취득하여 관리하고 있는 광 또는 전자적 방식으로 처리된 자료 또는 정보를 말합니다.
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">개방이란?</h5>
+								공공기관이 이용자에게 공공데이터를 활용할 수 있는 형태로 제공하고, 제공받은 공공데이터를 영리적·비영리적으로 이용할 권한을 부여하는 것을 말합니다.
+								<div class="box_border bg_lightgray2 sm-mt-10 lg-mt-15">
+									<ul class="list shape_type1">
+										<li>정부는 국민 누구나 공공데이터를 자유롭게 재이용 할 수 있는 권리를 보장하겠습니다.</li>
+										<li>누구나 공공데이터를 활용 및 융복합하여 가상재화나 서비스를 생산, 이익을 창출토록하겠습니다.</li>
+										<li>국민 삶의 질 제고와 신산업, 일자리 창출로 경제활성화에 기여하도록 하겠습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">공공데이터 제공목록 및 이용신청</h4>
+							공공데이터의 제공 및 이용활성화에 관한 법률에 따라 공공데이터포털에서 제공목록을 조회하실 수 있으며, 법률 제27조에 따라 제공목록에 포함되지 않은 공공데이터를
+							신청하실 수 있습니다.
+						</div>
+						<div class="section">
+							<h4 class="tit">공공데이터개방책임관</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>공공데이터개방책임관 표로 구분, 담당, 연락처 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">담당</th>
+											<th scope="col">연락처</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<td><strong class="bold">공공데이터제공 책임관</strong></td>
+											<td><strong class="bold">사회적가치혁신실장 류용웅</strong></td>
+											<td>02-399-7359</td>
+										</tr>
+										<tr class="txt_c">
+											<td><strong class="bold">공공데이터제공 실무담당자</strong></td>
+											<td><strong class="bold">정보화사업부 최성민</strong></td>
+											<td>02-399-7095</td>
+										</tr>
+										<tr class="txt_c">
+											<td><strong class="bold">공공데이터제공 실무담당자</strong></td>
+											<td><strong class="bold">사회적가치혁신실 박소영</strong></td>
+											<td>02-399-5326</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn_wrap btn_wrap_m txt_c">
+							<a href="#n" class="btn btn_link_site ico_arrow_w bg_red">공공데이터 목록(공공데이터포털) 바로가기</a>
+							<a href="#n" class="btn btn_link_site ico_arrow_w bg_red">공공데이터 이용신청(공공데이터포털) 바로가기</a>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

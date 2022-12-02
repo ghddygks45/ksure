@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(6);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Confirmation of Irrecoverability</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info15">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">Confirmation of Irrecoverability</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									Service of K-SURE to check that a claim generated through the export of goods or provision of service
+									overseas is irrecoverable according to Article 19-2 of the Enforcement Decree of the Corporate Tax Act
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Requirements for Confirmation</h4>
+							<ul class="list shape_type1">
+								<li><strong class="bold">K-SURE can confirm irrecoverability of a claim limitedly when <span
+											class="color_red txt_underline">documentary evidence</span>for any of the following cases
+										specified in the Enforcement Rules of the Corporate Tax Act are submitted.</strong>
+								</li>
+								<li><strong class="bold">[Enforcement Rules of the Corporate Tax Act] Article 10-4 (Reasons for
+										Irrecoverability and Scope of Claims Determined as Irrecoverable)</strong>
+									<ul class="list shape_type2">
+										<li>In the event a local correspondent bank, chamber of commerce and industry or public organization
+											confirms that a claim is irrecoverable due to bankruptcy or disappearance of the debtor, or any
+											equivalent force majeure</li>
+										<li>In the event a dispute arises between the parties to a transaction and an intermediary agency,
+											court, or insurance agency, etc., decides to reduce the claim amount, or fixes the claim amount
+											as the expenses incurred (In the event a partial amount of claim is reduced or a partial amount of
+											claim is fixed as the expenses incurred, the scope of claim determined as irrecoverable shall be
+											the reduced amount or amount fixed as expenses incurred.)</li>
+										<li>In the event a claim amount reduction is decided as the claim is irrecoverable due to the
+											debtor’s refusal to underwrite or pay the claim, or inevitably according to an agreement between
+											parties to the transaction, and upon confirmation by a local correspondent bank, investigation
+											agency, notary public, or public organization (In the event a partial amount of claim is
+											reduced, the scope of claim determined as irrecoverable shall be the reduced amount.)</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

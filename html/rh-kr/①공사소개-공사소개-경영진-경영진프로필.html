@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 3);
+			}, 100);
+
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">경영진 프로필</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-공사소개-경영진-경영진프로필.html" class="active">경영진 프로필</a></li>
+							<li><a href="①공사소개-공사소개-경영진-감사프로필.html">감사 프로필</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="blind">사장, 부사장</h4>
+							<div class="profile_wrap ceo">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_01.jpg" alt="">
+										</div>
+										<div class="name_box">
+											<div class="name">이인호<span class="position">한국무역보험공사 사장</span></div>
+											<a href="#n" class="btn_white_line ico_arrow sm-mt-15 lg-mt-25"
+												onclick="fn_open_popup_fadeIn('detail01', this);">상세 프로필</a>
+										</div>
+									</div>
+									<div class="career">
+										<ul class="list shape_type1">
+											<li>
+												<dl>
+													<dt>학력</dt>
+													<dd>서울대 경제학 졸업</dd>
+													<dd>서울대 행정학 석사</dd>
+													<dd>Harvard Kennedy School of Government 석사</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>주요경력</dt>
+													<dd>산업통상자원부 통상차관보</dd>
+													<dd>산업통상자원부 차관</dd>
+													<dd>한국무역보험공사 사장</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="profile_wrap sub_ceo sm-mt-20 lg-mt-30">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_02.jpg" alt="">
+										</div>
+										<div class="name_box">
+											<div class="name">백승달<span class="position">부사장</span></div>
+											<p class="sm-mt-15 lg-mt-20">프로젝트금융본부장</p>
+										</div>
+									</div>
+									<div class="career">
+										<ul class="list shape_type1">
+											<li>
+												<dl>
+													<dt>학력</dt>
+													<dd>Indiana University MBA</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>주요경력</dt>
+													<dd>프로젝트금융 본부장</dd>
+												</dl>
+											</li>
+										</ul>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail02', this);">상세 프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_03.jpg" alt="">
+										</div>
+										<div class="name_box">
+											<div class="name">김호일<span class="position">부사장</span></div>
+											<p class="sm-mt-15 lg-mt-20">전략경영본부장</p>
+										</div>
+									</div>
+									<div class="career">
+										<ul class="list shape_type1">
+											<li>
+												<dl>
+													<dt>학력</dt>
+													<dd>서울대 서양사학과 졸업</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>주요경력</dt>
+													<dd>전략경영본부장</dd>
+												</dl>
+											</li>
+										</ul>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail03', this);">상세 프로필</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">본부장</h4>
+							<div class="profile_wrap">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_04.jpg" alt="">
+										</div>
+										<div class="name">윤종배<span class="position">본부장</span></div>
+									</div>
+									<div class="career">
+										<p>중소중견사업본부장</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail04', this);">상세 프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_05.jpg" alt="">
+										</div>
+										<div class="name">박진식<span class="position">본부장</span></div>
+									</div>
+									<div class="career">
+										<p>혁신사업본부장</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail05', this);">상세 프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_06.jpg" alt="">
+										</div>
+										<div class="name">장진욱<span class="position">본부장</span></div>
+									</div>
+									<div class="career">
+										<p>리스크채권본부장</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail06', this);">상세 프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_07.jpg" alt="">
+										</div>
+										<div class="name">강신호<span class="position">본부장</span></div>
+									</div>
+									<div class="career">
+										<p>무역사업본부장</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail07', this);">상세 프로필</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">비상임이사</h4>
+							<div class="profile_wrap">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_08.jpg" alt="">
+										</div>
+										<div class="name">유희열<span class="position">비상임이사</span></div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup_fadeIn('detail08', this);">상세
+											프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_09.jpg" alt="">
+										</div>
+										<div class="name">한명환<span class="position">비상임이사</span></div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup_fadeIn('detail09', this);">상세
+											프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_10.jpg" alt="">
+										</div>
+										<div class="name">진양현<span class="position">비상임이사</span></div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup_fadeIn('detail10', this);">상세
+											프로필</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-kr/images/img_profile_11.jpg" alt="">
+										</div>
+										<div class="name">남혜정<span class="position">비상임이사</span></div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup_fadeIn('detail11', this);">상세
+											프로필</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ceo popup -->
+						<div class="layer_popup_box" data-popup="detail01">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_01.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">이인호<span class="position">한국무역보험공사 사장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>서울대 경제학 졸업</dd>
+															<dd>서울대 행정학 석사</dd>
+															<dd>Harvard Kennedy School of Government 석사</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>산업통상자원부 기획조정실 정책기획관</dd>
+															<dd>산업통상자원부 창의산업정책관</dd>
+															<dd>산업통상자원부 무역투자실장</dd>
+															<dd>산업통상자원부 통상차관보</dd>
+															<dd>산업통상자원부 차관</dd>
+															<dd>한국무역보험공사 사장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail01');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // ceo popup -->
+
+
+						<!-- sub_ceo popup -->
+						<div class="layer_popup_box" data-popup="detail02">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_02.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">백승달<span class="position">부사장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>서울대 서양사학과 졸업</dd>
+															<dd>Indiana University MBA</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>비서실 실장</dd>
+															<dd>뉴욕지사 지사장</dd>
+															<dd>리스크총괄부 부장</dd>
+															<dd>전략기획부 부장</dd>
+															<dd>단기영업부 부장</dd>
+															<dd>한국무역보험공사 본부장</dd>
+															<dd>한국무역보험공사 부사장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail02');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail03">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_03.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">김호일<span class="position">부사장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>서울대 농경제학 졸업</dd>
+															<dd>서울대 농경제학 석사</dd>
+															<dd>성균관대 무역학 박사</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>홍보비서실장</dd>
+															<dd>리스크분석부장</dd>
+															<dd>해외투자금융부장</dd>
+															<dd>투자금융총괄실장</dd>
+															<dd>한국무역보험공사 본부장</dd>
+															<dd>한국무역보험공사 부사장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail03');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // sub_ceo popup -->
+
+
+						<!-- other popup -->
+						<div class="layer_popup_box" data-popup="detail04">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_04.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">윤종배<span class="position">본부장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>서울대 미학과 졸업</dd>
+															<dd>서울대 경영학 석사</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>경기북부지사장</dd>
+															<dd>경영평가부장</dd>
+															<dd>플랜트금융2부장</dd>
+															<dd>영업총괄실장</dd>
+															<dd>기획조정실장</dd>
+															<dd>한국무역보험공사 본부장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail04');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail05">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_05.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">박진식<span class="position">본부장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>경북대 사법학 졸업</dd>
+															<dd>연세대 경영학 석사</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>인사팀장</dd>
+															<dd>경기북부지사 지사장</dd>
+															<dd>비서실장</dd>
+															<dd>경영평가부장</dd>
+															<dd>인사부장</dd>
+															<dd>혁신사업본부 본부장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail05');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail06">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_06.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">장진욱<span class="position">본부장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>연세대 경제학 졸업</dd>
+															<dd>Thunderbird University MBA</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>두바이지사 지사장</dd>
+															<dd>투자금융총괄실 실장</dd>
+															<dd>기획조정실 실장</dd>
+															<dd>리스크채권본부 본부장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail06');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail07">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_07.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">강신호<span class="position">본부장</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>고려대 법학과 졸업</dd>
+															<dd>Cornell University 법학</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>중앙지사 지사장</dd>
+															<dd>조사부 부장</dd>
+															<dd>법무실 실장</dd>
+															<dd>경영평가부 부장</dd>
+															<dd>영업총괄실 실장</dd>
+															<dd>한국무역보험공사 본부장</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail07');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail08">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_08.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">유희열<span class="position">비상임이사</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>서울대 문리과대학</dd>
+															<dd>서울대 행정학(碩)</dd>
+															<dd>고려대 행정학(博)</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>과학기술처 차관</dd>
+															<dd>부산대 석좌교수</dd>
+															<dd>(現)한국무역보험공사 비상임이사</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail08');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail09">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_09.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">한명환<span class="position">비상임이사</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>성균관대 경제학</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>한국수출입은행 남북기획실장</dd>
+															<dd>한국수출입은행 뉴욕사무소장</dd>
+															<dd>(現)한국무역보험공사 비상임이사</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail09');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail10">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_10.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">진양현<span class="position">비상임이사</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>경희대 경제학</dd>
+															<dd>경희대 행정학, 서울대 정책학(碩)</dd>
+															<dd>Budapest University of Economic Sciences 경제학(博)</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>기재부 기획재정담당관</dd>
+															<dd>기재부 행정예산국장</dd>
+															<dd>IMF Senior Economist</dd>
+															<dd>방위사업청 차장</dd>
+															<dd>부산진해경제자유구역청 청장</dd>
+															<dd>부산대 국제전문대학원 교수</dd>
+															<dd>(現) 부산경제진흥원 원장</dd>
+															<dd>(現) 한국무역보험공사 비상임이사</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail10');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail11">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">경영진 프로필</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-kr/images/img_profile_11.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">남혜정<span class="position">비상임이사</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>학력</dt>
+															<dd>인하대 경영학</dd>
+															<dd>서울대 회계학(碩)</dd>
+															<dd>서울대 회계학(博)</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>주요경력</dt>
+															<dd>국가회계제도심의위원회 위원</dd>
+															<dd>서울시 중구 지방재정공시심의위원회 위원</dd>
+															<dd>동국대 경영대학 교수</dd>
+															<dd>(現)한국무역보험공사 비상임이사</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail11');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // other popup -->
+
+						<script>
+							function fn_open_popup_fadeIn(tg, e) {
+								fn_open_popup(tg, e);
+
+								var tgPopup = $(".layer_popup_box[data-popup=" + tg + "]"),
+									tgPopupCont = tgPopup.find('.popup_content'),
+									tgPopupContHeight = tgPopupCont.outerHeight(),
+									tgPopupProfile = tgPopup.find('.profile_box');
+
+								tgPopupCont.css('height', tgPopupContHeight);
+								tgPopupProfile.css('display', 'none');
+
+								setTimeout(function () {
+									tgPopupProfile.slideDown(800);
+								}, 100)
+
+							}
+						</script>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-md/css/style.css">
+	<script src="../../asset/rh-md/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-md/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-md/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-md/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-md/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-md/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-md/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(8, 8);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">기금운용공시</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- tab -->
+					<ul class="tab tab_pc_3">
+						<li><a href="⑥정보공개-경영공시-기금운용공시-일반사항.html" class="active">일반사항</a></li>
+						<li><a href="⑥정보공개-경영공시-기금운용공시-기금운용평가결과.html">기금운용 평가결과</a></li>
+						<li><a href="#;">기금운용기준-자산운용지침(IPS)</a></li>
+						<li><a href="#;">연간자금운용계획(수입지출현황 포함)</a></li>
+						<li><a href="#;">투자 및 수익률 현황</a></li>
+						<li><a href="#;">기타공시</a></li>
+					</ul>
+					<!-- // tab -->
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">자금운용의 원칙</h4>
+							<ul class="list shape_type1">
+								<li> 기금의 설치목적을 충실히 수행하기 위하여 안정성을 기본 원칙으로 하여 운용하여야 한다.</li>
+								<li>보험금 지급 등 적기 지출에 대비하여 적정 유동성을 확보하여야 한다.</li>
+								<li>안정성을 해치지 않는 범위내에서 공공성을 고려하여 정부의 정책추진방향에 부합하도록 운용하여야 한다.</li>
+								<li>안정성, 유동성 및 공공성을 크게 해치지 않는 범위내에서 수익성을 도모하여 기금확대 조성에 기여하여야 한다.</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">자금운용의 근거</h4>
+							무역보험법 제33조(기금의 운용) 기금은 다음 각 호의 방법으로 운용한다. 다만, 제4호의 방법으로 운용하는 경우에는 산업통상자원부장관의 승인을 받아야 한다.
+							<ul class="list shape_type1 sm-mt-10 lg-mt-17">
+								<li>금융기관에 예입(預入)</li>
+								<li>국채·지방채 또는 증권거래소에 상장된 유가증권의 매입</li>
+								<li>금융기관 또는 특별법에 따라 설립된 법인이 발행하거나 지급을 보증한 유가증권의 매입</li>
+								<li>제2호와 제3호에 해당되지 아니하는 유가증권의 매입</li>
+								<li>그 밖에 산업통상자원부장관이 기획재정부장관과 협의하여 정하는 방법</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">자금운용관련 의사결정 체계도</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-md/images/img_fund_use.jpg" alt="하단에 내용 참고 바랍니다.">
+								<a href="../../asset/rh-md/images/img_fund_use.jpg" class="btn_img_size">크게보기</a>
+							</div>
+							<div class="sm-mt-5 lg-mt-10">※ 자금부(자산운용 전담)와 리스크총괄실(리스크관리 전담)은 각각 별도의 본부(전략경영본부 및 리스크채권본부)에 소속되어 독립적으로 운영
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

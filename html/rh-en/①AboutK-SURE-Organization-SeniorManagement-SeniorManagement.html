@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Senior Management</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="#n" class="active">Senior Management</a></li>
+							<li><a href="#n">Auditor</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="blind">Chairman and President, Deputy President</h4>
+							<div class="profile_wrap ceo">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_01.jpg" alt="">
+										</div>
+										<div class="name_box">
+											<div class="name">Inho Lee<span class="position">Chairman and President</span></div>
+											<a href="#n" class="btn_white_line ico_arrow sm-mt-15 lg-mt-25"
+												onclick="fn_open_popup_fadeIn('detail01', this);">CEO's Profile</a>
+										</div>
+									</div>
+									<div class="career">
+										<ul class="list shape_type1">
+											<li>
+												<dl>
+													<dt>Education</dt>
+													<dd>B.A. in Economics, Seoul National University, Korea</dd>
+													<dd>M.A. in Public Administration, Seoul National University</dd>
+													<dd>M.A. in Public Administration, Harvard Kennedy School</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>Career Highlights </dt>
+													<dd>Assistant Deputy Minister of Trade, MOTIE</dd>
+													<dd>Vice Minister, Ministry of Trade, Industry and Energy (MOTIE)</dd>
+													<dd>President and Chairman, Korea Trade Insurance Corporation</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="profile_wrap sub_ceo sm-mt-20 lg-mt-30">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_02.jpg" alt="">
+										</div>
+										<div class="name_box">
+											<div class="name">Baek Seung-dal</div>
+											<div class="color_red mt-3">Deputy President</div>
+										</div>
+									</div>
+									<div class="career">
+										<ul class="list shape_type1">
+											<li>
+												<dl>
+													<dt>Education</dt>
+													<dd>Master of Business Administration, Indiana University</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>Career Highlights</dt>
+													<dd>Deputy President, K-SURE</dd>
+												</dl>
+											</li>
+										</ul>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail02', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_03.jpg" alt="">
+										</div>
+										<div class="name_box">
+											<div class="name">Kim, Ho-ill</div>
+											<div class="color_red mt-3">Deputy President</div>
+										</div>
+									</div>
+									<div class="career">
+										<ul class="list shape_type1">
+											<li>
+												<dl>
+													<dt>Education</dt>
+													<dd>Ph.D. in International Trade, Sungkyunkwan University</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt>Career Highlights</dt>
+													<dd>Deputy President, K-SURE</dd>
+												</dl>
+											</li>
+										</ul>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail03', this);">Profile</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">general manager</h4>
+							<div class="profile_wrap">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_04.jpg" alt="">
+										</div>
+										<div class="name">Yoon, Jong-Bae</div>
+										<div class="color_red">Executive Director</div>
+									</div>
+									<div class="career">
+										<p>SME Business Division</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail04', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_05.jpg" alt="">
+										</div>
+										<div class="name">Park, Jin-Sik</div>
+										<div class="color_red">Executive Director</div>
+									</div>
+									<div class="career">
+										<p>Business Innovation Division</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail05', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_06.jpg" alt="">
+										</div>
+										<div class="name">Jang, Jin-Wook</div>
+										<div class="color_red">Executive Director</div>
+									</div>
+									<div class="career">
+										<p>Risk & Recoveries Division</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail06', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_07.jpg" alt="">
+										</div>
+										<div class="name">Kang Shin-Ho</div>
+										<div class="color_red">Executive Director</div>
+									</div>
+									<div class="career">
+										<p>Trade Business Division</p>
+										<a href="#n" class="btn_white_line ico_arrow sm-mt-10 lg-mt-15"
+											onclick="fn_open_popup_fadeIn('detail07', this);">Profile</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">non-executive director</h4>
+							<div class="profile_wrap">
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_08.jpg" alt="">
+										</div>
+										<div class="name">Yu Hee-yol</div>
+										<div class="color_red">Board Member</div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow"
+											onclick="fn_open_popup_fadeIn('detail08', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_09.jpg" alt="">
+										</div>
+										<div class="name">Han Myung-hwan</div>
+										<div class="color_red">Board Member</div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow"
+											onclick="fn_open_popup_fadeIn('detail09', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_10.jpg" alt="">
+										</div>
+										<div class="name">Jin Yang-hyun</div>
+										<div class="color_red">Board Member</div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow"
+											onclick="fn_open_popup_fadeIn('detail10', this);">Profile</a>
+									</div>
+								</div>
+								<div class="profile_box">
+									<div class="profile">
+										<div class="pic">
+											<img src="../../asset/rh-en/images/img_profile_11.jpg" alt="">
+										</div>
+										<div class="name">Nam Hye-Jeong</div>
+										<div class="color_red">Board Member</div>
+									</div>
+									<div class="career">
+										<a href="#n" class="btn_white_line ico_arrow"
+											onclick="fn_open_popup_fadeIn('detail11', this);">Profile</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ceo popup -->
+						<div class="layer_popup_box" data-popup="detail01">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_01.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Inho Lee<span class="position">Chairman and President</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>M.A. in Public Administration, Harvard Kennedy School</dd>
+															<dd>M.A. in Public Administration, Seoul National University</dd>
+															<dd>B.A. in Economics, Seoul National University, Korea</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>President and Chairman, Korea Trade Insurance Corporation</dd>
+															<dd>Vice Minister, Ministry of Trade, Industry and Energy (MOTIE)</dd>
+															<dd>Assistant Deputy Minister of Trade, MOTIE</dd>
+															<dd>Deputy Minister for Trade and Investment, MOTIE</dd>
+															<dd>Director General for Industrial Innovation Policy, MOTIE</dd>
+															<dd>Director General for Policy Coordination, MOTIE</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail01');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<!-- // ceo popup -->
+
+
+						<!-- sub_ceo popup -->
+						<div class="layer_popup_box" data-popup="detail02">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_02.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Baek Seung-dal<span class="position">Deputy President</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>Master of Business Administration, Indiana University</dd>
+															<dd>Bachelor of Western History, Seoul National University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Deputy President, K-SURE</dd>
+															<dd>Executive Director, K-SURE</dd>
+															<dd>Senior Director, Short-term Business Division</dd>
+															<dd>Senior Director, Strategic Planning Division</dd>
+															<dd>Senior Director, Risk Coordination Division</dd>
+															<dd>Chief Representative, K-SURE New York Representative Office</dd>
+															<dd>Senior Director, Secretarial Office</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail02');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail03">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_03.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Kim, Ho-ill<span class="position">Deputy President</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>Ph.D. in International Trade, Sungkyunkwan University</dd>
+															<dd>M.A. in Agriculture and Life Sciences, Seoul National University</dd>
+															<dd>B.A. in Agriculture and Life Sciences, Seoul National University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Deputy President, K-SURE</dd>
+															<dd>Executive Director, K-SURE</dd>
+															<dd>Senior Director, Investment & Finance Coordination Department</dd>
+															<dd>Senior Director, Overseas Investment Finance Department</dd>
+															<dd>Senior Director, Risk Analysis Department</dd>
+															<dd>Senior Director, Public Relations and Secretarial Department</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail03');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<!-- // sub_ceo popup -->
+
+
+						<!-- other popup -->
+						<div class="layer_popup_box" data-popup="detail04">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_04.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Yoon, Jong-Bae<span class="position">Executive Director</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>Master of Business Administration, Seoul National University</dd>
+															<dd>Bachelor of Aesthetics, Seoul National University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Executive Director, K-SURE</dd>
+															<dd>Senior Director, Planning and Coordination Department</dd>
+															<dd>Senior Director, Business Coordination Department</dd>
+															<dd>Senior Director, Project Finance Department Ⅱ</dd>
+															<dd>Senior Director, Management Evaluation Department</dd>
+															<dd>General Manager, Gyeonggi Northern Bra</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail04');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail05">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_05.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Park, Jin-Sik<span class="position">Executive Director</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>Master of Business Administration, Yeonsei University</dd>
+															<dd>Bachelor Private Law, Kyungpook National Unviersity</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Executive Director, K-SURE</dd>
+															<dd>Senior Director, Department of Human Resources</dd>
+															<dd>Senior Director, Management Evaluation Department</dd>
+															<dd>Senior Director, Secretarial Department</dd>
+															<dd>General Manager, Gyeonggi Northern Branch</dd>
+															<dd>Director, Human Resources Team</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail05');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail06">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_06.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Jang, Jin-Wook<span class="position">Executive Director</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>Master of Business Administration, Thunderbird University</dd>
+															<dd>Bachelor of Economics, Yonsei University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Executive Director, K-SURE</dd>
+															<dd>Senior Director, Planning and Coordination Department</dd>
+															<dd>Senior Director, Project Finance Coordination Department</dd>
+															<dd>Chief Representative, Dubai Representative Office</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail06');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail07">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_07.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Kang Shin-Ho<span class="position">Executive Director</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>Master of Law, Cornell University</dd>
+															<dd>Bachelor of Law, Korea University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Executive Director, K-SURE</dd>
+															<dd>Senior Director, Business Coordination Department</dd>
+															<dd>Senior Director, Management Evaluation Department</dd>
+															<dd>Senior Director, Legal and Compliance Department</dd>
+															<dd>Senior Director, Research Department</dd>
+															<dd>General Manager, Central Branch</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail07');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail08">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_08.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Yu Hee-yol<span class="position">Board Member</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>PhD. in Public Administration, Korea University</dd>
+															<dd>M.S. in Public Administration, Seoul National University</dd>
+															<dd>B.A. in Liberal Arts and Sciences, Seoul National University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Chair professor of Pusan National University</dd>
+															<dd>Vice Minister of Ministry of Science-Technology</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail08');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail09">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_09.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Han Myung-hwan<span class="position">Board Member</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>B.A. in Economics, Sung Kyun Kwan University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Chief of New York Representative Office of Korea Eximbank</dd>
+															<dd>Head of Inter-Korean Planning Department of Korea Eximbank</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail09');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail10">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_10.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Jin Yang-hyun<span class="position">Board Member</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>PhD. in Economics, Budapest University of Economic Sciences</dd>
+															<dd>M.S. in Public Administration, Kyung Hee University</dd>
+															<dd>M.S. in Public Policy, Seoul National University</dd>
+															<dd>B.A. in Economics, Kyung Hee University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>President of Busan Economic Promotion Agency (BEPA)</dd>
+															<dd>Professor of Graduate School of International Studies, Pusan National University</dd>
+															<dd>Minister of Busan-Jinhae Free Economic Zone Authority</dd>
+															<dd>Vice Minister of Defense Acquisition Program Administration</dd>
+															<dd>IMF Senior Economist</dd>
+															<dd>Chef of Administration and Budget Bureau, Ministry of Economy and Finance</dd>
+															<dd>Member of Planning and Coordination Office, Ministry of Economy and Finance</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail10');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<div class="layer_popup_box" data-popup="detail11">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">Profile</h4>
+								</div>
+								<div class="popup_content">
+									<div class="profile_wrap">
+										<div class="profile_box">
+											<div class="profile">
+												<div class="pic">
+													<img src="../../asset/rh-en/images/img_profile_11.jpg" alt="">
+												</div>
+												<div class="name_box">
+													<div class="name">Nam Hye-Jeong<span class="position">Board Member</span></div>
+												</div>
+											</div>
+											<div class="career">
+												<ul class="list shape_type1">
+													<li>
+														<dl>
+															<dt>Education</dt>
+															<dd>PhD. in Accounting, Seoul National University</dd>
+															<dd>M.S. in Accounting, Seoul National University</dd>
+															<dd>B.A. in Business Administration, Inha University</dd>
+														</dl>
+													</li>
+													<li>
+														<dl>
+															<dt>Career Highlights</dt>
+															<dd>Professor of business administration, Dongguk</dd>
+															<dd>Member of the Financial Disclosure Deliberation Committee of Jung-gu, Seoul</dd>
+															<dd>Member of National Accounting Standard deliberation Committee</dd>
+														</dl>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('detail11');"><span
+										class="blind">Close</span></button>
+							</div>
+						</div>
+						<!-- // other popup -->
+
+						<script>
+							function fn_open_popup_fadeIn(tg, e) {
+								fn_open_popup(tg, e);
+
+								var tgPopup = $(".layer_popup_box[data-popup=" + tg + "]"),
+									tgPopupCont = tgPopup.find('.popup_content'),
+									tgPopupContHeight = tgPopupCont.outerHeight(),
+									tgPopupProfile = tgPopup.find('.profile_box');
+
+								tgPopupCont.css('height', tgPopupContHeight);
+								tgPopupProfile.css('display', 'none');
+
+								setTimeout(function () {
+									tgPopupProfile.slideDown(800);
+								}, 100)
+
+							}
+						</script>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

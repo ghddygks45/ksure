@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-fx/css/style.css">
+	<script src="../../asset/rh-fx/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-fx/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-fx/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-fx/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-fx/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-fx/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-fx/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">환변동보험(선물환)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="④환변동보험제도안내-환변동보험(범위제한범위선물환)-범위제한선물환.html" class="active">범위제한선물환</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(범위제한범위선물환)-범위선물환.html">범위선물환</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">범위제한선물환 환변동보험</h4>
+							환율하락에 따른 보험금과 환율상승시의 환수금을 일정 범위 이내로 제한하는 상품
+							<div class="table mt-10">
+								<table>
+									<caption>환율하락에 따른 보험금과 환율상승시의 환수금을 일정 범위 이내로 제한하는 상품 정보를 제공하고 있습니다.</caption>
+									<colgroup>
+										<col style="width: 200px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">대상통화</th>
+											<td>USD</td>
+										</tr>
+										<tr>
+											<th scope="row">최대보험기간</th>
+											<td>최장 6개월</td>
+										</tr>
+										<tr>
+											<th scope="row">최소청약금액</th>
+											<td>결제일자별 1만 달러</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="bold sm-mt-15 lg-mt-20">※ 월말 결제만 가능, 조기결제 및 월중결제 불가</p>
+							<div class="sub_section sm-mt-20 lg-mt-30">
+								<h5 class="sub_tit">범위제한선물환 환변동보험(Collar)구조도
+								</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/vary_table5.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+									<img src="../../asset/rh-kr/images/vary_table5_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+									<div class="blind">
+										<div>
+											<h6>손익구조</h6>
+											<ul>
+												<li>보상환율 : 보장환율 -50원까지</li>
+												<li>환수환율 : 보장환율 +50원까지</li>
+											</ul>
+										</div>
+										<div>
+											<h6>손익구조 예시 (-50 ~ 50원 구간예시)</h6>
+											<ul>
+												<li>보장환율 1,250원</li>
+												<li>1,200 ~ 1,250원 범위까지 보상</li>
+												<li>1,250 ~ 1,300원 범위까지 환수</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

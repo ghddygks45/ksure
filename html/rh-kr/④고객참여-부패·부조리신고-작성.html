@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(7);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar04.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">부패·부조리신고</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="top_info_box bg_info01">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">PC용 보안 프로그램이 필요한 선택 설치 후 이용하실 수 있습니다.</strong>
+								<ul class="list shape_type1 sm-mt-7 lg-mt-10">
+									<li>키보드 보안 프로그램 설치 없이도 서비스를 이용하실 수 있습니다.</li>
+									<li>키보드보안 프로그램을 설치하지 않는 경우, 서비스를 위해 입력하는 중요한 정보(개인정보, 비밀번호 등)가 유출될 수 있습니다.</li>
+								</ul>
+								<div class="sm-mt-10 lg-mt-17">
+									<a href="#n" class="btn_white_line ico_download">키보드 보안 프로그램 선택 설치</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="sm-mb-13 lg-mb-19">
+							<p class="color_red">※ 귀하가 제기하신 민원이 부패.공익 신고에 해당될 경우, 「부패방지권익위법」 및 「공익신고자 보호법」에 따라 신고자는 보호되고 지원됨을 안내드립니다.
+							</p>
+						</div>
+
+						<div class="section">
+							<div class="board_write_top tit_top">
+								<div class="l">
+									<h4 class="tit">신고자 정보</h4>
+								</div>
+								<div class="r">
+									<span class="color_red bold">*</span> 표시는 필수 입력 사항입니다.
+								</div>
+							</div>
+							<div class="board_write th_w200">
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">성명</label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default input-readonly" value="홍길동"
+											readonly></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										주민등록번호
+										<span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<div class="reg_num">
+											<input type="text" class="inp_reg" maxlength="6" title="주민등록번호 앞자리 입력">
+											<span class="hyp">-</span>
+											<input type="text" class="inp_reg" maxlength="7" title="주민등록번호 뒷자리 입력">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">주소</div>
+									<div class="div_td">
+										<div class="mb-5">
+											<input type="text" title="우편번호 입력" class="input_default">
+											<a href="#;" class="btn_zip size_free bg_gray" title="새창으로 열림" target="_blank">우편번호 찾기</a>
+										</div>
+										<div class="addr_inp">
+											<input type="text" title="주소 입력" class="addr1 sm-mb-5">
+											<input type="text" title="상세 주소 입력" class="addr2">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">연락처</div>
+									<div class="div_td">
+										<div class="input_tel_box">
+											<span><input type="text" title="앞자리 입력" class="input-readonly" readonly=""></span>
+											<span><input type="text" title="중간자리 입력" class="input-readonly" readonly=""></span>
+											<span><input type="text" title="마지막자리 입력" class="input-readonly" readonly=""></span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="subject">직업 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td">
+										<input type="text" id="subject" class="inp_w_full">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<div class="board_write_top tit_top">
+								<div class="l">
+									<h4 class="tit">피신고자 정보</h4>
+								</div>
+								<div class="r">
+									<span class="color_red bold">*</span> 표시는 필수 입력 사항입니다.
+								</div>
+							</div>
+							<div class="board_write th_w200">
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">성명</label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default input-readonly" value="홍길동"
+											readonly></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										주민등록번호
+										<span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<div class="reg_num">
+											<input type="text" class="inp_reg" maxlength="6" title="주민등록번호 앞자리 입력">
+											<span class="hyp">-</span>
+											<input type="text" class="inp_reg" maxlength="7" title="주민등록번호 뒷자리 입력">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">주소</div>
+									<div class="div_td">
+										<div class="mb-5">
+											<input type="text" title="우편번호 입력" class="input_default">
+											<a href="#;" class="btn_zip size_free bg_gray" title="새창으로 열림" target="_blank">우편번호 찾기</a>
+										</div>
+										<div class="addr_inp">
+											<input type="text" title="주소 입력" class="addr1 sm-mb-5">
+											<input type="text" title="상세 주소 입력" class="addr2">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">연락처</div>
+									<div class="div_td">
+										<div class="input_tel_box">
+											<span><input type="text" title="앞자리 입력" class="input-readonly" readonly=""></span>
+											<span><input type="text" title="중간자리 입력" class="input-readonly" readonly=""></span>
+											<span><input type="text" title="마지막자리 입력" class="input-readonly" readonly=""></span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="subject">직업 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td">
+										<input type="text" id="subject" class="inp_w_full">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<div class="board_write_top tit_top">
+								<div class="l">
+									<h4 class="tit">신고내용</h4>
+								</div>
+								<div class="r">
+									<span class="color_red bold">*</span> 표시는 필수 입력 사항입니다.
+								</div>
+							</div>
+							<div class="board_write th_w200">
+								<div class="row">
+									<div class="div_th">
+										<label for="text3">
+											부패행위신고 취지 및 이유
+											<span class="bold color_red">*</span><span class="blind">필수</span>
+										</label>
+									</div>
+									<div class="div_td">
+										<textarea name="" id="text3" cols="30" rows="10" class="textarea"
+											placeholder="※ 내용은 2000자 이내로 써주시고, 제안 내용이 그 이상일 경우에는 첨부파일을 이용해 주십시오."></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text4">
+											부패행위신고 내용
+											<span class="bold color_red">*</span><span class="blind">필수</span>
+										</label>
+									</div>
+									<div class="div_td">
+										<textarea name="" id="text4" cols="30" rows="10" class="textarea"
+											placeholder="※ 내용은 2000자 이내로 써주시고, 제안 내용이 그 이상일 경우에는 첨부파일을 이용해 주십시오."></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="attach_file">증거자료 등 첨부 서류</label>
+									</div>
+									<div class="div_td">
+										<input type="file" id="attach_file">
+										<div class="mt-5">※ 첨부 할 수 있는 파일 총 용량은 최대 10MB 이하 이며, exe파일은 지원하지 않습니다.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- btn -->
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="#;" class="btn md bg_red" onclick="fn_open_popup('popup1');">등록</a>
+								<a href="④고객참여-부패·부조리신고-동의인증.html" class="btn md bg_lightgray">취소</a>
+							</div>
+						</div>
+						<!-- // btn -->
+
+						<div class="layer_popup_box" data-popup="popup1">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">본인확인을 위한 등록정보 확인</h4>
+								</div>
+								<div class="popup_content">
+									<div class="confirm_box bg_popup01">
+										작성 시 등록하신 이메일 주소와 비밀번호를 입력해주세요.
+									</div>
+									<div class="sm-mt-15 lg-mt-20">
+										<input type="text" class="inp_w_full" title="이메일 입력" placeholder="이메일 주소를 입력해주세요.">
+										<input type="text" class="sm-mt-6 lg-mt-6 inp_w_full" title="비밀번호 입력" placeholder="비밀번호를 입력해주세요.">
+									</div>
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn md bg_red" onclick="fn_hide_popup('popup1');">확인</button>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">옵션형</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-환변동보험-옵션형-개요(옵션형).html">제도개요</a></li>
+							<li><a href="②사업안내-환변동보험-옵션형-보장결제환율조회.html" class="active">보장/결제환율조회</a></li>
+							<li><a href="②사업안내-환변동보험-옵션형-옵션형보험요율.html">옵션형 보험요율</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">옵션형 환율 산정방식</h4>
+							<div class="des_list_box one_line_arr">
+								<div class="des_list bg_des_option01">
+									<h5 class="des_tit">보장환율</h5>
+									<ul class="list shape_type1">
+										<li>청약일 시장평균환율 or 청약일 시장평균환율-10원</li>
+									</ul>
+								</div>
+								<div class="des_list bg_des_option02">
+									<h5 class="des_tit">결제환율</h5>
+									<ul class="list shape_type1">
+										<li>월말 만기결제 : 결제월 최종영업일 최초고시환율</li>
+										<li>조기결제 : 결제일 최초고시환율</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="section">
+							<h4 class="tit">옵션형 보장환율 조회(청약일 기준 시장평균환율)</h4>
+							<div class="mul_srh_box sm-mb-20 lg-mb-35">
+								<div class="mul_srh_form">
+									<div class="srh_row txt_c">
+										<div class="inp_box">
+											<label for="srh1" class="bold">기준일자 :</label>
+											<div class="date">
+												<span class="date-inp"><input type="text" class="datepicker" id="srh1"></span>
+											</div>
+											<button type="button" class="btn_mul_srh">검색</button>
+										</div>
+									</div>
+								</div>
+								<div class="srh_info txt_c">
+									<p class="color_red">※ 보장환율 산정일자는 청약일 익영업일 입니다.</p>
+									<p>Ex) ’22.08.01 청약 → 보장환율은 다음날(’22.08.02) 조회 가능합니다.</p>
+								</div>
+							</div>
+							<div class="table">
+								<table>
+									<caption>옵션형 보장환율 조회 표로 기준일자, 통화, 보장환율 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">기준일자</th>
+											<th scope="col">통화</th>
+											<th scope="col">보장환율</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<td>2022.08.01</td>
+											<td>EUR</td>
+											<td>1325.13</td>
+										</tr>
+										<tr class="txt_c">
+											<td>2022.08.01</td>
+											<td>JPY</td>
+											<td>970.25</td>
+										</tr>
+										<tr class="txt_c">
+											<td>2022.08.01</td>
+											<td>USD</td>
+											<td>1298.6</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

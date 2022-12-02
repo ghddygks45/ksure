@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(12);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">내게 맞는 보험 찾기</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="top_info_insur">
+								<strong>나의 조건을 선택하여 <br><span class="color_blue fwb">내게 맞는 보험 찾기</span></strong>
+								<div class="tag">
+									<span>#조건선택</span>
+									<span>#상황별 보험</span>
+									<span>#단기, 중장기 보험</span>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="insur_find_box">
+								<div class="insur_box">
+									<div class="num">01</div>
+									<strong><span class="color_blue">어떤 상황</span>에 대한 보험이 <br>필요하신가요?</strong>
+									<select name="" id="" title="상황별 보험 선택">
+										<option value="">수출거래 관련 필요</option>
+									</select>
+								</div>
+								<div class="insur_box bg_blue">
+									<div class="num">02</div>
+									<strong><span class="color_yellow">기업의 규모</span>를<br>선택해 주세요.</strong>
+									<select name="" id="" title="기업 규모 선택">
+										<option value="">미선택</option>
+									</select>
+								</div>
+								<div class="insur_box bg_insur01">
+									<div class="num">03</div>
+									<strong>연간 평균 <span class="color_blue">수출실적</span>을 <br>선택해 주세요.</strong>
+									<select name="" id="" title="수출실적 선택">
+										<option value="">U$3천만 이하 (없음 포함)</option>
+									</select>
+								</div>
+								<div class="insur_box bg_insur02">
+									<div class="num">04</div>
+									<strong>필요로 하신 보험의 <br><span class="color_blue">이용 목적</span>을 선택해 주세요.</strong>
+									<select name="" id="" title="이용 목적 선택">
+										<option value="">수출후 수출대금 미회수 위험 담보</option>
+									</select>
+								</div>
+								<div class="insur_box bg_navy">
+									<div class="num">05</div>
+									<strong>수출 시 <span class="color_yellow">거래 형태</span>를<br>선택해 주세요.</strong>
+									<select name="" id="" title="수출 시 거래 형태 선택">
+										<option value="">일반수출</option>
+									</select>
+								</div>
+								<div class="insur_box">
+									<div class="num">06</div>
+									<strong>거래 시 <span class="color_blue">결제 조건</span>을 <br>선택해 주세요.</strong>
+									<select name="" id="" title="거래 시 결제 조건 선택">
+										<option value="">미선택</option>
+									</select>
+								</div>
+								<div class="insur_box">
+									<div class="num">07</div>
+									<strong><span class="color_blue">결제 기간</span>을 <br>선택해 주세요.</strong>
+									<select name="" id="" title="결제 기간 선택">
+										<option value="">미선택</option>
+									</select>
+								</div>
+								<div class="insur_box">
+									<div class="num">08</div>
+									<strong><span class="color_blue">수출 품목</span>을 <br>선택해 주세요.</strong>
+									<select name="" id="" title="수출 품목 조건 선택">
+										<option value="">미선택</option>
+									</select>
+								</div>
+								<div class="insur_box bg_insur03">
+									<strong class="insur_tit">내게 맞는 보험<br>조회하기</strong>
+									<a href="#n" class="btn_link_site ico_arrow_w" onclick="fn_open_popup('popup1', this);">결과보기</a>
+								</div>
+							</div>
+							<div class="sm-mt-20 lg-mt-30">
+								<div class="insur_link">
+									<a href="#n" class="bg01">BOND 관련<br>보험종목 안내</a>
+									<a href="#n" class="bg02">해외 기업<br>신용도 조사</a>
+									<a href="#n" class="bg03">수출대금 미회수 건<br>추심대행</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- 보험조회 결과 팝업 -->
+						<div class="layer_popup_box" data-popup="popup1">
+							<div class="popup popup_size_1000" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">보험조회 결과</h4>
+								</div>
+								<div class="popup_content">
+									<div id="print_area">
+										<div class="section">
+											<h4 class="tit">선택하신 조건은 다음과 같습니다.</h4>
+											<div class="table">
+												<table>
+													<caption>보험조회 결과 표로 번호, 문항, 답변 정보 제공</caption>
+													<colgroup>
+														<col style="width:10%;">
+														<col>
+														<col>
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">번호</th>
+															<th scope="col">문항</th>
+															<th scope="col">답변</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>어떤 상황에 대한 보험이 필요하신가요?</td>
+															<td>수출거래 관련 필요</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>기업의 규모를 선택해 주세요.</td>
+															<td>중견기업</td>
+														</tr>
+														<tr>
+															<th scope="row">3</th>
+															<td>연간 평균 수출실적을 선택해 주세요.</td>
+															<td>U$3천만 초과 ~U$5천만 이하</td>
+														</tr>
+														<tr>
+															<th scope="row">4</th>
+															<td>필요로 하신 보험의 이용 목적을 선택해 주세요.</td>
+															<td>수출후 수출대금 미회수 위험 담보</td>
+														</tr>
+														<tr>
+															<th scope="row">5</th>
+															<td>수출 시 거래 형태를 선택해 주세요.</td>
+															<td>위탁가공무역</td>
+														</tr>
+														<tr>
+															<th scope="row">6</th>
+															<td>거래 시 결제 조건을 선택해 주세요.</td>
+															<td>무신용장(D/A, T/T 등)</td>
+														</tr>
+														<tr>
+															<th scope="row">7</th>
+															<td>결제기간을 선택해 주세요.</td>
+															<td>180일 초과 ~ 360일 이내</td>
+														</tr>
+														<tr>
+															<th scope="row">8</th>
+															<td>수출 품목을 선택해 주세요.</td>
+															<td>물품(농수산물 제외) 및 서비스(용역)</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="section">
+											<h4 class="tit">선택하신 조건에 맞는 보험은 다음과 같습니다.</h4>
+											<div class="box_border bg_lightgray2 box_dashed">
+												<ul>
+													<li>
+														<span>단기수출보험(선적후)</span>
+														<a href="#n" class="btn_white_line ico_arrow">상세보기</a>
+													</li>
+													<li>
+														<span>단기수출보험(중소중견Plus+)</span>
+														<a href="#n" class="btn_white_line ico_arrow">상세보기</a>
+													</li>
+													<li>
+														<span>수출안전망보험</span>
+														<a href="#n" class="btn_white_line ico_arrow">상세보기</a>
+													</li>
+													<li>
+														<span>서비스종합보험(일시결제방식)</span>
+														<a href="#n" class="btn_white_line ico_arrow">상세보기</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn md bg_red" onclick="fn_hide_popup('popup1');">확인</button>
+										<button type="button" class="btn md bg_darkgray" onclick="print();">인쇄</button>
+										<!-- onclick="$.print('.layer_popup_box[data-popup=popup1]');" -->
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('popup1');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 보험조회 결과 팝업 -->
+
+						<script>
+							function print() {
+								$.print('#print_area');
+							}
+						</script>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

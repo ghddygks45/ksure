@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(9, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">해외채권 회수지원 서비스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info01">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">PC용 보안 프로그램이 필요한 선택 설치 후 이용하실 수 있습니다.</strong>
+								<ul class="list shape_type1 sm-mt-7 lg-mt-10">
+									<li>키보드 보안 프로그램 설치 없이도 서비스를 이용하실 수 있습니다.</li>
+									<li>키보드보안 프로그램을 설치하지 않는 경우, 서비스를 위해 입력하는 중요한 정보(개인정보, 비밀번호 등)가 유출될 수 있습니다.</li>
+								</ul>
+								<div class="sm-mt-10 lg-mt-17">
+									<a href="#n" class="btn_white_line ico_download">키보드 보안 프로그램 선택 설치</a>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="board_write_top">
+								<div class="l">
+									<h4 class="tit m-0">수출자 정보</h4>
+								</div>
+								<div class="r">
+									<span class="color_red bold">*</span> 표시는 필수 입력 사항입니다.
+								</div>
+							</div>
+							<div class="board_write th_w200">
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">수출업체명 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">수출보험 가입여부 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd1-1" name="radio1" class="blind">
+											<label for="rd1-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd1-2" name="radio1" class="blind">
+											<label for="rd1-2">부</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">수출보험 이용여부 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd2-1" name="radio2" class="blind">
+											<label for="rd2-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd2-2" name="radio2" class="blind">
+											<label for="rd2-2">부</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">수출품 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">대표 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">상담의뢰자 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td">
+										<input type="text" id="text1" class="inp_default">
+										<span class="ml-5">※ 직위, 성명</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">이메일 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<div class="email_inp">
+											<span class="wr1">
+												<input type="text" class="email_inp1" title="이메일 아이디 입력"> @
+											</span>
+											<span class="wr2">
+												<input type="text" class="email_inp2" title="이메일 계정 입력">
+												<select name="" id="" title="이메일 계정 선택">
+													<option value="">선택하세요</option>
+												</select>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">전화번호 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<div class="input_tel_box">
+											<span>
+												<select name="" id="" title="핸드폰 앞자리 선택">
+													<option value="">010</option>
+												</select>
+											</span>
+											<span><input type="text" title="핸드폰 중간자리 입력"></span>
+											<span><input type="text" title="핸드폰 마지막자리 입력"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="board_write_top">
+								<div class="l">
+									<h4 class="tit m-0">수입자 정보</h4>
+								</div>
+								<div class="r">
+									<span class="color_red bold">*</span> 표시는 필수 입력 사항입니다.
+								</div>
+							</div>
+							<div class="board_write th_w200">
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">수입국 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">수입업체명 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">수입자 교포여부 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd3-1" name="radio3" class="blind">
+											<label for="rd3-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd3-2" name="radio3" class="blind">
+											<label for="rd3-2">부</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">대표 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">담당자 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">이메일 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<div class="email_inp">
+											<span class="wr1">
+												<input type="text" class="email_inp1" title="이메일 아이디 입력"> @
+											</span>
+											<span class="wr2">
+												<input type="text" class="email_inp2" title="이메일 계정 입력">
+												<select name="" id="" title="이메일 계정 선택">
+													<option value="">선택하세요</option>
+												</select>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">전화번호 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<div class="input_tel_box">
+											<span>
+												<select name="" id="" title="핸드폰 앞자리 선택">
+													<option value="">010</option>
+												</select>
+											</span>
+											<span><input type="text" title="핸드폰 중간자리 입력"></span>
+											<span><input type="text" title="핸드폰 마지막자리 입력"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="board_write_top">
+								<div class="l">
+									<h4 class="tit m-0">채권관련 정보</h4>
+								</div>
+								<div class="r">
+									<span class="color_red bold">*</span> 표시는 필수 입력 사항입니다.
+								</div>
+							</div>
+							<div class="board_write th_w240">
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">미수채권금액 <span class="bold color_red">*</span><span class="blind">필수</span></label>
+									</div>
+									<div class="div_td">
+										<select class="board_select" title="거래통화 선택">
+											<option value="">거래통화 선택</option>
+										</select>
+										<input type="text" id="text1" class="inp_default">
+										<p class="mt-5">※ 거래통화가 선택박스에 없을 경우 원화(KRW)기준으로 작성</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">수출물품 수취확인여부 <span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd4-1" name="radio4" class="blind">
+											<label for="rd4-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd4-2" name="radio4" class="blind">
+											<label for="rd4-2">부</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd4-3" name="radio4" class="blind">
+											<label for="rd4-3">알수없음</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">클레임 여부 <span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd5-1" name="radio5" class="blind">
+											<label for="rd5-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd5-2" name="radio5" class="blind">
+											<label for="rd5-2">부</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">수입자 영업중지여부 <span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd6-1" name="radio6" class="blind">
+											<label for="rd6-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd6-2" name="radio6" class="blind">
+											<label for="rd6-2">부</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd6-3" name="radio6" class="blind">
+											<label for="rd6-3">알수없음</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">수입자 연락지속여부 <span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<span class="rd-lb">
+											<input type="radio" id="rd7-1" name="radio7" class="blind">
+											<label for="rd7-1">여</label>
+										</span>
+										<span class="rd-lb">
+											<input type="radio" id="rd7-2" name="radio7" class="blind">
+											<label for="rd7-2">부</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">사고건 최초 선적일 <span class="bold color_red">*</span><span
+												class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">사고건 최종 선적일 <span class="bold color_red">*</span><span
+												class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">
+										<label for="text1">가장 오래된 사고건최초 만기일 <span class="bold color_red">*</span><span
+												class="blind">필수</span></label>
+									</div>
+									<div class="div_td"><input type="text" id="text1" class="inp_default"></div>
+								</div>
+								<div class="row">
+									<div class="div_th">채무인정자료(체크) <span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<span class="ck-lb">
+											<input type="checkbox" id="ck1" class="blind">
+											<label for="ck1">계약서(서명)</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck2" class="blind">
+											<label for="ck2">선적서류</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck3" class="blind">
+											<label for="ck3">물건수취</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck4" class="blind">
+											<label for="ck4">확인메일</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck5" class="blind">
+											<label for="ck5">정산 관련한 메일</label>
+										</span><br>
+										<span class="ck-lb mt-10">
+											<input type="checkbox" id="ck5" class="blind">
+											<label for="ck5">기타</label>
+											<input type="text" class="inp_default ml-5">
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">독촉메일(체크) <span class="bold color_red">*</span><span class="blind">필수</span>
+									</div>
+									<div class="div_td">
+										<span class="ck-lb">
+											<input type="checkbox" id="ck6" class="blind">
+											<label for="ck6">발송</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck7" class="blind">
+											<label for="ck7">미발송</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck8" class="blind">
+											<label for="ck8">답변수취</label>
+										</span>
+										<span class="ck-lb">
+											<input type="checkbox" id="ck9" class="blind">
+											<label for="ck9">답변 미수취</label>
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="div_th">사고발생경위 <span class="bold color_red">*</span><span class="blind">필수</span></div>
+									<div class="div_td">
+										<textarea name="" id="detail" cols="30" rows="10" class="textarea"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="#n" class="btn md bg_red">등록</a>
+								<a href="②사업안내-해외채권회수지원서비스-상담신청-인증.html" class="btn md bg_lightgray">취소</a>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

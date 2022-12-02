@@ -1,0 +1,28 @@
+@use '../use'as *;
+
+/* accessibility */
+.accessibility {
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+
+	a {
+		display: block;
+		width: 1px;
+		height: 1px;
+		margin-bottom: -1px;
+		overflow: hidden;
+		text-align: center;
+		color: #fff;
+
+		&:focus,
+		&:active {
+			width: 100%;
+			height: auto;
+			padding: 5px 0;
+			background-color: #e43c3c;
+		}
+	}
+}

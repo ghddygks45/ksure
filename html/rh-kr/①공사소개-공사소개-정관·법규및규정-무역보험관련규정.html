@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 6);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">무역보험관련 규정</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="①공사소개-공사소개-정관·법규및규정-정관.html">정관</a></li>
+							<li><a href="①공사소개-공사소개-정관·법규및규정-무역보험관련법규.html">무역보험관련법규</a></li>
+							<li><a href="①공사소개-공사소개-정관·법규및규정-무역보험관련규정.html" class="active">무역보험관련규정</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">가 ~ 나</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">가</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1 double">
+												<li><a href="#;" title="감사규정 다운로드">감사규정</a></li>
+												<li><a href="#;" title="고객지원 업무요강 다운로드">고객지원 업무요강</a></li>
+												<li><a href="#;" title="개인정보보호규정 다운로드">개인정보보호규정</a></li>
+												<li><a href="#;" title="국내채권관리규정 다운로드">국내채권관리규정</a></li>
+												<li><a href="#;" title="개방형 직위 운영요강 다운로드">개방형 직위 운영요강</a></li>
+												<li><a href="#;" title="국별신용조사규정 다운로드">국별신용조사규정</a></li>
+												<li><a href="#;" title="경영계획 및 성과평가 규정 다운로드">경영계획 및 성과평가 규정</a></li>
+												<li><a href="#;" title="국외지사 현지직원 인사관리요강 다운로드">국외지사 현지직원 인사관리요강</a></li>
+												<li><a href="#;" title="경영계획 및 성과평가 요강 다운로드">경영계획 및 성과평가 요강</a></li>
+												<li><a href="#;" title="국외채권관리규정 다운로드">국외채권관리규정</a></li>
+												<li><a href="#;" title="계약요강 다운로드">계약요강</a></li>
+												<li><a href="#;" title="기록물관리규정 다운로드">기록물관리규정</a></li>
+												<li><a href="#;" title="계약인력 운용요령 다운로드">계약인력 운용요령</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">나</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="내규 및 약관규정 다운로드">내규 및 약관규정</a></li>
+												<li><a href="#;" title="내부통제규정 다운로드">내부통제규정</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">다 ~ 라</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">다</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="단기 인수규정 다운로드">단기 인수규정</a></li>
+												<li><a href="#;" title="대외채권추심대행 업무처리규정 다운로드">대외채권추심대행 업무처리규정</a></li>
+												<li><a href="#;" title="도장요강 다운로드">도장요강</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">라</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="리스크관리규정 다운로드">리스크관리규정</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">마 ~ 바</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">마</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="문서사무규정 다운로드">문서사무규정</a></li>
+												<li><a href="#;" title="무역보험기금운용계획 관리규정 다운로드">무역보험기금운용계획 관리규정</a></li>
+												<li><a href="#;" title="무역보험기금채권규정 다운로드">무역보험기금채권규정</a></li>
+												<li><a href="#;" title="민원처리요강 다운로드">민원처리요강</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">바</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1 double">
+												<li><a href="#;" title="보상규정 다운로드">보상규정</a></li>
+												<li><a href="#;" title="복지자금대여취급요강 다운로드">복지자금대여취급요강</a></li>
+												<li><a href="#;" title="보수규정 다운로드">보수규정</a></li>
+												<li><a href="#;" title="부사장제 운영규정 다운로드">부사장제 운영규정</a></li>
+												<li><a href="#;" title="보수규정시행요강 다운로드">보수규정시행요강</a></li>
+												<li><a href="#;" title="부품·소재신뢰성보험 인수규정 다운로드">부품·소재신뢰성보험 인수규정</a></li>
+												<li><a href="#;" title="보험계약준비금 적립기준 다운로드">보험계약준비금 적립기준</a></li>
+												<li><a href="#;" title="부패방지경영시스템 운영요강 다운로드">부패방지경영시스템 운영요강</a></li>
+												<li><a href="#;" title="복지규정 다운로드">복지규정</a></li>
+												<li><a href="#;" title="비상근무요강 다운로드">비상근무요강</a></li>
+												<li><a href="#;" title="복지규정시행요강 다운로드">복지규정시행요강</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">사 ~ 아</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">사</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="사무인계요강 다운로드">사무인계요강</a></li>
+												<li><a href="#;" title="상사신용조사규정 다운로드">상사신용조사규정</a></li>
+												<li><a href="#;" title="상임임원 복무관리요강 다운로드">상임임원 복무관리요강</a></li>
+												<li><a href="#;" title="상임이사 후보자 역량 교육 및 평가 시행요강 다운로드">상임이사 후보자 역량 교육 및 평가 시행요강</a></li>
+												<li><a href="#;" title="수입보험 인수규정 다운로드">수입보험 인수규정</a></li>
+												<li><a href="#;" title="수출신용보증 인수규정 다운로드">수출신용보증 인수규정</a></li>
+												<li><a href="#;" title="수출신용보증(공급망) 인수규정 다운로드">수출신용보증(공급망) 인수규정</a></li>
+												<li><a href="#;" title="시간외근무 시행요령 다운로드">시간외근무 시행요령</a></li>
+												<li><a href="#;" title="신뢰성보험 보상규정 다운로드">신뢰성보험 보상규정</a></li>
+												<li><a href="#;" title="신뢰성보험 보상요강 다운로드">신뢰성보험 보상요강</a></li>
+												<li><a href="#;" title="신용정보관리규정 다운로드">신용정보관리규정</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">아</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1 double">
+												<li><a href="#;" title="안전보건관리규정 다운로드">안전보건관리규정</a></li>
+												<li><a href="#;" title="인사관리규정 다운로드">인사관리규정</a></li>
+												<li><a href="#;" title="안전사고에 관한 임원 문책규정 다운로드">안전사고에 관한 임원 문책규정</a></li>
+												<li><a href="#;" title="업무매뉴얼 운영요강 다운로드">업무매뉴얼 운영요강</a></li>
+												<li><a href="#;" title="임금피크제 운영요강 다운로드">임금피크제 운영요강</a></li>
+												<li><a href="#;" title="여비규정 다운로드">여비규정</a></li>
+												<li><a href="#;" title="임원보수 및 퇴직금규정 다운로드">임원보수 및 퇴직금규정</a></li>
+												<li><a href="#;" title="연수규정 다운로드">연수규정</a></li>
+												<li><a href="#;" title="임원직인 및 사인(社印) 조인요강 다운로드">임원직인 및 사인(社印) 조인요강</a></li>
+												<li><a href="#;" title="예산운용요강 다운로드">예산운용요강</a></li>
+												<li><a href="#;" title="임원추천위원회운영규정 다운로드">임원추천위원회운영규정</a></li>
+												<li><a href="#;" title="위임전결규정 다운로드">위임전결규정</a></li>
+												<li><a href="#;" title="임원 및 본부장 직무청렴계약 운영요강 다운로드">임원 및 본부장 직무청렴계약 운영요강</a></li>
+												<li><a href="#;" title="유연근무제 시행요령 다운로드">유연근무제 시행요령</a></li>
+												<li><a href="#;" title="임대사업 시행요강 다운로드">임대사업 시행요강</a></li>
+												<li><a href="#;" title="윤리경영규정 다운로드">윤리경영규정</a></li>
+												<li><a href="#;" title="임원추천위원회운영규정 다운로드">임원추천위원회운영규정</a></li>
+												<li><a href="#;" title="이의신청처리규정 다운로드">이의신청처리규정</a></li>
+												<li><a href="#;" title="인권경영요강 다운로드">인권경영요강</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">자 ~ 차</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">자</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1 double">
+												<li><a href="#;" title="자금운용규정 다운로드">자금운용규정</a></li>
+												<li><a href="#;" title="지식경영 및 혁신제안규정 다운로드">지식경영 및 혁신제안규정</a></li>
+												<li><a href="#;" title="자산관리요강 다운로드">자산관리요강</a></li>
+												<li><a href="#;" title="지식경영 및 혁신제안요강 다운로드">지식경영 및 혁신제안요강</a></li>
+												<li><a href="#;" title="재보험 운영규정 다운로드">재보험 운영규정</a></li>
+												<li><a href="#;" title="지원직근로자 인사관리요령 다운로드">지원직근로자 인사관리요령</a></li>
+												<li><a href="#;" title="종합평정시행요강 다운로드">종합평정시행요강</a></li>
+												<li><a href="#;" title="직제규정 다운로드">직제규정</a></li>
+												<li><a href="#;" title="준법감시요강 다운로드">준법감시요강</a></li>
+												<li><a href="#;" title="직제규정 시행요강 다운로드">직제규정 시행요강</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">차</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="취업규칙 다운로드">취업규칙</a></li>
+												<li><a href="#;" title="채용요강 다운로드">채용요강</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">타 ~ 파</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">타</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="퇴직금규정 다운로드">퇴직금규정</a></li>
+												<li><a href="#;" title="퇴직금규정시행요강 다운로드">퇴직금규정시행요강</a></li>
+												<li><a href="#;" title="투자위험보증계정 운영규정 다운로드">투자위험보증계정 운영규정</a></li>
+												<li><a href="#;" title="투자위험보증사업(해외자원개발펀드보험) 업무방법서 다운로드">투자위험보증사업(해외자원개발펀드보험) 업무방법서</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">파</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="파생상품보험 인수규정 다운로드">파생상품보험 인수규정</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">하 ~ 기타</h4>
+							<div class="box_border box_state">
+								<div class="reg_download_box">
+									<div>
+										<div class="l">
+											<p class="circle red">하</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1 double">
+												<li><a href="#;" title="한국무역보험공사 경영위원회규정 다운로드">한국무역보험공사 경영위원회규정</a></li>
+												<li><a href="#;" title="한국무역보험공사 운영위원회 운영세칙 다운로드">한국무역보험공사 운영위원회 운영세칙</a></li>
+												<li><a href="#;" title="한국무역보험공사 공직자의 이해충돌 방지제도 운영요강 다운로드">한국무역보험공사 공직자의 이해충돌 방지제도 운영요강</a></li>
+												<li><a href="#;" title="해외자원개발펀드보험 인수규정 다운로드">해외자원개발펀드보험 인수규정</a></li>
+												<li><a href="#;" title="한국무역보험공사 이사회규정 다운로드">한국무역보험공사 이사회규정</a></li>
+												<li><a href="#;" title="회계규정 다운로드">회계규정</a></li>
+												<li><a href="#;" title="한국무역보험공사 임직원 행동강령 다운로드">한국무역보험공사 임직원 행동강령</a></li>
+												<li><a href="#;" title="회계처리요강 다운로드">회계처리요강</a></li>
+											</ul>
+										</div>
+									</div>
+									<div>
+										<div class="l">
+											<p class="circle yellow">기타</p>
+										</div>
+										<div class="r">
+											<ul class="list shape_type1">
+												<li><a href="#;" title="CI 관리요강 다운로드">CI 관리요강</a></li>
+												<li><a href="#;" title="ESG 위원회 규정 다운로드">ESG 위원회 규정</a></li>
+												<li><a href="#;" title="1급 본부장 운영규정 다운로드">1급 본부장 운영규정</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

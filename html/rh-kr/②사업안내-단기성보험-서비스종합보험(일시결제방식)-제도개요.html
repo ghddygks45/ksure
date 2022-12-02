@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 7);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">서비스종합보험(일시결제방식)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-서비스종합보험(일시결제방식)-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-서비스종합보험(일시결제방식)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-서비스종합보험(일시결제방식)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-서비스종합보험(일시결제방식)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요</h4>
+							서비스종합보험(일시결제방식)은 국내에 주소를 둔 기업이 외국기업에게 운송, 관광 등의 서비스를 제공하고 서비스제공 상대방으로부터 서비스대금을 지급받지 못하게 됨으로써 발생하는 손실을 보상하는
+							제도
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_insur11_2.jpg" alt="하단에 내용 참고 바랍니다.">
+								<a href="../../asset/rh-kr/images/img_insur11_2.jpg" class="btn_img_size">크게보기</a>
+								<div class="blind">
+									서비스종합보험(일시결제방식)
+									<ol>
+										<li>수출자가 K-SURE에 보험청약을 하고 K-SURE는 보험증권 발급한 후, 수출자는 국내에 주소를 둔 수입자에 운송, 관광 등 서비스를 제공하고 서비스 이행을 K-SURE에
+											통지한다.</li>
+										<li>K-SURE는 수출자에 보험료를 청구하고 수출자는 보험료를 납부함으로써 보험관계가 성립된다.</li>
+										<li>그 후 수입자가 서비스 대금 미지급시 이에 대해 K-SURE가 손실을 보상한다.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상거래</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">결제기간</h5>
+								<ul class="list shape_type1">
+									<li>180일 이내의 무신용장 및 신용장 거래</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">서비스 형태</h5>
+								<ul class="list shape_type1">
+									<li>시스템통합, 의료, 금융, 운송(해상 및 항공), 관광, 공연, 디자인(디지털 디자인 포함), 교육, 컨설팅, 문화컨텐츠 및 소프트웨어 제공 서비스, 해외엔지니어링,
+										산업재산권, 노하우 등 기술 서비스, 업종융합 서비스 등</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">운용방식</h4>
+							<div class="table">
+								<table>
+									<caption>운용방식 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">한도책정 방식</th>
+											<td>거래하고자하는 수입자별로 보상한도(보험사고 발생시 공사가 지급하는 보험금액의 최대누적액)가 기재된 보험증권을 발급받고 서비스 제공시 이를 공사에 통지함으로써 보험관계가
+												성립하는 방식</td>
+										</tr>
+										<tr>
+											<th scope="row">Polling 방식</th>
+											<td>수출기업이 선택하는 책임금액(U$5만부터 U$1만단위로 U$30만까지 선택가능)범위내에서 수개의 수출계약상대방에 대하여 발생하는 대금 미회수 위험을 하나의 보험증권으로
+												담보하는 방식(별도의 수출통지 없이 보험관계 성립)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn_wrap txt_c">
+							<a href="#n" class="btn_link_site bg_red ico_arrow_w">면책사례 바로가기</a>
+						</div>
+						<div class="notice_box">본 안내의 일부 내용은 무역보험관련 내규 개정시 변경될 수 있사오니 이 점 참고하시기 바라며, 보다 정확한 내용은 담당 영업점이나
+							고객센터(1588-3884)를 통해 확인하시기 바랍니다.</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

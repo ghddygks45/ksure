@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(9, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-side	bar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">해외채권 회수지원 서비스</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-해외채권회수지원서비스-이용안내.html">이용안내</a></li>
+							<li><a href="②사업안내-해외채권회수지원서비스-상담신청-인증.html">상담신청</a></li>
+							<li><a href="#;">FAQ</a></li>
+							<li><a href="②사업안내-해외채권회수지원서비스-신청서류및약관.html" class="active">신청서류 및 약관</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">채권추심 신청서류</h4>
+							* 채권추심 위임장을 클릭하시면 다운 받으실 수 있습니다
+							<div class="table sm-mt-10 lg-mt-15">
+								<table class="m_scroll">
+									<caption>채권추심 신청서류 표로 구분, 구비서류, 대리인의 경우, 다운로드 정보 제공</caption>
+									<colgroup>
+										<col style="width: 10%;">
+										<col style="width: 10%;">
+										<col>
+										<col style="width: 15%;">
+										<col style="width: 15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col" colspan="2">구분</th>
+											<th scope="col">구비서류</th>
+											<th scope="col">대리인의 경우</th>
+											<th scope="col">다운로드</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row" rowspan="6">의뢰인 관련서류</th>
+											<td rowspan="3">법인</td>
+											<td>사업자등록증 사본</td>
+											<td rowspan="3">위임장, 신분증 사본</td>
+											<td rowspan="3">-</td>
+										</tr>
+										<tr class="txt_c">
+											<td class="bor_r">법인인감증명서</td>
+										</tr>
+										<tr class="txt_c">
+											<td class="bor_r">사용인감계(사용인감 사용시)</td>
+										</tr>
+										<tr class="txt_c">
+											<td rowspan="3">개인</td>
+											<td>사업자등록증 사본</td>
+											<td rowspan="3">위임장, 신분증 사본</td>
+											<td rowspan="3">-</td>
+										</tr>
+										<tr class="txt_c">
+											<td class="bor_r">신분증 사본</td>
+										</tr>
+										<tr class="txt_c">
+											<td class="bor_r">인감증명서</td>
+										</tr>
+										<tr>
+											<th scope="row" colspan="2" rowspan="3">채권관련서류</th>
+											<td>
+												채권추심위임장
+												<a href="#n" class="btn_white_line ico_arrow ml-5" onclick="fn_open_popup('sample', this);">위임장
+													작성방법 샘플보기</a>
+											</td>
+											<td class="txt_c">-</td>
+											<td class="txt_c">
+												<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp파일 다운로드</span></a>
+												<a href="#n" class="ico_file_down ico_doc"><span class="blind">doc파일 다운로드</span></a>
+											</td>
+										</tr>
+										<tr>
+											<td>대외채권추심대행 서비스 중요안내사항 및 채권자 확인서</td>
+											<td class="txt_c">-</td>
+											<td class="txt_c">
+												<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp파일 다운로드</span></a>
+												<a href="#n" class="ico_file_down ico_doc"><span class="blind">doc파일 다운로드</span></a>
+											</td>
+										</tr>
+										<tr>
+											<td>계약서, 선적서류, 환어음, 수출입자간서신, 신용조사보고서, 제3자 지급보증서, 거래경위서, 기타 참고서류</td>
+											<td class="txt_c">-</td>
+											<td class="txt_c">-</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">채권추심 약관</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>채권추심 약관 표로 구분, 내용, 다운로드 정보 제공</caption>
+									<colgroup>
+										<col style="width: 15%;">
+										<col>
+										<col style="width: 15%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+											<th scope="col">다운로드</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">약관</th>
+											<td>대외채권추심대행 약관</td>
+											<td class="txt_c">
+												<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp파일 다운로드</span></a>
+												<a href="#n" class="ico_file_down ico_pdf"><span class="blind">pdf파일 다운로드</span></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<!-- 위임장 작성방법 샘플 팝업 -->
+						<div class="layer_popup_box" data-popup="sample" style="display:block;">
+							<div class="popup popup_size_1000" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">위임장 작성방법 샘플</h4>
+								</div>
+								<div class="popup_content" id="div_page">
+									<div class="print_box">
+										<a href="#;" id="print" onclick="popupPrint();"><span class="blind">프린트 하기</span></a>
+									</div>
+									<ul class="tab tab_m_2">
+										<li><a href="#tab_box1" class="active">POWER OF ATTORNEY FOR<br>COLLECTION OF CLAIMS</a></li>
+										<li><a href="#tab_box2">DOCUMENTS TO<br>BE SUBMITTED</a></li>
+										<li><a href="#tab_box3">대외채권 추심대행 약관</a></li>
+									</ul>
+									<script>
+										$('.tab a').on('click', function () {
+											var boxId = $(this).attr('href').split('#')[1];
+											$(this).addClass('active').parent().siblings().find('> a').removeClass();
+											$('[data-tab-box]').hide();
+											$('[data-tab-box=' + boxId + ']').show();
+
+											return false;
+										});
+
+										function popupPrint() {
+											var initBody;
+
+											function beforePrint() {
+												initBody = document.body.innerHTML;
+												document.body.innerHTML = div_page.innerHTML;
+											}
+
+											function afterPrint() {
+												document.body.innerHTML = initBody;
+											}
+
+											window.onbeforeprint = beforePrint;
+											window.onafterprint = afterPrint;
+											window.print();
+										}
+									</script>
+
+									<!-- POWER OF ATTORNEY FOR COLLECTION OF CLAIMS -->
+									<div class="section" data-tab-box="tab_box1">
+										<div class="section">
+											<h5 class="tit">SAMPLE</h5>
+											<p class="color_red">* 영문으로 작성하십시오.</p>
+											<div class="white_sample">
+												<strong>POWER OF ATTORNEY FOR COLLECTION OF CLAIMS</strong>
+												<p class="to">To. Korea Trade Insurance Corporation</p>
+												<p>Creditor fully understands the contents of the Debt Collection Standard Contract and agrees
+													that the said Debt Collection
+													Standard Contract is incorporated by reference in the Debt Collection Authorization Agreement,
+													and the authorization of debt
+													collection is given as follows:
+												</p>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">Creditor and Debtor</h5>
+											<div class="table">
+												<table class="m_scroll">
+													<caption class="caption">Creditor and Debtor 표 - Debtor(채무자), Creditor(채권자)로 구성</caption>
+													<colgroup>
+														<col style="width: 25%;">
+														<col style="width: 25%;">
+														<col style="width: 25%;">
+														<col style="width: 25%;">
+													</colgroup>
+													<thead>
+														<tr>
+															<th colspan="2" scope="col">Debtor(채무자)</th>
+															<th colspan="2" scope="col">Creditor(채권자)</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th id="tb_ex1">Name</th>
+															<td headers="tb_ex1">수입자 상호명</td>
+															<th id="tb_ex2">Name</th>
+															<td headers="tb_ex2">수출자 상호명</td>
+														</tr>
+														<tr>
+															<th id="tb_ex3">Address</th>
+															<td headers="tb_ex3">국가명까지 작성</td>
+															<th id="tb_ex4">Address</th>
+															<td headers="tb_ex4"><span class="blind">내용없음</span></td>
+														</tr>
+														<tr>
+															<th id="tb_ex5">Officer in Charge</th>
+															<td headers="tb_ex5">본건 담당자명</td>
+															<th id="tb_ex6">Officer in Charge</th>
+															<td headers="tb_ex6">본건 담당자명</td>
+														</tr>
+														<tr>
+															<th id="tb_ex7">Tel</th>
+															<td headers="tb_ex7"><span class="blind">내용없음</span></td>
+															<th id="tb_ex8">Tel</th>
+															<td headers="tb_ex8"><span class="blind">내용없음</span></td>
+														</tr>
+														<tr>
+															<th id="tb_ex9">Fax</th>
+															<td headers="tb_ex9"><span class="blind">내용없음</span></td>
+															<th id="tb_ex10">Fax</th>
+															<td headers="tb_ex10"><span class="blind">내용없음</span></td>
+														</tr>
+														<tr>
+															<th id="tb_ex11">E-mail</th>
+															<td headers="tb_ex11"><span class="blind">내용없음</span></td>
+															<th id="tb_ex12">E-mail</th>
+															<td headers="tb_ex12"><span class="blind">내용없음</span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">Particulars of Claims(채권사항)</h5>
+											<div class="table">
+												<table class="m_scroll">
+													<caption class="caption">Particulars of Claims(채권사항) 표 - Date of Agreement(계약일자), Date of
+														Delivery(선적일자), Conditions of Payment(지불조건), Name of Bank with which Debtor transacts(채무자
+														거래은행), Original Amount(선적원금), Due Date(결제만기일), Amounts Paid(결제금액), Balanced Amounts(채권잔액),
+														Default Interest(연체이자), Amounts to be Collected(추심대상금액), Client's Reference Number(관리번호)로 구성
+													</caption>
+													<colgroup>
+														<col style="width: 25%;">
+														<col style="width: 25%;">
+														<col style="width: 25%;">
+														<col style="width: 25%;">
+													</colgroup>
+													<tbody>
+														<tr>
+															<th id="table_ex1">Date of Agreement<br>(계약일자)</th>
+															<td headers="table_ex1" class="color_red">계약서 or P/O 일자</td>
+															<th id="table_ex2">Date of Delivery<br>(선적일자)</th>
+															<td headers="table_ex2" class="color_red">선적횟수가 여러 번일 경우, 미수가 발생한 최초건의 선적일자와 결제만기일 기입</td>
+														</tr>
+														<tr>
+															<th id="table_ex3">Conditions of Payment<br>(지불조건)</th>
+															<td headers="table_ex3"><span class="blind">내용없음</span></td>
+															<th id="table_ex4">Name of Bank with which Debtor transacts<br>(채무자 거래은행)</th>
+															<td headers="table_ex4" class="color_red">없거나 모를 경우 기입하지 마십시오</td>
+														</tr>
+														<tr>
+															<th id="table_ex5"><span class="red">①</span>Original Amount<br>(선적원금)</th>
+															<td headers="table_ex5 table_ex7" class="red">총 선적금액</td>
+															<th id="table_ex6">Due Date<br>(결제만기일)</th>
+															<td headers="table_ex6" class="color_red">선적횟수가 여러 번일 경우, 미수가 발생한 최초건의 선적일자와 결제만기일 기입</td>
+														</tr>
+														<tr>
+															<th id="table_ex7"><span class="color_red">②</span>Amounts Paid<br>(결제금액)</th>
+															<td headers="table_ex7 table_ex7" class="color_red">결제된 금액이 있을 경우 그 금액</td>
+															<th id="table_ex8"><span class="color_red">③</span>Balanced Amounts<br>(채권잔액)</th>
+															<td headers="table_ex8" class="color_red">① - ②<br>(선적금액-결제금액)</td>
+														</tr>
+														<tr>
+															<th id="table_ex9"><span class="color_red">④</span>Default Interest<br>(연체이자)</th>
+															<td headers="table_ex9" class="color_red">계약서에 ‘연체이자’에 관한 사항을 명시한 경우, 연체이자율</td>
+															<th id="table_ex10">Amounts to be Collected<br>(추심대상금액)</th>
+															<td headers="table_ex10" class="last color_red">③ + ④</td>
+														</tr>
+														<tr>
+															<th id="table_ex11">Client's Reference Number<br>(관리번호)</th>
+															<td headers="table_ex11" class="color_red">없을 경우 기입하지 마십시오</td>
+															<th id="table_ex12" class="end"></th>
+															<td headers="table_ex12" class="color_red"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">Particulars(세부내용)</h5>
+											<p class="color_red">* 선적횟수가 여러번일 경우 건별로 작성하십시오. 횟수가 3회이상일 경우 별지에 작성, 첨부하십시오.</p>
+											<div class="table sm-mt-10 lg-mt-15">
+												<table class="m_scroll">
+													<caption class="caption">Particulars(세부내용) 표 - Classification, Date of Delivery(선적일), Amounts
+														of
+														Delivered Items(선적금액), Due Date(만기일), Amounts Paid(수입자 결제금액), Amounts in Default(수입자 미결제금액),
+														Default Interest(연체이자), Amounts to be Collected(잔금)로 구성</caption>
+													<colgroup>
+														<col>
+														<col style="width: 12%;">
+														<col style="width: 13%;">
+														<col style="width: 13%;">
+														<col style="width: 13%;">
+														<col style="width: 13%;">
+														<col style="width: 10%;">
+														<col style="width: 12%;">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">Classification</th>
+															<th scope="col">Date<br>of <br>Delivery<br>(선적일)</th>
+															<th scope="col">Amounts of<br>Delivered Items<br>(선적금액)<br><span
+																	class="color_red">①</span>
+															</th>
+															<th scope="col">Due Date<br>(만기일)</th>
+															<th scope="col">Amounts<br>Paid<br>(수입자<br>결제금액)<br><span class="color_red">②</span></th>
+															<th scope="col">Amounts in<br>Default<br>(수입자<br>미결제금액)<br><span class="color_red">③ = ① -
+																	②</span></th>
+															<th scope="col">Default Interest<br>(연체이자)<br><span class="color_red">④</span></th>
+															<th scope="col" class="last">Amounts<br>to be<br>Collected<br>(잔금)<br><span
+																	class="color_red">⑤ =
+																	③ + ④</span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<th scope="row">3</th>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<th scope="row">Total</th>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+															<td>&nbsp;</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">Summary of Transactions (please check in the boxes below)</h5>
+											<p class="color_red">* 해당란에 체크하십시오</p>
+											<table class="table sm-mt-10 lg-mt-15">
+												<caption style="display:none">Summary of Transactions (please check in the boxes below) 표 -
+													Classification, Yes, No로 구성</caption>
+												<colgroup>
+													<col style="width: 70%;">
+													<col style="width: 15%;">
+													<col style="width: 15%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">Classification</th>
+														<th scope="col">Yes</th>
+														<th scope="col">No</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">Has the drawee accepted the bill of exchange?<br>(환어음은 인수되었습니까?)</th>
+														<td>&nbsp;</td>
+														<td><strong class="check">V</strong></td>
+													</tr>
+													<tr>
+														<th scope="row">Have you received the bill of lading?<br>(선하증권은 받았습니까?)</th>
+														<td><strong class="check">V</strong></td>
+														<td>&nbsp;</td>
+													</tr>
+													<tr>
+														<th scope="row">Has the buyer received the goods?<br>(바이어가 물품을 받았습니까?)</th>
+														<td><strong class="check">V</strong></td>
+														<td>&nbsp;</td>
+													</tr>
+													<tr>
+														<th scope="row">Has there been any claim on defects in the goods?<br>(물품에 대한 하자제기는 있었습니까?)
+														</th>
+														<td>&nbsp;</td>
+														<td><strong class="check">V</strong></td>
+													</tr>
+													<tr>
+														<th scope="row">Does the agreement contain arbitration clause?<br>(계약서상에 중재조항은 있었습니까?)</th>
+														<td>&nbsp;</td>
+														<td><strong class="check">V</strong></td>
+													</tr>
+													<tr>
+														<th scope="row">Is the buyer operating its business?<br>(바이어가 영업을 하고 있습니까?)</th>
+														<td><strong class="check">V</strong></td>
+														<td>&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="section">
+											<h5 class="tit">Documents Submitted (please check in the boxes below)</h5>
+											<p class="color_red">* 준비한 서류에 체크하십시오</p>
+											<table class="table type3 sm-mt-10 lg-mt-15">
+												<caption style="display:none">Documents Submitted (please check in the boxes below)</caption>
+												<colgroup>
+													<col style="width: 30%;">
+													<col style="width: 30%;">
+													<col>
+												</colgroup>
+												<tbody>
+													<tr>
+														<td><span class="checked">1. Agreement</span><br>(계약서)</td>
+														<td><span class="checked">2. Delivery Documents</span><br>(선적서류)</td>
+														<td><span class="binbox">3. Bill of Exchange</span> <br>(환어음)</td>
+													</tr>
+													<tr>
+														<td colspan="2"><span class="binbox">4. Correspondence between Exporter and
+																Importer</span><br>(수출입자간서신)</td>
+														<td><span class="binbox">5. Third Party Payment Guarantee</span><br>(제3자 지급보증서) </td>
+													</tr>
+													<tr>
+														<td colspan="2"><span class="binbox">6. Description of Transaction</span><br>(거래경위서)</td>
+														<td><span class="binbox">7. Credit Search Report</span><br>(신용조사 보고서)</td>
+													</tr>
+													<tr>
+														<td colspan="3">Other Documents : <br>(기타 참고서류)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="section">
+											<h5 class="tit">Other Remarks</h5>
+											<p class="color_red">* 영문으로 거래경위를 서술하십시오(한글 거래경위서는 별지에 작성, 첨부하십시오)</p>
+											<div class="border_wrap sm-mt-10 lg-mt-15">
+												<p class="color_red">* 거래경위 서술 내용</p>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-10">
+													<li>거래시작 및 거래과정(결제방법 등) 설명</li>
+													<li>수출품명</li>
+													<li>수입자의 미결제 사유 (클레임 제기 등 논쟁사항 있을 경우 그 상세 내용)</li>
+													<li>귀사가 진행했던 대금결제 독촉 방법</li>
+													<li>대금결제 독촉에 대한 수입자의 반응 및 현재까지의 상황</li>
+													<li>수입자와의 연락가능 여부 및 수입자의 영업현황 등</li>
+													<li>기타 특이사항</li>
+												</ul>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">Authorized Matters(위임사항)</h5>
+											<div class="border_wrap">
+												<ul class="list shape_type1">
+													<li>Creditor authorizes Korea Trade Insurance Corporation to collect the claims (amounts to be
+														collected) which the
+														Creditor has against the Debtor.
+														(채권자는 한국무역보험공사에게 채권자가 채무자에 대해 보유한 미수채권의 회수를 위임한다)</li>
+													<li>Creditor authorizes Korea Trade Insurance Corporation to take all measures necessary,
+														including those mentioned
+														below, to collect claims in Korea Trade Insurance Corporation's name.
+														(채권자는 한국무역보험공사에게 채권회수를 위해 아래의 내용과 같은 필요한 제반조치를 한국무역보험공사의 명의로 행할 수 있는
+														권한을 부여한다)
+													</li>
+													<li>Credit & property assessment, reimbursement pressure, negotiation of repayment conditions,
+														partial repayment
+														agreements, receipt of repayment, legal measures such as lawsuits etc.
+														(채무자에 대한 신용·재산조사, 변제 촉구, 변제조건에 대한 협상, 분할상환약정체결, 변제금 수령, 소송 등 법적절차 등)
+													</li>
+													<li>In the event that Korea Trade Insurance Corporation and Creditor enters into the Debt
+														Collection Authorization
+														Agreement, the contents of this Power of Attorney shall be deemed to have been incorporated
+														into the said Debt
+														Collection Authorization Agreement.
+														(한국무역보험공사와 채권자간에 채권추심대행계약이 성립되는 경우, 본 위임장에 기재된 내용도 채권추심대행계약의 내용으로
+														편입된다)
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">채권자 서명 방법</h5>
+											<div class="table">
+												<table class="m_scroll">
+													<caption class="caption">채권자 서명 방법 표 - 구분, 서명방법, 비고로 구성</caption>
+													<colgroup>
+														<col style="width: 12%;">
+														<col>
+														<col style="width: 32%;">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">서 명 방 법</th>
+															<th scope="col">비 고</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>법인</td>
+															<td>법인명판 + 법인인감도장 날인</td>
+															<td rowspan="2">사용인감계<br> 제출시<br>사용인감도장 날인</td>
+														</tr>
+														<tr>
+															<td>개인</td>
+															<td class="bor_r">사업주 서명 + 사업주 개인인감도장 날인</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<!-- // POWER OF ATTORNEY FOR COLLECTION OF CLAIMS -->
+
+									<!-- DOCUMENTS TO BE SUBMITTED -->
+									<div data-tab-box="tab_box2" style="display: none;">
+										<h5 class="tit">DOCUMENTS TO BE SUBMITTED</h5>
+										<p class="color_red">* 기입하지 마십시오.</p>
+										<div class="table sm-mt-10 lg-mt-15">
+											<table class="m_scroll">
+												<caption class="caption">DOCUMENTS TO BE SUBMITTED 표 - Classification, Documents to be
+													Submitted,
+													Agent로 구성</caption>
+												<colgroup>
+													<col style="width: 15%;">
+													<col style="width: 15%;">
+													<col style="width: 50%;">
+													<col style="width: 20%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col" colspan="2">Classification</th>
+														<th scope="col">Documents to be Submitted</th>
+														<th scope="col">Agent</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th rowspan="2">Documents<br>relating to<br>the Client</th>
+														<th>Corporation</th>
+														<td class="txt_l">
+															* Company registry<br>
+															* Business registration<br>
+															* Certificate of seal impression<br>
+															(of the Corporate Seal)<br>
+															* Certificate of seal impression<br>
+															(of the General Seal of the Company)<br>
+															* A copy of the passbook of the Company<br>
+															(for the use of depositing the collected amounts)<br>
+														</td>
+														<td class="last">Power of Attorney<br>and<br>Identification Card</td>
+													</tr>
+													<tr>
+														<th>Individual</th>
+														<td class="txt_l">
+															* Business registration<br>
+															* Identification card<br>
+															* Certificate of seal impression<br>
+															* A copy of the passbook of the business owner<br>
+														</td>
+														<td>Power of Attorney<br>and<br>Identification Card</td>
+													</tr>
+													<tr>
+														<th colspan="2">Documents relating to the<br>Claims</th>
+														<td class="txt_l">
+															* Power of Attorney for Collection of Claims<br>
+															* Request for Collection of Claims<br>
+															* Agreement, Delivery Documents, Bill of<br>
+															Exchange, Correspondence between the <br>
+															Exporter and Importer, Credit Search Report,<br>
+															Third Party Payment Guarantee, Description <br>
+															of Transaction and Other relevant <br>
+															documents
+														</td>
+														<td class="last">&nbsp;</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!-- // DOCUMENTS TO BE SUBMITTED -->
+
+									<!-- 대외채권 추심대행 약관 -->
+									<div data-tab-box="tab_box3" style="display: none;">
+										<h5 class="tit">대외채권추심대행 약관</h5>
+										<p class="color_red">* 약관을 숙지하고, 보관하십시오</p>
+										<div class="section sm-mt-10 lg-mt-15">
+											<div class="border_wrap">
+												<ul class="list shape_type1 three">
+													<li><span class="bold">제정 : </span>2004. 1. 2</li>
+													<li><span class="bold">1차 개정 : </span>2007. 11. 29</li>
+													<li><span class="bold">2차 개정 : </span>2010. 7. 6</li>
+													<li><span class="bold">3차 개정 : </span>2021. 4. 1</li>
+												</ul>
+											</div>
+										</div>
+										<div class="section">
+											<h5 class="tit">제 1 장 총 칙</h5>
+											<ul class="list shape_type1">
+												<li>
+													<span class="bold">제 1 조(약관의 내용)</span>
+													<p class="sm-mt-7 lg-mt-10">이 약관은 한국무역보험공사(이하 “공사”라 함)가 수출 또는 기타 대외거래에서 발생한 대외채권에 대하여 채권자로부터
+														채권추심 권한을 위임받아 그 업무를 대행하는
+														내용을 정하는 약관입니다.</p>
+												</li>
+												<li>
+													<span class="bold">제 2 조(적용대상채권)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>이 약관은 변제기일이 경과된 대외채권 중 미화 5천 달러 이상 또는 이에 상당하는 금전채권을 대상으로 합니다.</li>
+														<li>제1항에도 불구하고 관련 증빙에 따라 채권채무 관계가 명확하고 회수실익이 있다고 판단되는 경우에는 적용대상거래에 포함될 수 있습니다.</li>
+													</ul>
+												</li>
+												<li>
+													<span class="bold">제 3 조(정의)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>이 약관에서 “채권자”란 수출자, 수출 또는 기타 대외거래와 관련하여 발생한 채권을 취득한 금융기관을 말합니다.</li>
+														<li>이 약관에서 “기타 대외거래”란 수출용원자재 또는 수출용완제품의 수입, 해외투자 및 그 밖에 공사가 무역보험법에 의하여 인정하는 거래를 말합니다.</li>
+														<li>이 약관에서 “대외채권”이란 수출 또는 기타 대외거래에서 발생한 채권을 말합니다.</li>
+														<li>이 약관에서 “채권추심대행계약”이란 채권자가 보유하고 있는 대외채권의 추심을 공사에게 위임하기 위해 체결하는 계약을 말합니다.</li>
+														<li>이 약관에서 “추심수수료 등”이란 채권추심 위임관계가 성립된 이후 대외채권의 채무자 등으로부터 회수한 금액에 대하여 이 약관에서 정한 바에 따라 공사가
+															채권자에게 부과하는 수수료 및 부가가치세를 말합니다.</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="section">
+											<h5 class="tit">제 2 장 채권추심 위임관계</h5>
+											<ul class="list shape_type1">
+												<li><span class="bold">제 4 조(채권추심대행계약의 성립)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>채권추심대행계약은 공사에 채권추심을 위임하고자 하는 채권자가 공사가 정하는 양식에 따른 다음 제1호부터 제5호까지의 서류를 공사에 제출하고 공사가 이를
+															승낙함으로써 성립합니다.
+															<ul class="list num_type1 sm-mt-7 lg-mt-10">
+																<li>채권추심위임장</li>
+																<li>위임대상 채권의 명세서 및 관련서류 사본(필요시 원본)</li>
+																<li>채권 발생경위 및 채무자에 대한 기본 자료</li>
+																<li>사업자등록증 사본</li>
+																<li>기타 공사가 채권추심을 위해 요청하는 자료</li>
+															</ul>
+														</li>
+														<li>공사에 대한 서류제출은 인터넷 또는 서면방법에 의하며, 이 경우 채권자는 이 약관에 대하여 사전에 숙지하고 이를 채권추심대행계약의 내용으로 하는 것에 동의한
+															것으로 간주합니다.</li>
+														<li>공사의 채권추심대행계약 승낙은 채권자의 서류제출방법(인터넷 또는 서면방법)에 따르며, 승낙통지를 발송한 시점부터 채권추심대행계약의 효력이 발생합니다.</li>
+														<li>채권자는 제1항의 서류를 제출한 이후 추가로 가지게 된 모든 채권 관련 서류를 공사에게 제공하여야 합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 5 조(채권추심대행계약의 해지)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>채권추심업무의 진행 중 다음 각 호의 어느 하나에 해당하는 사유가 발생한 경우 공사는 채권추심대행계약을 해지할 수 있습니다.
+															<ul class="list num_type1 sm-mt-7 lg-mt-10">
+																<li>채권이 원인무효임이 판명된 경우</li>
+																<li>채무자가 채무를 부인하고 채권자가 채권을 증명하지 못하여 계속적인 추심진행의 실익이 없는 경우</li>
+																<li>본안소송에서 채권자의 청구 취지 전부에 대하여 패소하는 등 집행권원을 받을 수 없게 된 경우</li>
+																<li>채권의 소멸시효 완성으로 추심이 불가능한 경우</li>
+																<li>채무자가 파산 또는 사망하여 추심이 불가능한 경우</li>
+																<li>채권자가 제8조 또는 제9조 제4항의 회신을 하지 않아 추심업무수행이 불가능한 경우</li>
+																<li>다음 각목의 어느 하나에 해당하는 사유가 발생하여 계속적인 추심진행의 실익이 없는 경우
+																	<ul class="list hangul_type pl-13 sm-mt-7 lg-mt-10">
+																		<li>채무자에게 변제자력이 없는 경우</li>
+																		<li>채무자의 소재가 1년 이상 파악되지 않는 경우</li>
+																		<li>채권자가 추심진행에 필요한 비용을 지급하지 않는 경우</li>
+																		<li>채권자가 휴폐업한 경우</li>
+																		<li>소송 이외의 채권추심방안이 없는 경우로서 채권자가 소송진행에 동의하지 않는 경우</li>
+																	</ul>
+																</li>
+															</ul>
+														<li>공사가 제1항 제1호부터 제6호까지의 규정에 따라 채권자에게 해지통지를 하고 그 해지통지 사유가 채권자의 고의 또는 과실에 의한 경우 채권자는 공사가
+															부담하였거나 부담하여야 할 비용을 추심성공과 관계없이 공사에 납부하여야 합니다.</li>
+														<li>채권자가 추심의 종결 전에 채권추심대행계약을 해지하고자 하는 경우 공사 및 해외현지추심기관의 사전동의를 받아야 합니다.</li>
+														<li>채권자가 제3항을 위반한 경우 채권자는 공사가 추심을 위하여 지출한 모든 비용 및 추심위임금액 전액이 회수된 것으로 간주하여 산정한 추심수수료 등을 합한
+															금액의 범위 내에서 공사가 청구하는 금액을 공사에 지급하여야 합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 6 조(중복위임의 금지 등)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>채권자는 본 약관에 따라 공사에 추심을 위임한 채권에 대하여 추심이 종결되기 전에는 제3자와 위임계약을 체결할 수 없습니다.</li>
+														<li>채권자는 공사의 승인 없이 채권추심대행계약상의 권리와 의무의 전부 또는 일부를 제3자에게 양도하거나 하도급을 주거나 담보의 목적물로 사용할 수 없습니다.
+														</li>
+														<li>채권자가 제1항 또는 제2항을 위반한 경우, 채권자는 공사가 추심을 위하여 지출한 모든 비용 및 추심대행금액 전액이 회수된 것으로 간주하여 산정한 추심수수료
+															등을 합한 금액의 범위 내에서 공사가 청구하는 금액을 공사에 지급하여야 합니다.</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="section">
+											<h5 class="tit">제 3 장 추심업무의 수행 및 종결</h5>
+											<ul class="list shape_type1">
+												<li><span class="bold">제 7 조(추심업무 수행방법)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>공사는 채권자로부터 위임받은 채권에 대하여 공사가 직접 추심업무를 진행하거나 또는 국내외 유관기관, 외국소재 채권추심기관 등에 위임하여 처리할 수 있습니다.
+														</li>
+														<li>공사는 다음 각 호의 방법으로 추심업무를 진행합니다.
+															<ul class="list num_type1 sm-mt-7 lg-mt-10">
+																<li>채무자에 대한 소재지 파악 및 신용ㆍ재산조사</li>
+																<li>전신, 전화, 서면 또는 면담 등에 의한 변제 촉구</li>
+																<li>변제조건에 대한 협상</li>
+																<li>채무자와 채무의 분할상환 약정체결</li>
+																<li>변제금 수령</li>
+																<li>소송 등 법적 절차의 진행</li>
+																<li>기타 채권추심활동에 필요한 부대활동 등<br>단, 추심관련 서류번역은 제외</li>
+															</ul>
+														</li>
+														<li>공사는 채권추심업무의 주요 진행사항을 공사홈페이지 또는 사이버영업점에서 채권자가 확인할 수 있도록 하거나 서면(e-mail포함)으로 통지하여 채권자에게
+															알려드립니다. 다만, 전산서비스의 장애 발생 등 불가피한 사유로 인터넷에 의한 통지가 이루어지지 아니할 경우에는 3개월에 1회씩 정기적으로 의뢰받은 채권의
+															진행현황을 서면으로 통지합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 8 조(채권자 통지사항)</span>
+													<p class="sm-mt-7 lg-mt-10">채권자는 다음 각 호의 어느 하나에 해당하는 사유가 발생하는 경우 이를 알게 된 날로부터 10영업일 이내에 공사에
+														통지하여야 합니다.</p>
+													<ul class="list num_type1 sm-mt-7 lg-mt-10">
+														<li>위임한 채권과 관련하여 채무자의 재산발견, 채무변제 의사확인, 연락처 변경 등 채권회수에 필요하다고 인정되는 사항이 발생한 경우</li>
+														<li>이 약관에 따라 공사에 위임한 채권이 제12조 각 호에 해당하는 경우</li>
+														<li>채권자의 주소(e-mail 주소 포함), 상호, 전화번호, FAX번호가 변경된 경우</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 9 조(채권자 사전동의 사항)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>다음 각 호의 어느 하나에 해당하는 경우 공사는 채권자의 사전, 서면동의를 얻은 후 업무를 진행합니다.
+															<ul class="list num_type1 sm-mt-7 lg-mt-10">
+																<li>수출의 경우, 당해 수출물품을 회수하거나 채무자가 대물변제의사를 표시하는 경우</li>
+																<li>채권의 분할상환과 채권금액감액이 필요한 경우</li>
+																<li>채무자에 대한 재산조사, 법적절차를 진행할 경우</li>
+																<li>채권추심업무 수행상 통상적비용(우편료, 전화료, 시내출장비등) 이외의 경비가 발생할 경우</li>
+																<li>기타 공사가 중요하다고 판단하는 사항</li>
+															</ul>
+														</li>
+														<li>제1항 제4호의 경우에는 발생 시마다 원칙적으로 채권자가 부담하며, 채권자는 공사가 정하는 기간 내에 지정하는 은행계좌로 입금하여야 합니다.</li>
+														<li>제2항에 따라 채권자가 부담한 비용은 채권추심이 성공하지 못한 경우에도 반환되지 않습니다.</li>
+														<li>채권자는 공사로부터 제1항 각호의 사항에 대한 동의여부를 요구받는 경우에 10영업일 이내에 공사에 동의여부를 통지하여야 합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 10 조(추심업무의 종결)</span>
+													<p class="sm-mt-7 lg-mt-10">채권추심대행계약에 따라 위임된 채권액 전액을 회수하거나 제5조에 따라 채권추심대행계약이 해지된 경우 추심업무가
+														종결됩니다.</p>
+												</li>
+											</ul>
+										</div>
+										<div class="section">
+											<h5 class="tit">제 4 장 채권의 회수 및 추심수수료 등</h5>
+											<ul class="list shape_type1">
+												<li><span class="bold">제 11 조(회수금 처리방법)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>채무자로부터 회수한 금액은 공사가 채무자 또는 추심위임기관으로부터 직접 수령합니다.</li>
+														<li>공사가 회수금액을 직접 수령한 경우, 공사는 추심금액을 수령한 날로부터 15영업일 이내에 회수금처리 내역을 채권자가 확인할 수 있도록 안내하고 제13조에서
+															정하는 추심수수료 등과 채권자가 이 약관에 따라 납부하여야 할 금액이 있는 경우는 그 금액을 공제하고 채권자의 은행계좌에 입금합니다.</li>
+														<li>제1항에도 불구하고 채권자가 부득이하게 제12조 각 호의 사항을 포함한 회수금을 직접 수령한 경우, 채권자는 이를 공사에 지체 없이 통지하여야 하며 통지한
+															날로부터 15영업일 이내에 공사에게 제13조에서 정하는 추심수수료 등과 채권자가 이 약관에 따라 납부하여야 할 금액을 공사에 납부하여야 합니다. 다만, 채권자가
+															공사에 납부할 금액의 확인이 필요한 경우에는 공사가 그 금액을 확인해 준 날로부터 15영업일 이내에 납부할 수 있습니다.</li>
+														<li>채권자가 제3항에 의하여 납부하여야 할 금액을 공사가 지정하는 날까지 납부하지 않은 경우는 그 금액과 그 다음날부터 납부하는 날까지의 날수에 대하여 공사가
+															정한 이율을 적용하여 계산한 연체금을 납부해야 합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 12 조(회수금액 간주)</span>
+													<p class="sm-mt-7 lg-mt-10">채권추심위임 이후 다음 각 호의 어느 하나에 해당하는 사유가 발생한 경우에는 공사가 추심에 성공하여 회수된 금액으로
+														간주합니다.</p>
+													<ul class="list num_type1 sm-mt-7 lg-mt-10">
+														<li>채권자가 채무자로부터 현금 및 수표, 유가증권 등 환가성 있는 증서를 수령하여 변제에 충당하거나, 변제에 충당되었다고 인정되는 경우</li>
+														<li>채무자로부터 대물변제를 받은 경우</li>
+														<li>채권자가 채무자 등의 변제공탁으로 공탁금을 수령한 경우</li>
+														<li>채권자가 강제집행, 임의경매, 배당참가 등으로 수출대금을 회수한 경우</li>
+														<li>채권자가 공사의 동의 없이 채무자와 경개계약, 채권채무의 상계, 채권의 전부 또는 일부에 대한 포기 및 감면 등으로 공사의 채권 추심이 불가능하게 된 경우
+														</li>
+														<li>채무자 이외의 제3자가 채무자를 위하여 위 제1호부터 제4호까지의 방법 등으로 채권자에게 변제한 경우</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 13 조(추심수수료 등)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>추심수수료 등은 채무자가 소재하는 국가, 회수금액, 추심의뢰 채권의 유형 등을 기초로 공사가 정합니다.</li>
+														<li>공사는 채권자로부터 요청받은 채권금액 중 제12조 각 호의 사항을 포함하여 회수된 금액에 대하여 추심수수료 등을 부과합니다.</li>
+														<li>채무자로부터 수출상품 등으로 대물변제를 받은 경우는 그 물품을 제3자 앞에 매각한 금액, 공인 감정기관 또는 공사와 채권자가 합의한 기관의 평가액을 회수한
+															금액으로 간주합니다.</li>
+														<li>추심금액이 분할 상환되는 경우에 공사는 각 분할 회수금에 상응하는 추심수수료 등을 부과합니다.</li>
+														<li>채권추심이 실패로 종결되거나 중도에 채권추심대행계약이 해지될 경우 등에는 공사가 채권자에게 비용 및 보수를 청구할 수 있는 경우와 그 범위에 대하여는
+															제2장에서 정한 바와 같습니다.</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<div class="section">
+											<h5 class="tit">제 5 장 보 칙</h5>
+											<ul class="list shape_type1">
+												<li><span class="bold">제 14 조(소멸시효의 관리)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>채권자는 소멸시효완성 예정일 이후에도 공사와 채권추심대행계약을 계속 유지하고자 하는 경우에는 채권의 소멸시효가 만료되기 전 적절한 시효중단 조치를 취하여야하며
+															이러한 조치를 취한 때로부터 15영업일 이내에 이를 공사에 통지하여야 합니다</li>
+														<li>제1항에 따른 소멸시효 관리에 대해 공사는 별도의 의무나 책임을 부담하지 않으며, 채권자는 소멸시효 완성을 중단시키기 위해 필요한 조치에 대하여 공사와 협의할
+															수 있습니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 15 조(면책)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>채권자는 공사에 제출한 증서 또는 기타 문서가 사변, 재해, 수송도중의 사고 등 불가항력적인 사유로 인하거나 또는 공사의 직원이 아닌 대리인, 수탁자,
+															수임인, 기타 제3자의 고의, 과실로 인하여 분실, 손상 또는 멸실된 경우에는 공사에 책임을 묻지 않으며 공사의 요청에 따라 곧 그에 대신할 증서 등을 제출하여야
+															합니다. 공사는 추심 종결일로부터 3개월 이상 문서를 보관할 의무가 없습니다.</li>
+														<li>공사는 채권자에게 제공된 보고서와 정보에 대한 정확성을 보장하지 아니하며, 오류나 누락 및 제공된 보고서와 정보를 채권자 또는 제3자가 사용함에 있어서 입게
+															되는 어떠한 손실에 대해서도 책임을 지지 않습니다.</li>
+														<li>채권자의 귀책사유로 인한 경우, 천재지변, 전쟁, 내란, 사변, 폭동, 소요 또는 기타 이들과 유사한 불가항력으로 인한 업무의 지연 또는 불능사유가 발생한
+															경우 이로 인하여 발생하는 채권자의 손해에 대하여 공사는 책임을 지지 아니합니다.</li>
+														<li>공사 직원 및 대리인의 고의 또는 중과실이 아닌 일반적인 근무태만으로 인하여 회수할 수 있는 채권이 회수불능으로 인정되는 경우에는 총 위임금액에 대한
+															추심수수료 등의 범위 내에서 책임을 부담합니다. 다만, 대리인의 범위에 공사가 채권추심을 위임한 채권추심기관의 직원 및 공사에 의해 직접 고용되지 않은 대리인은
+															제외합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 16 조(특약사항)</span>
+													<p class="sm-mt-7 lg-mt-10">공사는 이 약관에서 정한 내용과 다른 사항을 약정하고자 하는 경우에는 채권자와 합의하여 특별약정을 추가로 체결할 수
+														있습니다.</p>
+												</li>
+												<li><span class="bold">제 17 조(적용환율 및 단수절사)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>이 약관에서 적용하는 환율(당일 최초로 고시되는 매매기준율을 말하며, 이하 같음)은 다음 각 호와 같습니다.
+															<ul class="list num_type1 sm-mt-7 lg-mt-10">
+																<li>회수한 날의 환율</li>
+																<li>제1호에 규정된 환산일에 환율이 없는 경우에는 환율이 고시된 직전일의 환율로 환산합니다.</li>
+																<li>원화환율이 고시되어 있지 않은 경우에는 다른 통화를 매개로 환산합니다.</li>
+																<li>제1호부터 제3호까지 규정된 환율의 적용이 곤란한 경우에는 공사가 지정한 환율로 환산합니다.</li>
+															</ul>
+														</li>
+														<li>외국통화일 경우 소수둘째미만을, 내국통화일 경우 10원미만을 단수절사 합니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 18 조(통지의 효력)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>공사는 채권자가 신고한 최종 주소(e-mail 주소 포함)로 서면(e-mail 포함) 통지 또는 기타 서류 등을 발송한 경우, 채권자가 수령한 것으로 간주하며
+															공사는 이 약관에 의한 통지의무를 다한 것으로 봅니다.</li>
+														<li>공사가 채무자에 대한 통지 등의 사본을 보존하고 있는 경우에는 발송한 것으로 봅니다.</li>
+													</ul>
+												</li>
+												<li><span class="bold">제 19 조(준거법령)</span>
+													<ul class="list num_type2 sm-mt-7 lg-mt-10">
+														<li>공사는 채권추심이 이루어지는 국가의 채권추심 법령 및 각종 규정을 준수합니다.</li>
+														<li>이 약관에 정해져 있지 않은 사항에 대하여는 대한민국법령이 정하는 바에 따릅니다.</li>
+														<li>이 계약에 의한 권리의무에 관하여 분쟁이 발생할 경우 공사의 본점 소재지를 관할하는 법원을 관할법원으로 합니다.</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- // 대외채권 추심대행 약관 -->
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn md bg_red" onclick="fn_hide_popup('sample');">닫기</button>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('sample');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+						<!-- // 위임장 작성방법 샘플 팝업 -->
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

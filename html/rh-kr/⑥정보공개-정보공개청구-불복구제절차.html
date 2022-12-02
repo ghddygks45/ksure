@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">불복구제절차</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">불복구제절차</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_info_request03.jpg" alt="하단에 내용 참고 바랍니다." class="pc_content">
+								<img src="../../asset/rh-kr/images/img_info_request03_m.jpg" alt="하단에 내용 참고 바랍니다." class="m_content">
+								<div class="blind">
+									<ul>
+										<li>이의신청</li>
+										<li>행정심판 행정소송</li>
+										<li>
+											<ul>
+												<li>행정심판 - 국민권인위원회, 중앙행정심판위원회</li>
+												<li>행정소송 - 서울행정법원</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">이의신청</h4>
+							<ul class="list shape_type1">
+								<li>청구인이 정보공개와 관련한 공공기관의 비공개 또는 부분공개의 결정에 대하여 불복이 있는 때에는 공공기관으로터 정보공개여부의 결정통지를 받은 날 또는 비공개의
+									결정이 있는 것으로 보는 날부터 30일 이내에 당해 공공기관에 문서로 이의신청을 할 수 있습니다.</li>
+								<li>공공기관은 이의신청을 받은 날부터 7일 이내에 그 이의신청에 대하여 결정하고 그 결과를 청구인에게 지체없이 문서로 통지하여야 합니다.</li>
+								<li>이의신청은 “서면”으로 하여야 하며 신청인의 이름, 주민등록번호 및 주소, 이의 신청의 대상이 되는 정보의 공개여부에 대한 결정통지의 내용, 이의신청의 취지 및 이유,
+									정보공개여부의 결정통지를 받은 날 또는 비공개결정이 있는 것으로 보는 날 등이 포함되어야 합니다.</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">행정심판</h4>
+							<ul class="list shape_type1">
+								<li>청구인이 정보공개와 관련한 공공기관의 결정에 대하여 불복이 있는 때에는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">행정소송</h4>
+							<ul class="list shape_type1">
+								<li>청구인이 정보공개와 관련한 공공기관의 결정에 대하여 불복이 있는 때에는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">담당자 안내</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>담당자 안내 표로 구분, 담당, 연락처 정보 제공</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">담당</th>
+											<th scope="col">연락처</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<td><span class="bold">정보공개 접수처</span></td>
+											<td><span class="bold">성과평가팀</span></td>
+											<td>Tel 02-399-7304 / Fax 02-399-6904</td>
+										</tr>
+										<tr class="txt_c">
+											<td><span class="bold">방문 및 우편</span></td>
+											<td colspan="2">서울특별시 종로구 종로 14 (서린동), 한국무역보험공사 (우 03187)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

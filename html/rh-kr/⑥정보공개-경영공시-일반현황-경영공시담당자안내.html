@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(1, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">경영공시 담당자 안내</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="⑥정보공개-경영공시-일반현황-경영공시담당자안내.html" class="active">경영공시 담당자 안내</a></li>
+							<li><a href="⑥정보공개-경영공시-일반현황-정보공개담당관.html">정보공개 담당관</a></li>
+						</ul>
+
+						<div class="section">
+							<div class="table">
+								<table class="m_scroll">
+									<caption>경영공시 담당자 목록이며 구분, 공사항목, 담당팀, 작성자, 연락처, 감독자, 확인자 정보를 제공하고 있습니다.</caption>
+									<colgroup>
+										<col style="width: 130px;">
+										<col style="width:100px">
+										<col style="width:135px;">
+										<col style="width: 140px;">
+										<col style="width: 140px;">
+										<col style="width: 140px;">
+										<col style="width: 177px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th colspan="2" scope="col">공시항목</th>
+											<th scope="col">담당팀</th>
+											<th scope="col">작성자</th>
+											<th scope="col">연락처</th>
+											<th scope="col">감독자</th>
+											<th scope="col">확인자</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th rowspan="3">일반현황</th>
+											<th colspan="2">일반현황</th>
+											<td class="cnt txt_c">종합기획팀</td>
+											<td class="cnt txt_c">팀장 허재진 </td>
+											<td class="cnt txt_c bor_r">399-5087</td>
+											<td class="cnt txt_c" rowspan="59">경영평가부장<br>박재형</td>
+											<td class="cnt txt_c" rowspan="59">감사실장<br>유승희</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">경영공시 담당자 안내</th>
+											<td class="cnt txt_c" rowspan="2">성과평가팀</td>
+											<td class="cnt txt_c" rowspan="2">팀장 이동원</td>
+											<td class="cnt txt_c bor_r" rowspan="2">399-6920</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">정보공개담당관</th>
+										</tr>
+										<tr>
+											<th rowspan="23">기관운영</th>
+											<th colspan="2">임직원수</th>
+											<td class="cnt txt_c">인사팀</td>
+											<td class="cnt txt_c">팀장 박세헌</td>
+											<td class="cnt txt_c bor_r">399-6863</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">임원현황</th>
+											<td class="cnt txt_c">종합기획팀</td>
+											<td class="cnt txt_c">팀장 허재진 </td>
+											<td class="cnt txt_c bor_r">399-5087</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">신규채용현황</th>
+											<td class="cnt txt_c">인사팀</td>
+											<td class="cnt txt_c">팀장 박세헌</td>
+											<td class="cnt txt_c bor_r">399-6863</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">임·직원 채용정보</th>
+											<td class="cnt txt_c">인사팀</td>
+											<td class="cnt txt_c">팀장 박세헌</td>
+											<td class="cnt txt_c bor_r">399-6863</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">임원연봉</th>
+											<td class="cnt txt_c">급여후생팀</td>
+											<td class="cnt txt_c">팀장 김태현</td>
+											<td class="cnt txt_c bor_r">399-6788</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">직원평균보수</th>
+											<td class="cnt txt_c">급여후생팀</td>
+											<td class="cnt txt_c">팀장 김태현</td>
+											<td class="cnt txt_c bor_r">399-6788</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">기관장 업무추진비</th>
+											<td class="cnt txt_c">비서팀</td>
+											<td class="cnt txt_c">부장 김정탁</td>
+											<td class="cnt txt_c bor_r">399-6857</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">복리후생비</th>
+											<td class="cnt txt_c">급여후생팀</td>
+											<td class="cnt txt_c">팀장 김태현</td>
+											<td class="cnt txt_c bor_r">399-6788</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">그 밖의 복리후생제도 등의 운영현황</th>
+											<td class="cnt txt_c">급여후생팀</td>
+											<td class="cnt txt_c">팀장 김태현</td>
+											<td class="cnt txt_c bor_r">399-6788</td>
+										</tr>
+										<tr>
+											<th colspan="2" rowspan="2" class="bl">안전관리 및 정보보호</th>
+											<td class="cnt txt_c">안전경영팀</td>
+											<td class="cnt txt_c">팀장 최상봉</td>
+											<td class="cnt txt_c bor_r">399-7366</td>
+										</tr>
+										<tr>
+											<td class="cnt txt_c bl">정보보안팀</td>
+											<td class="cnt txt_c">팀장 김경주</td>
+											<td class="cnt txt_c bor_r">399-6169</td>
+										</tr>
+										<tr>
+											<th colspan="2" rowspan="2" class="bl">환경보호</th>
+											<td class="cnt txt_c">안전경영팀</td>
+											<td class="cnt txt_c">팀장 최상봉</td>
+											<td class="cnt txt_c bor_r">399-7366</td>
+										</tr>
+										<tr>
+											<td class="cnt txt_c bl">계약관리팀</td>
+											<td class="cnt txt_c">팀장 박수범</td>
+											<td class="cnt txt_c bor_r">399-6125</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">사회공헌활동</th>
+											<td class="cnt txt_c">사회적가치경영팀</td>
+											<td class="cnt txt_c">팀장 김현재</td>
+											<td class="cnt txt_c bor_r">399-7037</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">인권경영</th>
+											<td class="cnt txt_c">혁신윤리기획팀</td>
+											<td class="cnt txt_c">팀장 김종직</td>
+											<td class="cnt txt_c bor_r">399-7302</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">이사회 회의록</th>
+											<td class="cnt txt_c">종합기획팀</td>
+											<td class="cnt txt_c">팀장 허재진 </td>
+											<td class="cnt txt_c bor_r">399-5087</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">일·가정 양립 지원제도 운영현황</th>
+											<td class="cnt txt_c">인사팀</td>
+											<td class="cnt txt_c">팀장 박세헌</td>
+											<td class="cnt txt_c bor_r">399-6863</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">임원 국외출장 내역</th>
+											<td class="cnt txt_c">성과평가팀</td>
+											<td class="cnt txt_c">팀장 이동원</td>
+											<td class="cnt txt_c bor_r">399-6920</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">노동조합 관련현황</th>
+											<td class="cnt txt_c">급여후생팀</td>
+											<td class="cnt txt_c">팀장 김태현</td>
+											<td class="cnt txt_c bor_r">399-6788</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">내부규정</th>
+											<td class="cnt txt_c">법무팀</td>
+											<td class="cnt txt_c">팀장 김동혁</td>
+											<td class="cnt txt_c bor_r">399-6148</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">징계현황</th>
+											<td class="cnt txt_c">인사팀</td>
+											<td class="cnt txt_c">팀장 박세헌</td>
+											<td class="cnt txt_c bor_r">399-6863</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl" rowspan="2">소송 및 법률자문 현황</th>
+											<td class="cnt txt_c">법무팀</td>
+											<td class="cnt txt_c">팀장 김동혁</td>
+											<td class="cnt txt_c bor_r">399-6148</td>
+										</tr>
+										<tr>
+											<td class="cnt txt_c bl">채권관리팀</td>
+											<td class="cnt txt_c">팀장 이건광</td>
+											<td class="cnt txt_c bor_r">399-5782</td>
+										</tr>
+										<tr>
+											<th rowspan="12">주요사업<br>및<br>경영성과</th>
+											<th colspan="2">요약 재무상태표</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 박주현</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">요약 손익계산서</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 박주현</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">수입·지출현황</th>
+											<td class="cnt txt_c">기금예산팀</td>
+											<td class="cnt txt_c">팀장 진정현</td>
+											<td class="cnt txt_c bor_r">399-5779</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">자본금 및 주주현황</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 박주현</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">장단기 차입금현황</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 박주현</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<th colspan="2" rowspan="2" class="bl">감사보고서</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 박주현</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<td class="cnt txt_c bl">감사실</td>
+											<td class="cnt txt_c">책임검사역 김영일</td>
+											<td class="cnt txt_c bor_r">399-7086</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">납세정보 현황</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 박주현</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">주요사업</th>
+											<td class="cnt txt_c">기금예산팀</td>
+											<td class="cnt txt_c">팀장 진정현</td>
+											<td class="cnt txt_c bor_r">399-5779</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">투자 및 출자·출연 현황</th>
+											<td class="cnt txt_c">채권관리팀</td>
+											<td class="cnt txt_c">팀장 이건광</td>
+											<td class="cnt txt_c bor_r">399-5782</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">경영부담비용 추계</th>
+											<td class="cnt txt_c">회계심사팀</td>
+											<td class="cnt txt_c">팀장 정재윤</td>
+											<td class="cnt txt_c bor_r">399-6790</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">중장기 재무관리계획</th>
+											<td class="cnt txt_c">기금예산팀</td>
+											<td class="cnt txt_c">팀장 진정현</td>
+											<td class="cnt txt_c bor_r">399-5779</td>
+										</tr>
+										<tr>
+											<th rowspan="7">대내외<br>평가</th>
+											<th colspan="2">경영 평가결과</th>
+											<td class="cnt txt_c">성과평가팀</td>
+											<td class="cnt txt_c">팀장 이동원</td>
+											<td class="cnt txt_c bor_r">399-6920</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">동반성장 평가결과</th>
+											<td class="cnt txt_c">사회적가치경영팀</td>
+											<td class="cnt txt_c">팀장 김현재</td>
+											<td class="cnt txt_c bor_r">399-7037</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">청렴도 평가결과</th>
+											<td class="cnt txt_c">혁신윤리기획팀</td>
+											<td class="cnt txt_c">팀장 김종직</td>
+											<td class="cnt txt_c bor_r">399-7302</td>
+										</tr>
+										<tr>
+											<th colspan="2" rowspan="3" class="bl">국회 등 외부평가</th>
+											<td class="cnt txt_c">종합기획팀</td>
+											<td class="cnt txt_c">팀장 허재진</td>
+											<td class="cnt txt_c bor_r">399-5087</td>
+										</tr>
+										<tr>
+											<td class="cnt txt_c bl">감사실</td>
+											<td class="cnt txt_c">책임검사역 김영일</td>
+											<td class="cnt txt_c bor_r">399-7086</td>
+										</tr>
+										<tr>
+											<td class="cnt txt_c bl">성과평가팀</td>
+											<td class="cnt txt_c">팀장 이동원</td>
+											<td class="cnt txt_c bor_r">399-6920</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">고객만족도 조사결과</th>
+											<td class="cnt txt_c">고객만족팀</td>
+											<td class="cnt txt_c">팀장 박진</td>
+											<td class="cnt txt_c bor_r">399-7062</td>
+										</tr>
+										<tr>
+											<th rowspan="2">정보공개</th>
+											<th colspan="2" class="bl">계약정보</th>
+											<td class="cnt txt_c">계약관리팀</td>
+											<td class="cnt txt_c">팀장 박수범</td>
+											<td class="cnt txt_c bor_r">399-6125</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">연구보고서</th>
+											<td class="cnt txt_c">성과평가팀</td>
+											<td class="cnt txt_c">팀장 이동원</td>
+											<td class="cnt txt_c bor_r">399-6920</td>
+										</tr>
+										<tr>
+											<th rowspan="4">공지사항</th>
+											<th colspan="2" class="bl">해외 ECA 현황</th>
+											<td class="cnt txt_c">국제협력팀</td>
+											<td class="cnt txt_c">팀장 류재상</td>
+											<td class="cnt txt_c bor_r">399-6919</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">상품권 구매 및 사용내역</th>
+											<td class="cnt txt_c">성과평가팀</td>
+											<td class="cnt txt_c">팀장 이동원</td>
+											<td class="cnt txt_c bor_r">399-6920</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">경영공시 질의응답</th>
+											<td class="cnt txt_c">성과평가팀</td>
+											<td class="cnt txt_c">팀장 이동원</td>
+											<td class="cnt txt_c bor_r">399-6920</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">무역보험 FAQ</th>
+											<td class="cnt txt_c">고객만족팀</td>
+											<td class="cnt txt_c">팀장 박진</td>
+											<td class="cnt txt_c bor_r">399-7062</td>
+										</tr>
+										<tr>
+											<th rowspan="3">기금운용공시</th>
+											<th colspan="2">일반사항</th>
+											<td class="cnt txt_c">자금운용팀</td>
+											<td class="cnt txt_c">팀장 이완석</td>
+											<td class="cnt txt_c bor_r">399-6854</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">기금운용기준</th>
+											<td class="cnt txt_c">자금운용팀</td>
+											<td class="cnt txt_c">팀장 이완석</td>
+											<td class="cnt txt_c bor_r">399-6854</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">투자 및 수익현황</th>
+											<td class="cnt txt_c">자금운용팀</td>
+											<td class="cnt txt_c">팀장 이완석</td>
+											<td class="cnt txt_c bor_r">399-6854</td>
+										</tr>
+										<tr>
+											<th rowspan="4">무역보험<br>정보통계</th>
+											<th colspan="2">무역보험관련 통계</th>
+											<td class="cnt txt_c">영업기획팀</td>
+											<td class="cnt txt_c">팀장 김철환</td>
+											<td class="cnt txt_c bor_r">399-6854</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">무역보험 약관</th>
+											<td class="cnt txt_c">영업기획팀</td>
+											<td class="cnt txt_c">팀장 김철환</td>
+											<td class="cnt txt_c bor_r">399-6584</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">국가정보자료</th>
+											<td class="cnt txt_c">국별조사팀</td>
+											<td class="cnt txt_c">팀장 정선영</td>
+											<td class="cnt txt_c bor_r">399-5787</td>
+										</tr>
+										<tr>
+											<th colspan="2" class="bl">환율동향</th>
+											<td class="cnt txt_c">환위험관리팀</td>
+											<td class="cnt txt_c">팀장 홍수이</td>
+											<td class="cnt txt_c bor_r">399-6928</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

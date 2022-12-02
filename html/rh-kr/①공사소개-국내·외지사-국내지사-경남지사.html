@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(9, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">국내지사</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab tab_m_3">
+							<li><a href="①공사소개-국내·외지사-국내지사-중앙지사.html">중앙지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-강남지사.html">강남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-부산지사.html">부산지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-대구경북지사.html">대구경북지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-인천지사.html">인천지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-반월시화지사.html">반월시화지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-광주전남지사.html">광주전남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-대전세종충남지수.html">대전세종충남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-울산지사.html">울산지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-경기남부지사.html">경기남부지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-경기북부지사.html">경기북부지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-강원지사.html">강원지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-충북지사.html">충북지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-전북지사.html">전북지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-경남지사.html" class="active">경남지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-구로디지털지사.html">구로디지털지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-제주지사.html">제주지사</a></li>
+							<li><a href="①공사소개-국내·외지사-국내지사-천안출장소.html">천안출장소</a></li>
+						</ul>
+
+						<div class="section">
+							<div class="img_box">
+								<img src="../../asset/rh-kr/images/img_place_head_office.jpg" alt="">
+								<div class="plcae_info">
+									<strong class="address">경상남도 창원시 성산구 중앙대로 257 (용호동), 경남무역회관 5층 (우 51430)</strong>
+									<ul class="more_info_list">
+										<li class="phone"><span>고객센터 :</span> 1588-3884 / <span>팩스 : </span> 055-286-9399</li>
+										<li class="time"><span>근무시간 :</span> 평일 09:00~18:00, 토/일 및 주중 공휴일 : 휴무</li>
+									</ul>
+									<a href="#;" class="kakao_navigation_btn" title="새창으로 열림" target="_blank">카카오
+										길찾기</a>
+								</div>
+							</div>
+							<div class="place_btn_area">
+								<a href="#n" class="btn_white_line ico_arrow" onclick="fn_open_popup('info', this);">담당자 안내</a>
+								<a href="#n" class="btn_white_line ico_arrow">경상지역 보험료 지원 사업 안내 바로가기</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">지사안내</h4>
+							<ul class="list shape_type1">
+								<li><span class="bold">관할지역 : </span>경상남도</li>
+								<li><span class="bold">위치 : </span>경남도청 앞에서 하차, 도청 정문에서 전방 우측 세 번째 건물 (무역회관 건물 1층 방문객 주차장 이용)</li>
+								<li>
+									<div class="bold">업무</div>
+									<ul class="list shape_type2">
+										<li>수출입자 신용조사</li>
+										<li>담보력이 부족한 중소기업에 대한 수출신용보증(선적전, 선적후)</li>
+										<li>수출대금 미회수 위험을 커버해주는 수출보험</li>
+										<li>환율하락에 대비한 환변동보험의 인수 및 보상심사</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+
+						<div class="layer_popup_box" data-popup="info">
+							<div class="popup popup_size_600" tabindex="0">
+								<div class="popup_head">
+									<h4 class="popup_tit">담당자 안내</h4>
+								</div>
+								<div class="popup_content">
+									<div class="company_sub_tit">
+										중앙지사/중견기업팀
+									</div>
+									<p class="color_red">※ 담당자와 통화를 원하실 경우 고객센터(1588-3884)를 이용하여 주시기 바랍니다.</p>
+									<div class="table sm-mt-15 lg-mt-25">
+										<table>
+											<caption>담당자 안내 표로 담당자, 담당업무 정보제공</caption>
+											<colgroup>
+												<col style="width:30%;">
+												<col>
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">담당자</th>
+													<th scope="col">담당업무</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">지사장 김준호</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>업무총괄</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">책임심사역 최완규</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>업무총괄</li>
+															<li>무역보험 컨설팅</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">변상현</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>신용조사/평가/인수 (ㄹ, ㅇ(우 ~ 이))</li>
+															<li>홍보, 마케팅 및 간담회</li>
+															<li>보험료 지원사업 및 단체보험 (부산시)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">이희진</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>신용조사/평가/인수 (ㄱ, ㅅ)</li>
+															<li>홍보, 마케팅 및 간담회</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">권소희</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>신용조사/평가/인수 (ㄴ, ㄷ, ㅌ, ㅍ)</li>
+															<li>보험료 지원사업 (부산시)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">김현솔</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>신용조사/평가/인수 (ㅇ (아 ~ 요), ㅂ)</li>
+															<li>단체보험 (부산시)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">박소라</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>신용조사/평가/인수 (ㅁ, ㅈ, ㅊ, ㅋ, ㅎ)</li>
+															<li>보험료 지원사업 및 단체보험 (양산시)</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">최영선</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>수출신용보증(선적전) 재보증</li>
+															<li>플러스보험, 농수산물패키지보험 인수</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">정다은</th>
+													<td>
+														<ul class="list shape_type1">
+															<li>보험료수납</li>
+															<li>환변동보험 (청약접수 및 정산)</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="btn_wrap txt_c">
+										<button type="button" class="btn md bg_red" onclick="fn_hide_popup('info');">확인</button>
+									</div>
+								</div>
+								<button type="button" class="btn_popup_close" onclick="fn_hide_popup('info');"><span
+										class="blind">닫기</span></button>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

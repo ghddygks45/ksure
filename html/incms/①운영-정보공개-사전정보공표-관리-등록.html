@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1240">
+	<title>CMS 통합관리자</title>
+	<link rel="shortcut icon" href="../../asset/incms/images/favicon.ico" media="all">
+	<link rel="stylesheet" type="text/css" href="../../asset/incms/css/style.css" media="all">
+	<script src="../../asset/incms/js/jquery-1.12.0.min.js"></script>
+	<script src="../../asset/incms/js/calendar.js"></script>
+	<script src="../../asset/incms/js/ui.js"></script>
+</head>
+
+<body id="user-admin" class="layout-page">
+	<header id="header"></header>
+	<div id="container">
+		<aside id="sidebar"></aside>
+		<article id="content">
+			<p id="page_loc">
+				<a href="#none" class="ico_home">HOME</a>
+				<span>&gt;</span>
+				<a href="#none">depth1</a>
+				<span>&gt;</span>
+				<a href="#none">depth2</a>
+				<span>&gt;</span>
+				<strong>depth3</strong>
+			</p>
+
+			<h2 id="tit_page">사전정보공표 목록관리</h2>
+
+			<table class="tb_write">
+				<colgroup>
+					<col style="width:130px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							게시여부
+						</th>
+						<td>
+							<input type="radio" name="data_sttus1" id="data_sttus1" checked>
+							<label for="data_sttus1">게시</label>
+							<input type="radio" name="data_sttus1" id="data_sttus2">
+							<label for="data_sttus2">미게시</label>
+						</td>
+					</tr>
+					<tr>
+						<th>즐겨찾기</th>
+						<td>
+							<input type="radio" name="data_sttus2" id="data_sttus3" checked>
+							<label for="data_sttus3">N</label>
+							<input type="radio" name="data_sttus2" id="data_sttus4">
+							<label for="data_sttus4">Y</label>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							작성일
+						</th>
+						<td>
+							<input type="text" name="bbs_regist_dt" id="bbs_regist_dt" readonly style="width:100px;">
+							<a href="#divCalendar" class="btn_cal"
+								onclick="openCalendar(document.getElementById('bbs_regist_dt')); return false;">달력</a>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							작성자
+						</th>
+						<td><input type="text" style="width: 200px;"></td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							담당부서
+						</th>
+						<td><input type="text" style="width: 200px;"></td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							주기
+						</th>
+						<td><input type="text" style="width: 200px;"></td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							시기
+						</th>
+						<td><input type="text" style="width: 200px;"></td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							분류
+						</th>
+						<td><input type="text" style="width: 200px;"></td>
+					</tr>
+					<tr>
+						<th>
+							<span class="req">필수입력</span>
+							공표항목
+						</th>
+						<td><input type="text" style="width: 100%;"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="btn_area">
+				<div class="fl"><a href="#n" class="btn btn_lg basic"><i class="fa fa-list-ul"></i> 목록</a></div>
+				<div class="fr">
+					<button type="submit" class="btn btn_lg act"><i class="fa fa-save"></i> 저장</button>
+				</div>
+			</div>
+
+		</article>
+	</div>
+	<footer id="footer"></footer>
+</body>
+
+</html>

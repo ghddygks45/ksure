@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 6);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar05.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">NCS 및 채용 Q&A</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- infobox -->
+					<div class="top_info_box bg_info02">
+						<div class="top_info_wrap">
+							<ul class="list shape_type1">
+								<li class="bold">처리중 또는 답변이 완료된 상담 질의에 대해서는 수정 및 삭제가 되지 않습니다.</li>
+								<li class="bold">아래와 같은 게시물(답글 포함)은 관리자에 의해 사전통보 없이 삭제될 수 있습니다.
+									<p class="txt_margin fwl color_default">①욕설, 상업성 광고 ②특정인의 비방·명예훼손 ③개인정보 ④특정기관에 대한 근거 없는 비난 ⑤정치적
+										목적·성향
+										⑥반복적 게시물(제목을 약간 달리한 경우도 반복 게시물로 판단) ⑦입후보 예정자의 비방, 허위사실을 공표하는 등 선거법에 위반되는 내용</p>
+								</li>
+							</ul>
+							<p class="txt_margin color_red">※ 게시물 작성시 개인정보노출 방지를 위해 개인정보(주민등록번호, 신용카드번호, 은행계좌번호, 법인등록번호, 핸드폰번호,
+								이메일주소
+								등)가
+								포함되지 않도록 각별히 주의하시기 바라겠습니다.</p>
+						</div>
+					</div>
+					<!-- // infobox -->
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<!-- board_top -->
+						<div class="board_top">
+							<div class="l">
+								전체 <span class="bold">905</span>건, 현재페이지 : <span class="bold">1</span>/<span class="page">11</span>
+							</div>
+
+							<div class="r">
+								<div class="search_unit">
+									<div class="select_wrap">
+										<select class="board_select" title="조건 선택">
+											<option value="">구분</option>
+										</select>
+									</div>
+									<div class="input_wrap">
+										<input type="text" class="board_input" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="blind">검색</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // board_top -->
+
+						<!-- board_list -->
+						<div class="board_list bg_type2">
+							<!-- 데이터 값이 없을 경우 -->
+							<div class="no_data">
+								<p>등록된 게시물이 없습니다.</p>
+							</div>
+							<!-- // 데이터 값이 없을 경우 -->
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_red fix">처리중</span>
+									<span class="num pc_content">No.901</span>
+								</div>
+								<div class="board_cont">
+									<a href="⑤소식-채용정보-NCS및채용Q&A-수정.html" class="subject">
+										우대사항 관련 문의
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+										<li><span class="bold">조회수 : </span>2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_red fix">처리중</span>
+									<span class="num pc_content">No.900</span>
+								</div>
+								<div class="board_cont">
+									<a href="⑤소식-채용정보-NCS및채용Q&A-수정.html" class="subject">
+										문의드립니다.
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+										<li><span class="bold">조회수 : </span>2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">처리완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="⑤소식-채용정보-NCS및채용Q&A-수정.html" class="subject">
+										채용분야 응시 관련
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+										<li><span class="bold">조회수 : </span>2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">처리완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="⑤소식-채용정보-NCS및채용Q&A-수정.html" class="subject">
+										공인영어성적에 관하여 질문드립니다.
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+										<li><span class="bold">조회수 : </span>2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">처리완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="⑤소식-채용정보-NCS및채용Q&A-수정.html" class="subject">
+										채용분야 응시 관련
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+										<li><span class="bold">조회수 : </span>2</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">처리완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="⑤소식-채용정보-NCS및채용Q&A-수정.html" class="subject">
+										공인영어성적에 관하여 질문드립니다.
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+										<li><span class="bold">조회수 : </span>2</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- // board_list -->
+
+						<!-- pagination -->
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+						<!-- // pagination -->
+
+						<!-- btn -->
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="⑤소식-채용정보-NCS및채용Q&A-동의인증.html" class="btn md bg_red">글쓰기</a>
+							</div>
+						</div>
+						<!-- // btn -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

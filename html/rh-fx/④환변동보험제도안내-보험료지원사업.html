@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-fx/css/style.css">
+	<script src="../../asset/rh-fx/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-fx/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-fx/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-fx/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-fx/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-fx/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-fx/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">보험료지원사업</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<h4 class="tit">유관기관 환변동보험료 지원사업 요약</h4>
+						<div class="table">
+							<table class="m_scroll">
+								<caption>유관기관 환변동보험료 지원사업 요약 표로 구분, 주요 내용, 다운로드 정보 제공</caption>
+								<colgroup>
+									<col style="width: 15%;">
+									<col style="width: 13%;">
+									<col>
+									<col style="width: 23%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col" colspan="2">주요 내용</th>
+										<th scope="col">다운로드</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">한국농수산식품 유통공사(aT) 환변동보험 보험료 지원사업</th>
+										<td colspan="2">
+											<strong class="bold">지원기간</strong>
+											<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+												<li>'22.1.1. ~ '22.12.31.<br>* 사업비 조기 소진시 종결</li>
+											</ul>
+											<div class="mt-15">
+												<strong class="bold">지원 대상</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+													<li>농축산식품 수출업체(수산물 및 임산물 제외)</li>
+													<li>HS-Code 제1~22류, 24류 중 수산물·임산물을 제외한 농축산식품을 신선」과「가공」으로 구분하여 지원</li>
+													<li>단, 독점규제 및 공정거래에 관한법률 제14조에 따른 상호출자제한기업 집단의 경우 지원 제외</li>
+													<li>무역협회, 지자체 등으로부터 보험료를 기 지원받은 건에 대해서는 중복지원 불가</li>
+													<li>신청업체는 수출 계획 및 이행 확약서 필수 제출(무역통계정보 제공 동의서 온라인 제출)</li>
+												</ul>
+											</div>
+											<div class="mt-15">
+												<strong class="bold">지원내용</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+													<li>환변동보험료(일반선물환 : 95%, 범위선물환 : 95%,<br>범위제한선물환 : 95%, 부분 및 완전보장옵션 : 95%)</li>
+												</ul>
+											</div>
+											<div class="mt-15">
+												<strong class="bold">업체당 지원한도</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+													<li>최대 8천만원(단기,환변동 포함)</li>
+												</ul>
+											</div>
+											<div class="mt-15 mb-7">
+												<strong class="bold">보험료 지원방식</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+													<li>보험료 先지원</li>
+												</ul>
+											</div>
+											<a href="#n" class="btn_white_line ico_arrow ml-5">환변동보험 가입시 필요서류</a>
+										</td>
+										<td class="txt_c">
+											<div class="bold sm-mb-6 lg-mb-8">지원사업안내 및 신청서</div>
+											<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp파일 다운로드</span></a>
+											<a href="#n" class="ico_file_down ico_doc"><span class="blind">doc파일 다운로드</span></a>
+											<div class="mt-10">
+												<div class="bold sm-mb-6 lg-mb-8">품목별 HS코드</div>
+												<a href="#n" class="ico_file_down ico_excel"><span class="blind">excel파일 다운로드</span></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">한국수산무역협회 환변동보험료 지원사업</th>
+										<td colspan="2">
+											<div class="mb-15"><strong class="bold color_red">'22년 사업비 소진으로 조기마감되었습니다.</strong></div>
+											<strong class="bold">지원기간</strong>
+											<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+												<li>'22.2.15. ~ '22.12.31.</li>
+											</ul>
+											<div class="mt-15">
+												<strong class="bold">지원 대상</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5 mb-7">
+													<li>중소 중견 수산물 업체</li>
+													<li>
+														한국수산무역협회에서 양식 다운받아 한국수산무역협회에 제출 후 지원대상 선정<br>
+														<strong class="bold">※ 타 보험료지원사업과 중복지원 불가</strong>
+													</li>
+												</ul>
+												<a href="http://www.kfta.net/Main/" target="_blank" title="새창으로 열림"
+													class="btn_white_line ico_arrow ml-5">한국수산무역협회 바로가기</a>
+											</div>
+											<div class="mt-15">
+												<strong class="bold">지원내용</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5 mb-7">
+													<li>지원종목 : 선물환, 옵션형 환변동보험</li>
+													<li>지원내역 : 보험료의 95%(선물환 및 옵션형)를 한국수산무역협회가 지원</li>
+													<li>
+														지원한도 : 업체당 4천만원<br>
+														※ 그 외 자세한 사항은 한국수산무역협회 홈페이지 리스크안전망 구축 참조
+													</li>
+												</ul>
+												<a href="#n" class="btn_white_line ico_arrow ml-5">환변동보험 가입시 필요서류</a>
+											</div>
+										</td>
+										<td class="txt_c">
+											<strong class="bold color_red">'22년 사업비 소진으로 조기마감되었습니다.</strong>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">산림조합중앙회 환변동보험료 지원사업</th>
+										<td colspan="2">
+											<strong class="bold">지원기간</strong>
+											<ul class="list shape_type1 sm-mt-7 lg-mt-5">
+												<li>'21.12.11 ~ '22.12.10<br>* 사업비 소진시 조기마감</li>
+											</ul>
+											<div class="mt-15">
+												<strong class="bold">지원 대상</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5 mb-7">
+													<li>산림조합중앙회가 통보한 지원대상 기업(지원대상 기업 추가 통보 가능)</li>
+												</ul>
+											</div>
+											<div class="mt-15">
+												<strong class="bold">지원내용</strong>
+												<ul class="list shape_type1 sm-mt-7 lg-mt-5 mb-7">
+													<li>지원종목 : 선물환, 옵션형 환변동보험</li>
+													<li>지원내역 : 보험료의 95%</li>
+													<li>지원한도 : 업체당 1천만원</li>
+												</ul>
+												<a href="#n" class="btn_white_line ico_arrow ml-5">환변동보험 가입시 필요서류</a>
+											</div>
+										</td>
+										<td class="txt_c">
+											<div class="bold sm-mb-6 lg-mb-8">지원사업 안내문 및 지원신청서</div>
+											<a href="#n" class="ico_file_down ico_hwp"><span class="blind">hwp파일 다운로드</span></a>
+											<a href="#n" class="ico_file_down ico_doc"><span class="blind">doc파일 다운로드</span></a>
+											<div class="mt-10">
+												<div class="bold sm-mb-6 lg-mb-8">임산물 HScode 목록</div>
+												<a href="#n" class="ico_file_down ico_excel"><span class="blind">excel파일 다운로드</span></a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

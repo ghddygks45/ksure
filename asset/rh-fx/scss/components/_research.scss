@@ -1,0 +1,198 @@
+@use '../use'as *;
+
+.research {
+	margin-bottom: 50px;
+	border: 1px solid #d7d7d7;
+
+	.res_top {
+		padding: 12px;
+		border-bottom: 1px solid #d7d7d7;
+		background: #f6f6f6;
+
+		>p {
+			display: flex;
+			align-items: center;
+
+			&::before {
+				display: inline-block;
+				content: '';
+				width: 19px;
+				height: 18px;
+				margin-right: 5px;
+				background: url(../images/bg_ico_survey.jpg) no-repeat 0 0;
+			}
+		}
+	}
+
+	.res_check {
+		display: flex;
+		margin-bottom: 15px;
+		align-items: center;
+
+		.l {
+			flex: 1;
+			margin-bottom: -5px;
+		}
+
+		.r {
+			flex: 0 0 auto;
+
+			>button {
+				height: 38px;
+				padding: 0 8px;
+				background: #8b7f72;
+				font-weight: 400;
+				color: #fff;
+			}
+		}
+
+		.rd-lb {
+			margin-bottom: 5px;
+		}
+	}
+
+	.comment_write {
+		margin-bottom: 10px;
+
+		.comment {
+			display: flex;
+			margin-bottom: 5px;
+			align-items: center;
+
+			.l {
+				flex: 1;
+			}
+
+			.r {
+				flex: 0 0 auto;
+				margin-left: 5px;
+			}
+
+			.btn_cmt1 {
+				border: 1px solid #d6d6d6;
+				background: #f5f5f5;
+			}
+
+			.btn_cmt2 {
+				background: #59544b;
+				color: #fff;
+			}
+
+			button {
+				height: 38px;
+				padding: 0 8px;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.dep_charge {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 3px;
+			}
+
+			>span {
+				display: inline-flex;
+				align-items: center;
+
+				&::before {
+					display: inline-block;
+					content: '';
+					width: 4px;
+					height: 4px;
+					margin-right: 5px;
+					transform: rotate(45deg);
+					background: #777;
+				}
+
+				&:not(:last-child) {
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+@include res--pc-ctn {
+	.research {
+		margin-bottom: 80px;
+
+		.res_top {
+			padding: 15px 20px;
+
+			>p {
+				&::before {
+					margin-right: 7px;
+				}
+			}
+		}
+
+		.res_check {
+			margin-bottom: 15px;
+
+			.l {
+				flex: 1;
+				margin-bottom: -5px;
+			}
+
+			.r {
+				flex: 0 0 auto;
+
+				>button {
+					height: 50px;
+					padding: 0 10px;
+				}
+			}
+
+			.rd-lb {
+				margin-bottom: 5px;
+			}
+		}
+
+		.comment_write {
+			margin-bottom: 10px;
+
+			.comment {
+				margin-bottom: 10px;
+
+				.r {
+					margin-left: 7px;
+				}
+
+				button {
+					min-width: 98px;
+					height: 50px;
+					padding: 0 10px;
+				}
+			}
+		}
+
+		.dep_charge {
+			li {
+				&:not(:last-child) {
+					margin-bottom: 3px;
+				}
+
+				>span {
+					display: inline-flex;
+					align-items: center;
+
+					&::before {
+						display: inline-block;
+						content: '';
+						width: 4px;
+						height: 4px;
+						margin-right: 5px;
+						transform: rotate(45deg);
+						background: #777;
+					}
+
+					&:not(:last-child) {
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+	}
+}

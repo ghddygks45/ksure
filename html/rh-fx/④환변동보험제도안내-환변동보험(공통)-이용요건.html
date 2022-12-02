@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-fx/css/style.css">
+	<script src="../../asset/rh-fx/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-fx/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-fx/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-fx/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-fx/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-fx/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-fx/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">환변동보험(공통)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-개요.html">개요</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-보험료.html">보험료</a></li>
+							<li><a href="④환변동보험제도안내-환변동보험(공통)-이용절차.html">이용절차</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">이용요건</h4>
+							<div class="table">
+								<table>
+									<caption>환변동보험(공통) 이용요건 비교 표로 구분, 일반형, 범위선물환 및 완전보장 옵션형 조기결제 불가형, 범위제한선물환 및 완전보장 옵션형조기결제형 정보를 제공하고
+										있습니다.</caption>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">일반형</th>
+											<th scope="col">범위선물환 및 완전보장 옵션형 조기결제 불가형</th>
+											<th scope="col">범위제한선물환 및 완전보장 옵션형조기결제형</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">대상통화</th>
+											<td>USD, JPY, EUR, CNY</td>
+											<td>USD, JPY, EUR</td>
+											<td>USD</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">이용대상 기업 및 이용제한 기업</h4>
+							<div class="table">
+								<table>
+									<caption>이용대상 기업 및 이용제한 기업 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">대상 기업</th>
+											<td>신용상 문제점이 없는 국내 중소, 중견기업</td>
+										</tr>
+										<tr>
+											<th scope="row">제한 기업</th>
+											<td>
+												<ul class="list shape_type1">
+													<li><strong class="bold">신용불량기업</strong>
+														<ul class="list shape_type2">
+															<li>기업구조조정촉진법상 부실 징후기업</li>
+															<li>채무자 회생 및 파산에 관한 법률에 의하여 회생절차 개시결정을 받은 기업</li>
+															<li>신용등급에 의거 특례평가 G급 또는 R급인 기업</li>
+															<li>보험계약자 또는 연대보증인이 신용관리대상정보의 등록사유 발생시킨 경우</li>
+														</ul>
+													</li>
+													<li><strong class="bold">환변동보험료를 납부하지 않아 보험계약이 해제된 경험이 있거나, 이익금을 연체 중인 기업</strong></li>
+													<li><strong class="bold">보험료 또는 보증료를 연체중인 기업</strong></li>
+													<li><strong class="bold">환수금 회수특례보증을 이용중인 기업</strong></li>
+													<li><strong class="bold">사업장 4대 사회보험료 연체중인 기업</strong></li>
+													<li><strong class="bold">휴폐업 상태인 기업</strong></li>
+													<li><strong class="bold">국세 및 지방세를 체납중인 기업</strong></li>
+													<li><strong class="bold">부실자료 제출 기업</strong><br>
+														※ 단, 부분보장 및 완전보장 옵션형의 경우 신용등급 미평가 수출자 및 특례 G급도 이용 가능합니다.
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Foreign Exchange Risk Insurance</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info13">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">What is Foreign Exchange Risk Insurance?</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									This scheme is designed to hedge the currency fluctuation risk by removing foreign exchange losses
+									that
+									may occur in the course of obtaining or paying foreign currencies through export or import, and fixing
+									the
+									transaction amount in Korean won in advance.
+								</div>
+								<ul class="list shape_type1 sm-mt-7 lg-mt-10">
+									<li>Foreign exchange risk insurance helps small- and medium-sized companies with vulnerable conditions
+										for foreign exchange risk management in their trade activities by providing them with system and
+										cost- wise assistance to conveniently hedge foreign exchange risk.</li>
+									<li>When subscribing to the insurance, K-SURE hedges the entire amount through a commercial bank, and
+										therefore does not receive any benefits from operating this product.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Comparison of Foreign Exchange Risk Insurance Products (based on export transaction)</h4>
+							<div class="table">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Product</th>
+											<th scope="col">Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Forward</th>
+											<td>When the exchange rate falls, the loss is indemnified and, when the exchange rate increases,
+												the gains are paid.</td>
+										</tr>
+										<tr>
+											<th scope="row">Range Forward</th>
+											<td>With transactions exposed to foreign exchange risk in a certain range, when the exchange rate
+												falls below the range, the loss is indemnified and, when the exchange rate increases over the
+												range, the gains are paid.</td>
+										</tr>
+										<tr>
+											<th scope="row">Collar</th>
+											<td>The insured amount in the event of a drop in the exchange rate and amount of clawback in the
+												event of an increase in the exchange rate are limited to a certain range.</td>
+										</tr>
+										<tr>
+											<th scope="row">Bear Put Spread</th>
+											<td>The obligation to pay gains is exempted and, when the exchange rate falls, compensation is
+												also provided for a certain amount of reduction.</td>
+										</tr>
+										<tr>
+											<th scope="row">Put Option</th>
+											<td>The obligation to pay gains is exempted and, when the exchange rate falls, compensation is
+												provided for the entire amount of reduction.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">What is Foreign Exchange Hedge?</h4>
+							This is to fix the transaction amount of export, import, or overseas investment to the current exchange
+							rate in order to eliminate the risk caused by exchange rate fluctuations.
+							<div class="sub_section sm-mt-15 lg-mt-20">
+								<h5 class="sub_tit">Purpose of Foreign Exchange Hedge</h5>
+								<ul class="list shape_type1">
+									<li>To continue performing stable business activities by fixing the future cash flow based on the
+										Korean won regardless of exchange rate fluctuations</li>
+									<li>To limit profit and loss from exchange rate fluctuations, and secure profits stably through export
+										and import transactions</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

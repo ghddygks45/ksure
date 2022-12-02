@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Organization Chart</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<div class="org_chart_wrap">
+								<!-- 링크없는 항목 == a > span 으로 교체 -->
+								<div class="main_org">
+									<h4 class="ceo txt_c">Chairman and President</h4>
+									<div class="extras">
+										<div class="l">
+											<ul>
+												<li><span class="lab bg_orange">Management Committee</span></li>
+											</ul>
+											<ul class="line_connect">
+												<li><span class="lab bg_yellow">Secretarial Team</span></li>
+											</ul>
+										</div>
+										<div class="r">
+											<ul>
+												<li><span class="lab bg_orange">Board of Directors</span></li>
+											</ul>
+											<ul>
+												<li><span class="lab bg_orange">Auditor</span>
+													<ul class="sub_org">
+														<li><span class="lab bg_default">Audit and inspection Department</span></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="depart_org">
+									<ul>
+										<li><span class="lab bg_gray">Strategic Management Division</span>
+											<ul class="sub_org">
+												<li><span>Planning and Coordination Department</span></li>
+												<li><span>Department of Human Resources</span></li>
+												<li><span>Department of Administrative Support</span></li>
+												<li><span>Treasury Department</span></li>
+												<li><span>Public Relations Department</span></li>
+												<li><span>Overseas Representative offices</span></li>
+											</ul>
+										</li>
+										<li><span class="lab bg_gray">Business Innovation Division</span>
+											<ul class="sub_org">
+												<li><span>Department of Social Value and Innovation</span></li>
+												<li><span>Management Evaluation Department</span></li>
+												<li><span>lnformatization Planning Department</span></li>
+												<li><span>lnformatization Department</span></li>
+												<li><span>Underwriting Department</span></li>
+											</ul>
+										</li>
+										<li><span class="lab bg_gray">SME Business Division</span>
+											<ul class="sub_org">
+												<li><span>Business Coordination Department</span></li>
+												<li><span>Department of Customer Value Management</span></li>
+												<li><span>Fintech Business Department</span></li>
+												<li><span>Domestic Branches</span></li>
+											</ul>
+										</li>
+										<li><span class="lab bg_gray">Trade Business Division</span>
+											<ul class="sub_org">
+												<li><span>Short-term Business Coordination Department</span></li>
+												<li><span>Short-term Business Department</span></li>
+												<li><span>Research Department</span></li>
+											</ul>
+										</li>
+										<li><span class="lab bg_gray">Project Finance Division</span>
+											<ul class="sub_org">
+												<li><span>Project Finance Coordination Department</span></li>
+												<li><span>Project Finance Department</span></li>
+												<li><span>lnfrastiructure FinanceDepartment</span></li>
+												<li><span>Maritime Finance Department</span></li>
+												<li><span>Project <br class="pc_content">Restructuring Department</span></li>
+											</ul>
+										</li>
+										<li><span class="lab bg_gray">Risk &amp; Recoveries Division</span>
+											<ul class="sub_org">
+												<li><span>Risk Management Department</span></li>
+												<li><span>Claims &amp; Recoveries Department</span></li>
+												<li><span>Domestic Claims &amp; Recoveries Department </span></li>
+												<li><span>Legal and Compliance Department</span></li>
+												<li><span>Credit Review Department</span></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">Domestic Branches</h4>
+							<ul class="branch_list">
+								<!-- 링크없는 항목 == a > span 으로 교체 -->
+								<li><a href="#;" target="_blank" title="새창으로 열림">Central</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Gangnam</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Guro Digital</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Northern area of Gyeonggi</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Southern area of Gyeonggi</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Inchon</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Sihwa</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">DaejeonSejong-Chungnam</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Chungbuk</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Gangwon</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Busan</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Daegu-Gyeongbuk</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Ulsan</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Gyeonnam</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Jeonbuk</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Gwangju-Jeonnam</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Jeju</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Cheonan</a></li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">Overseas Representative offices</h4>
+							<ul class="branch_list">
+								<!-- 링크없는 항목 == a > span 으로 교체 -->
+								<li><a href="#;" target="_blank" title="새창으로 열림">Los Angeles</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Beijing</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Sao Paulo</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Paris</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Hochiminh</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Shanghai</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">New York</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Jakarta</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">New Delhi</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Panama</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Tokyo</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Moscow</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Dubai</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Mexico City</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Chengdu</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Hanoi</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Warsaw</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Madrid</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Johannesburg (KBC)</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Singapore(KBC)</a></li>
+								<li><a href="#;" target="_blank" title="새창으로 열림">Riyadh(KBC)</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

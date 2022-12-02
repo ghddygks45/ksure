@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4, 10);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출보증보험</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-중장기성보험-수출보증보험-제도개요.html" class="active">제도개요</a></li>
+							<li><a href="②사업안내-중장기성보험-수출보증보험-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-중장기성보험-수출보증보험-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도개요</h4>
+							금융기관이 수출거래와 관련하여 수출보증서를 발행한 후 수입자(발주자)로부터 보증채무 이행청구를 받아 이를 이행함으로써 입게 되는 금융기관의 손실을 보상하는 제도
+							<ul class="list shape_type1 sm-mt-10 lg-mt-15">
+								<li>국제거래시 수입자는 수출자의 수출이행에 대한 담보로서 수출자로 하여금 금융기관의 수출보증서를 제출하도록 요구</li>
+								<li>수출보증보험은 <span class="fwr color_red txt_underline">수출보증서</span>를 발행한 금융기관이 보증수익자(수입자 또는 발주자)로부터 보증채무
+									이행청구(Bond-Calling)를 받아 대지급하는 경우에 입게 되는 손실을 보상함으로써 수출자가 수출보증서를 용이하게 발급받을 수 있게 하는 수출지원제도</li>
+							</ul>
+						</div>
+						<div class="section">
+							<h4 class="tit">수출보증서의 종류</h4>
+							<div class="table">
+								<table class="m_scroll">
+									<caption>수출보증서의 종류 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">입찰보증<br>(Bid Bond)</th>
+											<td>입찰방식 거래에 있어서 입찰자가 낙찰된 후 계약체결에 응하지 않거나 계약체결 후 일정기간 내에 계약이행보증서를 제출하지 못하는 경우 발주자가 지급청구를 할 수 있도록
+												하는 보증서</td>
+										</tr>
+										<tr>
+											<th scope="row">계약이행보증<br>(Performance Bond)</th>
+											<td>산업설비수출계약이나 해외건설공사계약을 체결한 수출자가 계약상의 의무이행을 하지 않음으로써 발주자가 입게되는 손해를 보상받기 위해 발행하는 보증서</td>
+										</tr>
+										<tr>
+											<th scope="row">선수금환급보증<br>(Advanced Payment Bond)</th>
+											<td>수출자가 선수금 수령 후 수출이행을 하지 않는 경우에 수령한 선수금에 대한 반환청구를 할 수 있는 보증서</td>
+										</tr>
+										<tr>
+											<th scope="row">유보금환급보증<br>(Retention Bond)</th>
+											<td>기성고방식의 수출거래에 있어서 수입자는 각 기성단계별 기성대금 중 일부를 수출자의 완공불능위험에 대비하기 위해 유보하게 되는데, 수출자가 유보금에 해당하는 금액을
+												결제받기 위해서 제출하는 보증서</td>
+										</tr>
+										<tr>
+											<th scope="row">하자보수보증<br>(Maintenance Bond)</th>
+											<td>산업설비의 설치 또는 해외건설공사 완료 후, 일정기간 완공설비나 건물 등에서 발생하는 하자발생에 따른 손실을 담보하기 위해 발행하는 보증서</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">상품구조</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">금융기관용 : 보험계약자가 보증서 발행 금융기관인 경우</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/img_insur12.jpg"
+										alt="수출자와 수입자간 수출계약이 이루어지고 수출자는 금융기관에 보증서 발급을 의뢰한다. 금융기관은 K-SURE에 수출보증보험을 청약하면 K-SURE는 금융기관에 보험증권을 발급하고 금융기관은 수입자에 보증서를 발급한다.">
+									<a href="../../asset/rh-kr/images/img_insur12.jpg" class="btn_img_size">크게보기</a>
+								</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">수출자용 : 보험계약자가 수출기업인 경우</h5>
+								<div class="img_box">
+									<img src="../../asset/rh-kr/images/img_insur13.jpg"
+										alt="수출자와 수입자간 수출계약이 이루어지고 수출자는 K-SURE에 수출보증보험을 청약한다. K-SURE는 금융기관에 보험증권을 발급하면 금융기관은 수입자에 보증서를 발급한다.">
+									<a href="../../asset/rh-kr/images/img_insur13.jpg" class="btn_img_size">크게보기</a>
+								</div>
+								<div class="sm-mt-5 lg-mt-10 bold">※ 수출자용은 금융기관을 피보험자로 하는 타인을 위한 보험계약의 성격을 가짐</div>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">대상거래</h4>
+							<ul class="list shape_type1">
+								<li>해외건설 촉진법의 규정에 의한 해외공사</li>
+								<li>대외무역법에서 정한 수출(다만, 중계무역, 외국인도 수출제외)</li>
+								<li>기타 서비스·용역 수출</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

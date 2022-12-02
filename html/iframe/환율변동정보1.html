@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover"><!-- 추가 -->
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>환위험관리 지원센터 | Ksure 한국무역보험공사</title>
+
+	<link rel="stylesheet" href="css/style.css"><!-- 추가 -->
+	<script src="js/jquery-3.6.0.min.js"></script><!-- 추가 -->
+	<script src="js/swiper-bundle.min.js"></script><!-- 추가 -->
+</head>
+
+<body>
+	<!-- iframe_wrap div 추가 -->
+	<div class="section">
+		<h4 class="tit">실시간 고시환율</h4>
+		<p>KEB하나은행에서 고시되는 실시간 환율(매매기준율) 입니다.</p>
+		<div class="exchange_wrap sm-mt-10 lg-mt-15">
+			<div class="exchange_top">
+				<h5 class="sub_tit2 fwb color_black">환율정보</h5>
+				<div class="exc_r">
+					<div class="swiper_count">
+						<strong>1</strong> /
+						<span></span>
+					</div>
+					<div class="swiper_btn">
+						<button class="swiper-prev" onclick="swiper.slidePrev();"><span class="blind">이전 슬라이드</span></button>
+						<button class="swiper-next" onclick="swiper.slideNext();"><span class="blind">다음 슬라이드</span></button>
+					</div>
+				</div>
+			</div>
+			<div class="exchange_chart_rate type1">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">USD/KRW</span>
+								<span class="item_price down">966.98</span>
+							</div>
+							<div class="r down_arrow">
+								<span class="item_diff">-3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">JPY/KRW</span>
+								<span class="item_price up">966.98</span>
+							</div>
+							<div class="r up_arrow">
+								<span class="item_diff">3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">EUR/KRW</span>
+								<span class="item_price down">966.98</span>
+							</div>
+							<div class="r down_arrow">
+								<span class="item_diff">-3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">CNY/KRW</span>
+								<span class="item_price up">966.98</span>
+							</div>
+							<div class="r up_arrow">
+								<span class="item_diff">3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">USD/KRW</span>
+								<span class="item_price down">966.98</span>
+							</div>
+							<div class="r down_arrow">
+								<span class="item_diff">-3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">JPY/KRW</span>
+								<span class="item_price up">966.98</span>
+							</div>
+							<div class="r up_arrow">
+								<span class="item_diff">3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">EUR/KRW</span>
+								<span class="item_price down">966.98</span>
+							</div>
+							<div class="r down_arrow">
+								<span class="item_diff">-3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="l">
+								<span class="currency">CNY/KRW</span>
+								<span class="item_price up">966.98</span>
+							</div>
+							<div class="r up_arrow">
+								<span class="item_diff">3.44</span>
+								<span class="item_differ">-0.34%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script>
+			var num = 1;
+			const swiper = new Swiper('.exchange_chart_rate .swiper', {
+				slidesPerView: 2,
+				slidesPerGroup: 2,
+				breakpoints: {
+					1119: {
+						slidesPerView: 4,
+						slidesPerGroup: 4
+					},
+				},
+				on: {
+					activeIndexChange: function () {
+						$('.swiper_count > strong').text(this.snapIndex + 1);
+					}
+				}
+			});
+
+			$(window).resize(function () {
+				slideCount();
+			});
+
+			function slideCount() {
+				var w = $(window).width();
+				if (w > 1119) {
+					$('.swiper_count > span').text($('.exchange_chart_rate .swiper-slide').length / 4);
+				} else {
+					$('.swiper_count > span').text($('.exchange_chart_rate .swiper-slide').length / 2);
+				}
+			}
+			slideCount();
+		</script>
+		<p class="txt_margin">* 정보제공자 사정으로 인해 데이터 전송시점이 다소 지연될 수 있습니다.</p>
+	</div>
+
+	<!-- 환율 변동추이 -->
+	<div class="section">
+		<h4 class="tit">환율 변동추이</h4>
+		<p>미 달러(USD), 일본 엔(JPY), 유로(EUR)의 최근 환율 변동추이입니다.</p>
+
+		<div class="sub_section sm-mt-15 lg-mt-25">
+			<h5 class="sub_tit">원/달러 (USD-KRW)</h5>
+			<div class="chart_box">
+				<!-- 차트영역입니다. 이미지는 제거 해주세요. -->
+				<img src="images/img_chart_area2.gif" alt="" style="width:100%">
+			</div>
+			<div class="table sm-mt-15 lg-mt-25">
+				<table>
+					<caption>원/달러 (USD-KRW) 목록 표로 거래일, 시가, 고가, 저가, 종가, 전일대비 정보제공</caption>
+					<colgroup>
+						<col style="width:18%;">
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="txt_c">거래일</th>
+							<th scope="col" class="txt_c">시가</th>
+							<th scope="col" class="txt_c">고가</th>
+							<th scope="col" class="txt_c">저가</th>
+							<th scope="col" class="txt_c">종가</th>
+							<th scope="col">전일대비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="sub_section">
+			<h5 class="sub_tit">원/100엔 (JPY-KRW)</h5>
+			<div class="chart_box">
+				<!-- 차트영역입니다. 이미지는 제거 해주세요. -->
+				<img src="images/img_chart_area2.gif" alt="" style="width:100%">
+			</div>
+			<div class="table sm-mt-15 lg-mt-25">
+				<table>
+					<caption>원/달러 (USD-KRW) 목록 표로 거래일, 시가, 고가, 저가, 종가, 전일대비 정보제공</caption>
+					<colgroup>
+						<col style="width:18%;">
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="txt_c">거래일</th>
+							<th scope="col" class="txt_c">시가</th>
+							<th scope="col" class="txt_c">고가</th>
+							<th scope="col" class="txt_c">저가</th>
+							<th scope="col" class="txt_c">종가</th>
+							<th scope="col">전일대비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="sub_section">
+			<h5 class="sub_tit">원/유로 (EUR-KRW)</h5>
+			<div class="chart_box">
+				<!-- 차트영역입니다. 이미지는 제거 해주세요. -->
+				<img src="images/img_chart_area2.gif" alt="" style="width:100%">
+			</div>
+			<div class="table sm-mt-10 lg-mt-25">
+				<table>
+					<caption>원/달러 (USD-KRW) 목록 표로 거래일, 시가, 고가, 저가, 종가, 전일대비 정보제공</caption>
+					<colgroup>
+						<col style="width:18%;">
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="txt_c">거래일</th>
+							<th scope="col" class="txt_c">시가</th>
+							<th scope="col" class="txt_c">고가</th>
+							<th scope="col" class="txt_c">저가</th>
+							<th scope="col" class="txt_c">종가</th>
+							<th scope="col">전일대비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="down">1,377</span></td>
+						</tr>
+						<tr>
+							<td class="txt_c">2022-09-07</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,387.1</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c">1,377</td>
+							<td class="txt_c"><span class="up">1,377</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	<!-- // 환율 변동추이 -->
+</body>
+
+</html>

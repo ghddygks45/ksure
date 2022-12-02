@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 5);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Overseas Business Credit Insurance</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="section">
+							<h4 class="tit">Overview of Scheme and Product Characteristics</h4>
+							This scheme is to compensate for losses caused as domestic and overseas financial institutes enter into
+							financial contracts to provide funds to foreigners that are necessary for overseas businesses expected to
+							produce the effect of export promotion or foreign currency acquisition under the condition of the
+							repayment period exceeding two years, but become unable to recover the principal and interest of the loan.
+						</div>
+						<div class="section">
+							<h4 class="tit">Product Structure</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-en/images/img_insur07.jpg" alt="Transaction Structure for Buyer Credit">
+								<a href="../../asset/rh-en/images/img_insur07.jpg" class="btn_img_size">Large view of images</a>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Target Transactions</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">Applicable Overseas Businesses</h5>
+								Overseas businesses in which domestic corporations, etc., participate by entering into the following
+								contracts (hereinafter referred to as “overseas business-related contract”)
+								<ul class="list shape_type1 sm-mt-5 lg-mt-10">
+									<li>Contract to obtain equity, such as shares, of a foreign corporation engaged in an overseas
+										business (equity of 10% or more)</li>
+									<li>Contract to supply raw materials in relation to an overseas business</li>
+									<li>Contract to purchase products in relation to an overseas business</li>
+									<li>Contract of operation and management in relation to an overseas business</li>
+									<li>Contract related to an overseas business that is expected to produce the effect of export
+										promotion or foreign currency acquisition</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">Applicable Financial Transactions</h5>
+								Financial contracts with a repayment period exceeding two years which domestic and overseas financial
+								institutes conclude with foreigners in order to provide funds necessary for overseas businesses
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">Risks Covered</h4>
+							<div class="table">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">Category</th>
+											<th scope="col">Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Commercial risk</th>
+											<td>Borrower risk, bankruptcy, insolvency, default</td>
+										</tr>
+										<tr>
+											<th scope="row">Political Risks</th>
+											<td>
+												※Borrowing country risk
+												<ul class="list shape_type1 sm-mt-5 lg-mt-10">
+													<li>Moratorium, conclusion of debt reduction agreement, remittance delay, adoption of law to
+														terminate repayment obligation</li>
+													<li>War, strife, expropriation, revolution, riot, strike, typhoon and other force majeure
+														events</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

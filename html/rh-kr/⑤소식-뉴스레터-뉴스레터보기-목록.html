@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar05.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">뉴스레터 보기</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- infobox -->
+					<div class="top_info_box bg_info04">
+						<div class="top_info_wrap">
+							<strong class="bold sm-fs-14 lg-fs-18">한국무역보험공사 Newsletter</strong>
+							<p class="txt_margin">
+								이메일로 무역보험공사의 소식을 빠르게 전해드립니다.<br class="pc_content">
+								무역보험공사의 새로운 보험상품 안내와 다양한 국가정보자료, 무역과 관련한 상담사례 등 무역에 필요한 최신정보에서 무역에 관련한<br class="pc_content"> 중요
+								Issue 들이 제공됩니다.
+							</p>
+							<div class="sm-mt-10 lg-mt-17">
+								<a href="⑤소식-뉴스레터-뉴스레터신청.html" class="btn_white_line ico_arrow">뉴스레터 신청하기</a>
+							</div>
+						</div>
+					</div>
+					<!-- // infobox -->
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<!-- board_top -->
+						<div class="board_top">
+							<div class="l">
+								전체 <span class="bold">905</span>건, 현재페이지 : <span class="bold">1</span>/<span class="page">11</span>
+							</div>
+
+							<div class="r">
+								<div class="search_unit">
+									<div class="select_wrap">
+										<select class="board_select" title="조건 선택">
+											<option value="">구분</option>
+										</select>
+									</div>
+									<div class="input_wrap">
+										<input type="text" class="board_input" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="blind">검색</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // board_top -->
+
+						<!-- gallery_list -->
+						<div class="gallery_list newslatter">
+							<ul>
+								<li>
+									<a href="⑤소식-뉴스레터-뉴스레터보기-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_newslatter_thumb.jpg" alt="2022년 07월 Newsletter 썸네일">
+										</div>
+										<strong class="subject">2022년 07월 Newsletter</strong>
+									</a>
+								</li>
+								<li>
+									<a href="⑤소식-뉴스레터-뉴스레터보기-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_newslatter_thumb.jpg" alt="2022년 06월 Newsletter 썸네일">
+										</div>
+										<strong class="subject">2022년 06월 Newsletter</strong>
+									</a>
+								</li>
+								<li>
+									<a href="⑤소식-뉴스레터-뉴스레터보기-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_newslatter_thumb.jpg" alt="2022년 05월 Newsletter 썸네일">
+										</div>
+										<strong class="subject">2022년 05월 Newsletter</strong>
+									</a>
+								</li>
+								<li>
+									<a href="⑤소식-뉴스레터-뉴스레터보기-상세.html">
+										<div class="thumbnail">
+											<img src="../../asset/rh-kr/images/img_newslatter_thumb.jpg" alt="2022년 06월 Newsletter 썸네일">
+										</div>
+										<strong class="subject">2022년 04월 Newsletter</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- // gallery_list -->
+
+						<!-- pagination -->
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+						<!-- // pagination -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+/* 포트폴리오 목록 */
+#tit_page {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.search_area {
+	.checkbox {
+		display: inline-block;
+	}
+
+	.toggle-checkbox {
+		display: none;
+
+	}
+
+	.toggle-btn {
+		display: block;
+		background-color: #3c4145;
+
+	}
+
+	.toggle-btn:before {
+		background-color: #fff;
+	}
+
+	.toggle-btn,
+	.toggle-btn:before,
+	.toggle--feature:before {
+		transition: all 250ms ease-in;
+	}
+
+	.toggle-btn:before,
+	.toggle--feature:before {
+		content: '';
+		display: block;
+	}
+
+	.toggle .toggle-btn,
+	.toggle-btn {
+		position: relative;
+		height: 18px;
+		width: 30px;
+		border-radius: 70px;
+		top: 3px;
+	}
+
+	.toggle-btn:before,
+	.toggle-btn:before {
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+
+	}
+
+	.toggle-checkbox:checked+.toggle-btn {
+		background-color: #3652E3;
+	}
+
+	.toggle-checkbox:checked+.toggle-btn:before {
+		left: 16px;
+		background-color: #ffffff;
+	}
+
+	@keyframes starry_star {
+		50% {
+			background-color: rgba(255, 255, 255, .1);
+			box-shadow: #fff 30px -3px 0 0, #fff 12px 10px 0 -1px, rgba(255, 255, 255, .1) 38px 18px 0 1px, #fff 32px 34px 0 0, rgba(255, 255, 255, .1) 20px 24px 0 -1.5px, #fff 5px 38px 0 1px
+		}
+	}
+
+	@keyframes bounceIn {
+		0% {
+			opacity: 0;
+			transform: scale(.3)
+		}
+
+		50% {
+			opacity: 100;
+			transform: scale(1.1)
+		}
+
+		55% {
+			transform: scale(1.1)
+		}
+
+		75% {
+			transform: scale(.9)
+		}
+
+		100% {
+			opacity: 100;
+			transform: scale(1)
+		}
+	}
+
+	.input-width {
+		width: 100%;
+	}
+
+	.table-2row {
+		label {
+			width: 17%;
+		}
+	}
+
+	th {
+		text-align: left;
+	}
+
+	.confirm-title {
+		margin: 0 5px 0 20px;
+	}
+
+	.gallery-list {
+		.no-data {
+			width: 100%;
+			text-align: center;
+			width: 98%;
+			padding: 50px 0;
+		}
+	}
+
+	.btn-list-area {
+		text-align: right;
+	}
+
+}
+
+/* 포트폴리오 상세 */
+.title_page {
+	display: flex;
+}
+
+.btn-preview {
+	margin-left: 10px;
+	line-height: normal;
+}
+
+.portfoilo-detail-wrap {
+
+	.preview-area {
+		display: inline-block;
+		vertical-align: bottom;
+	}
+
+	.caution {
+		vertical-align: middle;
+		margin: 5px;
+	}
+
+	.mount-area {
+		label {
+			width: 19%;
+			margin-right: 0;
+		}
+	}
+
+	.disabled-link {
+		width: 100%;
+	}
+
+	.tip {
+		font-size: 10px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+
+	.explan-wrap {
+		position: relative;
+		padding: 5px 20px;
+
+
+		.explan-desc {
+			text-align: left;
+		}
+
+		.btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 0;
+			background-color: transparent;
+			text-indent: -56px;
+
+			.fa-question {
+				color: #2051FF;
+				display: inline;
+			}
+		}
+	}
+
+	.attach {
+		position: relative;
+		overflow: hidden;
+
+		a {
+			position: absolute;
+			top: -6px;
+			text-indent: -9999px;
+			display: block;
+			width: 184px;
+			height: 34px;
+		}
+	}
+
+}

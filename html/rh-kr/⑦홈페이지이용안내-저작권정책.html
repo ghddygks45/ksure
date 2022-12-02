@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar07.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">저작권정책</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info18">
+							<div class="top_info_wrap">
+								한국무역보험공사 홈페이지에서 제공하는 모든 콘텐츠 즉, 웹문서, 첨부파일, DB정보 등은 저작권법에 의하여 보호받는 저작물로, 별도의 저작권
+								표시 또는 다른 출처를 명시한 경우를 제외하고는 원칙적으로 한국무역보험공사에 저작권이 있습니다.
+								<p class="txt_margin">
+									따라서 한국무역보험공사 홈페이지에서 제공하는 콘텐츠를 무단 복제, 배포하는 경우에는 저작권법 제 136조, 137조, 138조에 의한 저작재산권
+									침해죄에 해당하는 5년 이하의 징역 또는 5천만원 이하의 벌금에 처해질 수 있습니다.
+								</p>
+								<p class="txt_margin">
+									한국무역보험공사 홈페이지에서 제공하는 콘텐츠를 상업적으로 이용하거나 웹을 통해 제 3자에게 제공하고자 하는 경우에는 한국무역보험공사와
+									사전에 별도의 협의를 하거나 허락을 득하여야 하며, 협의 또는 허락을 얻어 자료의 내용을 게재하는 경우에도 출처가 한국무역보험공사임을
+									반드시 명시하여야 합니다.
+								</p>
+								<p class="txt_margin">
+									한국무역보험공사 홈페이지의 콘텐츠를 적법한 절차에 따라 다른 인터넷 사이트에 게재하는 경우에도 단순한 오류 정정 이외에 내용의 무단변경을
+									금지하며, 이를 위반할 때에는 형사 처벌을 받을 수 있습니다.
+								</p>
+								<p class="txt_margin">
+									다른 인터넷 사이트에서 한국무역보험공사 홈페이지를 링크하는 경우에도 링크 사실을 한국무역보험공사에 통지하여야 합니다.
+								</p>
+								<p class="txt_margin">
+									궁금한 사항은 한국무역보험공사 홈페이지 운영자에게 문의하여 주시기 바랍니다.
+								</p>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">문의정보</h4>
+							<div class="table">
+								<table>
+									<caption>문의정보 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row">부서</th>
+											<td>한국무역보험공사 고객가치부</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">이메일</th>
+											<td>sgh0673@ksure.or.kr</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">전화번호</th>
+											<td>02-399-5335</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">주소</th>
+											<td>(03187) 서울시 종로구 종로 14(서린동) 한국무역보험공사</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

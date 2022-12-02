@@ -1,0 +1,69 @@
+@use '../use'as *;
+
+.location {
+	>ul {
+		@include clearboth();
+
+		>li {
+			padding: 2px 7px 2px 14px;
+			background-color: #fff;
+			font-size: 12px;
+			float: left;
+
+			&.home {
+				padding: 2px 7px 2px 25px;
+				background: #fff url(../images/bg_home.png) no-repeat 0 50%/20px;
+			}
+
+			&:not(:first-child) {
+				position: relative;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 9px;
+					left: 1px;
+					border-top: 1px solid #aaa;
+					border-right: 1px solid #aaa;
+					width: 4px;
+					height: 4px;
+					transform: rotate(45deg);
+				}
+			}
+
+			&:last-child {
+				font-weight: 400;
+				color: #e43c3c;
+			}
+		}
+	}
+
+	@include res--pc-ctn {
+
+
+		>ul {
+			>li {
+				padding: 5px 10px 6px 16px;
+				font-size: 15px;
+
+				&.home {
+					padding: 5px 10px 6px 37px;
+					background-size: auto;
+				}
+
+				&:not(:first-child) {
+					&:before {
+						top: 14px;
+						left: 0;
+						width: 5px;
+						height: 5px;
+					}
+				}
+
+				&:last-child {
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+}

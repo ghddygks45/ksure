@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar04.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">고객제안</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="top_info_box bg_info03">
+							<div class="top_info_wrap">
+								<p class="lg-mb-10">
+									저희 무역보험공사는 고객 여러분들의 Needs와 다양한 아이디어를 수렴, 고객에게 보다 나은 서비스를 제공하고자 “고객제안” 코너를 운영하고 있으며 무역보험제도, 업무절차,
+									고객서비스 개선 등 무역보험과 관련된 고객제안 수렴하여 검토 후 반영하고 있습니다.
+								</p>
+								<ul class="list shape_type1">
+									<li>
+										<span class="bold">제안자격 :</span>
+										제한없음
+									</li>
+									<li>
+										<span class="bold">제안분야 :</span>
+										무역보험제도, 업무절차, 고객 서비스 개선 등 무역보험과 관련된 제안
+									</li>
+									<li>
+										<span class="bold">비밀보장 :</span>
+										고객제안은 효과적인 Feedback을 위하여 실명으로 운영됩니다만 고객 여러분의 자유로운 의견 개진을 위하여 기업 및 담당자 정보는 철저히 비밀이 보장되오니 이 점 참고하시기
+										바랍니다.
+									</li>
+								</ul>
+								<div class="sm-mt-10 lg-mt-17">
+									<a href="④고객참여-고객제안-고객제안-동의인증.html" class="btn_white_line ico_arrow">고객제안 작성하기</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="l">
+								전체 <span class="bold">905</span>건, 현재페이지 : <span class="bold">1</span>/<span class="page">11</span>
+							</div>
+
+							<div class="r">
+								<div class="search_unit">
+									<div class="select_wrap">
+										<select class="board_select" title="조건 선택">
+											<option value="">구분</option>
+										</select>
+									</div>
+									<div class="input_wrap">
+										<input type="text" class="board_input" title="검색어 입력">
+										<button type="button" class="btn_search"><span class="blind">검색</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="board_list bg_type2">
+							<!-- 데이터 값이 없을 경우 -->
+							<div class="no_data">
+								<p>등록된 게시물이 없습니다.</p>
+							</div>
+							<!-- // 데이터 값이 없을 경우 -->
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_red fix">접수</span>
+									<span class="num pc_content">No.901</span>
+								</div>
+								<div class="board_cont">
+									<a href="④고객참여-고객제안-고객제안목록-상세.html" class="subject">
+										우대사항 관련 문의
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_red fix">접수</span>
+									<span class="num pc_content">No.900</span>
+								</div>
+								<div class="board_cont">
+									<a href="④고객참여-고객제안-고객제안목록-상세.html" class="subject">
+										문의드립니다.
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">조치완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="④고객참여-고객제안-고객제안목록-상세.html" class="subject">
+										채용분야 응시 관련
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">조치완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="④고객참여-고객제안-고객제안목록-상세.html" class="subject">
+										공인영어성적에 관하여 질문드립니다.
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">조치완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="④고객참여-고객제안-고객제안목록-상세.html" class="subject">
+										채용분야 응시 관련
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+									</ul>
+								</div>
+							</div>
+							<div class="board_box">
+								<div class="cate">
+									<span class="tack bg_lightgray fix">조치완료</span>
+									<span class="num pc_content">No.899</span>
+								</div>
+								<div class="board_cont">
+									<a href="④고객참여-고객제안-고객제안목록-상세.html" class="subject">
+										공인영어성적에 관하여 질문드립니다.
+										<span class="lock"><span class="blind">비밀글</span></span>
+									</a>
+									<ul class="board_info_list">
+										<li><span class="bold">작성자 : </span>송○○</li>
+										<li><span class="bold">작성일 : </span>2022.07.24</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+						<div class="btn_wrap">
+							<div class="r">
+								<a href="④고객참여-고객제안-고객제안-동의인증.html" class="btn md bg_red">글쓰기</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

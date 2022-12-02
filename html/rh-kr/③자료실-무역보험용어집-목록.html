@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(4);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar03.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">무역보험용어집</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="terms_wrap">
+							<div class="terms_search">
+								<p>찾고자 하시는 용어를 검색하여 주세요, 검색하실 용어를 입력 하신 후 검색버튼을 누르세요.</p>
+								<div class="terms_inp">
+									<span class="inp_inner">
+										<input type="text" title="검색어 입력">
+										<button type="button"><span class="blind">검색</span></button>
+									</span>
+									<button type="button" class="btn_srh_reset">초기화</button>
+								</div>
+							</div>
+							<div class="keypad">
+								<div class="lang_kr">
+									<button type="button" class="on">ㄱ</button>
+									<button type="button">ㄴ</button>
+									<button type="button">ㄷ</button>
+									<button type="button">ㄹ</button>
+									<button type="button">ㅁ</button>
+									<button type="button">ㅂ</button>
+									<button type="button">ㅅ</button>
+									<button type="button">ㅇ</button>
+									<button type="button">ㅈ</button>
+									<button type="button">ㅊ</button>
+									<button type="button">ㅋ</button>
+									<button type="button">ㅌ</button>
+									<button type="button">ㅍ</button>
+									<button type="button">ㅎ</button>
+								</div>
+								<div class="lang_en">
+									<button type="button">A</button>
+									<button type="button">B</button>
+									<button type="button">C</button>
+									<button type="button">D</button>
+									<button type="button">E</button>
+									<button type="button">F</button>
+									<button type="button">G</button>
+									<button type="button">H</button>
+									<button type="button">I</button>
+									<button type="button">J</button>
+									<button type="button">K</button>
+									<button type="button">L</button>
+									<button type="button">M</button>
+									<button type="button">N</button>
+									<button type="button">O</button>
+									<button type="button">P</button>
+									<button type="button">Q</button>
+									<button type="button">R</button>
+									<button type="button">S</button>
+									<button type="button">T</button>
+									<button type="button">U</button>
+									<button type="button">V</button>
+									<button type="button">W</button>
+									<button type="button">X</button>
+									<button type="button">Y</button>
+									<button type="button">Z</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="board_top">
+							<div class="l">
+								전체 <span class="bold">905</span>건, 현재페이지 : <span class="bold">1</span>/<span class="page">11</span>
+							</div>
+							<div class="r">
+								<a href="#n" class="btn_white_line ico_download">무역보험 용어집 다운로드</a>
+							</div>
+						</div>
+
+						<div class="faq_list type2">
+							<ul>
+								<li>
+									<a href="#;" class="q_box active">
+										<span class="blind">질문</span>
+										<div class="category color_default fwl">No.897</div>
+										<div class="r">
+											<div class="subject">신용위험(Commercial Risks)</div>
+										</div>
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										수출통지한 건의 결제기일(만기)이 지났으나 결제통지가 이뤄지지 않고 있다는 내용입니다. 결제통지를 해주시면 결제금액만큼 귀사의 한도가 되살아나게 되며
+										타수출업체도 결제금액 범위내에서 동 수입자와의 거래를 위한 한도책정을 받을 수 있게 됩니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<div class="category color_default fwl">No.897</div>
+										<div class="r">
+											<div class="subject">신용위험(Commercial Risks)</div>
+										</div>
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										수출통지한 건의 결제기일(만기)이 지났으나 결제통지가 이뤄지지 않고 있다는 내용입니다. 결제통지를 해주시면 결제금액만큼 귀사의 한도가 되살아나게 되며
+										타수출업체도 결제금액 범위내에서 동 수입자와의 거래를 위한 한도책정을 받을 수 있게 됩니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<div class="category color_default fwl">No.897</div>
+										<div class="r">
+											<div class="subject">신용위험(Commercial Risks)</div>
+										</div>
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										수출통지한 건의 결제기일(만기)이 지났으나 결제통지가 이뤄지지 않고 있다는 내용입니다. 결제통지를 해주시면 결제금액만큼 귀사의 한도가 되살아나게 되며
+										타수출업체도 결제금액 범위내에서 동 수입자와의 거래를 위한 한도책정을 받을 수 있게 됩니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<div class="category color_default fwl">No.897</div>
+										<div class="r">
+											<div class="subject">신용위험(Commercial Risks)</div>
+										</div>
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										수출통지한 건의 결제기일(만기)이 지났으나 결제통지가 이뤄지지 않고 있다는 내용입니다. 결제통지를 해주시면 결제금액만큼 귀사의 한도가 되살아나게 되며
+										타수출업체도 결제금액 범위내에서 동 수입자와의 거래를 위한 한도책정을 받을 수 있게 됩니다.
+									</div>
+								</li>
+								<li>
+									<a href="#;" class="q_box">
+										<span class="blind">질문</span>
+										<div class="category color_default fwl">No.897</div>
+										<div class="r">
+											<div class="subject">신용위험(Commercial Risks)</div>
+										</div>
+									</a>
+									<div class="a_box">
+										<span class="blind">답변</span>
+										수출통지한 건의 결제기일(만기)이 지났으나 결제통지가 이뤄지지 않고 있다는 내용입니다. 결제통지를 해주시면 결제금액만큼 귀사의 한도가 되살아나게 되며
+										타수출업체도 결제금액 범위내에서 동 수입자와의 거래를 위한 한도책정을 받을 수 있게 됩니다.
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

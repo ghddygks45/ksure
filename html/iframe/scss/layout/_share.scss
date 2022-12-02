@@ -1,0 +1,114 @@
+@use '../use'as *;
+
+.share_wrap {
+	position: absolute;
+	top: 40px;
+	right: 0;
+
+	>li:not(:last-child) {
+		display: none;
+	}
+
+	.btn_share {
+		display: block;
+		width: 28px;
+		height: 28px;
+		background: url(../images/btn_share.png) no-repeat 0 0/100%;
+
+		&.close {
+			background-image: url(../images/btn_share_close.png);
+
+			+.share_sns_box {
+				position: absolute;
+				top: 31px;
+				left: 0;
+				display: block;
+				border-radius: 28px;
+				padding: 12px 0;
+				background: #f6f6f6;
+				box-shadow: 6px 10px 12px 0px rgba(0, 0, 0, 0.1);
+
+				>li {
+					>a {
+						display: block;
+						width: 28px;
+						height: 28px;
+						background-repeat: no-repeat;
+						background-position: center;
+
+						&.btn_share_facebook {
+							background-image: url(../images/share_facebook.png);
+							background-size: 7px;
+						}
+
+						&.btn_share_twitter {
+							background-image: url(../images/share_twitter.png);
+							background-size: 15px;
+						}
+
+						&.btn_share_kakaostory {
+							background-image: url(../images/share_kakao.png);
+							background-size: 7px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include res--pc-ctn {
+		top: 60px;
+		@include clearboth();
+
+		>li {
+			position: relative;
+			display: block !important;
+			margin-left: 5px;
+			float: left;
+
+			>button {
+				display: block;
+				width: 42px !important;
+				height: 42px !important;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-size: auto !important;
+
+				&.btn_print {
+					background-image: url(../images/btn_print.png);
+				}
+
+				&.btn_pdf_download {
+					background-image: url(../images/btn_pdf.png);
+				}
+
+				&.btn_img_download {
+					background-image: url(../images/btn_image.png);
+				}
+
+				&.btn_copy_link {
+					background-image: url(../images/btn_copy.png);
+				}
+
+				&.btn_share {
+					&.close {
+						+.share_sns_box {
+							top: 46px;
+							border-radius: 42px;
+							padding: 17px 0;
+
+							>li {
+								>a {
+									width: 42px;
+									height: 42px;
+									background-size: auto !important;
+								}
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

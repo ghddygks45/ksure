@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">선물환 방식</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-환변동보험-선물환방식-개요(선물환방식).html">개요</a></li>
+							<li><a href="②사업안내-환변동보험-선물환방식-보장조기결제환율조회.html" class="active">보장/조기결제환율조회</a></li>
+							<li><a href="②사업안내-환변동보험-선물환방식-선물환방식보험요율.html">선물환방식 보험요율</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">보장환율 산정방식(일반형)</h4>
+							청약일 시장평균환율 + 기간별 Swap point
+						</div>
+						<div class="section">
+							<h4 class="tit">결제환율 산정방식(일반형)</h4>
+							<div class="table">
+								<table>
+									<caption>결제환율 산정방식(일반형) 표로 일반형, 범위선물환 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+										<col>
+									</colgroup>
+									<tbody>
+										<tr class="txt_c">
+											<th scope="row" rowspan="2">일반형</th>
+											<td>월말 만기결제</td>
+											<td>결제월 최종영업일 최초고시환율</td>
+										</tr>
+										<tr class="txt_c">
+											<td>월중 만기결제 및 조기결제</td>
+											<td>결제신청일 시장평균환율 + 잔여기간 Swap point</td>
+										</tr>
+										<tr class="txt_c">
+											<th scope="row">범위선물환</th>
+											<td colspan="2">결제월 최종영업일 최초고시환율</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보장/조기결제 환율 조회</h4>
+							<span class="color_red">※ 보장환율 및 조기결제환율의 산정일자는 청약일 및 결제신청일 익영업일입니다.</span><br>
+							Ex) 18'04.01 청약 또는 결제신청 → 보장/조기결제 환율은 다음날('18.04.02) 조회 가능합니다.
+						</div>
+						<div class="section">
+							<h4 class="tit">일반선물환</h4>
+							<div class="mul_srh_box sm-mb-20 lg-mb-35">
+								<div class="mul_srh_form">
+									<div class="srh_row">
+										<div class="inp_box">
+											<label for="srh1" class="bold">산정일자 :</label>
+											<div class="date">
+												<span class="date-inp"><input type="text" class="datepicker" id="srh1"></span>
+											</div>
+										</div>
+										<div class="inp_box">
+											<label for="srh2" class="bold">통화 :</label>
+											<select name="" style="width: 150px;" id="srh2">
+												<option value="">USD</option>
+											</select>
+										</div>
+										<div class="inp_box">
+											<label for="srh3" class="bold">회차 :</label>
+											<select name="" style="width: 150px;" id="srh3">
+												<option value="">001</option>
+											</select>
+										</div>
+										<div class="inp_box">
+											<label for="srh4" class="bold">수출입구분 :</label>
+											<select name="" style="width: 150px;" id="srh4">
+												<option value="">수출</option>
+											</select>
+										</div>
+									</div>
+									<div class="srh_row">
+										<div class="inp_box">
+											<label for="srh5" class="bold">결제종류 :</label>
+											<select name="" style="width: 150px" id="srh5">
+												<option value="">보장환율</option>
+											</select>
+											<button type="button" class="btn_mul_srh">검색</button>
+										</div>
+									</div>
+								</div>
+								<div class="srh_info">
+									<ul class="list shape_type1">
+										<li>월말 최종영업일 만기 결제시 적용되는 결제환율은 해당월 최종영업일의 최초 고시매매기준율을 적용 받습니다.</li>
+										<li>월중 만기결제의 경우 적용되는 결제환율은 조기결제시 적용되는 결제환율과 같습니다.</li>
+										<li>보장환율 또는 조기결제환율 조회시 산정일자는 보험청약일 또는 조기결제신청일의 다음 영업일이 됩니다.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="srh_result">
+								<div class="sub_section">
+									<h5 class="sub_tit">2022.09 ~ 2024.05</h5>
+									<div class="table">
+										<table>
+											<caption>일반선물환 검색 결과 첫번째 표로 결제 년월일, 평균스왑포인트, 보장환율로 구성</caption>
+											<thead>
+												<tr>
+													<th scope="col">결제<br>년월일</th>
+													<th scope="col">평균스왑<br>포인트</th>
+													<th scope="col">결제환율<br>(월중결제, 조기결제)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="sub_section">
+									<h5 class="sub_tit">2022.09 ~ 2024.05</h5>
+									<div class="table">
+										<table>
+											<caption>일반선물환 검색 결과 첫번째 표로 결제 년월일, 평균스왑포인트, 보장환율로 구성</caption>
+											<thead>
+												<tr>
+													<th scope="col">결제<br>년월일</th>
+													<th scope="col">평균스왑<br>포인트</th>
+													<th scope="col">결제환율<br>(월중결제, 조기결제)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="sub_section">
+									<h5 class="sub_tit">2022.09 ~ 2024.05</h5>
+									<div class="table">
+										<table>
+											<caption>일반선물환 검색 결과 첫번째 표로 결제 년월일, 평균스왑포인트, 보장환율로 구성</caption>
+											<thead>
+												<tr>
+													<th scope="col">결제<br>년월일</th>
+													<th scope="col">평균스왑<br>포인트</th>
+													<th scope="col">결제환율<br>(월중결제, 조기결제)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+												<tr>
+													<td class="txt_c">2022.08</td>
+													<td class="txt_c">1.05</td>
+													<td class="txt_c">1337.6</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

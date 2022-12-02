@@ -1,0 +1,35 @@
+@use '../use'as *;
+
+body {
+	font-size: 13px;
+
+	.inner {
+		padding: 0 10px;
+	}
+
+	.container {
+		padding-top: 58px;
+	}
+
+	@include res--pc-ctn {
+		font-size: 16px;
+
+		.inner {
+			@include clearboth();
+		}
+
+		.container {
+			padding-top: 132px;
+		}
+	}
+
+	@include res--pc {
+		.inner {
+			width: 1440px;
+			margin: 0 auto;
+			padding: 0;
+
+			@include clearboth();
+		}
+	}
+}

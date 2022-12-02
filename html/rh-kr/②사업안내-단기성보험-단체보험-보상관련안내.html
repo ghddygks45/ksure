@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 5);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단체보험</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단체보험-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단체보험-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-단체보험-보상관련안내.html" class="active">보상관련 안내</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">보험사고 발생 시 처리절차</h4>
+							보험계약이 성립된 무역거래에서 해당 약관이 담보하는 위험으로 손실이 발생할 경우, 공사는 사고원인을 조사한 후 피보험자의 약관 위반여부를 심사하고 지급보험금액을 산정하여 보험금을 지급하게
+							됩니다.
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="#n" class="btn_link_site bg_red ico_arrow_w">국외보상 신청서류</a>
+								</div>
+							</div>
+							<div class="table sm-mt-15 lg-mt-20">
+								<table>
+									<caption>보험사고 발생 시 처리절차 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사고발생 통지</th>
+											<td><strong class="bold">피보험자</strong>는 담보위험에서 정한 손실이 발생하였을 때에는 <strong class="bold">결제기일부터 1월
+													이내</strong>에 그 사실을 공사에 <strong class="bold">서면으로 통지</strong><br>
+												- 한편, <strong class="bold">피보험자</strong>는 수출대금의 <strong class="bold">결제기일 이전에 담보위험 사유가
+													발생</strong>한 사실을 안 때에는 <strong class="bold">안 날부터 1월 이내</strong>에 그 사실을 공사에 <strong
+													class="bold">서면으로 통지</strong></td>
+										</tr>
+										<tr>
+											<th scope="row">사고조사</th>
+											<td>사고발생통지 이후 공사는 수입자, 에이전트 및 선사 등을 조사하여 수출채권 존재 여부, 피보험자의 고의 과실 및 약관 위반 여부 등을 조사하며, <strong
+													class="bold">피보험자</strong>는 공사에서 요청하는 경우 <strong class="bold">사고조사에 협조</strong>할 의무가 있음</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금 지급청구</th>
+											<td><strong class="bold">피보험자</strong>는 <strong class="bold">사고발생통지를 한 날로부터 1월이 경과한 이후</strong>
+												자기비용으로 손실을 계산하여
+												공사에 증빙서류 및 기타
+												필요한 서류와 함께 보험금 청구서 제출</td>
+										</tr>
+										<tr>
+											<th scope="row">보험금 지급</th>
+											<td>공사는 보험금 청구서를 받은 날로부터 1월 이내에 보험금 지급</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보상되지 않는 손실(면책)</h4>
+							<span class="color_red fwr">※ K-SURE(보험자)와 단체(보험계약자) 간 체결한 “단체보험 특약”에 따라, 피보험자인 수출자는 약관상 보험계약자의 모든 권리와 의무를
+								부담합니다.</span>
+							<ul class="list shape_type1 sm-mt-5 lg-mt-10">
+								<li>약관 및 홈페이지에 게시된 주요 면책사례 및 수출 시 유의할 사항을 참고하시기 바랍니다.</li>
+							</ul>
+							<div class="btn_wrap">
+								<div class="r">
+									<a href="#n" class="btn_white_line ico_arrow">국외보상 주요 면책사례 바로가기</a>
+									<a href="#n" class="btn_white_line ico_download ml-5">단기수출보험(중소중견Plus+)단체보험 이용 시 유의사항(PDF)</a>
+								</div>
+							</div>
+							<div class="table sm-mt-15 lg-mt-20">
+								<table>
+									<caption>보상되지 않는 손실 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">사고발생 통지</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>본지사 거래에서 발생한 손실</li>
+													<li>물품 자체에서 발생한 손실</li>
+													<li>법령을 위반한 경우</li>
+													<li>대상거래에 부합하지 않는 경우</li>
+													<li>수출자(피보험자)가 수출계약 상대방이 무역보험 사고발생 수입자이거나 공사 신용등급 R급임을 알고 있는 상태에서 수출한 거래 등 *</li>
+													<li>피보험자의 고의 또는 과실로 인하여 발생한 손실
+														<ul class="list shape_type2">
+															<li>보험금을 목적으로 서류위조, 수입자와의 공모 등을 통해 허위 신청한 보험사기 수출 건</li>
+															<li>물품하자, 선적지연 및 기타수출 계약상 매도인의 의무위반 등 정당한 수입자의 클레임</li>
+															<li>수출기업의 고의 또는 과실로 회수할 수 없게 된 수출채권 등</li>
+														</ul>
+													</li>
+													<li>신용장방식 수출거래에서 신용장조건을 불일치한 경우</li>
+													<li>고지․주의․협조․통지의무를 태만히 함으로 인하여 증가된 손실</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="sm-mt-5 lg-mt-10">* 현재 고위험 인수제한 국가 및 추후 고위험 인수제한 국가 추가지정에 따라 공사가 보험계약자 또는 피보험자에게 통지한 경우에도 그
+								통지일부터 동일하게 적용(단, 수출안전망 보험은 추가 인수제한 국가 적용 제외)</p>
+						</div>
+						<div class="notice_box">기타 문의는 공사 고객센터(1588-3884)로 연락주시기 바랍니다.</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

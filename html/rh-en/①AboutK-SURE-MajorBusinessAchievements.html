@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Major Business Achievements</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<h4 class="tit">WHAT WE DID IN 2020</h4>
+						<div class="sub_section">
+							<h5 class="sub_tit">A Total of KRW 165.1 trillion in Support with Record-High Support to SMEs at KRW 59.6
+								trillion</h5>
+							Despite the initially grim outlook on export due to the COVID-19 pandemic and US-China trade dispute,
+							K-SURE provided KRW 165.1 trillion in support to promote trade and overseas investment, with its support
+							to SMEs reaching a record-high level at KRW 59.6 trillion.
+						</div>
+						<div class="sub_section">
+							<h5 class="sub_tit">Full-Fledged Support for Export in Response to COVID-19</h5>
+							<p>K-SURE launched the COVID-19 Response Task Force (TF) to deal with the challenges presented by the
+								unprecedented global health crisis. In order to provide full-fledged support for exporters by mobilizing
+								all its resources, the TF was restructured into the K-SURE Emergency Business Management Team headed by
+								the Chairman and President of K-SURE and comprised of the directors of all the divisions.</p>
+							<p class="txt_margin">In addition to implementing the measures to reinvigorating export announced by the
+								government at the 4th Emergency Economic Council Meeting, K-SURE developed the Guidelines on Full-Fledge
+								Trade Insurance Support to Minimize the Damage from COVID-19, extended insurance policies without
+								lowering the credit line and provided KRW 37.4 trillion in liquidity through the Emergency Export
+								Stabilization Funds to assist exporters among SMEs.</p>
+						</div>
+						<div class="sub_section">
+							<h5 class="sub_tit">Improvement of the Digital Trade Insurance Platform</h5>
+							K-SURE’s launch of the Online Direct Guarantee and Online Direct Insurance for improved user convenience
+							was met with high customer satisfaction and viewed as an excellent example of digital innovation in the
+							industry. By expanding the scope of online services and automating the review procedure by linking
+							databases with relevant institutions, K-SURE successfully laid the groundwork for the digitization of
+							trade insurance.
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

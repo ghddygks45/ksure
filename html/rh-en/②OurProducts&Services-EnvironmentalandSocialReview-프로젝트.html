@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(8);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Environmental and Social Review</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<ul class="tab">
+							<li><a href="#;">summary</a></li>
+							<li><a href="#;" class="active">project</a></li>
+						</ul>
+
+						<div class="section">
+							<h4 class="tit">Environmental and Social Information Disclosure</h4>
+							<p>
+								In order to contribute to sustainable development, K-SURE discloses the information of environmental and
+								social reviews conducted in relation to the projects it is reviewing for support. Should you require
+								data on the environmental and social impact assessment of a project, please contact K-SURE using the
+								information below.
+							</p>
+							<ul class="contact_list sm-mt-15 lg-mt-20">
+								<li>
+									<span class="cont1">Department :</span>
+									K-SURE Environmental and Social Team
+								</li>
+								<li>
+									<span class="cont2">Address :</span>
+									14, Jong-ro, Jongno-gu, Seoul, Republic of Korea
+								</li>
+								<li class="lg-mt-10">
+									<span class="cont3">E-mail :</span>
+									environment@ksure.or.kr
+								</li>
+							</ul>
+							<div class="table sm-mt-25 lg-mt-40">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col style="width: 140px;">
+										<col style="width: 310px;">
+										<col style="width: 300px;">
+										<col style="width: 140px;">
+										<col style="width: 100px;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">DATE</th>
+											<th scope="col">Project</th>
+											<th scope="col">Project location</th>
+											<th scope="col">Reference No</th>
+											<th scope="col">File</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row" class="txt_c">2021/12/27</th>
+											<td class="txt_c">Barossa Area Development Project</td>
+											<td class="txt_c">approximately 300 kilometers north of Darwin, Northern Territory Australia</td>
+											<td class="txt_c">PJ0321040951</td>
+											<td class="txt_c"><a href="#n"><img src="../../asset/rh-en/images/ico_pdf.png"
+														alt="PDF download"></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="txt_c">2021/12/27</th>
+											<td class="txt_c">Barossa Area Development Project</td>
+											<td class="txt_c">approximately 300 kilometers north of Darwin, Northern Territory Australia</td>
+											<td class="txt_c">PJ0321040951</td>
+											<td class="txt_c"><a href="#n"><img src="../../asset/rh-en/images/ico_pdf.png"
+														alt="PDF download"></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="txt_c">2021/12/27</th>
+											<td class="txt_c">Barossa Area Development Project</td>
+											<td class="txt_c">approximately 300 kilometers north of Darwin, Northern Territory Australia</td>
+											<td class="txt_c">PJ0321040951</td>
+											<td class="txt_c"><a href="#n"><img src="../../asset/rh-en/images/ico_pdf.png"
+														alt="PDF download"></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pagination">
+								<ul class="page_num">
+									<li><a href="#;" class="first"><span class="blind">처음페이지 이동</span></a></li>
+									<li><a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a></li>
+									<li class="active"><a href="#;">1</a></li>
+									<li><a href="#;">2</a></li>
+									<li><a href="#;">3</a></li>
+									<li><a href="#;">4</a></li>
+									<li><a href="#;">5</a></li>
+									<li><a href="#;" class="next"><span class="blind">다음페이지 이동</span></a></li>
+									<li><a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

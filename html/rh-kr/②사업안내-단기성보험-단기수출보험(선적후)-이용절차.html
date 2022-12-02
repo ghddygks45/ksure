@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(2, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">단기수출보험(선적후)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-이용절차.html" class="active">이용절차</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-제도운영예시.html">제도운영예시</a></li>
+							<li><a href="②사업안내-단기성보험-단기수출보험(선적후)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2">
+								<ol class="ico_process">
+									<li class="use_step1">
+										<strong>보험가입 상담</strong>
+										(고객센터, 담당자)
+									</li>
+									<li class="use_step2">
+										<strong>수입자 및 은행 신용조사 신청</strong>
+										(사이버영업점)
+									</li>
+									<li class="use_step3">
+										<strong>한도신청</strong>
+										(사이버영업점)
+									</li>
+									<li class="use_step4">
+										<strong>신청한도 심사</strong>
+									</li>
+									<li class="use_step5">
+										<strong>보험증권 발급</strong>
+										(사이버영업점)
+									</li>
+									<li class="use_step6">
+										<strong>수출통지</strong>
+										(사이버영업점)
+									</li>
+									<li class="use_step7">
+										<strong>보험료 납부</strong>
+										(지정계좌)
+									</li>
+									<li class="use_step8">
+										<strong>결제통지</strong>
+										(사이버영업점)
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">보상절차</h4>
+							<div class="sm-p-25 lg-p-40 bg_lightgray2">
+								<ol class="ico_process">
+									<li class="comp_step1">
+										<strong>전화상담</strong>
+										(고객센터, 담당자)
+									</li>
+									<li class="comp_step2">
+										<strong>사고발생 통지</strong>
+										<span class="underline color_red bold">신청서류</span>
+									</li>
+									<li class="comp_step3">
+										<strong>사고조사</strong>
+									</li>
+									<li class="comp_step4">
+										<strong>보험금 청구</strong>
+										<span class="underline color_red bold">신청서류</span>
+									</li>
+									<li class="comp_step5">
+										<strong>보상심사</strong>
+									</li>
+									<li class="comp_step6">
+										<strong>보험금 지급</strong>
+									</li>
+									<li class="comp_step7">
+										<strong>채권양도 및 사후관리</strong>
+									</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">접수안내 및 주의사항</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">고객센터 접수</h5>
+								<ul class="list shape_type1">
+									<li>접수방법 상담시간 : 평일 09:00~18:00(주말/공휴일 제외)</li>
+									<li>접수방법 : 사이버영업점에서 제출서류를 첨부하여 사고통지 후 인수 및 보상담당자와 상담진행</li>
+									<li>사이버영업점 이용방법은 고객센터(1588-3884)로 문의</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">이용 시 주의사항</h5>
+								<ul class="list shape_type1">
+									<li>약관은 공사가 보상하지 않는 경우에 대해 상세히 규정하고 있으므로 약관의 내용을 숙지하여 보험에 가입하고도 보상받지 못하는 일이 없도록 주의하여야 합니다</li>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

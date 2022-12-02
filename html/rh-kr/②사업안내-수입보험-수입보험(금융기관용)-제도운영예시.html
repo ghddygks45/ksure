@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(6, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수입보험(금융기관용)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-수입보험-수입보험(금융기관용)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(금융기관용)-이용요건.html">이용요건</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(금융기관용)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(금융기관용)-신청서류.html">신청서류</a></li>
+							<li><a href="②사업안내-수입보험-수입보험(금융기관용)-제도운영예시.html" class="active">제도운영예시</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">제도운영 예시</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">수입자의 청약문의</h5>
+								<ul class="list shape_type1">
+									<li>A사는 최근 급등한 수입제품(주요자원) 가격 상승에 따른 수입금융한도 부족으로 수입보험(금융기관용)을 이용함으로써 한도를 증액하고자 공사에 인수한도 U$1백만을 신청</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">공사의 채무자(수입자) 신용조사</h5>
+								<ul class="list shape_type1">
+									<li>A사는 D등급으로 수입실적을 보유한 업체임</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">한도책정 및 보험증권 발급</h5>
+								<ul class="list shape_type1">
+									<li>공사는 대출은행(보험계약자) B은행 앞으로 U$1백만의 한도 책정 후 보험증권 발급</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">대출 실행 및 보험관계 성립</h5>
+								<ul class="list shape_type1">
+									<li>B은행은 A사 앞으로 보험증권을 담보로 한 수입자금 대출을 실행한 후 공사에 익월 20일까지 통지함으로써 보험관계가 성립, 익익월 10일까지 보험료 납부</li>
+								</ul>
+								<div class="table sm-mt-10 lg-mt-15">
+									<table>
+										<caption>대출 실행 및 보험관계 성립 표로 대출 통지금액, 보험가액, 보험금액(100%), 등급, 보험기간 정보 제공</caption>
+										<colgroup>
+											<col>
+											<col>
+											<col>
+											<col>
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">대출 통지금액</th>
+												<th scope="col">보험가액</th>
+												<th scope="col">보험금액(100%)</th>
+												<th scope="col">등급</th>
+												<th scope="col">보험기간</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="txt_c">
+												<th scope="row">U$1백만</th>
+												<td>U$1백만</td>
+												<td>U$1백만</td>
+												<td>D</td>
+												<td>100일</td>
+											</tr>
+											<tr class="txt_c">
+												<th scope="row">U$1백만</th>
+												<td colspan="4">L/C금액×연간보험요율×보험료기간/360×L/C개설일 최초고시매매기준율 = U$1백만 × 0.194%* × 1100원 = 2,134,000원
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">채무자 상환 추가 대출</h5>
+								<ul class="list shape_type1">
+									<li>A사가 대금을 상환하고 B은행이 공사에 상환통지하면 상환금액만큼 한도 회복추가대출 가능(회전방식)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 3);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출신용보증(매입)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-신용보증-수출신용보증(매입)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(매입)-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(매입)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(매입)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용요건 및 보증한도 유효기간</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">이용요건</h5>
+								<ul class="list shape_type1">
+									<li>신용상 문제가 없는 수출 중소·중견기업<br>※ 공사 내규에 따라 보증금지, 보증제한 및 기타 거절사유에 해당되는 경우 이용 제한</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">유효기간</h5>
+								<ul class="list shape_type1">
+									<li>보증서 발급일로부터 1년</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">보증요율</h5>
+								<ul class="list shape_type1">
+									<li>수출자·수입자 신용등급, 결제조건, 통관여부 등을 감안하여 산출됨</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">주요계약사항</h4>
+							<div class="table">
+								<table>
+									<caption>주요계약사항 표로 구분, 수출신용보증(매입) 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">수출신용보증(매입)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">법적성격</th>
+											<td>수출채권 담보부 대출</td>
+										</tr>
+										<tr>
+											<th scope="row">지원대상</th>
+											<td>중소·중견기업</td>
+										</tr>
+										<tr>
+											<th scope="row">보증 계약자</th>
+											<td>금융기관</td>
+										</tr>
+										<tr>
+											<th scope="row">보증하는 채무</th>
+											<td>대출원금에 보증비율을 곱한 금액 및 약정이자</td>
+										</tr>
+										<tr>
+											<th scope="row">담보위험</th>
+											<td>비상위험 및 신용위험으로 인한 대출금 미상환 위험</td>
+										</tr>
+										<tr>
+											<th scope="row">대상거래</th>
+											<td>통관(일반수출), 비통관(위탁 ·중계)거래</td>
+										</tr>
+										<tr>
+											<th scope="row">보증기간</th>
+											<td>1년</td>
+										</tr>
+										<tr>
+											<th scope="row">보증비율</th>
+											<td>90% 이내</td>
+										</tr>
+										<tr>
+											<th scope="row">보증약정</th>
+											<td>주채무자(수출기업)와 연대보증인이 약정서에 자필 서명</td>
+										</tr>
+										<tr>
+											<th scope="row">결제주체</th>
+											<td>수입자(수출자, 제3자도 가능)</td>
+										</tr>
+										<tr>
+											<th scope="row">수출통지</th>
+											<td>통지 없음</td>
+										</tr>
+										<tr>
+											<th scope="row">단기수출보험 가입</th>
+											<td>선택 가입</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="notice_box">
+							본 안내의 일부 내용은 무역보험관련 내규 개정시 변경될 수 있사오니 이 점 참고하시기 바라며, 보다 정확한 내용은 담당 영업점이나 고객센터(1588-3884)를 통해 확인하시기 바랍니다.
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

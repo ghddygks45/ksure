@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-en/css/style.css">
+	<script src="../../asset/rh-en/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-en/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-en/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-en/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-en/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-en/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-en/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">Overseas Debt Collection Support</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<div class="top_info_box bg_info14">
+							<div class="top_info_wrap">
+								<strong class="bold sm-fs-14 lg-fs-18">Overseas Debt Collection Support</strong>
+								<div class="sm-mt-7 lg-mt-10">
+									With its accumulated expertise, K-SURE supports the collection of overseas account receivables
+									generated through export transactions.
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">Why K-SURE?</h4>
+							<div class="img_box">
+								<img src="../../asset/rh-en/images/img_overseas.jpg" alt="Transaction Structure for Buyer Credit"
+									class="pc_content">
+								<img src="../../asset/rh-en/images/img_overseas_m.jpg" alt="Transaction Structure for Buyer Credit"
+									class="m_content">
+							</div>
+							<p class="sm-mt-5 lg-mt-10">※ Service charges are incurred at the debt collection agency service stage,
+								and not imposed at the consultation stage.</p>
+						</div>
+						<div class="section">
+							<h4 class="tit">Procedure of service use</h4>
+							<div class="use_procedure">
+								<div class="use_box">
+									<div class="use_tit">
+										<span>01</span>Application for consultation
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>Are you worried about overseas accounts receivables? Apply for consultation!</li>
+										</ul>
+										<div class="sm-mt-10 lg-mt-15">
+											<a href="#n" class="btn_white_line ico_arrow">Apply for online consultation</a>
+										</div>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>02</span>Consulting for debt collection strategies
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>An assigned consultant will help you with customized collection strategies according to the
+												characteristics of the accounts receivable.</li>
+										</ul>
+									</div>
+									<div class="con bg_lightorange">
+										<div class="notice_tit color_red">If necessary, use “Overseas Debt Collection Agency Service”</div>
+										<div class="bold sm-mt-5 lg-mt-10">* What is the overseas debt collection agency service?</div>
+										<p class="mt-3">K-SURE serves as an agency to collect overseas accounts receivables through its
+											overseas network</p>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>03</span>Overseas Debt Collection Agency Service* Application and Registration
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>Following the first consultation, send the required documents to request the debt collection
+												agency service.
+												<p class="txt_margin">* Overseas Debt Collection Agency Service: K-SURE serves as an agency for
+													collecting overseas accounts receivables through its overseas network</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>04</span>Debt Collection
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>Debt collection is executed by stage, and the progress is informed.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="use_box">
+									<div class="use_tit">
+										<span>05</span>Success/Failure and Termination of Collection
+									</div>
+									<div class="con">
+										<ul class="list shape_type1">
+											<li>If collection is succeeded, the recovered amount and service fees are settled, and if
+												collection is impossible of not effective, the collection is terminated.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

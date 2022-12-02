@@ -1,0 +1,83 @@
+		<div class="header-inner">
+			<h1 id="brand">
+				<a href="#">
+                    <title>TEACHERS PENSION 사학연금 Tomorrow Plus</title>
+                    <img src="../../asset/incms/images/logo.png" alt="">
+					<span>관리시스템</span>
+				</a>
+			</h1>
+			<div id="admin-info">
+				<p class="login-info">
+					<strong>시스템관리자</strong>
+					<a href="#layer_admininfo" class="fa fa-edit" onclick="openLayer(this);"><span class="tts">정보수정</span></a>
+				</p>
+				<p class="login-time">
+					<span class="time"><i class="fa fa-clock-o"></i> 59:46</span>
+					<button type="button" class="btn"><i class="fa fa-plus"></i> 연장</button>
+					<a href="#" class="btn"><i class="fa fa-sign-out"></i> 로그아웃</a>
+				</p>
+				<div class="util-toolbar">
+					<a href="#" class="btn act"><i class="fa fa-object-group"></i> 이미지편집</a>
+				</div>
+			</div>
+			<div id="layer_admininfo" class="layer_popup modal">
+				<div class="bg"></div>
+				<h2 class="tit_layer">관리자 정보수정</h2>
+				<div class="layer_cont">
+					<table class="tb_write">
+						<caption>관리자 정보수정</caption>
+						<colgroup>
+							<col style="width:140px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">아이디</th>
+								<td>admin1234</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admPw">현재비밀번호</label></th>
+								<td><input type="password" name="admPw" id="admPw" style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admRePw">변경 비밀번호</label></th>
+								<td><input type="password" name="admRePw" id="admRePw" style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admRePw2">변경 비밀번호 확인</label></th>
+								<td><input type="password" name="admRePw2" id="admRePw2" style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admNm">이름</label></th>
+								<td><input type="text" name="admNm" id="admNm" value="관리자" style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admPart">부서명</label></th>
+								<td><input type="text" name="admPart" id="admPart" value="전산팀" style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admTel">전화번호</label></th>
+								<td><input type="text" name="admTel" id="admTel" value="02-2284-1431" style="width:100%;"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="admEmail">이메일</label></th>
+								<td><input type="text" name="admEmail" id="admEmail" value="" style="width:100%;"></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn_area ac">
+						<button type="button" class="btn btn_lg" onclick="closeLayer(this);"><i class="fa fa-close"></i> 닫기</button>
+						<button type="button" class="btn btn_lg act"><i class="fa fa-check"></i> 저장</button>
+					</div>
+				</div>
+				<button type="button" class="btn_layer_close" onclick="closeLayer(this);">레이어닫기</button>
+			</div>
+			<nav id="gnb">
+				<ul>
+					<li class="on"><a href="#"><i class="fa fa-book"></i> 업무</a></li>
+					<li><a href="#"><i class="fa fa-gear"></i> 시스템</a></li>
+					<li><a href="#"><i class="fa fa-table"></i> 로그</a></li>
+					<li><a href="#"><i class="fa fa-pie-chart"></i> 통계</a></li>
+				</ul>
+			</nav>
+		</div>

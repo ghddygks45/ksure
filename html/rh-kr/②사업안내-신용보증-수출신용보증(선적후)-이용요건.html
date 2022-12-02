@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar02.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">수출신용보증(선적후)</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab tab_m_3">
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-제도개요.html">제도개요</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-이용요건.html" class="active">이용요건</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-이용절차.html">이용절차</a></li>
+							<li><a href="②사업안내-신용보증-수출신용보증(선적후)-신청서류.html">신청서류</a></li>
+						</ul>
+						<div class="section">
+							<h4 class="tit">이용요건 및 보증한도 유효기간</h4>
+							<div class="sub_section">
+								<h5 class="sub_tit">이용요건</h5>
+								<ul class="list shape_type1">
+									<li>신용상 문제가 없는 수출기업</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">유효기간</h5>
+								<ul class="list shape_type1">
+									<li>최종 매입일로부터 1년간 추가 매입이 없는 경우 보증한도 자동 소멸</li>
+								</ul>
+							</div>
+							<div class="sub_section">
+								<h5 class="sub_tit">보험료 및 보증료</h5>
+								<ul class="list shape_type1">
+									<li>결제기간 및 수입자 신용등급에 따라 결정되며, 보증료와 단기수출보험 보험료 함께 납부</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<h4 class="tit">주요계약사항</h4>
+							<div class="table">
+								<table>
+									<caption>주요계약사항 표로 구분, 내용 정보 제공</caption>
+									<colgroup>
+										<col style="width:25%;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">내용</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">보증금액</th>
+											<td>국내에서 외국으로의 수출을 말하며, 국내에서 자체 생산하거나 국내 제조업체로부터 구매한 물품을 수출하는 방식</td>
+										</tr>
+										<tr>
+											<th scope="row">담보위험</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>신용위험 : 수입기업(또는 L/C 개설은행)의 지급불능, 지급지체, 수입화물에 대한 인수거절 등</li>
+													<li>비상위험 : 전쟁위험, 송금위험, 환거래 제한 등</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보증비율</th>
+											<td>90%</td>
+										</tr>
+										<tr>
+											<th scope="row">보증한도 운영 방식</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>회전방식으로 운영</li>
+													<li>금융기관이 보증서를 담보로 수출채권을 매입한 후 수입자가 수출대금을 결제하는 경우 동 결제금액만큼 보증한도가 되살아나는 개념<br>
+														* K-SURE와 수입자 신용도, 결제경험 등을 심사하여 수입자별 보증한도 책정</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">보증약정</th>
+											<td>K-SURE 수출지간 권리·의무관계를 약정하는 것으로 연대보증인이 약정서에 자필 서명</td>
+										</tr>
+										<tr>
+											<th scope="row">단기수출보험 의무가입</th>
+											<td>
+												<ul class="list shape_type1">
+													<li>일반적으로 연대보증인(K-SURE)이 주채무자(수출자)를 대신하여 채무를 상환할 경우 연대보증인은 주채무자에 대해 보증채무이행금액과 부대비용을 구상할 권리 보유
+													</li>
+													<li>그러나 단기수출보험에 연계 가입하는 경우 K-SURE의 금융기관 앞 보증채무 이행 시 수출자의 잘못이 없으면 연계된 보험만큼 K-SURE에 대한 상환의무 면제
+													</li>
+													<li>따라서 수입자의 대금 미결제를 대비, 수출자를 보호하기 위해 단기수출보험과의 연계가입 의무화</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="sub_section sm-mt-15 lg-mt-25">
+								<h5 class="sub_tit">연대보증인 입보대상</h5>
+								<ul class="list shape_type1">
+									<li>개인기업 대표자는 채무 당사자(주채무자)로서 채무 부담하며, 원칙적으로 연대보증 폐지하고, 법인기업**은 실제경영자 1인 입보 원칙.</li>
+									<li>대표자 외 실제경영자가 있고 동 실제경영자가 사업자등록증상에 공동대표로 등록된 경우에는 주채무자로 입보</li>
+									<li>실제경영자로서 대표자에 해당하는 자가 여러 명인 경우 실제경영자에 해당하는 대표자 전원(공동대표 및 각자대표 포함)</li>
+								</ul>
+							</div>
+						</div>
+						<div class="notice_box">
+							본 안내의 일부 내용은 무역보험관련 내규 개정시 변경될 수 있사오니 이 점 참고하시기 바라며, 보다 정확한 내용은 담당 영업점이나 고객센터(1588-3884)를 통해 확인하시기 바랍니다.
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

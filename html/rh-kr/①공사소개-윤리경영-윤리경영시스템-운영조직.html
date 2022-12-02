@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(5, 1);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">운영조직</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<ul class="tab tab_m_3">
+						<li><a href="①공사소개-윤리경영-윤리경영시스템-윤리경영추진전략.html">윤리경영추진전략</a></li>
+						<li><a href="①공사소개-윤리경영-윤리경영시스템-윤리경영규범.html">윤리경영규범</a></li>
+						<li><a href="①공사소개-윤리경영-윤리경영시스템-운영조직.html" class="active">운영조직</a></li>
+					</ul>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="section">
+							<h4 class="tit">윤리경영 추진기구·조직</h4>
+							<ul class="list shape_type1">
+								<li>'윤리경영위원회' 를 중심으로 내·외부를 포괄하는 짜임새 있는 조직체계 구축</li>
+								<li>조직별 역할 및 책임의 명확화</li>
+							</ul>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">무역보험공사 윤리경영 운영체계</h4>
+							<div class="img_box sm-mt-12 lg-mt-15">
+								<img src="../../asset/rh-kr/images/img_emo_system01.jpg" alt="">
+								<div class="blind">
+									<ul>
+										<li>
+											<dl>
+												<dt>법무준법부</dt>
+												<dd>준법감사제도</dd>
+											</dl>
+											<dl>
+												<dt>준법감시원</dt>
+												<dd>내부통제기준 준수여부 점검</dd>
+												<dd>준법준수 교육</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>윤리경영위원회</dt>
+												<dd>위원장 : 사장</dd>
+												<dd>위원 : 상임이사</dd>
+											</dl>
+											<dl>
+												<dt>윤리경영실무위원회</dt>
+												<dd>위원장 : 부사장</dd>
+												<dd>위원 : 각 수서장</dd>
+											</dl>
+											<ul>
+												<li>행동강령 책임관 (인사부장)</li>
+												<li>윤리경영 전담관, 청탁방지 담당관, 이해충돌방지 담당관(사회가치혁신실장)</li>
+												<li>운영리스크 관리관(리스크총괄실장)</li>
+											</ul>
+										</li>
+										<li>
+											<dl>
+												<dt>사회적가치혁신실</dt>
+												<dd>윤리경영</dd>
+												<dd>Control Tower</dd>
+											</dl>
+										</li>
+										<li>
+											<dl>
+												<dt>감사</dt>
+												<dd>반부패감시</dd>
+											</dl>
+											<dl>
+												<dt>감사제보센터 (감사실)</dt>
+												<dd>부조리신고방 및 감사제안방 운영</dd>
+												<dd>내부감사˙징계</dd>
+												<dd>공익신고안내(공익침해행위신고 접수/처리)</dd>
+											</dl>
+										</li>
+									</ul>
+								</div>
+								<a href="../../asset/rh-kr/images/img_emo_system01.jpg" class="btn_img_size">크게보기</a>
+							</div>
+						</div>
+
+						<div class="section">
+							<h4 class="tit">주요업무</h4>
+
+							<div class="table_box">
+								<div class="table">
+									<table>
+										<caption>주요업무표로 구분, 주요업무 정보제공</caption>
+										<colgroup>
+											<col style="width:19%;min-width:125px;">
+											<col>
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">구분</th>
+												<th scope="col">주요업무</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">윤리경영위원회</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>공사의 주요 윤리경영 방침결정</li>
+														<li>윤리경영 실천규정 제정 및 개폐</li>
+														<li>정부의 정책적 권고사항 등에 대한 심의</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">윤리경영실무위원회</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>윤리경영위원회 활동지원</li>
+														<li>윤리경영위원회 심의안건 사전검토</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">윤리경영실무위원<br>(각 부서장)</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>소속 부서의 윤리경영 추진계획 수립 및 이행여부 점검</li>
+														<li>윤리경영 실천과 관련된 소속 직원의 상담ㆍ지도</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">윤리경영 전담관<br>청탁방지 담당관</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>윤리경영 실천을 위한 총괄기획</li>
+														<li>윤리경영 실천규정 및 윤리행동강령 제 개정 기획</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">행동강령책임관</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>윤리행동강령의 교육 및 상담</li>
+														<li>윤리행동강령의 준수여부 점검 및 평가</li>
+														<li>윤리행동강령 위반사례 적발 및 처리</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">이해충돌방지 담당관</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>이해충돌방지에 관한 내용의 교육 및 상담</li>
+														<li>이해충돌방지법 관련 제반 업무 (법 제25조)</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">운영리스크관리관</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>운영 리스크관리 기획, 점검 및 평가</li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">감사제보센터(감사실)</th>
+												<td>
+													<ul class="list shape_type1 mt-0">
+														<li>부조리행위 신고 접수/처리</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

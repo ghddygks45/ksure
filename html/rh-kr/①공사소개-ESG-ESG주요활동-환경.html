@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(3, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar01.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">ESG 주요 활동</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+						<ul class="tab">
+							<li><a href="①공사소개-ESG-ESG주요활동-환경.html" class="active">환경(Environmental)</a></li>
+							<li><a href="①공사소개-ESG-ESG주요활동-사회.html">사회(Social)</a></li>
+							<li><a href="①공사소개-ESG-ESG주요활동-지배구조.html">지배구조(Governance)</a></li>
+						</ul>
+
+						<h4 class="blind">환경(Environmental)</h4>
+
+						<div class="section">
+							<h5 class="tit">친환경 분야에 대한 적극적인 금융지원</h5>
+							<ul class="list shape_type1">
+								<li>중소·중견기업 ESG 경영 확산을 위한 무역보험 우대지원 지침, 중장기성 보험 ESG 우대 지침 등 각종 ESG 지원 정책을 수립하여 친환경 기업에 대한 금융 지원을
+									확대하고 있습니다.</li>
+								<li>또한, G20이 참여하는 TCFD(기후변화 재무정보공개 협의체) 지지 선언을 통해 기후 위기 극복 및 탄소 중립을 위한 그린 금융 지원에 앞장 서고 있습니다.
+								</li>
+							</ul>
+							<div class="img_round_box lg-mt-15 sm-mt-10">
+								<img src="../../asset/rh-kr/images/img_esg_act0101.jpg" alt="TCFD 지지선언 및 제 1차 그린금융 협의회 단체사진">
+							</div>
+						</div>
+
+						<div class="section">
+							<h5 class="tit">업사이클링을 통한 친환경 자원 재순환 실천</h5>
+							<ul class="list shape_type1">
+								<li>사회적기업을 통하여 업무 추진 과정에서 발생하는 폐현수막을 에코백, 필통으로 재활용하고 (’22년 270개 제작), 이를 어린이 도서관에 기부하는 등 친환경 가치의 확산을 위해
+									노력하고
+									있습니다.</li>
+							</ul>
+							<div class="img_flex_wrap lg-mt-15 sm-mt-10">
+								<div class="img_round_box pc_basis_70">
+									<img src="../../asset/rh-kr/images/img_esg_act0102.jpg" alt="페현수막 에코백 재활용 사진">
+								</div>
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0103.jpg" alt="페현수막 에코백 기부 사진">
+								</div>
+							</div>
+						</div>
+
+						<div class="section">
+							<h5 class="tit">플로깅 활동으로 지역 환경 개선 생활화</h5>
+							<ul class="list shape_type1">
+								<li>사회적기업의 플로깅* 키트를 활용한 임직원 플로깅 활동을 통해 임직원의 지역 환경 개선 활동을 생활화하고 있습니다.
+									<p>* ‘이삭을 줍다’라는 뜻을 가진 스웨덴어(Plocka Upp)와 조깅(Jogging)의 합성어로, 조깅을 하면서 동시에 쓰레기를 줍는 활동을 의미</p>
+								</li>
+							</ul>
+							<div class="img_flex_wrap lg-mt-15 sm-mt-10">
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0104.jpg" alt="플로깅 참여 임직원 단체사진">
+								</div>
+								<div class="img_round_box">
+									<img src="../../asset/rh-kr/images/img_esg_act0105.jpg" alt="임직원 플로깅 활동 사진">
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>

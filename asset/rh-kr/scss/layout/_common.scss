@@ -1,0 +1,76 @@
+@use '../use'as *;
+
+body {
+	font-size: 13px;
+
+	.inner {
+		padding: 0 10px;
+	}
+
+	.container {
+		padding-top: 58px;
+	}
+
+	@include res--pc-ctn {
+		font-size: 16px;
+
+		.inner {
+			@include clearboth();
+		}
+	}
+
+	@include res--pc {
+		.inner {
+			width: 1440px;
+			margin: 0 auto;
+			padding: 0;
+
+			@include clearboth();
+		}
+
+		.container {
+			padding-top: 132px;
+		}
+	}
+}
+
+@media print {
+
+	@page {
+		margin: 0;
+	}
+
+	body {
+		-webkit-print-color-adjust: exact;
+	}
+
+	/*----- Print -----*/
+	.accessibility,
+	.header,
+	.aside,
+	.location,
+	.quick_menu,
+	.footer {
+		display: none !important;
+	}
+
+	.container {
+		padding: 0 !important;
+
+		.inner {
+			width: 1100px !important;
+			padding: 0 50px !important;
+			margin: 0 !important;
+		}
+	}
+
+	.contents {
+		width: 100% !important;
+		margin: 0 auto !important;
+		float: none !important;
+	}
+
+	#print_area {
+		padding: 30px;
+	}
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../../asset/rh-kr/css/style.css">
+	<script src="../../asset/rh-kr/js/jquery-3.6.0.min.js"></script>
+	<script src="../../asset/rh-kr/js/jquery-ui.js"></script>
+	<script src="../../asset/rh-kr/js/jQuery.print.js"></script>
+	<script src="../../asset/rh-kr/js/html2canvas.min.js"></script>
+	<script src="../../asset/rh-kr/js/jspdf.min.js"></script>
+	<script src="../../asset/rh-kr/js/ui.js"></script>
+
+	<!-- 퍼블용 script -->
+	<script src="../../asset/rh-kr/js/include.js"></script>
+	<!-- // 개발 진행 시 삭제요청 -->
+	<title>Ksure 한국무역보험공사</title>
+
+	<script>
+		$(function () {
+			// 서브페이지 LNB 현재 메뉴 활성화
+			// 개발 시 삭제
+			setTimeout(function () {
+				currentPage(7, 2);
+			}, 100);
+		});
+	</script>
+</head>
+
+<body>
+	<!-- 
+		[include] 표기로 되어진 부분은 개발 언어로 include 해주세요.
+		w3-include-html 속성이 쓰여진 태그는 include 마크업의 부모태그입니다.
+		작업 시 참고바랍니다.
+	-->
+
+	<div id="wrap">
+		<!-- [include] : _inc-skipnav.html  -->
+		<div class="accessibility" w3-include-html="_include/_inc-skipnav.html"></div>
+		<!-- // skipnav -->
+
+		<!-- [include] : _inc-header.html  -->
+		<header id="header" class="header" w3-include-html="_include/_inc-header.html"></header>
+		<!-- // header -->
+
+		<!-- [include] : _inc-allmenu.html  -->
+		<div class="all_menu" w3-include-html="_include/_inc-allmenu.html"></div>
+		<!-- // 전체 메뉴 레이어 -->
+
+		<!-- container -->
+		<main id="container" class="container">
+			<div class="inner">
+				<!-- [include] : _inc-sidebar.html -->
+				<aside class="aside" w3-include-html="_include/_inc-sidebar06.html"></aside>
+				<!-- // sidebar -->
+
+				<!-- content -->
+				<div id="contents" class="contents">
+					<div class="content_top">
+						<h3 class="depth_tit">일별수납실적</h3>
+
+						<!-- [include] : _inc-share.html -->
+						<ul class="share_wrap" w3-include-html="_include/_inc-share.html"></ul>
+						<!-- // share -->
+
+						<!-- [include] : _inc-breadcrumb.html -->
+						<div class="location" w3-include-html="_include/_inc-breadcrumb.html"></div>
+						<!-- // breadcrumb -->
+					</div>
+
+					<!-- ctn -->
+					<div class="ctn">
+
+						<div class="sm-mb-13 lg-mb-19">
+							<p class="bul_type01">수납실적은 자료 수집 및 검증 절차에 따라 1일 전 실적까지 제공됩니다.</p>
+						</div>
+
+						<!-- search_box -->
+						<div class="search_box">
+							<div class="l">
+								전체 <span class="bold">905</span>건, 현재페이지 : <span class="bold">1</span>/<span class="page">11</span>
+							</div>
+							<div class="r">
+								<div class="search_form">
+									<span>집행일 : </span>
+									<div class="date_wrap">
+										<input type="text" class="datepicker">
+										<button type="submit" class="btn_search"><span class="blind">검색</span></button>
+									</div>
+								</div>
+								<a href="#;" class="btn_white_line ico_download">Excel 다운로드</a>
+							</div>
+						</div>
+						<!-- // search_box -->
+
+						<!-- table_top -->
+						<div class="table_top sm-mb-15 lg-mb-20">
+							<div class="l">
+								<p class="color_red">※ 소관 - 기금 : 산업통상자원부(21) - 무역보험기금(78)</p>
+							</div>
+							<div class="r">
+								(단위 : 백만원)
+							</div>
+						</div>
+						<!-- // table_top -->
+
+						<!-- table -->
+						<div class="table">
+							<table class="data_table m_scroll">
+								<caption>일별수납실적 목록표로 회계연도, 회계월, 회계일자, 수입관코드, 수입관명, 수입향코드, 수입향명, 예산금액, 예산현액, 당일수납금액, 연간누계수납금액, 연간누계수납순계금액
+									정보제공</caption>
+								<colgroup>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">회계연도</th>
+										<th scope="col">회계월</th>
+										<th scope="col">회계일자</th>
+										<th scope="col">수입관코드</th>
+										<th scope="col">수입관명</th>
+										<th scope="col">수입향코드</th>
+										<th scope="col">수입향명</th>
+										<th scope="col">예산금액</th>
+										<th scope="col">예산현액</th>
+										<th scope="col">당일수납금액</th>
+										<th scope="col">연간누계수납금액</th>
+										<th scope="col">연간누계수납순계금액</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+									<tr>
+										<td>2022</td>
+										<td>08</td>
+										<td>2022-08-02</td>
+										<td>12</td>
+										<td>경상이전수입</td>
+										<td>59</td>
+										<td>기타경상이전수입</td>
+										<td>0</td>
+										<td>0</td>
+										<td>1</td>
+										<td>234,172</td>
+										<td>0</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- // table -->
+
+						<!-- pagination -->
+						<div class="pagination">
+							<a href="#;" class="first"><span class="blind">처음페이지 이동</span></a>
+							<a href="#;" class="prev"><span class="blind">이전페이지 이동</span></a>
+							<ul class="page_num">
+								<li class="active"><a href="#;" title="현재 페이지">1</a></li>
+								<li><a href="#;">2</a></li>
+								<li><a href="#;">3</a></li>
+								<li><a href="#;">4</a></li>
+								<li><a href="#;">5</a></li>
+							</ul>
+							<a href="#;" class="next"><span class="blind">다음페이지 이동</span></a>
+							<a href="#;" class="last"><span class="blind">마지막페이지 이동</span></a>
+						</div>
+						<!-- // pagination -->
+
+					</div>
+					<!-- // ctn -->
+				</div>
+				<!-- // content -->
+			</div>
+		</main>
+		<!-- // container -->
+
+		<!-- [include] : _inc-quickmenu.html -->
+		<div class="quick_menu" w3-include-html="_include/_inc-quickmenu.html"></div>
+		<!-- // quickmenu -->
+
+		<!-- [include] : _inc-footer.html -->
+		<footer id="footer" class="footer" w3-include-html="_include/_inc-footer.html"></footer>
+		<!-- // footer -->
+	</div>
+</body>
+
+</html>
